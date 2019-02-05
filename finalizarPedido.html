@@ -49,159 +49,270 @@
         
         <main id="main" class="contenido jumbotronbg greybg mt-4" >      
             <div class="row justify-content-md-center justify-content-sm-center">
-                <div class=" col-md-9 col-sm-9 col-xs-9">
-                    <div class="row">
-                         <div class="col-12 col-md-12 col-sm-12 whitebg bgstore" style="background-image: url('img/asd.png');">
-                           
-                         </div>
+                 <div class="col-12 col-md-12 col-sm-12 whitebg bgstore" style="background-image: url('img/asd.png');">
+                   
+                 </div>
 
-                        <div class="col-12 col-md-3 col-sm-12 whitebg pt-0 pb-3 ">
-                            <ul class="nav nav-pills nav-order pt-3 pl-2 pr-2">
-                              <li class="nav-item ">
-                                <a class="nav-link active" data-toggle="pill" href="#delivery">Delivery
-                                    <br><img src="img/delivery.png">
-                                </a>
-                                
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#recojo">Recojo
-                                    <br><img src="img/recojo.png">
-                                </a>
-                                
-                              </li>
-                              
-                            </ul>
-                            <!-- Tab panes -->
-                            <div class="tab-content pt-2">
-                              <div class="tab-pane  active" id="delivery">
-                                    <h5 class="pl-2"><b>Datos de interés</b></h5>
-
-                                    <div class="detalleCarro py-3 yelowbg p-2">
-                                        <h6>Tienda Surco  <span class="float-right badge badge-pill badge-success">Abierto</span></h6>
-                                        <p class="smallleter">Calle Aldabas 555 </p>
-                                        <p class="smallleter">98766544</p>
-                                        <p class="text-muted smallleter">Horario 10 a.m a 6 p.m</p>
-                                        <p class="text-muted smallleter">Distancia 56 Km</p>
-                                    </div>
-                                    <div class="detalleCarro py-3 p-2">
-                                        <h6>Tienda Surco  <span class="float-right badge badge-pill badge-danger">Cerrado</span></h6>
-                                        <p class="smallleter">Calle Aldabas 555 </p>
-                                        <p class="smallleter">98766544</p>
-                                        <p class="text-muted smallleter">Horario 10 a.m a 6 p.m</p>
-                                        <p class="text-muted smallleter">Distancia 56 Km</p>
-                                        
-                                    </div>
-                                </div>
-                              <div class="tab-pane container fade p-0" id="recojo">
-                                 <h5 class="pl-2" ><b>Tiendas disponibles</b></h5>
-                                    <div class="detalleCarro py-3 yelowbg p-2">
-                                        <h6>Alfajor  <span class="float-right badge badge-pill badge-success">Abierto</span></h6>
-                                        <p class="smallleter">Elije tamaño</p>
-                                        <p>Caja grande</p>
-                                        
-                                    </div>
-                              </div>
+                <div class="col-12 col-md-3 col-sm-12 whitebg px-4 ">
+                    <ul class="nav nav-pills nav-order pt-3 pl-2 pr-2">
+                      <li class="nav-item ">
+                        <a class="nav-link active" data-toggle="pill" href="#delivery">Delivery
+                            <br><img src="img/delivery.png">
+                        </a>
+                        
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#recojo">Recojo
+                            <br><img src="img/recojo.png">
+                        </a>
+                        
+                      </li>
+                      
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content p-4">
+                      <div class="tab-pane  active" id="delivery">
+                            <h5 class="pl-2"><b>Datos de entrega</b></h5>
+                            <div class="detalleCarro separador py-3 yelowbg p-2">
+                                <h6>Av. Libertad 215 Urb. Primavera  </h6>
+                                <p class="smallleter">A la altura de cuadra 5</p>
+                                <span class="badge badge-pill badge-success">Activo</span>
+                                <button class="float-right btn btn-sm btn-success"><i class="fa fa-edit"></i></button>
                             </div>
+                            <div class="detalleCarro separador py-3  p-2">
+                                <h6>Av. Libertad 215 Urb. Primavera  </h6>
+                                <p class="smallleter">A la altura de cuadra 5</p>
+                                <span class="badge badge-pill badge-danger">Inactivo</span>
+                                <button class="float-right btn btn-sm btn-success"><i class="fa fa-edit"></i></button>
+                            </div>
+                            <button type="button" class="btn mt-3 btn-success" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus"></i> Agregar dirección</button>
+                            
                         </div>
-                        <div class="col-12 col-md-5 col-sm-12 pt-0 whitebg  ">
-                           <ul class="nav nav-pills">
-                              <li class="nav-item text-center">
-                                <a class="nav-link active" data-toggle="pill" href="#online">Pago Online</a>
-
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" data-toggle="pill" href="#contraentrega">Pago Contra Entrega</a>
-                              </li>
-                              
-                            </ul>
-                            <!-- Tab panes -->
-                            <div class="tab-content p-0">
-                              <div class="tab-pane container active p-0 " id="online">
-                                    <form class="p-2 formPedido">
-                                        <div class="input-group py-1">
-                                            <i class="fa fa-credit-card"></i>
-                                            <input type="text" class="form-control" placeholder="Numero de tarjeta" >
-                                        </div>
-                                        <div class="input-group py-1">
-                                            <i class="fa fa-user linear"></i>
-                                            <input type="text" class="form-control" placeholder="Nombre de tarjeta" >
-                                        </div>
-                                        <div class="input-group py-1">
-                                            <i class="fa fa-calendar"></i>
-                                            <input type="text" class="form-control" placeholder="MM/AAAA" >
-                                        </div>
-                                        <div class="input-group py-1">
-                                            <i class="fa fa-id-card linear"></i>
-                                            <input type="text" class="form-control" placeholder="Documento del titular" >
-                                        </div> 
-                                        <div class="input-group py-1">
-                                            <i class="fa fa-map-marker linear"></i>
-                                            <input type="text" class="form-control" placeholder="Direccion del titular" >
-                                        </div>
-                                        <div class="input-group py-1 ">
-                                            <i class="fa fa-mobile linear"></i>
-                                            <input type="text" class="form-control" placeholder="Celular del titular" >
-                                        </div>
-                                        <div class="input-group py-1">
-                                            <i class="fa fa-credit-card " ></i>
-                                            <input type="text" class="form-control" placeholder="CVV" >
-                                        </div>
-                                    </form>
-                                </div>
-                              <div class="tab-pane container fade" id="contraentrega">
+                      <div class="tab-pane container fade p-0" id="recojo">
+                         <h5 class="pl-2" ><b>Tiendas disponibles</b></h5>
+                            
+                            <div class="detalleCarro py-3 yelowbg p-2">
+                                <h6>Tienda Surco  <span class="float-right badge badge-pill badge-success">Abierto</span></h6>
+                                <p class="smallleter">Calle Aldabas 555 </p>
+                                <p class="smallleter">98766544</p>
+                                <p class="text-muted smallleter">Horario 10 a.m a 6 p.m</p>
+                                <p class="text-muted smallleter">Distancia 56 Km</p>
+                            </div>
+                            <div class="detalleCarro py-3 p-2">
+                                <h6>Tienda Surco  <span class="float-right badge badge-pill badge-danger">Cerrado</span></h6>
+                                <p class="smallleter">Calle Aldabas 555 </p>
+                                <p class="smallleter">98766544</p>
+                                <p class="text-muted smallleter">Horario 10 a.m a 6 p.m</p>
+                                <p class="text-muted smallleter">Distancia 56 Km</p>
                                 
-                                <form class="py-2 formPedido">
-                                        <div class="input-group py-1">
-                                            <i class="fa fa-credit-card"></i>
-                                            <input type="text" class="form-control" placeholder="Numero de tarjeta" >
-                                        </div>
-                                        <div class="input-group py-1">
-                                            <i class="fa fa-user linear"></i>
-                                            <input type="text" class="form-control" placeholder="Nombre de tarjeta" >
-                                        </div>
-                                        <div class="input-group py-1">
-                                            <i class="fa fa-calendar"></i>
-                                            <input type="text" class="form-control" placeholder="MM/AAAA" >
-                                        </div>
-                                        
-                                    </form>
-                              </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-4 col-sm-12 whitebg pt-3 px-3">
-                            <h5 class="px-3"><b>Resumen de Compra</b></h5>
-                            <h6 class="px-3"><b>La casa del Alfajor</b></h6>
-                            <div class="detalleCarro p-3">
-                                <h6>Alfajor  <span class="float-right">S/.45.00</span></h6>
-                                <p class="smallleter">Elije tamaño</p>
-                                <p>Caja grande</p>
-                            </div>
-                             <div class="detalleCarro p-3 separador">
-                                <h6>Alfajor <span class="float-right">S/.45.00</span></h6>
-                                <p class="smallleter">Elije tamaño</p>
-                                <p>Caja grande</p>
-                            </div>
-
-                             <div class="totalCarro text-center">
-                                <h6><span class="float-left">Subtotal</span> <b class="float-right">S/.90.00</b></h6><br>
-                                <h6><span class="float-left">Costo de envio</span> <b class="float-right">S/.10.00</b></h6><br>
-                                <h5><span class="float-left"><strong>Total</strong></span> <b class="float-right"><strong>S/.100.00</strong></b></h5>
-                                <br>
-                                <p class="smallleter mt-2">He aceptado los <a href="">Terminos y condiciones</a> y las <a href="">políticas</a> </p>
-                                <button type="button" class="btn btn-success" ></span>Confirmar y enviar</button>
-                            </div>
-
-                        </div>
-                    </div>
-
+                      </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-5 col-sm-12 px-4 whitebg  ">
+                   <ul class="nav nav-pills">
+                      <li class="nav-item text-center">
+                        <a class="nav-link active" data-toggle="pill" href="#online">Pago Online</a>
+
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#contraentrega">Pago Contra Entrega</a>
+                      </li>
+                      
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content p-0">
+                      <div class="tab-pane container active p-0 " id="online">
+                            <form class="p-2 formPedido">
+                                <div class="input-group py-1">
+                                    <i class="fa fa-credit-card"></i>
+                                    <input type="text" class="form-control" placeholder="Numero de tarjeta" >
+                                </div>
+                                <div class="input-group py-1">
+                                    <i class="fa fa-user linear"></i>
+                                    <input type="text" class="form-control" placeholder="Nombre de tarjeta" >
+                                </div>
+                                <div class="input-group py-1">
+                                    <i class="fa fa-calendar"></i>
+                                    <input type="text" class="form-control" placeholder="MM/AAAA" >
+                                </div>
+                                <div class="input-group py-1">
+                                    <i class="fa fa-id-card linear"></i>
+                                    <input type="text" class="form-control" placeholder="Documento del titular" >
+                                </div> 
+                                <div class="input-group py-1">
+                                    <i class="fa fa-map-marker linear"></i>
+                                    <input type="text" class="form-control" placeholder="Direccion del titular" >
+                                </div>
+                                <div class="input-group py-1 ">
+                                    <i class="fa fa-mobile linear"></i>
+                                    <input type="text" class="form-control" placeholder="Celular del titular" >
+                                </div>
+                                <div class="input-group py-1">
+                                    <i class="fa fa-credit-card " ></i>
+                                    <input type="text" class="form-control" placeholder="CVV" >
+                                </div>
+                            </form>
+                        </div>
+                      <div class="tab-pane container fade" id="contraentrega">
+                        
+                        <form class="p-0 formPedido">
+                                <div class=" py-0 separador">
+                                    <div class="form-check p-0">
+                                      <div>
+                                          <input id="option" type="radio" name="op1" value="option"  data-id="tarjetaVisa" checked >
+                                          <label for="option"><span><span></span></span>Visa</label>
+                                        </div>
+                                        <div>
+                                          <input id="option2" type="radio" name="op1" value="option2" data-id="tarjetaMastercard">
+                                          <label for="option2"><span><span></span></span>Mastercard</label>
+                                        </div>
+                                        <div>
+                                          <input id="option3" type="radio" name="op1" value="option3" data-id="efectivo">
+                                          <label for="option3"><span><span></span></span>Efectivo</label>
+                                        </div>
+                                       </div>
+                                </div>
+
+                                <div id="tarjetaMastercard" class="none pt-3">
+                                    <div class="input-group py-1">
+                                        <i class="fa fa-credit-card"></i>
+                                        <input type="text" class="form-control" placeholder="Numero de tarjeta Mastercard" >
+                                    </div>
+                                    <div class="input-group py-1">
+                                        <i class="fa fa-user linear"></i>
+                                        <input type="text" class="form-control" placeholder="Nombre de tarjeta" >
+                                    </div>
+                                    <div class="input-group py-1">
+                                        <i class="fa fa-calendar"></i>
+                                        <input type="text" class="form-control" placeholder="MM/AAAA" >
+                                    </div>
+                                </div>
+                                <div id="tarjetaVisa" class="pt-3">
+                                    <div class="input-group py-1">
+                                        <i class="fa fa-credit-card"></i>
+                                        <input type="text" class="form-control" placeholder="Numero de tarjeta Visa" >
+                                    </div>
+                                    <div class="input-group py-1">
+                                        <i class="fa fa-user linear"></i>
+                                        <input type="text" class="form-control" placeholder="Nombre de tarjeta" >
+                                    </div>
+                                    <div class="input-group py-1">
+                                        <i class="fa fa-calendar"></i>
+                                        <input type="text" class="form-control" placeholder="MM/AAAA" >
+                                    </div>
+                                </div>
+                                <div id="efectivo" class="none pt-3">
+                                    <div class="form-check">
+                                      <!-- <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                      <label class="form-check-label" for="exampleRadios2">
+                                        Exacto
+                                      </label> -->
+                                    </div>
+                                    <div class="input-group py-1 mt-3">
+                                        <i class="fa fa-user linear"></i>
+                                        <input type="text" class="form-control" placeholder="Pagaré con:" >
+                                    </div>
+                                    
+                                </div>
+                                
+                            </form>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-12 whitebg py-3 px-3">
+                    <h5 class="px-3"><b>Resumen de Compra</b></h5>
+                    <h6 class="px-3"><b>La casa del Alfajor</b></h6>
+                    <h5 class="px-3 infoAdd"><img src="img/reloj.png" data-toggle="tooltip" data-placement="right" title="Tiempo de entrega">12 min | <img src="img/scooter.png" data-toggle="tooltip" data-placement="right" title="Costo de entrega"> S/.12.00</h5>
+                    
+                    <div class="scrollable">
+                        <div class="detalleCarro p-3 separador">
+                            <h6>Alfajor  <span class="float-right">S/.45.00</span></h6>
+                            <p class="smallleter">Elije tamaño</p>
+                            <p>Caja grande</p>
+                        </div>
+                        <div class="detalleCarro p-3 separador">
+                            <h6>Alfajor <span class="float-right">S/.45.00</span></h6>
+                            <p class="smallleter">Elije tamaño</p>
+                            <p>Caja grande</p>
+                        </div>
+                        <div class="detalleCarro p-3 ">
+                            <h6>Alfajor <span class="float-right">S/.45.00</span></h6>
+                            <p class="smallleter">Elije tamaño</p>
+                            <p>Caja grande</p>
+                        </div>
+                        <div class="detalleCarro p-3 ">
+                            <h6>Alfajor <span class="float-right">S/.45.00</span></h6>
+                            <p class="smallleter">Elije tamaño</p>
+                            <p>Caja grande</p>
+                        </div>
+                    </div>
+
+                     <div class="totalCarro text-center separadorup">
+                        <h6><span class="float-left">Subtotal</span> <b class="float-right">S/.90.00</b></h6><br>
+                        <h6><span class="float-left">Costo de envio</span> <b class="float-right">S/.10.00</b></h6><br>
+                        <h5><span class="float-left"><strong>Total</strong></span> <b class="float-right"><strong>S/.100.00</strong></b></h5>
+                        <br>
+                        <p class="smallleter mt-2">He aceptado los <a href="">Terminos y condiciones</a> y las <a href="">políticas</a> </p>
+                        <button type="button" class="btn btn-success" ></span>Confirmar y enviar</button>
+                    </div>
+
+                </div>
+            </div>
         </main>
       
-        <footer class="pb-3 bg-sodark">
+        <!-- Modal -->
+        <div class="modal fade fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nueva dirección</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form class="p-2 formPedido">
+                                <div class="input-group py-2">
+                                    <i class="fa fa-map-marker"></i>
+                                    <input type="text" class="form-control" placeholder="Dirección de entrega">
+                                </div>
+                                <div class="input-group py-2">
+                                    <i class="fa fa-info linear"></i>
+                                    <input type="text" class="form-control" placeholder="Referencia">
+                                </div>
+                                <div class="input-group py-2">
+                                    <i class="fa fa-user linear"></i>
+                                    <input type="text" class="form-control" placeholder="Otros datos">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe width="100%" height="250px%" id="gmap_canvas" src="https://maps.google.com/maps?q=lima%20peru&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                    </iframe>
+                                </div>
+                                <style>.mapouter{text-align:right;height:100%;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}
+                                </style>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success">Guardar cambios</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="bg-sodark">
             <div class="container px-5">
                 <div class="row">
-                    <div class="pt-5 col-sm-12 col-md-4 text-center text-md-left">
+                    <div class="pt-4 col-sm-12 col-md-4 text-center text-md-left">
                         <img class="logo"src="img/logo.png">
                         <p class="tittlefoot">Desarrollado por <b>Kallpait</b></p>
                         <ul class="list-unstyled subtittlefoot">
@@ -210,7 +321,7 @@
                             <li><a class="" href="#"> <img src="img/web.png"> www.kallpait.com</a></li>
                         </ul>
                     </div>
-                    <div class="pt-5 col-sm-12 col-md-4 text-center">
+                    <div class="pt-4 col-sm-12 col-md-4 text-center">
                         <h5 class="tittlefoot">Descárgate el APP</h5>
                         <ul class="list-unstyled text-small">
                             <li>
@@ -219,7 +330,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="pt-5 col-sm-12 col-md-4 text-center">
+                    <div class="pt-4 col-sm-12 col-md-4 text-center">
                         <h6 class="" >Síguenos en:</h6>
                         <ul class="list-unstyled">
                             <li>
@@ -230,7 +341,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row text-center mt-3">
+                <div class="row text-center pb-3">
                     <div class="col-12">
                         <small class="ltlight">&copy; 2019, Tulivery. Todos los derechos reservados</small>
                     </div>

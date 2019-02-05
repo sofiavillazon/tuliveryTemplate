@@ -22,6 +22,35 @@ jQuery(document).ready(function(){
             }
         }
     });
+
+    $('input[type="checkbox"]').on('change', function() {
+       $('input[type="checkbox"]').not(this).prop('checked', false);
+    });
+    
+    $(':radio').change(function (event) {
+        var id = $(this).data('id');
+        var clase = $(this).data('id');
+
+        if (id == "tarjetaVisa") {
+            $("#tarjetaVisa").removeClass("none");
+            $("#tarjetaMastercard").addClass("none");
+            $("#efectivo").addClass("none");
+        }
+
+        if (id == "tarjetaMastercard") {
+            $("#tarjetaMastercard").removeClass("none");
+            $("#tarjetaVisa").addClass("none");
+            $("#efectivo").addClass("none");
+        }
+
+        if (id == "efectivo") {
+            $("#efectivo").removeClass("none");
+            $("#tarjetaMastercard").addClass("none");
+            $("#tarjetaVisa").addClass("none");
+        }
+
+       
+    });
 });
 
 // Image picker
@@ -46,3 +75,4 @@ $(document).ready(function() {
        $(".file-upload").click();
     });
 });
+

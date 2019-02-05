@@ -2,15 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Tulivery - Tienda</title>
+        <title>Tulivery - Login</title>
         <!-- STYLES -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/icon-font.min.css">
         <link rel="stylesheet" href="css/main.css">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body class="error">
         <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
             <div class="alignnav container px-5">
                 <a class="navbar-brand" href="index.html">
@@ -24,17 +25,17 @@
                         <li class="nav-item pt-1">
                             <a class="nav-link" href="detalle.html"> Menú </a>
                         </li>
-                         <li class="nav-item pt-1">
+                        <li class="nav-item pt-1">
                             <a class="nav-link" href="calificacion.html"> Calificación </a>
                         </li>
-                         <li class="nav-item pt-1">
+                        <li class="nav-item pt-1">
                             <a class="nav-link" href="informacion.html"> Información </a>
                         </li>
-                         <li class="nav-item">
-                            <a class="nav-link" href="login.html"> <span><i class="fa fa-user"></i></span> </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="principal.html"> <span><i class="fa fa-user"></i></span> </a>
                         </li>
-                         <li class="nav-item">
-                            <a class="nav-link" href="detalle.html"> <span><i class="fa fa-shopping-cart"></i></span> </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="informacion.html"> <span><i class="fa fa-shopping-cart"></i></span> </a>
                         </li>
 
                     </ul>
@@ -43,56 +44,21 @@
         </nav>
 
         
-        <main id="main" class=" jumbotronbg greybg mt-4" >      
-            <div class="row justify-content-md-center justify-content-sm-center">
-                <div class=" col-md-9 col-sm-9 col-xs-9 ">
-                    <div class="row">
-                       <div class="col-12 col-md-6 col-sm-12 whitebg p-4 ">
-                           <form class="py-2 formLogin">
-                            <h5 class="mt-3"><strong>Quiero inscribir mi tienda</strong></h5>
-                                <div class="input-group py-2">
-                                    <input type="text" class="form-control" placeholder="Nombre contácto" >
-                                </div>
-                                <div class="input-group py-2">
-                                    <input type="text" class="form-control" placeholder="Nombre de tienda" >
-                                </div>
-                                <div class="input-group py-2">
-                                    <input type="text" class="form-control" placeholder="Cantidad de sucursales" >
-                                </div>
-                                <div class="input-group py-2">
-                                    <input type="text" class="form-control" placeholder="Teléfono" >
-                                </div>
-                                <div class="input-group py-2">
-                                    <input type="text" class="form-control" placeholder="Dirección" >
-                                </div>
-                                <div class="input-group py-2">
-                                    <input type="text" class="form-control" placeholder="Ciudad" >
-                                </div>
-                                <div class="input-group py-2">
-                                    <input type="text" class="form-control" placeholder="E-mail" >
-                                </div>
-                                
-                                <button class="mt-3 mb-4 btn btn-danger btn-block rounded">
-                                   Registrarte
-                                </button>
-                            </form>
-                        </div>
-                        <div class="col-12 col-md-6 col-sm-12 p-4 whitebg  ">
-                           
-                            <h5 class="mt-3"><strong>Quiero inscribir mi tienda</strong></h5>
-                            <div class="col-sm-3 m-0">
-                               <div class="square">
-                                 <img class="profile-pic " src="img/default.jpg">
-                               </div>
-                               <div class="p-image">
-                                  <div class="uploadbtn lnr-camera upload-button">  </div>
-                                  <input class="file-upload" type="file" accept="image/*">
-                               </div>
-                              </div>
-                        </div>
-                        
-                    </div>
-                </div>
+        <main id="error" class="  mt-4" >      
+            <div id="clouds">
+                <div class="cloud x1"></div>
+                <div class="cloud x1_5"></div>
+                <div class="cloud x2"></div>
+                <div class="cloud x3"></div>
+                <div class="cloud x4"></div>
+                <div class="cloud x5"></div>
+            </div>
+            <div class='c'>
+                <div class='_404'>500</div>
+                <hr>
+                <div class='_1'>ERROR INESPERADO :(</div>
+                <div class='_2'>TU SOLICITUD NO SE PUDO COMPLETAR</div>
+                <a class='btn' href='#'>REGRESAR</a>
             </div>
         </main>
       
