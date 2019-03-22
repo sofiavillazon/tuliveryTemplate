@@ -12,47 +12,62 @@
     </head>
     <body>
         <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
-            <div class="alignnav container px-5">
-                <a class="navbar-brand" href="index.html">
-                <!-- <img class="logo" src="img/logo.png"> -->
-                <!-- <span class="tittle">Haz tu pedido en tu tienda favorita</span> -->
-                </a>
-                <button id="toggleTulivery" class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
+            <div class="alignnav container">
+                
+                <button id="toggleTulivery" class="navbar-toggler p-0 border-0 ml-auto " type="button" data-toggle="offcanvas">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav ml-md-auto ">
-                                <!-- <img class="store" src="img/nuevaTienda.png"> -->
-                                <!-- <span class="textmid"> Quiero tene mi <br>APP y Tienda Web </span> -->
+                        <!-- <img class="store" src="img/nuevaTienda.png"> -->
+                        <!-- <span class="textmid"> Quiero tene mi <br>APP y Tienda Web </span> -->
+                        <li class="nav-item pt-1 d-lg-none">
+                            <a class="nav-link" href="detalle.html"> Principal </a>
+                        </li>
                         <li class="nav-item pt-1">
                             <a class="nav-link" href="detalle.html"> Menú </a>
                         </li>
-                        <li class="nav-item pt-1">
+                        <li class="nav-item pt-1 active ">
                             <a class="nav-link" href="calificacion.html"> Calificación </a>
                         </li>
                         <li class="nav-item pt-1">
                             <a class="nav-link" href="informacion.html"> Información </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html"> <span><i class="fa fa-user"></i></span> </a>
+                        <li class="nav-item floatMenuOption">
+                            <a class="nav-link " href="login.html"> <span><i class="fa fa-user"></i></span> </a>
+                            <ul class="floatMenu">
+                                <li><a href="perfil.html"> Mi perfil <img src="img/i08.svg" alt="slider" ></a></li>
+                                <li><a href="direcciones.html"> Mis direcciones <img src="img/i07.svg" alt="slider" ></a></li>
+                                <li><a href="pedidos.html"> Mis pedidos <img src="img/i09.svg" alt="slider" ></a></li>
+                                <li><a href="Login2.html"> Salir <img src="img/i06.svg" alt="slider" ></a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="informacion.html"> <span><i class="fa fa-shopping-cart"></i></span> </a>
                         </li>
-
                     </ul>
                 </div>
             </div>
         </nav>
-
+        <a class="btn-fticon4 inicioIco" href="principal.html">
+            <i class="fa fa-home"></i>
+        </a>
         <a class="tiendaIco" href="detalle.html"><div class="circle"><img src="img/2.jpg"></div></a>
         
         <main id="main" class="contenido jumbotronbg greybg mt-4" >      
             <div class="row justify-content-md-center justify-content-sm-center">
-                         <div class="col-12 col-md-12 col-sm-12 whitebg bgstore " style="background-image: url('img/asd.png');">
-                         </div>
+                        <div id="slider" class="col-12 col-md-12 col-sm-12 whitebg bgstore" >
+                                <div class="slides-container">
+                                    <div class="slide"><img src="img/bg01.png" alt="slider" ></div>
+                                    <div class="slide"><img src="img/bg02.jpg" alt="Slider" ></div>
+                                </div>
+                                <div class="arrows">
+                                    <a class="prev" href="#"><i class="fa fa-angle-left"></i> </a>
+                                    <a class="next" href="#"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                        </div>
                
-                        <div class="calificacion col-12 col-md-9 col-sm-12 p-5 whitebg ">
+                        <div class="calificacion col-12 col-md-8 col-sm-12 p-5 whitebg ">
                             <div class="card imgresp px-3 px-3 py-4 d-md-flex flex-md-row pr-3  ">
                               <div class=" ml-2 mb-2">
                                 <h6 class="">Promedio</h6>
@@ -164,69 +179,123 @@
                             </div>
                             
                         </div>
-                        <div class="col-12  col-md-3 col-sm-12 yelowbg pt-5 ">
-                            <h5 class="px-3"><b>Tu Pedido</b></h5>
-                            <div class="detalleCarro px-3">
-                                <h6>Alfajor</h6>
-                                <p class="smallleter">Elije tamaño</p>
-                                <p>Caja grande</p>
-                                <div class=" rightcontent">
-                                    S/.45.00 <br>
-                                    <div class="input-group" id="spinner">
-                                        <span class="input-group-btn btn-group-sm">
-                                        <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
-                                        </span>
-                                        <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
-                                        <span class="input-group-btn btn-group-sm">
-                                        <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
-                                        </span>
-                                    </div>  
-                                </div>  
+                        <div class="col-12 col-md-4 col-sm-12 yelowbg pt-4 px-4">
+                                <h5><b>Oscar Bardales</b></h5>
+                                
+                                <h6>Tu pedido de <b> La casa del  Alfajor</b></h6>
+                                <div class="detalleCarro pt-3 pb-1 px-2 row">
+                                    <div class="leftcontent col-6">
+                                        <h6>
+                                        <a class="closebtn"><i class="fa fa-times"></i></a> Alfajor</h6>
+                                        <p class="smallleter">Tamaño personal</p>
+                                        <p class="smallleter">Poco picante</p>
+                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                    </div>
+            
+                                    <div class="rightcontent col-6">
+                                        S/.45.00 <br>
+                                        <div class="input-group" id="spinner">
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                            </span>
+                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="detalleCarro pt-3 pb-1 px-2 row">
+                                    <div class="leftcontent col-6">
+                                        <h6>
+                                        <a class="closebtn"><i class="fa fa-times"></i></a> Alfajor</h6>
+                                        <p class="smallleter">Tamaño personal</p>
+                                        <p class="smallleter">Poco picante</p>
+                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                    </div>
+            
+                                    <div class="rightcontent col-6">
+                                        S/.45.00 <br>
+                                        <div class="input-group" id="spinner">
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                            </span>
+                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="detalleCarro pt-3 pb-1 px-2 row">
+            
+                                    <div class="leftcontent col-6">
+                                        <h6>
+                                        <a class="closebtn"><i class="fa fa-times"></i></a> Alfajor</h6>
+                                        <p class="smallleter">Tamaño personal</p>
+                                        <p class="smallleter">Poco picante</p>
+                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                    </div>
+            
+                                    <div class="rightcontent col-6">
+                                        S/.45.00 <br>
+                                        <div class="input-group" id="spinner">
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                            </span>
+                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                    
+                                <div class="detalleCarro pt-3 pb-1 px-2 row">
+                                    <div class="leftcontent col-6">
+                                        <h6>
+                                        <a class="closebtn"><i class="fa fa-times"></i></a> Alfajor</h6>
+                                        <p class="smallleter">Tamaño personal</p>
+                                        <p class="smallleter">Poco picante</p>
+                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                    </div>
+            
+                                    <div class="rightcontent col-6">
+                                        S/.45.00 <br>
+                                        <div class="input-group" id="spinner">
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                            </span>
+                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+            
+                                <div class="totalCarro sepCarro pt-3">
+                                    <h6>Subtotal <b class="float-right">S/.80.00</b></h6>
+                                    <h6>Costo de envío <b class="float-right">S/.10.00</b></h6>
+                                    <a href="finalizarPedido.html">
+                                        <button href="index.html" type="button" class="btn btn-success col-12" ></span>Finalizar pedido</button>
+                                    </a>
+                                </div>
                             </div>
-                             <div class="detalleCarro px-3">
-                                <h6>Alfajor</h6>
-                                <p class="smallleter">Elije tamaño</p>
-                                <p>Caja grande</p>
-                                <div class=" rightcontent">
-                                    S/.45.00 <br>
-                                    <div class="input-group" id="spinner">
-                                        <span class="input-group-btn btn-group-sm">
-                                        <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
-                                        </span>
-                                        <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
-                                        <span class="input-group-btn btn-group-sm">
-                                        <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
-                                        </span>
-                                    </div>  
-                                </div> 
-                            </div>
-
-                             <div class="totalCarro px-3 text-center text-md-center">
-                                <h6><div class="float-left">Subtotal</div> <b class="float-right">S/.80.00</b></h6><br>
-                                <h6><div class="float-left">Costo de envío</div> <b class="float-right">S/.10.00</b></h6>
-                                <button type="button" class="btn btn-success" ></span>Finalizar pedido</button>
-                            </div>
-
-                            
-
-
-                        </div>
                 </div>
         </main>
       
 
 
         <footer class="bg-sodark">
-            <div class="container px-5">
+            <div class="containerv2">
                 <div class="row">
-                    <div class="pt-4 col-sm-12 col-md-4 text-center text-md-left">
+                    <div class="pt-4 col-sm-12 col-md-4 text-md-center">
                         <img class="logo"src="img/logo.png">
-                        <p class="tittlefoot">Desarrollado por <b>Kallpait</b></p>
-                        <ul class="list-unstyled subtittlefoot">
-                            <li><a class="" href="#"> <img src="img/tel.png"> (51) 1313 8390 </a></li>
-                            <li><a class="" href="#"> <img src="img/mail.png"> oscar.bardales@kallpait.com</a></li>
-                            <li><a class="" href="#"> <img src="img/web.png"> www.kallpait.com</a></li>
-                        </ul>
                     </div>
                     <div class="pt-4 col-sm-12 col-md-4 text-center">
                         <h5 class="tittlefoot">Descárgate el APP</h5>
