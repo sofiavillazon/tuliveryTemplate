@@ -1392,9 +1392,8 @@ input[type=radio]:not(old):checked + label > span > span{
 }
 
 .loginv2 {
-  background-color: rgba(0,0,0,0.8);
   background: url("../img/bg2.png") ; 
-  
+  background-color: #444;
 }
 
 .loginv2 .card-signin {
