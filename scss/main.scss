@@ -1393,8 +1393,7 @@ input[type=radio]:not(old):checked + label > span > span{
 
 .loginv2 {
   background-color: rgba(0,0,0,0.8);
-  background: url("https://sofiavillazon.github.io/tuliveryTemplate/img/bg2.png") no-repeat center fixed ghostwhite; 
-  background-size: 56%;;
+  background: url("../img/bg2.png") ; 
   
 }
 
@@ -1714,7 +1713,7 @@ input[type=radio]:not(old):checked + label > span > span{
 
 .profile .bgavatar:hover{
  
-    background-image: url(/img/bgfondo.png)!important;
+    background-image: url(../img/bgfondo.svg)!important;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 120%;
@@ -1730,7 +1729,7 @@ input[type=radio]:not(old):checked + label > span > span{
   color: #fff;
   padding: 9px 0px 60px 15px;
   .bgavatar{
-    background-image: url(/img/bgfondo03.png);
+    background-image: url(../img/bgfondo03.svg);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 130%;
