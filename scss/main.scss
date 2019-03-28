@@ -1834,3 +1834,7 @@ input[type=radio]:not(old):checked + label > span > span{
   border: 3px solid #b5b5b5;
   background-color: #f7f7f7;
 }
+
+#main>.row{
+  min-height: 76vh;
+}

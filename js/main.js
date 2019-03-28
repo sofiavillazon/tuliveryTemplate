@@ -13,6 +13,13 @@ $('.toggleDetail h6').on('click', function(){
    
 });
 
+var $currDiv = $( "#start" );
+$('input:radio').on('click', function(){
+    $currDiv  = $currDiv.next();
+    $currDiv.toggleClass('active').siblings().removeClass('active');
+    console.log($(this));
+});
+
 $('.dirDetalle').on('click', function(){
     $(this).toggleClass('active').siblings().removeClass('active');
 
@@ -185,17 +192,17 @@ $('.closebtn').click(function() {
     });
 });
 
-var maxelm = 3;
-
+var maxelm = 10;
+var maxeld = 4;
 // DELIVERY ----- LISTA D DIRECCIONES EMPRESA CANTIDAD LIMITE 10
 $( document.body ).append( $( "<div>" ) );
 var n = $( ".dirempresa" ).length;
-if(n > maxelm){
+if(n > maxeld){
     $(".scrolldir").css("overflow-y","scroll");
     $(".scrolldir").css("overflow-x","hidden");
-    $(".scrolldir").css("max-height","400px");
+    $(".scrolldir").css("max-height","988px");
 }
-if(n <= maxelm){
+if(n <= maxeld){
     $(".scrolldir").css("overflow","hidden");
     $(".scrolldir").css("overflow-x","hidden");
     $(".scrolldir").css("max-height","100%");

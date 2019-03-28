@@ -296,102 +296,98 @@
             </div>
         </main>
       
-         <!-- Modal -->
-         <div class="modal fade fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog " role="document">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <h4 class="modal-title text-center" id="exampleModalLabel">Personalizar 1/4 Parrillero original con papas y ensalada</h4>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                           <span aria-hidden="true">&times;</span>
-                          </button>
-                      </div>
-                      <div class="modal-body formularioCompra">
-      
-                          <div class="row">
-                              <div class="col-md-12">
-                                  
-                                  <div class="toggleDetail active">
-                                      <h6 class="mt-5">Elige tu porción de pollo <i class="float-right fa fa-chevron-down"> </i></h6>
-                                      
-                                      <form class="formPedido toggleContent">
-                                          <span>Seleccionar una <div class="Form Obligatorio">*obligatorio</div></span>
-                                          <fieldset>
-                                              <div class="py-1 ">
-                                                  <div class="form-check">
-                                                      <div>
-                                                      <input id="option" type="radio" name="op1" value="option checked">
-                                                      <label for="option"><span><span></span></span>1/4 pardos pecho</label>
-                                                      </div>
-                                                      <div>
-                                                      <input id="option2" type="radio" name="op1" value="option2">
-                                                      <label for="option2"><span><span></span></span>1/4 pardos pierna</label>
-                                                      </div>
-                                                      <div>
-                                                      <input id="option3" type="radio" name="op1" value="option3">
-                                                      <label for="option3"><span><span></span></span>1/4 pardos</label>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </fieldset>
-                                      </form>
-                                  </div>
-      
-                                  <div class="toggleDetail">
-                                      <h6 class="mt-5">Elige tu complementario <i class="float-right fa fa-chevron-down"> </i> </h6>
-                                      <form class="formPedido toggleContent">
-                                          <span>Seleccionar una <div class="Form Obligatorio">*obligatorio</div></span>
-                                          <fieldset>
-                                              <div class=" py-1 ">
-                                                  <div class="form-check">
-                                                          <div>
-                                                          <input id="option4" type="radio" name="op2" value="option4">
-                                                          <label for="option4"><span><span></span></span>Papas firtas</label>
-                                                          </div>
-                                                          <div>
-                                                          <input id="option5" type="radio" name="op2" value="option5">
-                                                          <label for="option5"><span><span></span></span>Papas doradas</label>
-                                                          </div>
-                                                  </div>
-                                              </div>
-                                          </fieldset>
-                                      </form>
-                                  </div>
-                                  <div class="toggleDetail">
-                                      <h6 class="mt-5">Elige tu tipo de ensalada <i class="float-right fa fa-chevron-down"> </i></h6>
-                                      <form class=" formPedido toggleContent">
-                                          <span>Seleccionar una <div class="Form Obligatorio">*obligatorio</div></span>
-                                          <fieldset>
-                                              <div class=" py-1 ">
-                                                  <div class="form-check">
-                                                      <div class="">
-                                                      <input id="option6" type="radio" name="op3" value="option6">
-                                                      <label for="option6"><span><span></span></span>Ensalada fresca</label>
-                                                      </div>
-                                                      <div>
-                                                      <input id="option7" type="radio" name="op3" value="option7">
-                                                      <label for="option7"><span><span></span></span>Ensalada delicia</label>
-                                                      </div>
-      
-                                                      <div>
-                                                      <input id="option8" type="radio" name="op3" value="option8">
-                                                      <label for="option8"><span><span></span></span>Ensalada cocida</label>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </fieldset>
-                                      </form>
-                                  </div>
-                              </div>
-                          </div>
+        <!-- Modal -->
+        <div class="modal fade fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center" id="exampleModalLabel">Personalizar 1/4 Parrillero original con papas y ensalada</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                      <button type="button" class="btn btn-success">Añadir al pedido</button>
-                    </div>
-                  </div>
+                    <div class="modal-body formularioCompra">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+                                <div id="start" class="toggleDetail active">
+                                    <h6 class="mt-5">Elige tu porción de pollo <i class="float-right fa fa-chevron-down"> </i></h6>
+                                    
+                                    <form class="formPedido toggleContent">
+                                        <span>Seleccionar una <div class="Form Obligatorio">*obligatorio</div></span>
+                                        <fieldset>
+                                            <div class="py-1 ">
+                                                <div class="form-check">
+                                                    <div>
+                                                        <input id="op01" type="radio" name="checkfood" >
+                                                        <label for="op01"><span><span></span></span>Papas firtas</label>
+                                                        </div>
+                                                        <div>
+                                                        <input id="op02" type="radio" name="checkfood" >
+                                                        <label for="op02"><span><span></span></span>Papas doradas</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                                <div class="toggleDetail">
+                                    <h6 class="mt-5">Elige tu complementario <i class="float-right fa fa-chevron-down"> </i> </h6>
+                                    <form class="formPedido toggleContent">
+                                        <span>Seleccionar una <div class="Form Obligatorio">*obligatorio</div></span>
+                                        <fieldset>
+                                            <div class=" py-1 ">
+                                                <div class="form-check">
+                                                    <div>
+                                                    <input id="option4" type="radio" name="checkfood" >
+                                                    <label for="option4"><span><span></span></span>Papas firtas</label>
+                                                    </div>
+                                                    <div>
+                                                    <input id="option5" type="radio" name="checkfood" >
+                                                    <label for="option5"><span><span></span></span>Papas doradas</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="toggleDetail">
+                                    <h6 class="mt-5">Elige tu tipo de ensalada <i class="float-right fa fa-chevron-down"> </i></h6>
+                                    <form class=" formPedido toggleContent">
+                                        <span>Seleccionar una <div class="Form Obligatorio">*obligatorio</div></span>
+                                        <fieldset>
+                                            <div class=" py-1 ">
+                                                <div class="form-check">
+                                                    <div class="">
+                                                    <input id="option6" type="radio" name="checkfood" >
+                                                    <label for="option6"><span><span></span></span>Ensalada fresca</label>
+                                                    </div>
+                                                    <div>
+                                                    <input id="option7" type="radio" name="checkfood" >
+                                                    <label for="option7"><span><span></span></span>Ensalada delicia</label>
+                                                    </div>
+
+                                                    <div>
+                                                    <input id="option8" type="radio" name="checkfood" >
+                                                    <label for="option8"><span><span></span></span>Ensalada cocida</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-              </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Añadir al pedido</button>
+                </div>
+                </div>
+            </div>
+            </div>
 
         <footer class="bg-sodark">
             <div class="containerv2 ">
