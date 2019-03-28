@@ -157,4 +157,61 @@ $(prevSlide).click(function(e) {
  
 AutoPlay();
 
+$(function(){
+    $(".imgvisor").popImg();
+})
+
+
+$( document.body ).append( $( "<div>" ) );
+var n = $( ".detalleCarro" ).length;
+if(n > 4){
+    $("#scrollerSection").css("overflow-y","scroll");
+    $("#scrollerSection").css("overflow-x","hidden");
+    $("#scrollerSection").css("max-height","400px");
+    $("#scrollerSection").css("padding","0px 14px");
+    $("#scrollerSection").css("background-color","#fbfbfb");
+}
+if(n <= 4){
+    $("#scrollerSection").css("overflow","hidden");
+    $("#scrollerSection").css("overflow-x","hidden");
+    $("#scrollerSection").css("max-height","100%");
+    $("#scrollerSection").css("padding","0px 14px");
+    $("#scrollerSection").css("background-color","#fbfbfb");
+}
+
+$('.closebtn').click(function() {
+    $(this).parent().parent().parent().hide( "slow", function() {
+       
+    });
+});
+
+var maxelm = 3;
+
+// DELIVERY ----- LISTA D DIRECCIONES EMPRESA CANTIDAD LIMITE 10
+$( document.body ).append( $( "<div>" ) );
+var n = $( ".dirempresa" ).length;
+if(n > maxelm){
+    $(".scrolldir").css("overflow-y","scroll");
+    $(".scrolldir").css("overflow-x","hidden");
+    $(".scrolldir").css("max-height","400px");
+}
+if(n <= maxelm){
+    $(".scrolldir").css("overflow","hidden");
+    $(".scrolldir").css("overflow-x","hidden");
+    $(".scrolldir").css("max-height","100%");
+}
+
+// RECOJO -----  LISTA D DIRECCIONES PERSONA CANTIDAD LIMITE 10
+$( document.body ).append( $( "<div>" ) );
+var n = $( ".direntrega" ).length;
+if(n > maxelm){
+    $(".scrolldir2").css("overflow-y","scroll");
+    $(".scrolldir2").css("overflow-x","hidden");
+    $(".scrolldir2").css("max-height","400px");
+}
+if(n <= maxelm){
+    $(".scrolldir2").css("overflow","hidden");
+    $(".scrolldir2").css("overflow-x","hidden");
+    $(".scrolldir2").css("max-height","100%");
+}
 

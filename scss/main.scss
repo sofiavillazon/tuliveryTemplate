@@ -93,7 +93,7 @@
 }
 .imgresp .imgResponsive {
     width: 100%;
-    height: 89px !important;
+    height: 140px !important;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -134,10 +134,10 @@
   background: #ea4335;
 }
 .closebtn{
-    left: -27px;
-    top: -2px;
+    left: -11px;
+    top: -3px;
     background: #b5b5b5;
-    border-radius: 50%;
+    border-radius: 26%;
     width: 24px;
     height: 24px;
     padding: 1px 5px;
@@ -206,7 +206,7 @@
 }
 
 .totalCarro{
-  padding: 0px 10px 50px 10px;
+  padding: 0px 10px 30px 10px;
   button{
     border-radius: 50px;
     font-size: 18px;
@@ -532,11 +532,21 @@ footer h4, footer h5{
 /*5.-MAIN.............*/
 /*==============================================================*/
 .imgresp .imgResponsive2 {
-    width: 100%;
-    height: 89px !important;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
+   width: 100%;
+   height: 125px !important;
+   background-size: cover;
+   background-position: center;
+   overflow: hidden;
+}
+
+.separadoronly{
+  border-top: 2px solid #eee;
+}
+.separadorup{
+  border-bottom: 2px solid #eee;
+}
+.separadorup:last-child {
+  border-bottom: none;
 }
 
 #main{
@@ -566,25 +576,22 @@ footer h4, footer h5{
       a{
         text-decoration: none;
       }
-      div:hover{
-        opacity: 0.4;
+      div p:hover, div .active{
+        background: #ef4e35;
+        opacity: 0.8;
       }
       p{
         position: relative;
-        top: 49px;
+        top: 0px;
         padding: 13px 8px 3px 8px;
         left: 0px;
         font-weight: bold;
         color: white;
         width: 100%;
-        background: rgba(0,0,0,0);
-        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.96) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.96)));
-        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.96) 100%);
-        background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.96) 100%);
-        background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.96) 100%);
-        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.96) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+        height: 100%;
+        span{
+          opacity: 1 !important;
+        }
       }
     }
   }
@@ -1384,6 +1391,12 @@ input[type=radio]:not(old):checked + label > span > span{
       100% {margin-left: -1000px;}
   }
 
+.badge-basic{
+  background-color: #444;
+  color: #fff;
+  margin: 2px 0px; 
+}
+  
   /*LOGIN2*/
 
 :root {
@@ -1575,7 +1588,7 @@ input[type=radio]:not(old):checked + label > span > span{
 
 
 .imgvisor {
-  width: 110%;
+  width: 100%;
 }
 
 .alertmod{
@@ -1679,6 +1692,9 @@ input[type=radio]:not(old):checked + label > span > span{
   .orangeline{
     border-top: 3px solid #ea4335;
   }
+  .orangelinebtn{
+    border-bottom: 3px solid #ea4335;
+  }
   h4{
     margin-bottom: 0.1rem !important;
   }
@@ -1777,3 +1793,44 @@ input[type=radio]:not(old):checked + label > span > span{
   }
 }
 
+#starevent .star-rating{
+  // cursor: pointer;
+  font-size: 19px;
+  li:hover{
+    color: #cc3b25;
+  }
+  .active{
+    color: #ea4335;
+  }
+}
+
+#starevent .star-rating-click{
+  cursor: pointer;
+  font-size: 22px;
+  li:hover{
+    color: #cc3b25;
+  }
+  .active{
+    color: #ea4335;
+  }
+}
+
+.text-input {
+  background-color: #efefef !important;
+}
+
+.text-input {
+  padding: 0.375rem 0.7rem;
+  border-radius: 12px;
+  // height: 40px;
+}
+
+.modal { overflow-y: auto }
+
+.baseCarrito{
+  padding: 20px 0px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 3px solid #b5b5b5;
+  background-color: #f7f7f7;
+}

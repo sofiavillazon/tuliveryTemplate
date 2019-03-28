@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tulivery - Detalle</title>
+        <!-- STYLES -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/icon-font.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
+            <div class="alignnav container">
+                <a class="navbar-brand" href="principal.html">
+                    <img class="logoline" src="img/logo.png">
+                    <span class="tittle barlogo pl-2">Haz tu pedido en tu tienda favorita</span>
+                    </a>
+                <button id="toggleTulivery" class="navbar-toggler p-0 border-0 ml-auto " type="button" data-toggle="offcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-md-auto ">
+                        <!-- <img class="store" src="img/nuevaTienda.png"> -->
+                        <!-- <span class="textmid"> Quiero tene mi <br>APP y Tienda Web </span> -->
+                        <li class="nav-item pt-1 d-lg-none">
+                            <a class="nav-link" href="detalle.html"> Principal </a>
+                        </li>
+                        <!-- <li class="nav-item pt-1">
+                            <a class="nav-link" href="detalle.html"> Menú </a>
+                        </li>
+                        <li class="nav-item pt-1">
+                            <a class="nav-link" href="calificacion.html"> Calificación </a>
+                        </li>
+                        <li class="nav-item pt-1">
+                            <a class="nav-link" href="informacion.html"> Información </a>
+                        </li> -->
+                        <li class="nav-item floatMenuOption">
+                            <a class="nav-link " href="login.html"> <span><i class="fa fa-user"></i></span> </a>
+                            <ul class="floatMenu">
+                                <li><a href="perfil.html"> Mi perfil <img src="img/i08.svg" alt="slider" ></a></li>
+                                <li><a href="direcciones.html"> Mis direcciones <img src="img/i07.svg" alt="slider" ></a></li>
+                                <li><a href="pedidos.html"> Mis pedidos <img src="img/i09.svg" alt="slider" ></a></li>
+                                <li><a href="Login2.html"> Salir <img src="img/i06.svg" alt="slider" ></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="informacion.html"> <span><i class="fa fa-shopping-cart"></i></span> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <a class="btn-fticon4 inicioIco" href="principal.html">
+            <i class="fa fa-home"></i>
+        </a> -->
+
+        <main id="main" class="profile contenido mt-4" >      
+            <div class="row">
+                <div class="col-12 col-md-3 col-sm-12 sidebarprof text-center" >
+                    <div class="bgavatar">
+                        <img src="img/avatar.svg">
+                        <h5>Oscar Bardales</h5>
+                        <p>Conectado</p>
+                    </div>
+                    <ul>
+                        <li class=""><a  href="perfil.html"> Mi perfil </a></li>
+                        <li class=""><a  href="direcciones.html"> Mis direcciones</a></li>
+                        <li class=""><a  href="pedidos.html"> Mis pedidos </a></li>
+                        <li class="active"><a  href="comentarios.html"> Comentarios</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-9 col-sm-12 contentprof yelowbg p-5" >
+                    <div class="sectionProf">
+                        <h4>Mis Comentarios <button type="button" class="btn btn-danger float-right  btn-sm" data-toggle="modal" data-target="#nuevaDireccion">Comentar</button></h4>
+                        <p>Comentarios recientes</p><br>
+                        
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-sm-12 mt-2 mx-0  ">
+                                <div id="starevent" class="card orangeline orangelinebtn px-3 mt-0 d-md-flex flex-md-row ">
+                                    <div class="align-items-start pb-0">
+                                        <div class="separador pb-2 ">
+                                            <strong class="">La choza Naútica</strong> <br>   
+                                            <p class="text-descr ">Pedido 111 - 28 Feb 2019.</p>
+                                        </div>
+                                        <div class="separador py-2 ">
+                                            <span class="text-descr">Comida.</span> <br>
+                                            <div class="star-rating" style="display: inline-flex;">
+                                                <ul>
+                                                    <a><li class="active fa fa-star"></li></a>
+                                                    <a><li class="active fa fa-star"></li></a>
+                                                    <a><li class="active fa fa-star"></li></a>
+                                                    <a><li class="fa fa-star"></li></a>
+                                                    <a><li class="fa fa-star"></li></a>
+                                                </ul>
+                                            </div><br>
+
+                                            <span class="text-descr">Tiempo de entrega.</span> <br>
+                                            <div class="star-rating" style="display: inline-flex;">
+                                                <ul>
+                                                    <a><li class="active fa fa-star"></li></a>
+                                                    <a><li class="active fa fa-star"></li></a>
+                                                    <a><li class="fa fa-star"></li></a>
+                                                    <a><li class="fa fa-star"></li></a>
+                                                    <a><li class="fa fa-star"></li></a>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class=" py-2 ">
+                                            <p>Mi comentario es bla bla bla bla bla bla bla bla bla 
+                                               bla bla bla..</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 col-sm-12 mt-2 mx-0  ">
+                                <div id="starevent" class="card orangeline orangelinebtn px-3 mt-0 d-md-flex flex-md-row ">
+                                    <div class="align-items-start pb-0">
+                                        <div class="separador pb-2 ">
+                                            <strong class="">La choza Naútica</strong> <br>   
+                                            <p class="text-descr ">Pedido 111 - 28 Feb 2019.</p>
+                                        </div>
+                                        <div class="separador py-2 ">
+                                            <span class="text-descr">Comida.</span> <br>
+                                            <div class="star-rating" style="display: inline-flex;">
+                                                <ul>
+                                                    <a><li class="active fa fa-star"></li></a>
+                                                    <a><li class="active fa fa-star"></li></a>
+                                                    <a><li class="active fa fa-star"></li></a>
+                                                    <a><li class="active fa fa-star"></li></a>
+                                                    <a><li class="active fa fa-star"></li></a>
+                                                </ul>
+                                            </div><br>
+
+                                            <span class="text-descr">Tiempo de entrega.</span> <br>
+                                            <div class="star-rating" style="display: inline-flex;">
+                                                <ul>
+                                                    <a><li class="active fa fa-star"></li></a>
+                                                    <a><li class="fa fa-star"></li></a>
+                                                    <a><li class="fa fa-star"></li></a>
+                                                    <a><li class="fa fa-star"></li></a>
+                                                    <a><li class="fa fa-star"></li></a>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class=" py-2 ">
+                                            <p>Mi comentario es bla bla bla bla bla bla bla bla bla 
+                                                bla bla bla..</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Modal -->
+        <div class="modal fade fade bd-example-modal-md" id="nuevaDireccion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md" role="document">
+                    <div class="modal-content">
+                        <div class="yelowbg modal-header">
+                            <h5 >Pedidos por comentar</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body py-0">
+                            <div class="row">
+                                <div class="col-12 col-md-12 col-sm-12 mt-2 mx-0 separadorup">
+                                    <div class="card orangeline px-3 py-3 mt-0  flex-md-row ">
+                                        <div class="col-md-9 align-items-start pl-2">
+                                            <strong class="">Casa del alfajor</strong>
+                                            <span class="badge badge-pill badge-basic">Pedido 111</span>
+                                            <p class="text-descr">26 Feb 2018 - 2:35 pm.</p>
+                                        </div>
+                                        <div class="col-md-3 align-items-end pt-2 pl-3">
+                                            <button data-toggle="modal" data-target="#pedidoNoComentado" class="btn btn-danger btn-small float-right" data-dismiss="modal" ><i class="fa fa-comment"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-12 col-sm-12 mt-2 mx-0 separadorup">
+                                    <div class="card orangeline px-3 py-3  mt-1  flex-md-row ">
+                                        <div class="col-md-9 align-items-start pl-2">
+                                            <strong class="">Casa del alfajor</strong>
+                                            <span class="badge badge-pill badge-basic">Pedido 111</span>
+                                            <p class="text-descr">26 Feb 2018 - 2:35 pm.</p>
+                                        </div>
+                                        <div class="col-md-3 align-items-end pt-2 pl-3">
+                                            <button data-toggle="modal" data-target="#pedidoNoComentado" class="btn btn-danger btn-small float-right" data-dismiss="modal"><i class="fa fa-comment"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-12 col-sm-12 mt-2 mx-0 separadorup">
+                                    <div class="card orangeline px-3 py-3  mt-1  flex-md-row ">
+                                        <div class="col-md-9 align-items-start pl-2">
+                                            <strong class="">Casa del alfajor</strong>
+                                            <span class="badge badge-pill badge-basic">Pedido 111</span>
+                                            <p class="text-descr">26 Feb 2018 - 2:35 pm.</p>
+                                        </div>
+                                        <div class="col-md-3 align-items-end pt-2 pl-3">
+                                            <button data-toggle="modal" data-target="#pedidoNoComentado" class="btn btn-danger btn-small float-right" data-dismiss="modal"><i class="fa fa-comment"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                 
+        <!-- Modal addcoment -->
+        <div class="modal fade fade bd-example-modal-lg" id="pedidoNoComentado" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="yelowbg modal-header">
+                        <h5 >Nuevo Comentario - Pedido 111</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row p-3">
+                            <div class="col-12 col-md-12 col-sm-12  px-4">
+                                <h5><b>Restaurante:</b> La ChozaNáutica</h5>  
+                                <p class="text-small m-0">Pedido N° 110.</p>
+                                <p class="text-descr mb-4">Fecha: 28 Feb de 2018 2:30 pm</p>
+
+                                <div id="starevent" class="separadoronly ">
+                                    <span class="">Califica nuestra comida.</span> <br>
+                                    <div class="star-rating-click" style="display: inline-flex;">
+                                        <ul>
+                                            <a><li class="active fa fa-star"></li></a>
+                                            <a><li class="active fa fa-star"></li></a>
+                                            <a><li class="active fa fa-star"></li></a>
+                                            <a><li class="fa fa-star"></li></a>
+                                            <a><li class="fa fa-star"></li></a>
+                                        </ul>
+                                    </div><br>
+
+                                    <span class="">Califica el tiempo de entrega.</span> <br>
+                                    <div class="star-rating-click" style="display: inline-flex;">
+                                        <ul>
+                                            <a><li class="active fa fa-star"></li></a>
+                                            <a><li class="active fa fa-star"></li></a>
+                                            <a><li class="fa fa-star"></li></a>
+                                            <a><li class="fa fa-star"></li></a>
+                                            <a><li class="fa fa-star"></li></a>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="starevent" class="separadoronly py-3">
+                                    <span class="">Ingresa tu comentario para mejorar.</span> <br>
+                                    <div class="input-group pt-3">
+                                        
+                                        <textarea type="text" class="form-control text-input"  placeholder="Escribe lo que opinas." name="message" rows="3" cols="5"></textarea>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-success">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="bg-sodark">
+            <div class="containerv2">
+                <div class="row">
+                    <div class="pt-4 col-sm-12 col-md-4 text-md-center">
+                        <img class="logo"src="img/logo.png">
+                    </div>
+                    <div class="pt-4 col-sm-12 col-md-4 text-center">
+                        <h5 class="tittlefoot">Descárgate el APP</h5>
+                        <ul class="list-unstyled text-small">
+                            <li>
+                                <a class="text-muted" href="#"><img src="img/appleStore.png"></a>
+                                <a href=""><img src="img/googlePlay.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 col-sm-12 col-md-4 text-center">
+                        <h6 class="" >Síguenos en:</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="btn-fticon " href="#"><i class="fa fa-facebook"></i></a>
+                                <a class="btn-fticon3" href="#"><i class="fa fa-linkedin"></i></a>
+                                <a class="btn-fticon2" href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row text-center pb-3">
+                    <div class="col-12">
+                        <small class="ltlight">&copy; 2019, Tulivery. Todos los derechos reservados</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- SCRIPTS -->
+        <!-- <script src="js/jquery.min.js" charset="utf-8"></script> -->
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" charset="utf-8"></script>
+        <!-- other libraries -->
+        <script src="js/main.js" charset="utf-8"></script>
+    </body>
+</html>
