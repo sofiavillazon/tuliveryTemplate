@@ -55,7 +55,7 @@
         </a>
         <a class="tiendaIco" href="detalle.html"><div class="circle"><img src="img/2.jpg"></div></a>
         
-        <main id="main" class="contenido jumbotronbg  mt-4" >      
+        <main id="main" class="contenido jumbotronbg  mt-2" >      
             <div class="row justify-content-md-center justify-content-sm-center">
                 <div id="slider" class="col-12 col-md-12 col-sm-12 whitebg bgstore" >
                         <div class="slides-container">
@@ -278,15 +278,22 @@
                                     </div>
                                 </div>
                                 <div id="efectivo" class="none pt-3">
-                                    <div class="form-check">
-                                      <!-- <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                      <label class="form-check-label" for="exampleRadios2">
-                                        Exacto
-                                      </label> -->
+                                    <div>
+                                        <input id="option4" type="radio" name="op2" value="option4" data-id="efectivo">
+                                        <label for="option4"><span><span></span></span>Efectivo</label>
                                     </div>
-                                    <div class="input-group py-1 mt-3">
-                                        <i class="fa fa-user linear"></i>
-                                        <input type="text" class="form-control" placeholder="Pagaré con:" >
+                                    <br>
+                                    <div class="row"  style="display: flex;">
+                                        <div class="col-md-4">
+                                            <input id="option5" type="radio" name="op2" value="option5" data-id="efectivo">
+                                            <label for="option5"><span><span></span></span>Ingrese Monto</label>
+                                            
+                                        </div>
+                                        <div class="input-group py-0 mt-0 col-md-8">
+                                            <!-- <i class="fa fa-user linear"></i>
+                                            <input type="text" class="form-control" placeholder="Pagaré con:" > -->
+                                            
+                                        </div>
                                     </div>
                                     
                                 </div>
@@ -296,7 +303,9 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-sm-12 pt-4 px-4 px-0">
-                    <div class="baseCarrito">
+                    <div id="overBlack"></div>
+                    <div class="baseCarrito floatcart" id="myHeader">
+                        <div class="handler cart2"><span><i class="fa fa-shopping-cart"></i></span> <span id="countProd" class="badge badge-pill badge-danger">1</span></div>
                         <h5 class="pl-4"><b>Resumen de Compra</b></h5>
                         <h5 class="pl-4 infoAdd"><img src="img/reloj.png" data-toggle="tooltip" data-placement="right" title="Tiempo de entrega">12 min | <img src="img/scooter.png" data-toggle="tooltip" data-placement="right" title="Costo de entrega"> S/.12.00</h5>
                         <h6 class="pl-4 pb-2" >Tu pedido de <b> La casa del  Alfajor</b></h6>

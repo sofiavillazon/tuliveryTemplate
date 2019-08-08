@@ -73,7 +73,6 @@ jQuery(document).ready(function(){
 // Image picker
 
 $(document).ready(function() {
-
     var readURL = function(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
@@ -83,7 +82,6 @@ $(document).ready(function() {
             reader.readAsDataURL(input.files[0]);
         }
     }
-
     $(".file-upload").on('change', function(){
         readURL(this);
     });
@@ -95,7 +93,6 @@ $(document).ready(function() {
 
 
 // SLIDER
-
 var auto = true;
 var pause = 7000;
 var $this = $('#slider');
@@ -174,16 +171,16 @@ var n = $( ".detalleCarro" ).length;
 if(n > 4){
     $("#scrollerSection").css("overflow-y","scroll");
     $("#scrollerSection").css("overflow-x","hidden");
-    $("#scrollerSection").css("max-height","400px");
+    $("#scrollerSection").css("max-height","300px");
     $("#scrollerSection").css("padding","0px 14px");
-    $("#scrollerSection").css("background-color","#fbfbfb");
+    $("#scrollerSection").css("background-color","#fff");
 }
 if(n <= 4){
     $("#scrollerSection").css("overflow","hidden");
     $("#scrollerSection").css("overflow-x","hidden");
     $("#scrollerSection").css("max-height","100%");
     $("#scrollerSection").css("padding","0px 14px");
-    $("#scrollerSection").css("background-color","#fbfbfb");
+    $("#scrollerSection").css("background-color","#fff");
 }
 
 $('.closebtn').click(function() {
@@ -220,5 +217,34 @@ if(n <= maxelm){
     $(".scrolldir2").css("overflow","hidden");
     $(".scrolldir2").css("overflow-x","hidden");
     $(".scrolldir2").css("max-height","100%");
+}
+
+$('.handler').on('click', function(){
+    $('.floatcart').toggleClass('oculto');
+    $('#overBlack').toggleClass('hidden');
+});
+$('#overBlack').on('click', function(){
+    $('.floatcart').toggleClass('oculto');
+    $('#overBlack').toggleClass('hidden');
+});
+
+// 
+var $divs = $(".detalleCarro").toArray().length;
+$('#countProd').text($divs);
+
+// Sticky cart
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var overBlack = document.getElementById("overBlack");
+
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > 290) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
 }
 

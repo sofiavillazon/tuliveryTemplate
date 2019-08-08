@@ -15,10 +15,12 @@
     <body>
         <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
             <div class="alignnav container">
-                
                 <button id="toggleTulivery" class="navbar-toggler p-0 border-0 ml-auto " type="button" data-toggle="offcanvas">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- <div class="cart2">
+                    <a class="nav-link" href="informacion.html"> <span><i class="fa fa-shopping-cart"></i></span> </a>
+                </div>  -->
                 <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav ml-md-auto ">
 
@@ -44,9 +46,8 @@
                             </ul>
                         </li>
                         <li class="nav-item cart2">
-                            <a class="nav-link" href="informacion.html"> <span><i class="fa fa-shopping-cart"></i></span> </a>
+                            <a class="nav-link" href="informacion.html"> <span><i class="fa fa-shopping-cart"></i></span>  </a>
                         </li>
-                        
                     </ul>
                 </div>
             </div>
@@ -57,7 +58,7 @@
         <a class="tiendaIco " href="detalle.html">
             <div class="circle"><img src="img/2.jpg"></div>
         </a>
-        <main id="main" class="contenido jumbotronbg  mt-4" >
+        <main id="main" class="contenido jumbotronbg  mt-2" >        
             <div class="row  ">
                 <div id="slider" class="col-12 col-md-12 col-sm-12 whitebg bgstore" >
                         <div class="slides-container">
@@ -102,9 +103,9 @@
 
                     </ul>
                 </div>
-                <div class="col-12 col-md-5 col-sm-12 whitebg px-4 ">
+                <div class="col-12 col-lg-5 col-md-9 col-sm-12 whitebg px-4 ">
                     
-                    <div class="card imgresp separador d-md-flex flex-md-row ">
+                    <div class="card imgresp px-3  separador d-md-flex flex-md-row ">
                         <div class="imgResponsive2 ">
                             <img class="imgvisor logo"src="https://via.placeholder.com/400x250">
                         </div>
@@ -130,6 +131,33 @@
                             <button class="btn btn-danger btn-small" data-toggle="modal" data-target="#exampleModal">Agregar</button>
                         </div>
                     </div>
+                    <div class="card imgresp px-3  separador d-md-flex flex-md-row ">
+                        <div class="imgResponsive2 ">
+                            <img class="imgvisor logo"src="https://via.placeholder.com/400x250">
+                        </div>
+                        <div class=" d-flex flex-column align-items-start pl-2">
+                            <strong class="">Producto</strong>
+                            <div class="text-descr">A long established fact that a reader will be distracted by the readable content of a page.</div>
+                        </div>
+                        <div class=" d-flex flex-column align-items-start pl-3">
+                            <strong class="">S/, 25.00</strong>
+                            <button class="btn btn-danger btn-small" data-toggle="modal" data-target="#exampleModal">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="card imgresp px-3  separador d-md-flex flex-md-row ">
+                        <div class="imgResponsive2 ">
+                            <img class="imgvisor logo"src="https://via.placeholder.com/400x250">
+                        </div>
+                        <div class=" d-flex flex-column align-items-start pl-2">
+                            <strong class="">Producto</strong>
+                            <div class="text-descr">A long established fact that a reader will be distracted by the readable content of a page.</div>
+                        </div>
+                        <div class=" d-flex flex-column align-items-start pl-3">
+                            <strong class="">S/, 25.00</strong>
+                            <button class="btn btn-danger btn-small" data-toggle="modal" data-target="#exampleModal">Agregar</button>
+                        </div>
+                    </div>
+
                     <div class="card imgresp px-3  separador d-md-flex flex-md-row">
                         <div class="imgResponsive2 ">
                             <img class="imgvisor logo"src="https://via.placeholder.com/400x250">
@@ -144,8 +172,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-sm-12 pt-4 px-4">
-                    <div class="baseCarrito">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 pt-4 px-4">
+                    <div id="overBlack"></div>
+                    <div class="baseCarrito floatcart " id="myHeader">
+                        <div class="handler cart2"><span><i class="fa fa-shopping-cart"></i></span> <span id="countProd" class="badge badge-pill badge-danger">1</span></div>
                         <h5 class="px-3"><b>Oscar Bardales</b></h5>
                         <h6 class="px-3">Tu pedido de <b> La casa del  Alfajor</b></h6>
                         
@@ -305,18 +335,31 @@
                                                 <div class="form-check">
                                                     <div>
                                                         <input id="op01" type="radio" name="checkfood" >
-                                                        <label for="op01"><span><span></span></span>Papas firtas</label>
+                                                        <label for="op01"><span><span></span></span>Papas firtas <em class="text-success">+  S/. 10.00</em></label>
                                                         </div>
                                                         <div>
                                                         <input id="op02" type="radio" name="checkfood" >
-                                                        <label for="op02"><span><span></span></span>Papas doradas</label>
+                                                        <label for="op02"><span><span></span></span>Papas doradas <em class="text-success">+ S/. 10.00</em></label>
                                                     </div>
                                                 </div>
                                             </div>
                                         </fieldset>
                                     </form>
                                 </div>
-
+                                <div class="toggleDetail">
+                                    <h6 class="mt-5">Deseas adicionar un jugo <i class="float-right fa fa-chevron-down"> </i> </h6>
+                                    <form class="formPedido toggleContent">
+                                        <span>Seleccionar una <div class="Form Obligatorio">*obligatorio</div></span>
+                                        <fieldset>
+                                            <div class=" py-1 ">
+                                                <div class="form-check">
+                                                    <div class=""><input data-group="Deseas adicionar un jugo?" data-item="10" id="extra_Deseasadicionarunjugo___10" type="checkbox" name="product_extra_Deseasadicionarunjugo" value="10"><label for="extra_Deseasadicionarunjugo___10"><span><span></span></span>Piña Golden <em>Unico tamaño</em>&nbsp;<em class="text-success">+ S/. 6.50</em><div class="d-inline float-right" id="btn_minus_plus_10Deseasadicionarunjugo">  </div></label></div>
+                                                    <div class=""><input data-group="Deseas adicionar un jugo?" data-item="9" id="extra_Deseasadicionarunjugo___9" type="checkbox" name="product_extra_Deseasadicionarunjugo" value="9"><label for="extra_Deseasadicionarunjugo___9"><span><span></span></span>Papaya con Piña <em>Unico tamaño</em>&nbsp;<em class="text-success">+ S/. 6.00</em><div class="d-inline float-right" id="btn_minus_plus_9Deseasadicionarunjugo"> </div></label></div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
                                 <div class="toggleDetail">
                                     <h6 class="mt-5">Elige tu complementario <i class="float-right fa fa-chevron-down"> </i> </h6>
                                     <form class="formPedido toggleContent">
