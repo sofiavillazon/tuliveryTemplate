@@ -668,11 +668,8 @@ footer h6{
       a{
         text-decoration: none;
       }
-      div p:hover, div .active{
-        border-radius:5px;
-        border-top: 7px solid #ef4e35;
-      }
-      p{
+     
+      .categorySelect{
         position: relative;
         top: 0px;
         padding: 13px 8px 3px 8px;
@@ -690,7 +687,27 @@ footer h6{
     }
   }
 }
+.checkstatus{
+  display: none;
+}
+.imgresp.active .checkstatus {
+  display: block;
+  position: relative;
+  z-index: 5;
+  border-radius: 5px;
+  font-size: 28px;
+  color: #fff;
+  top: -40px;
+  background-color: #ef4e35;
+  left: 70%;
+  width: 50px;
+  padding: 0px 13px;
 
+}
+div .categorySelect:hover, .imgresp.active .categorySelect {
+  border-radius:5px;
+  border-top: 7px solid #ef4e35;
+}
 /*5.-FOOTER.............*/
 /*==============================================================*/
 footer{
@@ -1886,10 +1903,17 @@ input[type=radio]:not(old):checked + label > span > span{
   .sticky {
     position: fixed;
     width: 30.5%;
-    top: 100px;
+    top: 80px;
     z-index: 1;
   }
   
+  .stickyFoot {
+    position: fixed;
+    width: 30.5%;
+    bottom: 150px;
+    z-index: 1;
+  }
+
   .sticky + .content {
     padding-top: 2px;
   }
@@ -2272,3 +2296,50 @@ em.text-success{
  .timeline-blocks svg {width: 50px; height: 50px;}
  .timeline-blocks.active svg path {fill: #148f5d !important;} 
  .timeline-blocks.active {color: #148f5d !important; font-weight: 600} 
+
+
+#MetodoPago label {
+  display: block;
+  margin: 3px 0;
+}
+#MetodoPago .form-row input {
+  padding: 3px 1px;
+  width: 100%;
+}
+#MetodoPago input.currency {
+  text-align: right;
+  padding-right: 15px;
+}
+#MetodoPago .input-group .form-control {
+  float: none;
+}
+#MetodoPago .input-group .input-buttons {
+  position: relative;
+  z-index: 3;
+}
+#MetodoPago .input-group span{
+  background-color: #ced4da;
+  position: absolute;
+  padding: 5px 12px;
+  z-index: 5;
+  border-radius: 10px 0px 0px 10px;
+  color: #46464f;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.scrollAlto{
+  overflow: scroll;
+  height: 68vh;
+}
+
+.courrierFoto {
+  border-radius: 50%;
+  width: 60px !important;
+  height: 60px !important;
+  overflow: hidden;
+  position: absolute;
+  right: 16px;
+  top: 0px;
+  z-index: 5;
+}

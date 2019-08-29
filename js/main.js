@@ -10,7 +10,6 @@ $(function () {
 $('.toggleDetail h6').on('click', function(){
     $(this).parent().toggleClass('active').siblings().removeClass('active');
     $("i", this).toggleClass("fa-chevron-up fa-chevron-down");
-   
 });
 
 var $currDiv = $( "#start" );
@@ -22,13 +21,11 @@ $('input:radio').on('click', function(){
 
 $('.dirDetalle').on('click', function(){
     $(this).toggleClass('active').siblings().removeClass('active');
-
 });
 
 jQuery(document).ready(function(){
     $('#spinner button').on('click', function(){
         let input = $(this).closest('#spinner').find('input[name=qty]');
-
         if($(this).data('action') === 'increment') {
             if(input.attr('max') === undefined || parseInt(input.val()) < parseInt(input.attr('max'))) {
                 input.val(parseInt(input.val(), 10) + 1);
@@ -51,22 +48,33 @@ jQuery(document).ready(function(){
         if (id == "tarjetaVisa") {
             $("#tarjetaVisa").removeClass("none");
             $("#tarjetaMastercard").addClass("none");
-            $("#efectivo").addClass("none");
+            $("#exacto").addClass("none");
+            $("#rangeOrder").addClass("none");
+            $("#MetodoPago").addClass("none");
         }
 
         if (id == "tarjetaMastercard") {
             $("#tarjetaMastercard").removeClass("none");
             $("#tarjetaVisa").addClass("none");
-            $("#efectivo").addClass("none");
+            $("#exacto").addClass("none");
+            $("#rangeOrder").addClass("none");
+            $("#MetodoPago").addClass("none");
         }
 
         if (id == "efectivo") {
-            $("#efectivo").removeClass("none");
+            $("#exacto").removeClass("none");
+            $("#monto").removeClass("none");
             $("#tarjetaMastercard").addClass("none");
             $("#tarjetaVisa").addClass("none");
+            $("#MetodoPago").removeClass("none");
         }
 
-       
+        if (id == "monto") {
+            $("#rangeOrder").removeClass("none");
+        }
+        if (id == "exacto") {
+            $("#rangeOrder").addClass("none");
+        }
     });
 });
 
@@ -90,7 +98,6 @@ $(document).ready(function() {
        $(".file-upload").click();
     });
 });
-
 
 // SLIDER
 var auto = true;
@@ -122,8 +129,6 @@ function fadeNext() {
         currentSlide = currentSlide.next();
         currentSlide.delay().addClass('active').fadeIn();
     }
- 
-    
 }
  
 // Function responsible for fading to previous slide
@@ -160,7 +165,6 @@ $(prevSlide).click(function(e) {
 });
  
 AutoPlay();
-
 $(function(){
     $(".imgvisor").popImg();
 })
@@ -171,7 +175,7 @@ var n = $( ".detalleCarro" ).length;
 if(n > 4){
     $("#scrollerSection").css("overflow-y","scroll");
     $("#scrollerSection").css("overflow-x","hidden");
-    $("#scrollerSection").css("max-height","300px");
+    $("#scrollerSection").css("max-height","250px");
     $("#scrollerSection").css("padding","0px 14px");
     $("#scrollerSection").css("background-color","#fff");
 }
@@ -234,16 +238,17 @@ $('#countProd').text($divs);
 
 // Sticky cart
 window.onscroll = function() {myFunction()};
-
 var header = document.getElementById("myHeader");
 var overBlack = document.getElementById("overBlack");
-
+var toScroll = $(document).height() - 920;
 var sticky = header.offsetTop;
-
 function myFunction() {
-  if (window.pageYOffset > 290) {
-    header.classList.add("sticky");
-  } else {
+  if (window.pageYOffset > toScroll) {
     header.classList.remove("sticky");
+    header.classList.add("stickyFoot");
+} else {
+    header.classList.add("sticky");
+    header.classList.remove("stickyFoot");
+    $("#scrollerSection").css("max-height","221px");
   }
 }

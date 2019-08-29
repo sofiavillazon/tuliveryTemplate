@@ -84,6 +84,8 @@
                       </li>
                       
                     </ul>
+
+ 
                     <!-- Tab panes -->
                     <div class="tab-content py-4 px-3">
                       <div class="tab-pane  active" id="delivery">
@@ -197,7 +199,7 @@
                     </ul>
                     <!-- Tab panes -->
                     <div class="tab-content p-0">
-                      <div class="tab-pane active p-0 " id="online">
+                        <div class="tab-pane active p-0 " id="online">
                             <form class="p-2 formPedido">
                                 <div class="input-group py-1">
                                     <i class="fa fa-credit-card"></i>
@@ -229,24 +231,23 @@
                                 </div>
                             </form>
                         </div>
-                      <div class="tab-pane fade" id="contraentrega">
-                        
-                        <form class="p-0 formPedido">
+                        <div class="tab-pane fade" id="contraentrega">
+                            <form class="p-0 formPedido">
                                 <div class=" py-0 separador">
                                     <div class="form-check p-0 mb-4">
-                                      <div>
-                                          <input id="option" type="radio" name="op1" value="option"  data-id="tarjetaVisa" checked >
-                                          <label for="option"><span><span></span></span>Visa</label>
+                                        <div>
+                                        <input id="option" type="radio" name="op1" value="option"  data-id="tarjetaVisa" checked >
+                                        <label for="option"><span><span></span></span>Visa</label>
                                         </div>
                                         <div>
-                                          <input id="option2" type="radio" name="op1" value="option2" data-id="tarjetaMastercard">
-                                          <label for="option2"><span><span></span></span>Mastercard</label>
+                                        <input id="option2" type="radio" name="op1" value="option2" data-id="tarjetaMastercard">
+                                        <label for="option2"><span><span></span></span>Mastercard</label>
                                         </div>
                                         <div>
-                                          <input id="option3" type="radio" name="op1" value="option3" data-id="efectivo">
-                                          <label for="option3"><span><span></span></span>Efectivo</label>
+                                        <input id="option3" type="radio" name="op1" value="option3" data-id="efectivo">
+                                        <label for="option3"><span><span></span></span>Efectivo</label>
                                         </div>
-                                       </div>
+                                    </div>
                                 </div>
 
                                 <div id="tarjetaMastercard" class="none mt-3 pt-3">
@@ -277,29 +278,28 @@
                                         <input type="text" class="form-control" placeholder="MM/AAAA" >
                                     </div>
                                 </div>
-                                <div id="efectivo" class="none pt-3">
-                                    <div>
-                                        <input id="option4" type="radio" name="op2" value="option4" data-id="efectivo">
-                                        <label for="option4"><span><span></span></span>Efectivo</label>
+                                <div id="MetodoPago" class="none pt-3">
+                                    <div id="exacto" class=" px-0 ">
+                                        <input id="option4" type="radio" name="op2" value="option4" data-id="exacto">
+                                        <label for="option4"><span><span></span></span>Exacto</label>
                                     </div>
-                                    <br>
-                                    <div class="row"  style="display: flex;">
-                                        <div class="col-md-4">
-                                            <input id="option5" type="radio" name="op2" value="option5" data-id="efectivo">
+                                    <div id="monto" class=" px-0 row">
+
+                                        <div class="col-md-6 ">
+                                            <input id="option5" type="radio" name="op2" value="option5" data-id="monto">
                                             <label for="option5"><span><span></span></span>Ingrese Monto</label>
-                                            
                                         </div>
-                                        <div class="input-group py-0 mt-0 col-md-8">
-                                            <!-- <i class="fa fa-user linear"></i>
-                                            <input type="text" class="form-control" placeholder="Pagaré con:" > -->
-                                            
+                                        
+                                        <div id="rangeOrder" class="mt-1 px-2 py-3 form-row none col-md-6">
+                                            <div class="input-group"> 
+                                                <span class="input-group-addon">S/.</span>
+                                                <input type="number" value="50" min="0" step="10" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" />
+                                            </div>
                                         </div>
                                     </div>
-                                    
                                 </div>
-                                
                             </form>
-                      </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 col-sm-12 pt-4 px-4 px-0">
@@ -311,125 +311,126 @@
                         <h6 class="pl-4 pb-2" >Tu pedido de <b> La casa del  Alfajor</b></h6>
     
                         <div id="scrollerSection">
-                                <div class="detalleCarro pt-3 pb-1 px-2 row">
-                                    <div class="leftcontent pl-4 col-6">
-                                        <h6>
-                                        <a class="closebtn"><i class="fa fa-times"></i></a> Producto 1</h6>
-                                        <p class="smallleter">Tamaño personal</p>
-                                        <p class="smallleter">Poco picante</p>
-                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
-                                    </div>
-                                    <div class="rightcontent col-6">
-                                        S/.45.00 <br>
-                                        <div class="input-group" id="spinner">
-                                            <span class="input-group-btn btn-group-sm">
-                                            <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
-                                            </span>
-                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
-                                            <span class="input-group-btn btn-group-sm">
-                                            <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
-                                            </span>
-                                        </div>
+                            <div class="detalleCarro pt-3 pb-1 px-2 row">
+                                <div class="leftcontent pl-4 col-6">
+                                    <h6>
+                                    <a class="closebtn"><i class="fa fa-times"></i></a> Producto 1</h6>
+                                    <p class="smallleter">Tamaño personal</p>
+                                    <p class="smallleter">Poco picante</p>
+                                    <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                </div>
+                                <div class="rightcontent col-6">
+                                    S/.45.00 <br>
+                                    <div class="input-group" id="spinner">
+                                        <span class="input-group-btn btn-group-sm">
+                                        <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                        </span>
+                                        <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                        <span class="input-group-btn btn-group-sm">
+                                        <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
+                                        </span>
                                     </div>
                                 </div>
+                            </div>
     
-                                <div class="detalleCarro pt-3 pb-1 px-2 row">
-                                    <div class="leftcontent pl-4 col-6">
-                                        <h6>
-                                        <a class="closebtn"><i class="fa fa-times"></i></a> Producto 2</h6>
-                                        <p class="smallleter">Tamaño personal</p>
-                                        <p class="smallleter">Poco picante</p>
-                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
-                                    </div>
-                                    <div class="rightcontent col-6">
-                                        S/.45.00 <br>
-                                        <div class="input-group" id="spinner">
-                                            <span class="input-group-btn btn-group-sm">
-                                            <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
-                                            </span>
-                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
-                                            <span class="input-group-btn btn-group-sm">
-                                            <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
-                                            </span>
-                                        </div>
-                                    </div>
+                            <div class="detalleCarro pt-3 pb-1 px-2 row">
+                                <div class="leftcontent pl-4 col-6">
+                                    <h6>
+                                    <a class="closebtn"><i class="fa fa-times"></i></a> Producto 2</h6>
+                                    <p class="smallleter">Tamaño personal</p>
+                                    <p class="smallleter">Poco picante</p>
+                                    <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
                                 </div>
-                                <div class="detalleCarro pt-3 pb-1 px-2 row">
-                                    <div class="leftcontent pl-4 col-6">
-                                        <h6>
-                                        <a class="closebtn"><i class="fa fa-times"></i></a> Producto 3</h6>
-                                        <p class="smallleter">Tamaño personal</p>
-                                        <p class="smallleter">Poco picante</p>
-                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
-                                    </div>
-                                    <div class="rightcontent col-6">
-                                        S/.45.00 <br>
-                                        <div class="input-group" id="spinner">
-                                            <span class="input-group-btn btn-group-sm">
-                                            <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
-                                            </span>
-                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
-                                            <span class="input-group-btn btn-group-sm">
-                                            <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="detalleCarro pt-3 pb-1 px-2 row">
-                                    <div class="leftcontent pl-4 col-6">
-                                        <h6>
-                                        <a class="closebtn"><i class="fa fa-times"></i></a> Producto 4</h6>
-                                        <p class="smallleter">Tamaño personal</p>
-                                        <p class="smallleter">Poco picante</p>
-                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
-                                    </div>
-                                    <div class="rightcontent col-6">
-                                        S/.45.00 <br>
-                                        <div class="input-group" id="spinner">
-                                            <span class="input-group-btn btn-group-sm">
-                                            <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
-                                            </span>
-                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
-                                            <span class="input-group-btn btn-group-sm">
-                                            <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="detalleCarro pt-3 pb-1 px-2 row">
-                                    <div class="leftcontent pl-4 col-6">
-                                        <h6>
-                                        <a class="closebtn"><i class="fa fa-times"></i></a> Producto 5</h6>
-                                        <p class="smallleter">Tamaño personal</p>
-                                        <p class="smallleter">Poco picante</p>
-                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
-                                    </div>
-                                    <div class="rightcontent col-6">
-                                        S/.45.00 <br>
-                                        <div class="input-group" id="spinner">
-                                            <span class="input-group-btn btn-group-sm">
-                                            <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
-                                            </span>
-                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
-                                            <span class="input-group-btn btn-group-sm">
-                                            <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
-                                            </span>
-                                        </div>
+                                <div class="rightcontent col-6">
+                                    S/.45.00 <br>
+                                    <div class="input-group" id="spinner">
+                                        <span class="input-group-btn btn-group-sm">
+                                        <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                        </span>
+                                        <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                        <span class="input-group-btn btn-group-sm">
+                                        <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="px-4 totalCarro sepCarro pt-3">
-                                <h6>Subtotal <b class="float-right">S/.80.00</b></h6>
-                                <h6>Costo de envío <b class="float-right">S/.10.00</b></h6>
-                                <h5><span class="float-left"><strong>Total</strong></span> <b class="float-right"><strong>S/.100.00</strong></b></h5>
-                                <br>
-                                <p class="smallleter mt-2">He aceptado los <a href="">Terminos y condiciones</a> y las <a href="">políticas</a> </p>
-                                <button type="button" class="btn btn-success col-12" data-toggle="modal" data-target="#confirmarModal" ></span>Confirmar y enviar</button>
+                            <div class="detalleCarro pt-3 pb-1 px-2 row">
+                                <div class="leftcontent pl-4 col-6">
+                                    <h6>
+                                    <a class="closebtn"><i class="fa fa-times"></i></a> Producto 3</h6>
+                                    <p class="smallleter">Tamaño personal</p>
+                                    <p class="smallleter">Poco picante</p>
+                                    <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                </div>
+                                <div class="rightcontent col-6">
+                                    S/.45.00 <br>
+                                    <div class="input-group" id="spinner">
+                                        <span class="input-group-btn btn-group-sm">
+                                        <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                        </span>
+                                        <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                        <span class="input-group-btn btn-group-sm">
+                                        <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="detalleCarro pt-3 pb-1 px-2 row">
+                                <div class="leftcontent pl-4 col-6">
+                                    <h6>
+                                    <a class="closebtn"><i class="fa fa-times"></i></a> Producto 4</h6>
+                                    <p class="smallleter">Tamaño personal</p>
+                                    <p class="smallleter">Poco picante</p>
+                                    <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                </div>
+                                <div class="rightcontent col-6">
+                                    S/.45.00 <br>
+                                    <div class="input-group" id="spinner">
+                                        <span class="input-group-btn btn-group-sm">
+                                        <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                        </span>
+                                        <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                        <span class="input-group-btn btn-group-sm">
+                                        <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detalleCarro pt-3 pb-1 px-2 row">
+                                <div class="leftcontent pl-4 col-6">
+                                    <h6>
+                                    <a class="closebtn"><i class="fa fa-times"></i></a> Producto 5</h6>
+                                    <p class="smallleter">Tamaño personal</p>
+                                    <p class="smallleter">Poco picante</p>
+                                    <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                </div>
+                                <div class="rightcontent col-6">
+                                    S/.45.00 <br>
+                                    <div class="input-group" id="spinner">
+                                        <span class="input-group-btn btn-group-sm">
+                                        <button type="button" class="btn btn-danger" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                        </span>
+                                        <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                        <span class="input-group-btn btn-group-sm">
+                                        <button type="button" class="btn btn-success" data-action="increment"><span class="fa fa-plus"></span></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="px-4 totalCarro sepCarro pt-3">
+                            <h6>Subtotal <b class="float-right">S/.80.00</b></h6>
+                            <h6>Costo de envío <b class="float-right">S/.10.00</b></h6>
+                            <h5><span class="float-left"><strong>Total</strong></span> <b class="float-right"><strong>S/.100.00</strong></b></h5>
+                            <br>
+                            <p class="smallleter mt-2">He aceptado los <a href="">Terminos y condiciones</a> y las <a href="">políticas</a> </p>
+                            <button type="button" class="btn btn-success col-12" data-toggle="modal" data-target="#confirmarModal" ></span>Confirmar y enviar</button>
                         </div>
                     </div>
                 </div>
-            </main>
+            </div>
+        </main>
         
         <!-- Modal -->
         <div class="modal fade fade bd-example-modal-lg" id="nuevaDir" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -510,7 +511,7 @@
                         <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body formularioCompra">
+                    <div class="modal-body formularioCompra scrollAlto">
     
                         <div class="row">
                             <div class="col-md-12">
