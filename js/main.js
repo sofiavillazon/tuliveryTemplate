@@ -195,6 +195,7 @@ $('.closebtn').click(function() {
 
 var maxelm = 10;
 var maxeld = 4;
+
 // DELIVERY ----- LISTA D DIRECCIONES EMPRESA CANTIDAD LIMITE 10
 $( document.body ).append( $( "<div>" ) );
 var n = $( ".dirempresa" ).length;
@@ -232,23 +233,33 @@ $('#overBlack').on('click', function(){
     $('#overBlack').toggleClass('hidden');
 });
 
-// 
+
 var $divs = $(".detalleCarro").toArray().length;
 $('#countProd').text($divs);
-
+      
 // Sticky cart
 window.onscroll = function() {myFunction()};
 var header = document.getElementById("myHeader");
 var overBlack = document.getElementById("overBlack");
+
 var toScroll = $(document).height() - 920;
 var sticky = header.offsetTop;
+
 function myFunction() {
-  if (window.pageYOffset > toScroll) {
-    header.classList.remove("sticky");
-    header.classList.add("stickyFoot");
-} else {
-    header.classList.add("sticky");
-    header.classList.remove("stickyFoot");
-    $("#scrollerSection").css("max-height","221px");
-  }
+    if (window.pageYOffset < 300) {
+        header.classList.remove("sticky");
+        header.classList.remove("stickyFoot");
+    }
+    else{
+        if (window.pageYOffset > toScroll) {
+            header.classList.remove("sticky");
+            header.classList.add("stickyFoot");
+        } else {
+            header.classList.add("sticky");
+            header.classList.remove("stickyFoot");
+            $("#scrollerSection").css("max-height","221px");
+        }
+    }
 }
+
+
