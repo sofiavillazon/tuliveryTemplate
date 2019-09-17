@@ -1,3 +1,58 @@
+// duration of scroll animation
+var scrollDuration = 300;
+var leftPaddle = document.getElementsByClassName('left-paddle');
+var rightPaddle = document.getElementsByClassName('right-paddle');
+var itemsLength = $('.item').length;
+var itemSize = $('.item').outerWidth(true);
+var paddleMargin = 0;
+
+var getMenuWrapperSize = function() {
+	return $('.menu-wrapper').outerWidth();
+}
+
+var menuWrapperSize = getMenuWrapperSize();
+$(window).on('resize', function() {
+	menuWrapperSize = getMenuWrapperSize();
+});
+
+var menuVisibleSize = menuWrapperSize;
+var getMenuSize = function() {
+	return itemsLength * itemSize;
+};
+
+var menuSize = getMenuSize();
+var menuInvisibleSize = menuSize - menuWrapperSize;
+var getMenuPosition = function() {
+	return $('.menu').scrollLeft();
+};
+
+$('.menu').on('scroll', function() {
+	menuInvisibleSize = menuSize - menuWrapperSize;
+	var menuPosition = getMenuPosition();
+	var menuEndOffset = menuInvisibleSize - paddleMargin;
+	if (menuPosition <= paddleMargin) {
+		$(leftPaddle).addClass('hidden');
+		$(rightPaddle).removeClass('hidden');
+	} else if (menuPosition < menuEndOffset) {
+		// show both paddles in the middle
+		$(leftPaddle).removeClass('hidden');
+		$(rightPaddle).removeClass('hidden');
+	} else if (menuPosition >= menuEndOffset) {
+		$(leftPaddle).removeClass('hidden');
+		$(rightPaddle).addClass('hidden');
+}
+});
+
+// scroll to left
+$(rightPaddle).on('click', function() {
+	$('.menu').animate( { scrollLeft: menuInvisibleSize}, scrollDuration);
+});
+
+// scroll to right
+$(leftPaddle).on('click', function() {
+	$('.menu').animate( { scrollLeft: '0' }, scrollDuration);
+});
+
 // offcanvas menu
 $(function () {
 	'use strict'
@@ -93,7 +148,6 @@ $(document).ready(function() {
     $(".file-upload").on('change', function(){
         readURL(this);
     });
-    
     $(".upload-button").on('click', function() {
        $(".file-upload").click();
     });
@@ -237,12 +291,13 @@ $('#overBlack').on('click', function(){
 var $divs = $(".detalleCarro").toArray().length;
 $('#countProd').text($divs);
       
+
 // Sticky cart
 window.onscroll = function() {myFunction()};
 var header = document.getElementById("myHeader");
 var overBlack = document.getElementById("overBlack");
 
-var toScroll = $(document).height() - 920;
+var toScroll = $(document).height() - 980;
 var sticky = header.offsetTop;
 
 function myFunction() {
@@ -261,5 +316,4 @@ function myFunction() {
         }
     }
 }
-
 
