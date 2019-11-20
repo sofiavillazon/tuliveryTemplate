@@ -2359,18 +2359,16 @@ em.text-success{
   .container.alignnav  {
     max-width: 100%;
   }
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  
+  .listCategory a{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
 }
 
 
-.listCategory a{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+
 
 .categoryLine{
   list-style: none;
