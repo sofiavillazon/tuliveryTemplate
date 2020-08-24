@@ -3676,3 +3676,18 @@ em.text-success{
     height: calc(var(--input-padding-y) + 40px);
   }
 }
+
+#toggle{
+  border: none;
+  background-color: #464646;
+  margin-right: 12px;
+  padding: 10px;
+  border-radius: 50px ;
+  img{
+    width: 25px;
+  }
+}
+
+#toggle:hover{
+  background-color: #333333;
+}

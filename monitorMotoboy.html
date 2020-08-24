@@ -11,8 +11,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body class="bgMonitor">
+        
         <nav class="navLogo navbar navbarMonitor navbar-expand-lg fixed-top navbar-dark bg-dark ">
             <div class="alignnav container px-5">
+                <button type="button" href="" id="toggle"><img src="img/fullscreen.png" alt=""></button>
                 <a class="navbar-brand" href="index.html">
                     <img class="logoline" src="img/logo.png">
                     <span class="barlogo pl-2"></span>
@@ -564,6 +566,64 @@
         <!-- other libraries -->
         <script src="js/main.js" charset="utf-8"></script>
         <script src="js/popImg.js" charset="utf-8"></script>
+        <script src="js/screenfull.js"></script>
 
+        <script>
+            $(function () {
+                $('#supported').text('Supported/allowed: ' + !!screenfull.isEnabled);
+    
+                if (!screenfull.isEnabled) {
+                    return false;
+                }
+    
+                $('#request').click(function () {
+                    screenfull.request($('#container')[0]).then(function () {
+                        console.log('Browser entered fullscreen mode')
+                    })
+                    // Does not require jQuery. Can be used like this too:
+                    // screenfull.request(document.getElementById('container'));
+                });
+    
+                $('#exit').click(function () {
+                    screenfull.exit().then(function () {
+                        console.log('Browser exited fullscreen mode')
+                    });
+                });
+    
+                $('#toggle').click(function () {
+                    screenfull.toggle($('#container')[0]).then(function () {
+                        console.log('Fullscreen mode: ' + (screenfull.isFullscreen ? 'enabled' : 'disabled'))
+                    });
+                });
+    
+                $('#request2').click(function () {
+                    screenfull.request();
+                });
+    
+                $('#demo-img').click(function () {
+                    screenfull.toggle(this);
+                });
+    
+                function fullscreenchange() {
+                    var elem = screenfull.element;
+    
+                    $('#status').text('Is fullscreen: ' + screenfull.isFullscreen);
+    
+                    if (elem) {
+                        $('#element').text('Element: ' + elem.localName + (elem.id ? '#' + elem.id : ''));
+                    }
+    
+                    if (!screenfull.isFullscreen) {
+                        $('#external-iframe').remove();
+                        document.body.style.overflow = 'auto';
+                    }
+                }
+    
+                screenfull.on('change', fullscreenchange);
+    
+                // Set the initial values
+                fullscreenchange();
+            });
+            </script>
     </body>
 </html>
