@@ -19,13 +19,20 @@
                     <img class="logoline" src="img/logo.png">
                     <span class="barlogo pl-2"></span>
                 </a>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control selectOp" id="exampleFormControlSelect1">
                     <option>Monitor de motoboys</option>
                     <option selected>Monitor de pedidos</option>
                 </select>
                 <button id="toggleTulivery" class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <select class="itemSelect ml-2" id="test" name="form_select" onchange="showDiv(this)" value="4">
+                    <option value="4" >4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                </select>
+                
                 <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav ml-md-auto menuMonitor">
                         <li class="mr-3 dateMonitor">15 AGO 2020</li>
@@ -42,10 +49,10 @@
         </nav>
         
         <main id="main" class="contenido mt-2" >        
-            <div class="blockmonitor px-3 mt-4 py-1">
+            <div class="blockmonitor px-0 mt-4 py-1">
                  
                 <!-- CARD: 1 -->
-                <div class="colum-divider">
+                <div class="colum-divider" id="testing">
                     <div class="p-2">
                         <div class="cardPed green p-3">
                             <div class="circle"></div>
@@ -588,7 +595,7 @@
 
                     <div class="modal-body">
                         <form>
-                            <select multiple="multiple" name="favorite_fruits" id="fruit_select">
+                            <select multiple="multiple" name="favorite_fruits" id="select_option">
                                 <option>Pizza Raúl</option>
                                 <option>Pizza Street</option>
                                 <option>Pardos</option>
@@ -612,6 +619,7 @@
         <!-- other libraries -->
         <script src="js/main.js" charset="utf-8"></script>
         <script src="js/popImg.js" charset="utf-8"></script>
+        <script src="js/multi.min.js"></script>
         <script src="js/screenfull.js"></script>
 
         <script>
@@ -649,6 +657,12 @@
                 // Set the initial values
                 fullscreenchange();
             });
+                var select = document.getElementById("select_option");
+                multi(select, {
+                    enable_search: false
+                });
+
+
             </script>
     </body>
 </html>

@@ -2654,13 +2654,16 @@ em.text-success{
     margin-top: 18px;
     text-align: justify;
   }
+  
 }
 
 .blog-menu{
+
   li{
     display: block;
     margin-top: 16px;
   }
+  
   a{ 
     color: #666a6e !important; 
     padding-left: 12px;
@@ -2677,6 +2680,7 @@ em.text-success{
 
 // 
 .searchBar{
+  
   h1 {
     font-size: 25px;
     // text-align: center;
@@ -2771,13 +2775,12 @@ em.text-success{
   -webkit-text-stroke-width: 1.50px;
 }
 
+
+
 // Tulivery Monitoreo actualización
 
 .navbarMonitor{
-  .container.alignnav {
-    display: flex;
-  }
-  select.selectOp {
+  select {
     width: 260px !important;
     background-color: #41454b;
     color: white;
@@ -2971,44 +2974,31 @@ em.text-success{
 }
 
 .cardMot.green{
-  border: 2px solid #00cb00;
-  box-shadow: 0px 0px 14px #00cb00;
+  border: 2px solid #1D991D;
+  box-shadow: 0px 0px 10px #1D991D;
   span{
-    background-color: #fff;
-    color: #46464F;
-    font-weight: 900;
-    border: 2px solid #00cb00;
-    box-shadow: 0px 0px 14px #00cb00;
+    background-color: #1D991D;
   }
 }
 
 .cardMot.red{
   border: 2px solid #EF4E35;
-  box-shadow: 0px 0px 14px #EF4E35;
+  box-shadow: 0px 0px 10px #EF4E35;
   span{
-    background-color: #fff;
-    color: #46464F;
-    font-weight: 900;
-    border: 2px solid #EF4E35;
-    box-shadow: 0px 0px 14px #EF4E35;
-
+    background-color: #EF4E35;
   }
 
   .circle{
-    box-shadow: 0px 0px 14px #EF4E35;
+    box-shadow: 0px 0px 10px #EF4E35;
     background-color: #EF4E35;
   }
 }
 
 .cardMot.yellow{
-  border: 2px solid #dacb18;
-  box-shadow: 0px 0px 14px #dacb18;
+  border: 2px solid #DBA733;
+  box-shadow: 0px 0px 10px #DBA733;
   span{
-    background-color: #fff;
-    color: #46464F;
-    font-weight: 900;
-    border: 2px solid #dacb18;
-    box-shadow: 0px 0px 14px #dacb18;
+    background-color: #DBA733;
   }
 }
 
@@ -3019,7 +3009,7 @@ em.text-success{
 
 @media (max-width: 576px) {
   .colum-divider{
-    width: 100%;
+    width: 100%!important;
     display: inline-block;
   }
   .movPad{
@@ -3032,14 +3022,14 @@ em.text-success{
     padding-right: 15px !important;
   }
   .colum-divider{
-    width: 49.5%;
+    width: 49.5%!important;
     display: inline-block;
   }
 }
 
 @media (min-width: 1201px) and (max-width: 1800px) {
   .colum-divider{
-    width: 33%;
+    width: 33%!important;
     display: inline-block;
   }
   .cardMot{
@@ -3077,7 +3067,7 @@ em.text-success{
 
 @media (min-width: 1801px) and (max-width: 3000px) {
   .colum-divider{
-    width: 19.8%;
+    width: 19.8%!important;
     display: inline-block;
   }
   .cardMot{
@@ -3115,7 +3105,7 @@ em.text-success{
 
 @media (min-width: 3001px) and (max-width: 4000px)  {
   .colum-divider{
-    width: 16.5%;
+    width: 16.5%!important;
     display: inline-block;
   }
   .cardMot{
@@ -3154,7 +3144,7 @@ em.text-success{
 
 @media (min-width: 4001px)  {
   .colum-divider{
-    width: 16.5%;
+    width: 16.5%!important;
     display: inline-block;
   }
   .cardMot{
@@ -3282,50 +3272,38 @@ em.text-success{
 }
 
 .cardPed.green{
-  border: 2px solid #00cb00;
-  box-shadow: 0px 0px 14px #00cb00;
+  border: 2px solid #1D991D;
+  box-shadow: 0px 0px 10px #1D991D;
   span{
-    background-color: #fff;
-    color: #46464F;
-    font-weight: 900;
-    border: 2px solid #00cb00;
-    box-shadow: 0px 0px 14px #00cb00;
+    background-color: #1D991D;
   }
   .circle{
-    box-shadow: 0px 0px 14px #00cb00;
-    background-color: #00cb00;
+    box-shadow: 0px 0px 10px #1D991D;
+    background-color: #1D991D;
   }
 }
 
 .cardPed.red{
   border: 2px solid #EF4E35;
-  box-shadow: 0px 0px 14px #EF4E35;
+  box-shadow: 0px 0px 10px #EF4E35;
   span{
-    background-color: #fff;
-    color: #46464F;
-    font-weight: 900;
-    border: 2px solid #EF4E35;
-    box-shadow: 0px 0px 14px #EF4E35;
+    background-color: #EF4E35;
   }
   .circle{
-    box-shadow: 0px 0px 14px #EF4E35;
+    box-shadow: 0px 0px 10px #EF4E35;
     background-color: #EF4E35;
   }
 }
 
 .cardPed.yellow{
-  border: 2px solid #dacb18;
-  box-shadow: 0px 0px 14px #dacb18;
+  border: 2px solid #DBA733;
+  box-shadow: 0px 0px 10px #DBA733;
   span{
-    background-color: #fff;
-    color: #46464F;
-    font-weight: 900;
-    border: 2px solid #dacb18;
-    box-shadow: 0px 0px 14px #dacb18;
+    background-color: #DBA733;
   }
   .circle{
-    box-shadow: 0px 0px 14px #dacb18;
-    background-color: #dacb18;
+    box-shadow: 0px 0px 10px #DBA733;
+    background-color: #DBA733;
   }
 }
 
@@ -3336,7 +3314,7 @@ em.text-success{
 
 @media (max-width: 576px) {
   .colum-divider{
-    width: 100%;
+    width: 100%!important;
     display: inline-block;
   }
   .movPad{
@@ -3349,17 +3327,16 @@ em.text-success{
     padding-right: 15px !important;
   }
   .colum-divider{
-    width: 49.5%;
+    width: 49.5%!important;
     display: inline-block;
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1201px) and (max-width: 1800px) {
   .colum-divider{
-    width: 24.7%;
+    width: 24.7%!important;
     display: inline-block;
   }
-
   .cardPed{
     h2{
       line-height: 25px;
@@ -3393,8 +3370,135 @@ em.text-success{
   }
 }
 
+@media (min-width: 1801px) and (max-width: 3000px) {
+  .colum-divider{
+    width: 16.4%!important;
+    display: inline-block;
+  }
+  .cardPed{
+    .icoTime{
+      font-size: 12px;
+      img{
+        width: 18px;
+      }
+    }
+    h2{
+      line-height: 25px;
+      font-size: 25px;
+      height: 30px;
+    }
+    .col-detail{
+      li{
+        display: inline-block;
+        padding-right: 8px;
+      }
+      h6{
+        font-size:  15px!important;///////////////////////////
+      }
+      p{
+        font-size: 15px!important;///////////////////////////
+      }
+    }
+    p{
+      font-size: 13px; ///////////////////////////////////////////////////////////
+      img{
+        width: 25px; /////////////////////////////////////////
+      }
+    }
+    span{
+      font-size: 11px;
+    }
+    small{
+      font-size: 11px;
+    }
+  }
+}
 
+@media (min-width: 3001px) and (max-width: 4000px)  {
+  .colum-divider{
+    width: 16.5%!important;
+    display: inline-block;
+  }
+  .cardPed{
+    .icoTime{
+      font-size: 22px;
+    }
+    h2{
+      line-height: 38px;
+      font-size: 35px;
+      height: 43px;
+    }
+    .col-detail{
+      li{
+        display: inline-block;
+        padding-right: 20px;
+      }
+      h6{
+        font-size:  18px!important;///////////////////////////
+      }
+      p{
+        font-size: 18px!important;///////////////////////////
+      }
+    }
+    p{
+      font-size: 25px; ///////////////////////////////////////////////////////////
+      img{
+        width: 40px; /////////////////////////////////////////
+      }
+    }
+    span{
+      font-size: 18px;
+      
+    }
+    small{
+      font-size: 15px;
+    }
+  }
+}
 
+@media (min-width: 4001px)  {
+  .colum-divider{
+    width: 12.4%!important;
+    display: inline-block;
+  }
+  .cardPed{
+    .icoTime{
+      font-size: 22px;
+      img{
+        width: 30px;
+      }
+    }
+    h2{
+      line-height: 38px;
+      font-size: 44px;
+      height: 48px;
+    }
+    .col-detail{
+      li{
+        display: inline-block;
+        padding-right: 20px;
+      }
+      h6{
+        font-size: 20px!important;///////////////////////////
+      }
+      p{
+        font-size: 20px!important;///////////////////////////
+      }
+    }
+    p{
+      font-size: 30px; ///////////////////////////////////////////////////////////
+      img{
+        width: 40px; /////////////////////////////////////////
+      }
+    }
+    span{
+      font-size: 28px;
+    }
+    small{
+      font-size: 25px;
+    }
+  }
+}
 
 // modal
 .modalFilter{
@@ -3586,15 +3690,4 @@ em.text-success{
 
 #toggle:hover{
   background-color: #333333;
-}
-
-.itemSelect {
-  width: 70px !important;
-  background-color: #41454b;
-  height: calc(1.5em + 0.75rem + 2px);
-  color: white;
-  font-weight: 400;
-  border-radius: 0.25rem;
-  border: 1px solid #ced4da;
-  padding: 0.375rem 0.75rem;
 }

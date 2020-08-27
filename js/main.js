@@ -120,12 +120,18 @@ $('.menu').on('scroll', function() {
 }
 });
 
+
+
+function showDiv(element){
+    $('.colum-divider').css("width", (100/element.value)- 0.3 +'%' )
+    $('.colum-divider').css("zoom", (6/element.value) )
+    $('.colum-zoom').css("zoom", (5/element.value) )
+}
+
 // scroll to left
 $(rightPaddle).on('click', function() {
     scrollInc = scrollInc + (itemSize*3);
     $('.menu').animate( { scrollLeft: scrollInc }, scrollDuration);
-
-
 });
 
 // scroll to right
@@ -133,9 +139,6 @@ $(leftPaddle).on('click', function() {
     scrollInc = scrollInc - (itemSize*3);
     $('.menu').animate( { scrollLeft: scrollInc}, scrollDuration);
 });
-
-
-
 
 // Image picker
 $('.toggleDetail h6').on('click', function(){
@@ -321,4 +324,6 @@ function myFunction() {
         }
     }
 }
+
+// 
 
