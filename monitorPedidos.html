@@ -28,7 +28,7 @@
                 </button>
                 <select class="itemSelect ml-2" id="test" name="form_select" onchange="showDiv(this)" value="4">
                     <option value="4" >4</option>
-                    <option value="6">6</option>
+                    <option selected="selected" value="6">6</option>
                     <option value="8">8</option>
                     <option value="10">10</option>
                 </select>
@@ -52,7 +52,7 @@
             <div class="blockmonitor px-0 mt-4 py-1">
                  
                 <!-- CARD: 1 -->
-                <div class="colum-divider" id="testing">
+                <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed green p-3">
                             <div class="circle"></div>
@@ -83,7 +83,7 @@
                 </div>
 
                 <!-- CARD: 1 -->
-                <div class="colum-divider">
+                <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed green p-3">
                             <div class="circle"></div>
@@ -114,7 +114,7 @@
                 </div>
 
                 <!-- CARD: 1 -->
-                <div class="colum-divider">
+                <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed green p-3">
                             <div class="circle"></div>
@@ -145,7 +145,7 @@
                 </div>
 
                 <!-- CARD: 1 -->
-                <div class="colum-divider">
+                <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed green p-3">
                             <div class="circle"></div>
@@ -176,7 +176,7 @@
                 </div>
 
                  <!-- CARD: 1 -->
-                 <div class="colum-divider">
+                 <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed green p-3">
                             <div class="circle"></div>
@@ -207,7 +207,7 @@
                 </div>
 
                  <!-- CARD: 1 -->
-                 <div class="colum-divider">
+                 <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed green p-3">
                             <div class="circle"></div>
@@ -238,7 +238,7 @@
                 </div>
 
                  <!-- CARD: 1 -->
-                 <div class="colum-divider">
+                 <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed green p-3">
                             <div class="circle"></div>
@@ -269,7 +269,7 @@
                 </div>
 
                  <!-- CARD: 1 -->
-                 <div class="colum-divider">
+                 <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed green p-3">
                             <div class="circle"></div>
@@ -300,7 +300,7 @@
                 </div>
 
                  <!-- CARD: 1 -->
-                 <div class="colum-divider">
+                 <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed green p-3">
                             <div class="circle"></div>
@@ -331,7 +331,7 @@
                 </div>
 
                  <!-- CARD: 1 -->
-                 <div class="colum-divider">
+                 <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed yellow p-3">
                             <div class="circle"></div>
@@ -362,7 +362,7 @@
                 </div>
 
                  <!-- CARD: 1 -->
-                 <div class="colum-divider">
+                 <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed yellow p-3">
                             <div class="circle"></div>
@@ -393,7 +393,7 @@
                 </div>
 
                  <!-- CARD: 1 -->
-                 <div class="colum-divider">
+                 <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed yellow p-3">
                             <div class="circle"></div>
@@ -424,7 +424,7 @@
                 </div>
 
                  <!-- CARD: 1 -->
-                 <div class="colum-divider">
+                 <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed yellow p-3">
                             <div class="circle"></div>
@@ -455,7 +455,7 @@
                 </div>
 
                  <!-- CARD: 1 -->
-                 <div class="colum-divider">
+                 <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed yellow p-3">
                             <div class="circle"></div>
@@ -486,7 +486,7 @@
                 </div>
 
                  <!-- CARD: 1 -->
-                 <div class="colum-divider">
+                 <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed red p-3">
                             <div class="circle"></div>
@@ -517,7 +517,7 @@
                 </div>
 
                  <!-- CARD: 1 -->
-                 <div class="colum-divider">
+                 <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed red p-3">
                             <div class="circle"></div>
@@ -548,7 +548,7 @@
                 </div>
 
                  <!-- CARD: 1 -->
-                 <div class="colum-divider">
+                 <div class="colum-divider colum-zoom">
                     <div class="p-2">
                         <div class="cardPed red p-3">
                             <div class="circle"></div>
@@ -624,7 +624,6 @@
 
         <script>
             $(function () {
-                $('#supported').text('Supported/allowed: ' + !!screenfull.isEnabled);
     
                 if (!screenfull.isEnabled) {
                     return false;
@@ -635,8 +634,7 @@
                         console.log('Fullscreen mode: ' + (screenfull.isFullscreen ? 'enabled' : 'disabled'))
                     });
                 });
-    
-    
+
                 function fullscreenchange() {
                     var elem = screenfull.element;
     
@@ -645,24 +643,47 @@
                     if (elem) {
                         $('#element').text('Element: ' + elem.localName + (elem.id ? '#' + elem.id : ''));
                     }
-    
+                    // ABIERTO
+                    if (screenfull.isFullscreen) {
+                        $('.navbarMonitor').addClass("hiddenBar");
+                        $('.hoverNavDiv').css('display', 'block');
+                        $('body').css('padding-top', '0px');
+                        
+                        $('.hoverNavDiv').mouseover(function () {
+                            $('.navbarMonitor').removeClass("hiddenBar");
+                            // $('body').css('padding-top', '56px');
+                        });
+                        $('.navbarMonitor').mouseleave(function () {
+                            $('body').css('padding-top', '0px');
+                            $('.navbarMonitor').addClass("hiddenBar");
+                            // $('.navbarMonitor').css('display', 'flex');
+                        });
+                    }
+                    // CERRADO
+                    if (!screenfull.isFullscreen) {
+                        $('.navbarMonitor').removeClass("hiddenBar");
+                        $('body').css('padding-top', '56px');
+                        $('.hoverNavDiv').css('display', 'none');
+                        // $('.navbarMonitor').css('display', 'flex');
+                        // location.reload(true);
+                        $('.navbarMonitor').mouseleave(function () {
+                            $('.navbarMonitor').removeClass("hiddenBar");
+                            $('body').css('padding-top', '56px');
+                            // $('.navbarMonitor').css('display', 'flex');
+                        });
+                    }
+
                     if (!screenfull.isFullscreen) {
                         $('#external-iframe').remove();
                         document.body.style.overflow = 'auto';
                     }
                 }
-    
                 screenfull.on('change', fullscreenchange);
-    
                 // Set the initial values
                 fullscreenchange();
             });
-                var select = document.getElementById("select_option");
-                multi(select, {
-                    enable_search: false
-                });
 
-
+           
             </script>
     </body>
 </html>

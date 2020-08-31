@@ -299,7 +299,6 @@ footer h6{
 }
 
 .calificacion{
-
   .ranking .rank{
     width:160px!important;
     display: inline-flex;
@@ -2772,7 +2771,21 @@ em.text-success{
 }
 
 // Tulivery Monitoreo actualización
-
+.hiddenBar{
+  display: none;
+  margin-top: 0px;
+}
+.hoverNavDiv{
+  width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  height: 70px;
+  background-color: rgba( 255, 255, 255 ,0);
+}
+#status{
+  display: none;
+}
 .navbarMonitor{
   .container.alignnav {
     display: flex;
@@ -2959,11 +2972,10 @@ em.text-success{
     margin-top: 8px;
     display: inline-block;
     padding: 3px 10px 5px 10px; 
-    text-transform: uppercase;
-    letter-spacing: 1px;
     color: #fff;
-    font-weight: 500;
-    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px!important;
+    border-radius: 13px;
   }
   small{
     font-weight: 900;
@@ -2974,48 +2986,34 @@ em.text-success{
   border: 2px solid #00cb00;
   box-shadow: 0px 0px 14px #00cb00;
   span{
-    background-color: #fff;
-    color: #46464F;
-    font-weight: 900;
-    border: 2px solid #00cb00;
-    box-shadow: 0px 0px 14px #00cb00;
+    background-color: #00cb00;
+    float: right;
   }
 }
-
 .cardMot.red{
   border: 2px solid #EF4E35;
   box-shadow: 0px 0px 14px #EF4E35;
   span{
-    background-color: #fff;
-    color: #46464F;
-    font-weight: 900;
-    border: 2px solid #EF4E35;
-    box-shadow: 0px 0px 14px #EF4E35;
-
+    background-color: #EF4E35;
+    float: right;
   }
-
   .circle{
     box-shadow: 0px 0px 14px #EF4E35;
     background-color: #EF4E35;
   }
 }
-
 .cardMot.yellow{
   border: 2px solid #dacb18;
   box-shadow: 0px 0px 14px #dacb18;
   span{
-    background-color: #fff;
-    color: #46464F;
-    font-weight: 900;
-    border: 2px solid #dacb18;
-    box-shadow: 0px 0px 14px #dacb18;
+    background-color: #dacb18;
+    float: right;
   }
 }
 
 .bgMonitor{
   background-color: #F5F9FC ;
 }
-
 
 @media (max-width: 576px) {
   .colum-divider{
@@ -3039,7 +3037,13 @@ em.text-success{
 
 @media (min-width: 1201px) and (max-width: 1800px) {
   .colum-divider{
-    width: 33%;
+    width: 16.67%;
+    zoom: 0.8;
+    display: inline-block;
+  }
+  .colum-zoom{
+    width: 16.3667%;
+    zoom: 0.833333;
     display: inline-block;
   }
   .cardMot{
@@ -3285,11 +3289,7 @@ em.text-success{
   border: 2px solid #00cb00;
   box-shadow: 0px 0px 14px #00cb00;
   span{
-    background-color: #fff;
-    color: #46464F;
-    font-weight: 900;
-    border: 2px solid #00cb00;
-    box-shadow: 0px 0px 14px #00cb00;
+    background-color: #00cb00;
   }
   .circle{
     box-shadow: 0px 0px 14px #00cb00;
@@ -3301,11 +3301,7 @@ em.text-success{
   border: 2px solid #EF4E35;
   box-shadow: 0px 0px 14px #EF4E35;
   span{
-    background-color: #fff;
-    color: #46464F;
-    font-weight: 900;
-    border: 2px solid #EF4E35;
-    box-shadow: 0px 0px 14px #EF4E35;
+    background-color: #EF4E35;
   }
   .circle{
     box-shadow: 0px 0px 14px #EF4E35;
@@ -3317,11 +3313,7 @@ em.text-success{
   border: 2px solid #dacb18;
   box-shadow: 0px 0px 14px #dacb18;
   span{
-    background-color: #fff;
-    color: #46464F;
-    font-weight: 900;
-    border: 2px solid #dacb18;
-    box-shadow: 0px 0px 14px #dacb18;
+    background-color: #dacb18;
   }
   .circle{
     box-shadow: 0px 0px 14px #dacb18;
@@ -3355,10 +3347,10 @@ em.text-success{
 }
 
 @media (min-width: 1201px) {
-  .colum-divider{
-    width: 24.7%;
-    display: inline-block;
-  }
+  // .colum-divider{
+  //   width: 24.7%;
+  //   display: inline-block;
+  // }
 
   .cardPed{
     h2{
