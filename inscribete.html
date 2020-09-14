@@ -2,27 +2,28 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Tulivery - Detalle</title>
+        <title>Tulivery - Principal</title>
         <!-- STYLES -->
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css"> 
-
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/icon-font.min.css">
         <link rel="stylesheet" href="css/main.css">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body class="bghome">
         <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
             <div class="alignnav container px-5">
                 <a class="navbar-brand" href="index.html">
                 <img class="logoline" src="img/logo.png">
-                <span class="barlogo pl-2">Haz tu pedido en tu tienda favorita</span>
+                <!-- <span class="barlogo pl-2">Haz tu pedido en tu tienda favorita</span> -->
                 </a>
                 <button id="toggleTulivery" class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav ml-md-auto ">
-                        <li class="nav-item btnli">
+                        <!-- <li class="nav-item btnli">
                             <a class="nav-link" href="tienda.html">
                                 <img class="store pl-3" src="img/nuevaTienda.png">
                                 <h6 class="textmid"> <strong>Quiero tene mi <br>APP y Tienda Web</strong> </h6>
@@ -38,38 +39,87 @@
                             </ul>
                         </li>
                         <li class="nav-item cart2">
-                             <a class="nav-link" href="informacion.html"> <span><i class="fa fa-shopping-cart"></i></span> </a>
+                            <a class="nav-link" href="informacion.html"> <span><i class="fa fa-shopping-cart"></i></span> </a>
+                        </li> -->
+                       
+                        <li class="nav-item pt-1 active">
+                            <button type="button" class="btn btn-white-home float-right  btn-sm" data-toggle="modal" data-target="#nuevaDireccion">Regístrate</button>
+                        </li>
+                        <li class="nav-item pt-1 active">
+                        <button type="button" class="btn btn-danger-home float-right  btn-sm" data-toggle="modal" data-target="#nuevaDireccion">Entrar</button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        
-        <main id="main" class="contenido jumbotronbg  mt-2" >        
-            <div class="row  justify-content-md-center justify-content-sm-center mt-4 pb-5 pt-5">
-                <div class="col-12 col-md-2 px-3 py-0 text-right blog-menu">
-                    <h5>Páginas</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="active" href="nosotros.html">Nosotros</a></li>
-                        <li><a class="" href="terminos.html">Términos y condiciones</a></li>
-                        <li><a class="" href="politicas.html">Políticas de privacidad</a></li>
-                    </ul>
-                </div>
+
+        <div class="container containerAlign driverinHouse formDriver ">
+            <div class="skew"></div>
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <div class="textDriver">
+                    <span>Inscríbete</span>
+                    <h1>Trabaja con nosotros</h1>
+                  </div>
+              </div>
+              <div class="col-md-6 mt-3">
+                  <img src="img/banner01.jpg" alt="">
+              </div>
+              <div class="col-md-6 mt-3">
                 
-                <div class="col-12 col-md-7  blog-post">
-                      <h2 class="blog-post-host"> SOBRE   <span class="span">NOSOTROS.</span></h2>
-          
-                    <div class="">
-                        <p>Tulivery es una empresa peruana conformada por un grupo de emprendedores motivados para ofrecer un mejor servicio de reparto a domicilio que los demás.</p>
-                        <p>Buscamos lograr poco a poco un servicio de calidad para todos los que participan en la cadena de la entrega del pedido, desde las tiendas, mensajeros y el comprador final. Nuestro mayor interés es que todos los que participan en logar este servicio, sean reconocidos por su importante trabajo y trabajen armoniosamente. </p>
-                        <p>Nuestra labor inicia desde que recibimos un pedido tuyo, y hay muchas personas involucradas en llevar tu pedido hasta tu domicilio, pero el mensajero quien nos representa es el que verás al final del servicio. Por ello, no tercerizamos el mensajero como un trabajador independiente, para nosotros el mensajero es la persona que nos representa y haremos lo posible para que ellos se sientan bien, se sientan que forman parte de algo importante, y sobre todo crezcan con nosotros. </p>
-                        <p>No somos solo un aplicativo digital que sirve para hacer pedidos online, somos personas que atendemos personas. </p>
-      
+                <div class="col-12 col-md-12 col-sm-12 ">
+                    <div class=" input-group p-0 ">
+                        <label for="">Ciudad</label>
+                        <select class="form-control rounded ml-2">
+                            <option>Selecciona tu ciudad</option>
+                            <option>Ciudad 1</option>
+                            <option>Ciudad 2</option>
+                            <option>Ciudad 3</option>
+                            <option>Ciudad 4</option>
+                            <option>Ciudad 5</option>
+                            <option>Ciudad 6</option>
+                            <option>Ciudad 7</option>
+                            <option>Ciudad 8</option>
+                            <option>Ciudad 9</option>
+                        </select>
                     </div>
+                    
+                    <div class="input-group">
+                        <label for="">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Ingresa tu nombre">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="">Apellidos</label>
+                        <input type="text" class="form-control" placeholder="Ingresa tus apellidos">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control" placeholder="Ingresa tu mail">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="">Numero de teléfono</label>
+                        <input type="text" class="form-control" placeholder="Ingresa tu numero de teléfono">
+                    </div>
+
+                    <div class="input-group mb-4">
+                        <label for="">Tipo de vehiculo</label>
+                        <ul class="menuDriver">
+                            <li class="active"><img src="img/driver01.png" alt=""><span>MOTO</span></li>
+                            <li><img src="img/driver02.png" alt=""><span>BICICLETA</span></li>
+                            <li><img src="img/driver03.png" alt=""><span>BICICLETA ELÉCTRICA</span></li>
+                        </ul>
+                    </div>
+
+                    <button type="button" class="btn btn-danger-home float-right  btn-sm" data-toggle="modal" data-target="#nuevaDireccion">Enviar</button>
                 </div>
+
+              </div>
             </div>
-        </main>
-        
+          </div>
+
         <footer class="bg-sodark">
             <div class="containerv2 ">
               <div class="row">
@@ -123,7 +173,5 @@
         <script src="js/bootstrap.min.js" charset="utf-8"></script>
         <!-- other libraries -->
         <script src="js/main.js" charset="utf-8"></script>
-        <script src="js/popImg.js" charset="utf-8"></script>
-
     </body>
 </html>
