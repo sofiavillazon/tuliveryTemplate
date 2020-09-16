@@ -4338,3 +4338,139 @@ button.smallBtn img {
     width: 100%;
   }
 }
+
+.bgstore {
+  height: 200px;
+}
+
+.btn-fticon4 {
+font-size: 40px;
+padding: 0px 0px 0px 0px;
+-webkit-text-fill-color: #4f545b;
+-webkit-text-stroke-color: #fff;
+-webkit-text-stroke-width: 1px;
+}
+
+.tiendaIco:before {
+  width: 138px;
+  height: 138px;
+  position: absolute;
+  border-radius: 50%;
+  content: '';
+  background-color: rgba(255, 255, 255, 0);
+  border: 9px solid rgba(255, 255, 255, 0.5);
+  z-index: 11;
+  top: -9px;
+  left: -9px;
+}
+
+.tiendaIco .circle {
+  text-align: center;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px !important;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 10vh;
+  cursor: pointer;
+}
+
+.tiendaIco {
+  width: 80px;
+  height: 90px;
+  z-index: 1;
+  left: 5%;
+  top: 109px;
+  position: absolute;
+}
+
+.conteinerDetail{
+  background-color: transparent;
+}
+
+.cardDetail {
+  border-radius: 12px;
+  border: 1px solid #d3dce3;
+  // box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3)
+  -webkit-box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1); 
+  .imgResponsive2 {
+    border-radius: 10px 10px 0 0;
+    border: none!important;
+  }
+  .flex-column{
+    padding: 8px 12px;
+  
+  }
+}
+
+.nom_tienda {
+  z-index: 1031;
+  left: 9%;
+  top: 20px;
+  position: fixed;
+  font-weight: bold;
+  font-size: 23px;
+  font-family: "Arial";
+  color: #FFF;
+}
+
+
+.info span{
+  color: $reddark;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.template3{
+  background-color: #F5F9FC;
+  height: 130px;
+  .circle{
+    margin-top: 30px;
+    img{
+      border-radius: 12px;
+      border: 1px solid #E9EEF2;
+      width: 100px;
+    }
+    
+  }
+  .textDetail{
+    margin-top: 30px;
+    padding-left: 10px;
+    h3{
+      margin-bottom: 0px;
+      margin-top: 12px;
+    }
+    p{
+
+    }
+  }
+}
+.template2{
+  background-color: #F5F9FC;
+  height: 130px;
+  .circle{
+    margin-top: 30px;
+    img{
+      border-radius: 12px;
+      border: 1px solid #E9EEF2;
+      width: 100px;
+    }
+    
+  }
+  .textDetail{
+    margin-top: 30px;
+    padding-left: 10px;
+    h3{
+      margin-bottom: 0px;
+      margin-top: 12px;
+    }
+    p{
+
+    }
+  }
+}
+.bgGrey{
+  background-color: #F5F9FC;
+}
