@@ -712,7 +712,7 @@ body {
 .nav-order {
   display: -webkit-box; }
   .nav-order li {
-    width: 53%;
+    width: 50%;
     padding: 0px; }
 
 .nav-order .nav-link {
@@ -1476,6 +1476,17 @@ input[type=radio]:not(old):checked + label > span > span {
   left: initial;
   right: 35px; }
 
+.plantilla2 .imgResponsive2 {
+  height: 100% !important;
+  border-radius: 10px 0px 0px 10px !important;
+  overflow: hidden; }
+  .plantilla2 .imgResponsive2 img {
+    height: 120px !important;
+    width: auto !important; }
+
+.plantilla2 .text-descr {
+  line-height: 14px; }
+
 .imgvisor {
   width: 100%; }
 
@@ -1554,16 +1565,20 @@ input[type=radio]:not(old):checked + label > span > span {
   .floatMenuOption .nav-link {
     display: none; } }
 
+.display-inline {
+  padding: 0px !important;
+  display: inline-flex !important; }
+
 @media (min-width: 992px) {
   .sticky {
     position: fixed;
-    width: 30.5%;
+    width: 25%;
     top: 80px;
     z-index: 1; }
   .stickyFoot {
     position: fixed;
-    width: 30.5%;
-    bottom: 150px;
+    width: 25%;
+    top: 60px;
     z-index: 1; }
   .sticky + .content {
     padding-top: 2px; }
@@ -1724,14 +1739,14 @@ input[type=radio]:not(old):checked + label > span > span {
   100% {
     opacity: 1; } }
 
+.lineRight {
+  border-right: 1px solid #e9eef2; }
+
 .baseCarrito {
   padding: 20px 0px;
   border-radius: 10px;
   margin-bottom: 20px;
-  background-color: #fbfbfb;
-  -webkit-box-shadow: 2px 3px 20px -2px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 2px 3px 20px -2px rgba(0, 0, 0, 0.3);
-  box-shadow: 2px 3px 20px -2px rgba(0, 0, 0, 0.3); }
+  background-color: #fbfbfb; }
 
 #main > .row {
   min-height: 76vh; }
@@ -3579,12 +3594,13 @@ button.smallBtn img {
 .conteinerDetail {
   background-color: transparent; }
 
+.conteinerDetail .cardDetail:hover {
+  border: 1px solid #ef4e35;
+  cursor: pointer; }
+
 .cardDetail {
   border-radius: 12px;
-  border: 1px solid #d3dce3;
-  -webkit-box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1); }
+  border: 1px solid #d3dce3; }
   .cardDetail .imgResponsive2 {
     border-radius: 10px 10px 0 0;
     border: none !important; }

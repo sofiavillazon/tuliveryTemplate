@@ -936,7 +936,7 @@ body {
 .nav-order  {
   display: -webkit-box;
   li{
-    width: 53%;
+    width: 50%;
     padding: 0px;
   }
 }
@@ -1806,9 +1806,25 @@ input[type=radio]:not(old):checked + label > span > span{
   right: 35px;
 }
 
+.plantilla2 {
+ .imgResponsive2{
+    height: 100%!important;
+    border-radius: 10px 0px 0px 10px!important;
+    overflow: hidden;
+    img{
+      height: 120px!important;
+      width: auto!important;
+    }
+  }
+  .text-descr{
+    line-height: 14px;
+  }
+
+}
 
 .imgvisor {
   width: 100%;
+  
 }
 
 .alertmod{
@@ -1914,18 +1930,25 @@ input[type=radio]:not(old):checked + label > span > span{
   }
 }
 
+.display-inline{
+  // width: 43%!important;
+  padding: 0px!important;
+  display: inline-flex!important;
+}
+
 @media (min-width: 992px){
   .sticky {
     position: fixed;
-    width: 30.5%;
+    width: 25%;
     top: 80px;
     z-index: 1;
   }
   
   .stickyFoot {
     position: fixed;
-    width: 30.5%;
-    bottom: 150px;
+    width: 25%;
+    // bottom: 150px;
+    top:60px;
     z-index: 1;
   }
 
@@ -2141,16 +2164,19 @@ input[type=radio]:not(old):checked + label > span > span{
     opacity:1;
   }
 }
-
+.lineRight{
+  border-right: 1px solid #e9eef2;
+}
 .baseCarrito{
   padding: 20px 0px;
   border-radius: 10px;
   margin-bottom: 20px;
   // border: 3px solid #fff;
   background-color: #fbfbfb;
-  -webkit-box-shadow: 2px 3px 20px -2px rgba(0,0,0,0.30);
-  -moz-box-shadow: 2px 3px 20px -2px rgba(0,0,0,0.30);
-  box-shadow: 2px 3px 20px -2px rgba(0,0,0,0.30);  
+
+  // -webkit-box-shadow: 2px 3px 20px -2px rgba(0,0,0,0.30);
+  // -moz-box-shadow: 2px 3px 20px -2px rgba(0,0,0,0.30);
+  // box-shadow: 2px 3px 20px -2px rgba(0,0,0,0.30);  
 
   
 }
@@ -4387,14 +4413,18 @@ padding: 0px 0px 0px 0px;
 .conteinerDetail{
   background-color: transparent;
 }
+.conteinerDetail .cardDetail:hover {
+  border: 1px solid #ef4e35;
+  cursor: pointer;
+}
 
 .cardDetail {
   border-radius: 12px;
   border: 1px solid #d3dce3;
   // box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3)
-  -webkit-box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1); 
+  // -webkit-box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+  // -moz-box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1); 
   .imgResponsive2 {
     border-radius: 10px 10px 0 0;
     border: none!important;
