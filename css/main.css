@@ -1746,8 +1746,7 @@ input[type=radio]:not(old):checked + label > span > span {
 .baseCarrito {
   padding: 20px 0px;
   border-radius: 10px;
-  margin-bottom: 20px;
-  background-color: #fbfbfb; }
+  margin-bottom: 20px; }
 
 #main > .row {
   min-height: 76vh; }
