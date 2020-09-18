@@ -1808,12 +1808,13 @@ input[type=radio]:not(old):checked + label > span > span{
 
 .plantilla2 {
  .imgResponsive2{
-    height: 100%!important;
+    height: 90px!important;
     border-radius: 10px 0px 0px 10px!important;
     overflow: hidden;
     img{
-      height: 120px!important;
-      width: auto!important;
+      margin-left: -50%;
+      height: 100% !important;
+      width: auto;
     }
   }
   .text-descr{

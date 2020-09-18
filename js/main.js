@@ -309,7 +309,7 @@ var toScroll = $(document).height() - 980;
 var sticky = header.offsetTop;
 
 function myFunction() {
-    if (window.pageYOffset < 300) {
+    if (window.pageYOffset < 20) {
         header.classList.remove("sticky");
         header.classList.remove("stickyFoot");
     }
@@ -320,7 +320,7 @@ function myFunction() {
         } else {
             header.classList.add("sticky");
             header.classList.remove("stickyFoot");
-            $("#scrollerSection").css("max-height","221px");
+            $("#scrollerSection").css("max-height","215px");
         }
     }
 }
