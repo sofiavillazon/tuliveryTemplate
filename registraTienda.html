@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tulivery - Principal</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/icon-font.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body class="bghome">
+    <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
+      <div class="alignnav container px-5">
+        <a class="navbar-brand" href="index.html">
+          <img class="logoline" src="img/logo.png">
+          <!-- <span class="barlogo pl-2">Haz tu pedido en tu tienda favorita</span> -->
+        </a>
+        <button id="toggleTulivery" class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav ml-md-auto ">
+           
+            <li class="nav-item pt-1 active">
+              <button type="button" class="btn btn-white-home float-right  btn-sm" data-toggle="modal" data-target="#nuevaDireccion">Regístrate</button>
+            </li>
+            <li class="nav-item pt-1 active">
+              <button type="button" class="btn btn-danger-home float-right  btn-sm" data-toggle="modal" data-target="#nuevaDireccion">Entrar</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container containerAlign formDriver">
+      <div class="skew"></div>
+      <div class="row">
+        <div class="col-md-12 textDrive textSuscribe mb-4">
+            <span>Regístrate </span>
+            <h1>Registra tu tienda en Tulivery <a href="" class="moreinfo">YA TENGO USUARIO, DESEO INGRESAR <img src="img/arrowOrangetHome.svg" alt=""></a></h1>
+        </div>
+        <div class="col-md-5 mt-3">
+          <img src="img/bannerform.png" alt="">
+        </div>
+        <div class="col-md-7 mt-3">
+          <div class="col-12 col-md-12 col-sm-12 ">
+           
+            <div class="row">
+                    
+                  <div class="input-group col-md-6 mx-0 px-2">
+                    <label for="">Correo electrónico</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu correo">
+                  </div>
+                  <div class="input-group col-md-6 mx-0 px-2"">
+                    <label for="">Contraseña</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tus contraseña">
+                  </div>
+
+                  <div class="col-md-12 px-0 mx-0">
+                    <ul class="checkpoint">
+                        <li>8 Caract. mínimos</li>
+                        <li class="active">al menos 1 letra</li>
+                        <li>al menos 1 numero</li>
+                    </ul>
+                  </div>
+
+                  <div class="separadorw-10 mx-2 mt-2"></div>
+
+                  <div class="input-group col-md-12 mx-0 px-2 mb-3">
+                    <label for="">SELECCIONA TU PLAN</label>
+
+                    <div class="suscribePanel mt-3">
+    
+                        <div class="card-deck mb-1 text-center px-0">
+                            <div class="card cardPro my-1 shadow-sm px-0 mx-0">
+                                <div class="card-body cardInfoBanner ">
+                                    <h4>Plan Básico</h4>
+                                    <p>Precio mensual por tienda</p>
+                                </div>
+                            </div>
+                          
+                            <div class="card active cardPro my-1 shadow-sm px-0 mx-0">
+                                <div class="card-body cardInfoBanner ">
+                                    <h4>Plan Estándar</h4>
+                                    <p>Precio mensual por tienda</p>
+                                </div>
+                            </div>
+                    
+                            <div class="card cardPro my-1 shadow-sm px-0 mx-0">
+                                <div class="card-body cardInfoBanner ">
+                                    <h4>Plan Premium</h4>
+                                    <p>Precio mensual contrato por 1 año</p>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+
+                  </div>
+
+                  <div class="input-group col-md-12 mx-0 px-2 mb-0">
+                    <label for="">Nombre de tu tienda</label>
+                    <input type="text" class="form-control" placeholder="Ingresa el nombre de tu tienda">
+                  </div>
+                  <div class="separadorw-10 mx-2 mt-0"></div>
+
+                  <div class="input-group col-md-6 mx-mt-2 0 px-2"">
+                    <label for="">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu nombre">
+                  </div>
+
+                  <div class="input-group col-md-6 mx-mt-2 0 px-2"">
+                    <label for="">Apellido paterno</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu apellido paterno">
+                  </div>
+
+                  <div class="input-group col-md-6 mx-0 px-2"">
+                    <label for="">Apellido Materno</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu apellido materno">
+                  </div>
+                  <div class="input-group col-md-6 mx-0 px-2"">
+                      <label for="">Celular</label>
+                    <div class="row">
+                        <div class="col-md-8 mx-0">
+                            <input type="text" class="form-control" placeholder="Ingresa tu celular">
+                        </div>
+                        <div class="col-md-4 mx-0 pl-0">
+                            <button class="btn btn-default py-2">VERIFICAR</button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+         
+            <button type="button" class="btn btn-danger-home float-right  btn-sm" data-toggle="modal" data-target="#nuevaDireccion">Registrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-sodark">
+      <div class="containerv2 ">
+        <div class="row">
+          <div class="pt-4 col-sm-12 col-md-4 text-md-center">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 text-md-center">
+                <img class="" src="img/logo.png"  alt="" width="40%">
+              </div>
+              <div class="pt-3 col-sm-12 col-md-12 col-lg-6">
+                <h6><a href="">Sobre Tulivery</a></h6>
+                <h6><a href="">Cómo funciona Tulivery</a></h6>
+                <h6><a href="">Quiero repartir</a></h6>
+              </div>
+              <div class="pt-3 col-sm-12 col-md-12 col-lg-6">
+                <h6><a href="">Abrir mi Tienda</a></h6>
+                <h6><a href="">Términos y condiciones</a></h6>
+                <h6><a href="">Políticas de privacidad</a></h6>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4 col-sm-12 col-md-4 text-center">
+            <h5 class="tittlefoot">Descárgate el APP</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="appfooter" href="#"><img src="img/appleStore.png"></a>
+                <a class="appfooter"  href=""><img src="img/appstore.png"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-4 col-sm-12 col-md-4 text-center">
+            <h6 class="" >Síguenos en:</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a class="btn-fticon " href="#"><i class="fa fa-facebook"></i></a>
+                <a class="btn-fticon3" href="#"><i class="fa fa-linkedin"></i></a>
+                <a class="btn-fticon2" href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row text-center pb-3">
+          <div class="col-12">
+            <small class="ltlight">&copy; 2020, Tulivery. Todos los derechos reservados</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <!-- <script src="js/jquery.min.js" charset="utf-8"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <!-- other libraries -->
+    <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>

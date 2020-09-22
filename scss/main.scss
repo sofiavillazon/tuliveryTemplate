@@ -3043,6 +3043,9 @@ em.text-success{
 }
 
 @media (max-width: 576px) {
+  .formDriver .card {
+    width: 100% !important;
+  }
   .colum-divider{
     width: 100%;
     display: inline-block;
@@ -3713,6 +3716,29 @@ em.text-success{
     color: #3D3D3D!important;
   }
 }
+.bgBanner {
+  height: 260px;
+}
+.sliderBanner{
+  background-color: #F5F9FC !important;
+  h5{
+    width: 60%;
+    height: 50px;
+    z-index: 1;
+    left: calc(20vw + 10px);
+    top: 75px;
+    position: absolute;
+    font-size: 60px;
+    text-align: center;
+    line-height: 56px;
+    color: #fff!important;
+    font-weight: 700;
+  }
+  h5.dark{
+    color: #3D3D3D!important;
+  }
+}
+
 
 .searchHome{
   width: 40%;
@@ -4017,6 +4043,7 @@ button.smallBtn img {
   h1{
     font-size: 43px;
     line-height: 38px;
+    font-weight: 400!important;
   }
   p{
     font-size: #3D3D3D;
@@ -4031,6 +4058,106 @@ button.smallBtn img {
   .imageDrive img{
     width: 100%;
     margin-top: -50px;
+  }
+}
+
+
+.suscribePanel{
+  .card.shadow-sm{
+    margin-left: 10px!important;
+    margin-right: 10px!important;
+  }
+  .cardInfoBanner{
+    font-family: "Source Sans Pro";
+    padding-top: 0px;
+    margin-top: 0px;
+    
+    h4{
+      font-size: 28px;
+      color: $red!important;
+      font-weight: 600;
+      margin-bottom: -8px;
+    }
+    p{
+      font-size: 16px;
+      margin-bottom: 0px!important;
+      padding-bottom: 0px!important;
+    }
+    h1{
+      font-family: "Source Sans Pro";
+      font-size: 40px;
+      letter-spacing: -1px;
+      span{
+        font-size: 23px;
+        font-weight: 400;
+      }
+    }
+    .separador{
+      width: 100%;
+      border-bottom: 1px solid #BCBBBB;
+      height: 2px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.separadorw-10{
+  width: 100%;
+  border-bottom: 2px solid #BCBBBB;
+  height: 2px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.listSuscribe{
+  margin-left: 40px!important;
+  list-style: none;
+
+  li{
+    width: calc(100% - 24px);
+    text-align: left;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 17px!important;
+  }
+  li:before{
+    content: '';
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    background-image: url(../img/checkico.png);
+    background-size: cover;
+    background-position: center;
+    left: -24px;
+    top: 3px;
+    color: $dark!important;
+  }
+
+  li.block{
+    color: #B2B2B2!important;
+  }
+  li.block:before{
+    background-image: url(../img/checkico-block.png);
+  }
+  li.inactive{
+    width: 150px;
+  }
+}
+
+.textDrive{
+  span{
+    color: $red;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 2px;
+  }
+  h1{
+    font-size: 43px;
+    line-height: 38px;
+    font-weight: 400!important;
+  }
+  p{
+    font-size: #3D3D3D;
+    margin-bottom: 0px;
   }
 }
 
@@ -4623,4 +4750,123 @@ span.detail{
     margin-bottom: 0px;
     padding-bottom: 0px;   
   }
+
+
+.card.cardPro{
+  border: 1px solid #F5F9FC!important;
+  transition: all .1s ease-in-out;
+}
+.card.cardPro:hover{
+  border: 1px solid $red!important;
+  .btn-suscribe {
+    color: #fff;
+    background-color: $red;
+    border-color: $red;
+  }
+}
+
+.sliderBanner h5 {
+  font-size: 45px;
+}
+
+.btn-suscribe {
+    color: #fff;
+    background-color: $dark;
+    border-color: $dark;
+    width: 100%;
+    padding: 20px 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0px 0px 12px 12px!important;
+}
+.btn-suscribe:hover {
+    color: #fff;
+    background-color: $red;
+    border-color: $red;
+}
+
+.textSuscribe{
+  h1{
+    font-size: 38px!important;
+    width: 75%;
+  }
+ 
+}
+
+.pill-danger{
+  border-radius: 12px;
+  background-color: $red;
+  color: $white!important;
+  padding: 1px 15px;
+  font-size: 14px!important;
+}
+
+.formDriver .card .card-body {
+  width: 100%!important;
+}
+
+.formDriver{
+  h1{
+    width: 100%!important;
+    img{
+      width: 20px;
+    }
+  }
+  .card.active{
+    border: 1px solid $red!important;
+  }
+  .card{
+    padding: 18px 10px 10px 10px!important;
+    width: 33vw!important;
+    .card-body{
+      padding-bottom: 0px;
+    }
+    P{
+      line-height: 13px;
+      margin-top: 8px;
+      font-size: 11px;
+    }
+    h4{
+      font-size: 18px;
+    }
+  }
+   
+}
+
+.btn-default{
+  background-color: #999999;
+  color: $white;
+}
+.checkpoint{
+  margin-left: 10px;
+  padding-left: 0px;
+  text-align: left!important;
+  li{
+    background-color: $white;
+    border: 1px solid $dark;
+    list-style: none;
+    display: inline;
+    color: $dark;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 10px;
+  }
+  li.active{
+    color: $white;
+    border: 1px solid $red;
+    background-color: $red;
+  }
+}
+
+@media (max-width: 576px) {
+  .formDriver .card {
+    width: 88vw !important;
+  }
+  .textSuscribe h1 {
+    font-size: 29px !important;
+    width: 75%;
+  } 
+}
 
