@@ -1668,7 +1668,6 @@ input[type=radio]:not(old):checked + label > span > span{
   width: 50%;
   height: 0px;
   margin-bottom: 0;
-  /* Override default `<label>` margin */
   line-height: 1.5;
   color: #495057;
   border: 1px solid transparent;
