@@ -3946,3 +3946,35 @@ span.detail {
   .textSuscribe h1 {
     font-size: 29px !important;
     width: 75%; } }
+
+@keyframes float {
+  0% {
+    transform: translatey(0px); }
+  50% {
+    transform: translatey(-15px); }
+  100% {
+    transform: translatey(0px); } }
+
+.bgLogin2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh; }
+
+.animateBg img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill !important; }
+
+.gg {
+  transition: all 0.4s ease-in-out; }
+
+.bgLogin2.point {
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite; }
+
+.slide:hover .line {
+  opacity: 0.8;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }

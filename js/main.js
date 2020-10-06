@@ -338,7 +338,7 @@ $('.hero-area').slick({
     arrows: true,
     fade: true,
     easing: 'ease-in-out',
-    speed: 1000,
+    speed: 2000,
     prevArrow: '<span class="slider-navigation slider-navigation-prev"><i class="icon-arrow-left"></i></span>',
     nextArrow: '<span class="slider-navigation slider-navigation-next"><i class="icon-arrow-right"></i></span>',
   });
