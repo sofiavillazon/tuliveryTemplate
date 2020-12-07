@@ -323,6 +323,7 @@ function myFunction() {
             $("#scrollerSection").css("max-height","215px");
         }
     }
+
 }
 
 // 
