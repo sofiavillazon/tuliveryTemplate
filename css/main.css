@@ -514,7 +514,8 @@ footer h6 a:hover {
 /*==============================================================*/
 .imgresp .imgResponsive2 {
   width: 100%;
-  height: 125px !important;
+  min-height: 110px !important;
+  max-height: 122px;
   background-size: cover;
   background-position: center;
   overflow: hidden; }
@@ -612,6 +613,10 @@ footer .logo {
 footer li {
   padding-bottom: 4px; }
 
+@media (max-width: 1200px) {
+  .inicioIco {
+    display: inline-block; } }
+
 @media (min-width: 1200px) {
   .plantillaFullHeight.floatcart {
     margin-top: 50px; }
@@ -640,19 +645,17 @@ body {
   .navLogo .navbar-nav a h6 {
     font-size: 13px !important; } }
 
-@media (max-width: 1200px) and (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   .sepCarro {
     border-top: 1px solid #eaeaea; }
   .closebtn {
     position: initial; }
-  .bgLogin2 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: auto !important;
-    height: 90vh !important; } }
-
-@media (max-width: 1200px) {
+    .closebtn .bgLogin2 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: auto !important;
+      height: 90vh !important; }
   .sliderHome h5 {
     font-size: 42px !important; }
   .floatcart {
@@ -1559,7 +1562,8 @@ input[type=radio]:not(old):checked + label > span > span {
   right: 35px; }
 
 .plantilla2 .imgResponsive2 {
-  height: 90px !important;
+  max-height: 110px !important;
+  min-height: 80px;
   border-radius: 10px 0px 0px 10px !important;
   overflow: hidden; }
 
@@ -1629,6 +1633,9 @@ input[type=radio]:not(old):checked + label > span > span {
     -webkit-text-stroke-width: 1.50px; } }
 
 @media (max-width: 991px) {
+  .sliderBanner h5 {
+    font-size: 32px !important;
+    line-height: 35px !important; }
   .containerv2 {
     text-align: center; }
   .floatMenu img {
@@ -3135,7 +3142,7 @@ em.text-success {
   margin-top: -10px; }
 
 #slider.bgHome {
-  margin-top: -70px; }
+  margin-top: -10px; }
 
 .btn-danger-home {
   font-size: 15px;
@@ -3191,7 +3198,8 @@ em.text-success {
   color: #3D3D3D !important; }
 
 .bgBanner {
-  height: 260px; }
+  height: 260px;
+  z-index: 1; }
 
 .sliderBanner {
   margin-top: 0px !important;
@@ -3218,8 +3226,12 @@ em.text-success {
   height: 50px;
   z-index: 1031;
   left: calc(30vw + 10px);
-  top: calc(60vh - 90px);
+  top: calc(60vh - 95px);
   position: absolute; }
+
+ul {
+  list-style: none;
+  padding-left: 20px; }
 
 .searchHome .from-search .btn-search {
   font-size: 28px !important;
@@ -3289,7 +3301,9 @@ em.text-success {
 .cardInfoHome p {
   padding: 0px 20px;
   line-height: 16px;
-  color: #717171; }
+  color: #717171;
+  z-index: 6;
+  position: relative; }
 
 .cardInfoHome .base {
   margin-top: -10px;
@@ -3299,7 +3313,9 @@ em.text-success {
 .cardInfoHome .contenticon {
   position: relative;
   width: 80%;
-  margin: 0px auto; }
+  margin: 0px auto;
+  z-index: 4;
+  position: relative; }
 
 .cardInfoHome .contenticon .iconleft {
   transition: all 1s;
@@ -3614,7 +3630,14 @@ button.smallBtn img {
     margin-top: 60px;
     margin-bottom: 80px; } }
 
+@media (min-width: 575px) and (max-width: 1200px) {
+  .containerAlign {
+    margin-top: 60px;
+    margin-bottom: 80px; } }
+
 @media (max-width: 800px) {
+  .beforeMobile:before {
+    display: none; }
   .card.imgresp .imgResponsive2 span.text-right {
     left: calc(100% - 90px) !important;
     bottom: 36px; }
@@ -3646,6 +3669,8 @@ button.smallBtn img {
   .containerAlign {
     margin-top: 80px !important;
     margin-bottom: 80px; }
+    .containerAlign .card-deck {
+      padding: 0p !important; }
   .driverinHouse .card-left .card-body {
     width: 100%; }
   .driverinHouse .card .card-img-top {
@@ -3944,7 +3969,7 @@ button.smallBtn img {
   height: 90px;
   z-index: 1;
   left: 5%;
-  top: 109px;
+  top: 60px;
   position: absolute; }
 
 .conteinerDetail {
@@ -4274,7 +4299,7 @@ span.detail {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 ); }
 
 .marginSpaceTop {
-  margin-top: 50px !important; }
+  margin-top: 60px !important; }
 
 .bannerTopSmall {
   overflow: hidden;
@@ -4307,3 +4332,175 @@ span.detail {
   padding-left: 0px;
   background-size: cover;
   vertical-align: middle; }
+
+.faq.card {
+  padding: 0px !important;
+  margin-bottom: 0px;
+  width: 100% !important;
+  margin-top: 10px;
+  border: none; }
+  .faq.card .card-header {
+    border: 1px solid #ececec !important;
+    margin-top: 0px; }
+    .faq.card .card-header a {
+      color: #707070 !important;
+      font-weight: 500;
+      text-align: left;
+      width: 100%;
+      transform: rotate(0deg) !important; }
+    .faq.card .card-header a img {
+      width: 30px;
+      float: right;
+      transform: rotate(90deg) !important; }
+  .faq.card .card-body {
+    padding: 10px 30px 30px 30px;
+    background-color: #e2edf5;
+    border-left: 3px solid #EF4E35;
+    position: relative; }
+    .faq.card .card-body a {
+      color: #EF4E35 !important; }
+    .faq.card .card-body img.medium {
+      width: 30%;
+      border-radius: 0px;
+      margin: 0px auto !important; }
+    .faq.card .card-body img.medium2 {
+      width: 120px;
+      border-radius: 0px;
+      margin: 0px auto !important; }
+    .faq.card .card-body img.small {
+      width: 20px;
+      border-radius: 0px; }
+    .faq.card .card-body ul {
+      margin-top: 20px; }
+  .faq.card p {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 16px; }
+
+.faq.card:hover {
+  box-shadow: none !important; }
+
+.faq.card:hover button {
+  box-shadow: none; }
+
+.textSuscription:hover {
+  border: 1px solid #ef4e35; }
+  .textSuscription:hover .imginfo {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+    -webkit-transition-duration: 1.3s;
+    -moz-transition-duration: 1.3s;
+    -o-transition-duration: 1.3s;
+    transition-duration: 1.3s; }
+
+.textSuscription {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #d5daed; }
+  .textSuscription .detailSusc {
+    height: auto;
+    margin: auto 0; }
+  .textSuscription .imagesuscr {
+    height: auto;
+    margin: auto 0; }
+  .textSuscription .right {
+    text-align: right; }
+  .textSuscription h2 {
+    font-size: 23px;
+    width: 100%;
+    font-weight: 700;
+    color: #ef4e35; }
+  .textSuscription .imagesuscr img {
+    width: 100%;
+    border-radius: 8px; }
+  .textSuscription .imginfo {
+    width: 120px;
+    transition: all 1s; }
+
+.textMessage {
+  margin-top: 30px;
+  border-top: 1px solid #ef4e35;
+  border-bottom: 1px solid #ef4e35; }
+  .textMessage h1 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 35px;
+    color: #5c5c5c;
+    padding: 20px 0px; }
+
+.vert-center {
+  margin: auto 0;
+  height: 100%; }
+
+.card-informationSide {
+  margin-top: 5px;
+  width: 100%;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #d5daed;
+  min-height: 100px; }
+  .card-informationSide .detalle h6 {
+    text-transform: uppercase;
+    font-size: 13px; }
+  .card-informationSide img {
+    width: 50px; }
+  .card-informationSide h6 {
+    margin-bottom: 0px; }
+
+.badge-success.orange {
+  color: #fff;
+  background-color: #e94f38;
+  text-transform: uppercase;
+  font-size: 12px; }
+
+.card-informationSide:hover {
+  border: 1px solid #ef4e35;
+  cursor: pointer; }
+
+.card-informationComment {
+  margin-top: 5px;
+  width: 100%;
+  padding: 0px 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #d5daed;
+  min-height: 100px; }
+  .card-informationComment .starProm {
+    width: 150px !important;
+    top: 8px; }
+  .card-informationComment h6 {
+    color: #747474;
+    font-size: 14px; }
+  .card-informationComment strong {
+    padding-bottom: 0px; }
+  .card-informationComment .texto-commemt {
+    padding: 15px 0px; }
+  .card-informationComment .puntaje {
+    background-color: #EF4E35;
+    padding: 3px;
+    color: #fff;
+    text-align: right;
+    font-weight: bold;
+    position: absolute;
+    text-align: right;
+    right: 15px;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 0px 0px 5px 5px; }
+  .card-informationComment .detalle h6 {
+    text-transform: uppercase;
+    font-size: 13px; }
+  .card-informationComment img {
+    width: 50px; }
+  .card-informationComment h6 {
+    margin-bottom: 0px; }
+
+.card-informationComment:hover {
+  border: 1px solid #ef4e35;
+  cursor: pointer; }

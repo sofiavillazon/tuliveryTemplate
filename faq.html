@@ -10,249 +10,552 @@
         <link rel="stylesheet" href="css/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
-            <div class="alignnav container px-5">
-                <a class="navbar-brand" href="index.html">
-                <img class="logo" src="img/logo.png">
-                </a>
-                <button id="toggleTulivery" class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+    <body class="bghome">
+      <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
+        <div class="alignnav container px-5">
+            <a class="navbar-brand" href="index.html">
+            <img class="logoline" src="img/logo.png">
+            <!-- <span class="barlogo pl-2">Haz tu pedido en tu tienda favorita</span> -->
+            </a>
+            <button id="toggleTulivery" class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav ml-md-auto text-center">
-                        <li class="nav-item elm">
-                            <a class="nav-link" href="comoFunciona.html">
-                                <h6 class="textmid"> Cómo funciona <br>Tulivery </h6>
-                            </a>
-                        </li>
-                        <li class="nav-item elm">
-                            <a class="nav-link" href="planes.html">
-                                <h6 class="textmid"> Planes de  <br>suscripción </h6>
-                            </a>
-                        </li>
-                        <li class="nav-item elm">
-                            <a class="nav-link" href="faq.html">
-                                <h6 class="textmid"> FAQ </h6>
-                            </a>
-                        </li>
-                        <li class="nav-item elm">
-                            <a class="nav-link" href="#">
-                                <h6 class="textmid"> Sobre <br>Tulivery </h6>
-                            </a>
-                        </li>
-                        <li class="nav-item btnli">
-                            <a class="nav-link" href="tienda.html">
-                                <img class="store" src="img/nuevaTienda.png">
-                                <h6 class="textmid"> <strong>Quiero tener mi <br>APP y Tienda Web</strong> </h6>
-                            </a>
-                        </li>
-                    </ul>
+            </button>
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-md-auto ">
+                                      
+                    <li class="nav-item pt-1 active">
+                        <button type="button" class="btn btn-white-home float-right  btn-sm" data-toggle="modal" data-target="#nuevaDireccion">Regístrate</button>
+                    </li>
+                    <li class="nav-item pt-1 active">
+                    <button type="button" class="btn btn-danger-home float-right  btn-sm" data-toggle="modal" data-target="#nuevaDireccion">Entrar</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div class="container containerAlign driverinHouse formDriver marginSpaceTop ">
+          <div class="skew"></div>
+          <div class="row pt-4">
+            <div class="col-md-12 mb-3 ">
+              <div class="textDriver">
+                  <span>Lo que nuestros clientes quieren saber</span>
+                  <h1>Preguntas Frecuentes</h1>
                 </div>
             </div>
-        </nav>
-            <main role="main" class="contenido greybg" >
-                <div class="pt-4 ">
-                    <div class="row  justify-content-md-center justify-content-sm-center mb-1 ">
-                        <div class=" col-md-9 col-sm-9 col-xs-9 whitebg pt-5 pb-5 ">
-                            <div class="row ">
-                                <div class="col-md-12">
-                                    <h5 class="text-center redletter"><strong>Preguntas mas frecuentes que recibimos de nuestros clientes</strong></h5> 
-                                    <p class="text-center">Si tu pregunta no se encuentra en nuestra lista contacta con nosotros que estamos esperando ayudarte</p>
-                                </div>
-                                <div class=" col-md-12 mt-2 text-center mt-4">
-                                    <div class="row justify-content-md-center justify-content-sm-center px-5 ">
-                                        <div class="col-md-6 p-2 faq "> 
-                                          <div id="accordion">
-                                            <div class="card ">
-                                              <div class="card-header" id="headingOne">
-                                                <h5 class="mb-0">
-                                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                                    ¿Pregunta 1?
-                                                  </button>
-                                                </h5>
-                                              </div>
+            <div class="col-md-12 mt-3">
 
-                                              <div id="collapse1" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-                                                <div class="card-body">
-                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="card">
-                                              <div class="card-header" id="headingTwo">
-                                                <h5 class="mb-0">
-                                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                                    ¿Pregunta 2?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                                <div class="card-body">
-                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="card">
-                                              <div class="card-header" id="headingThree">
-                                                <h5 class="mb-0">
-                                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                                    ¿Pregunta 3?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                                <div class="card-body">
-                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                </div>
-                                              </div>
-                                            </div>
 
-                                            <div class="card">
-                                              <div class="card-header" id="headingOne">
-                                                <h5 class="mb-0">
-                                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                                    ¿Pregunta 4?
-                                                  </button>
-                                                </h5>
-                                              </div>
-
-                                              <div id="collapse4" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-                                                <div class="card-body">
-                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="card">
-                                              <div class="card-header" id="headingTwo">
-                                                <h5 class="mb-0">
-                                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                                    ¿Pregunta 5?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="collapse5" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                                <div class="card-body">
-                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="card">
-                                              <div class="card-header" id="headingThree">
-                                                <h5 class="mb-0">
-                                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                                    ¿Pregunta 6?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="collapse6" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                                <div class="card-body">
-                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                       <div class="col-md-6 p-2 faq"> 
-                                          <div id="accordion2">
-                                              <div class="card">
-                                              <div class="card-header" id="headingOne">
-                                                <h5 class="mb-0">
-                                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                                                    ¿Pregunta 7?
-                                                  </button>
-                                                </h5>
-                                              </div>
-
-                                              <div id="collapse7" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-                                                <div class="card-body">
-                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="card">
-                                              <div class="card-header" id="headingTwo">
-                                                <h5 class="mb-0">
-                                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                                                    ¿Pregunta 8?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="collapse8" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                                <div class="card-body">
-                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="card">
-                                              <div class="card-header" id="headingThree">
-                                                <h5 class="mb-0">
-                                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                                                    ¿Pregunta 9?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="collapse9" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                                <div class="card-body">
-                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                </div>
-                                              </div>
-                                            </div>
-
-                                            <div class="card">
-                                              <div class="card-header" id="headingOne">
-                                                <h5 class="mb-0">
-                                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                                                    ¿Pregunta 10?
-                                                  </button>
-                                                </h5>
-                                              </div>
-
-                                              <div id="collapse10" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-                                                <div class="card-body">
-                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="card">
-                                              <div class="card-header" id="headingTwo">
-                                                <h5 class="mb-0">
-                                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                                                    ¿Pregunta 11?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="collapse11" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                                <div class="card-body">
-                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="card">
-                                              <div class="card-header" id="headingThree">
-                                                <h5 class="mb-0">
-                                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
-                                                    ¿Pregunta 12?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="collapse12" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                                <div class="card-body">
-                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                      
-                                      </div>
-                                </div>
-                            </div>
+              <h4>Para comercios</h4>
+              <div id="accordion">
+                <!-- Elm 01 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading1">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Qué obtengo al inscribir mi tienda? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+                    <div class="card-body">
+                      <p> Obtienes tu tienda virtual y dependiendo de la suscripción que elegiste obtienes algunos adicionales. Lo más básico que obtienes es tener tu tienda web dentro del portal de <a href="www.tulivery.com">www.tulivery.com</a> y tu tienda APP dentro la APP de Tulivery, disponible en Android y iOS. También obtienes acceso al portal de tu tienda web para que administres tus datos y realizas la atención de tus pedidos; y para mayor comodidad, también puedes bajar la APP de “Tutienda” para que realices la atención de tus pedidos.</p>
+                      <p> Como adicionales puedes obtener una APP para tu repartidor en caso realices delivery y creas necesario tener control de la entrega. Y, por último, también puedes tener tu propia APP con el nombre de tu tienda para que tus clientes se identifiquen directamente con tu marca.</p>
                     </div>
+                  </div>
                 </div>
-            </main>
+
+                 <!-- Elm 02 -->
+                 <div class="card faq">
+                  <div class="card-header" id="heading2">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading2" aria-expanded="true" aria-controls="collapseheading2">
+                        ¿Qué significa tener mi propia APP? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+                    <div class="card-body">
+                      <p> Tenemos una suscripción Premium que te permite tener tu propia APP. Es decir, preparamos una APP exclusiva para tu tienda, con el nombre y colores que te representa y lo publicamos para que esté disponible para Play Store y App Store. De esta manera tus clientes podrán buscar en Play Store o App Store el nombre de tu tienda y podrán bajar e instalar tu tienda en sus celulares y hacer sus pedidos directamente a tu tienda. </p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Elm 03 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading3">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading3" aria-expanded="true" aria-controls="collapseheading3">
+                        ¿Cómo funciona mi tienda virtual cuándo un cliente hace un pedido? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+                    <div class="card-body">
+                      <p> El flujo es el siguiente, tu cliente ubica tu tienda dentro de la plataforma de <a href="https://www.tulivery.com/">https://www.tulivery.com/</a> o dentro de la APP de Tulivery, ingresa a tu tienda, arma su pedido y lo finaliza. Automáticamente, en tu tienda Web o en la APP de “Tutienda” se te notifica con sonido que acabas de recibir un pedido, y procedes a confirmar o anular. Puedes abrir el pedido y ver los datos de tu cliente y de su pedido, tomar contacto con tu cliente sea por teléfono o por WhatsApp. Y al realizar la entrega del pedido procedes a finalizar el pedido. Por cada actualización que realizas en el pedido, tu cliente recibe una notificación. Puedes ver luego todos los pedidos entregados y sacar reportes de tus ventas.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Elm 04 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading4" aria-expanded="true" aria-controls="collapseheading4">
+                        ¿Cuánto tengo que pagar por tener mi tienda? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+                    <div class="card-body">
+                      <p> Realizas solo un pago mensual dependiendo la suscripción que elegiste. El momento que decidas ya no tener tu tienda virtual con nosotros, simplemente dejas de pagar y tu tienda se desactiva. Solo la membresía Premium tiene un tiempo mínimo de acuerdo comercial.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Elm 05 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading5" aria-expanded="true" aria-controls="collapseheading5">
+                        ¿Voy a pagar comisión por ventas? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+                    <div class="card-body">
+                      <p> No. No te cobramos comisiones por ventas, todo lo que cobras por vender es cobrado directamente por tu tienda.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Elm 06 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading6" aria-expanded="true" aria-controls="collapseheading6">
+                        ¿Cómo registro mi tienda? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>¡Registrar tu tienda es simple! Vas a la página de inscripción de tienda, ingresas los datos del formulario, validamos que este conforme y listo. Debes tener en consideración que el correo que ingresas debe ser válido, para ello te enviaremos un código de verificación a ese correo y así poder validarlo. </p>
+                      <p>Una vez registrado tu tienda, solo debes completar los datos referidos al contenido de tu tienda virtual, y con ello automáticamente tu tienda estará en línea.</p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Elm 07 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading7">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading7" aria-expanded="true" aria-controls="collapseheading7">
+                        ¿En qué momento realizo el pago de mi suscripción? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Después que has inscrito tu tienda, tienes que completar los datos referentes a ubicación de tu tienda, tu horario de atención, cómo vas a entregar tus pedidos, cómo vas a cobrar, el catálogo de tus productos o servicios y finalmente eliges una suscripción y realizas el pago. </p>
+                      <p>Nosotros te ayudaremos para completar tu registro en caso necesites, estaremos siempre a tu disposición dentro del horario de atención.</p>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Elm 08 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading8">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading8" aria-expanded="true" aria-controls="collapseheading8">
+                        ¿Cuándo mi tienda está online? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading8" class="collapse" aria-labelledby="heading8" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Después que has completado los datos requeridos de tu tienda, catálogo de producto o servicios y hayas realizado el pago de una suscripción, tu tienda automáticamente aparece online. </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Elm 09 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading9">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading8" aria-expanded="true" aria-controls="collapseheading8">
+                        ¿Necesito una suscripción para mi tienda? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading8" class="collapse" aria-labelledby="heading9" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Si. Es necesario que elijas una de las suscripciones que tenemos, ocasionalmente tenemos ofertas las cuales te puedes enterar en nuestro portal o en nuestra página en Facebook. </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Elm 10 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading10">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading10" aria-expanded="true" aria-controls="collapseheading10">
+                        ¿Puedo tener más de una tienda dentro de un mismo comercio? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading10" class="collapse" aria-labelledby="heading10" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Si. Puedes crear varias tiendas para atender en lugares diferentes. Solo debes tener en cuenta que cada tienda necesita una suscripción. En caso, tengas un gran número de tiendas, puedes comunicarte directamente con nosotros para ofrecerte descuentos especiales.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Elm 11 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading11" aria-expanded="true" aria-controls="collapseheading11">
+                        ¿Cómo realizo el cobro a mis clientes? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading11" class="collapse" aria-labelledby="heading11" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Tú decides cómo vas a cobrar. Actualmente, la plataforma te permite que tu puedas elegir si vas a cobrar contra entrega con efectivo, con POS, con QR mediante tu billetera digital. Y estamos próximamente incluyendo cobro online, el cual será directamente a tu cuenta bancaria.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Elm 12 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading12">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading12" aria-expanded="true" aria-controls="collapseheading12">
+                        ¿Cómo anulo mi tienda? en caso decida ya no seguir en nuestra plataforma <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading12" class="collapse" aria-labelledby="heading12" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Solo no realizas el pago por renovación de tu suscripción y tu tienda se desactiva. En caso decidas definitivamente anular tu tienda, envías un email simple a sac@tulivery.com; para confirmar tus datos y nosotros procedemos a desactivar tu tienda.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Elm 13 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading13">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading13" aria-expanded="true" aria-controls="collapseheading13">
+                        ¿Qué pasa si mi suscripción está vencida? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading13" class="collapse" aria-labelledby="heading13" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Las suscripciones se renuevan cada mes, y en caso no pagues dentro de los próximos 3 días, tu tienda deja de estar online. Si posterior a ello, realizas el pago tu tienda automáticamente vuelve a estar online.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Elm 14 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading14">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading14" aria-expanded="true" aria-controls="collapseheading14">
+                        ¿Puedo pagar por un período mayor a 1 mes? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading14" class="collapse" aria-labelledby="heading14" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Sí claro. En caso pagues por periodos mayores a 1 mes obtienes descuentos especiales.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Elm 15 -->
+                <div class="card faq">
+                  <div class="card-header" id="heading15">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapseheading15" aria-expanded="true" aria-controls="collapseheading15">
+                        Aún tengo algunas dudas que necesito aclarar <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                      
+                    </h5>
+                  </div>
+                  <div id="collapseheading15" class="collapse" aria-labelledby="heading15" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Comunícate con nosotros mediante el correo de atención al cliente: sac@tulivery.com. Por nuestras redes sociales en Facebook e Instagram nos encuentras como Tulivery. O llamando al teléfono +51 1 3138390. </p>
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+
+              <h4 class="mt-4">Para comprador</h4>
+              <div id="accordion">
+               
+                <!-- Elm 16 -->
+                <div class="card faq">
+                  <div class="card-header" id="comprador1">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapsecomprador1" aria-expanded="true" aria-controls="collapsecomprador1">
+                        ¿Para hacer un pedido en alguna tienda debo registrarme? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapsecomprador1" class="collapse " aria-labelledby="comprador1" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Si. Para completar un pedido es necesario que te registres como usuario porque necesitamos de tus datos de contacto para poder confirmarte y avisarte sobre tu pedido. Además de la dirección de entrega en caso hayas pedido delivery.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Elm 17 -->
+                <div class="card faq">
+                  <div class="card-header" id="comprador2">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapsecomprador2" aria-expanded="true" aria-controls="collapsecomprador2">
+                        ¿Cómo me registro para hacer mi pedido?<img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapsecomprador2" class="collapse " aria-labelledby="comprador2" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>¡Registrarte en <strong><a href="www.tulivery.com">Tulivery</a></strong> es muy fácil! Ingresa a  <img class="small" src="img/terms/avatar.png" alt=""> , e inicia sesión a través de estos tres canales:</p>
+                      <ul>
+                        <li>1.	Facebook: Inicia sesión con tu cuenta de Facebook.</li>
+                        <li>2.	Correo: Inicia sesión con tu cuenta personal. ¡No olvides verificar tu cuenta mediante un código de verificación que te enviaremos a tu correo!</li>
+                        <li>3.	Celular: Ingresa tu número de celular y escribe el código de verificación que te enviaremos por SMS. </li>
+                      </ul>
+                      <img class="medium" src="img/terms/login.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Elm 18 -->
+                <div class="card faq">
+                  <div class="card-header" id="comprador3">
+                    <h5 class="mb-0 d-flex">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapsecomprador3" aria-expanded="true" aria-controls="collapsecomprador3">
+                        ¿Cómo puedo saber si la tienda que quiero llega hasta mi ubicación? <img src="img/arrowOrangetHome.svg" alt="">
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapsecomprador3" class="collapse " aria-labelledby="comprador3" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Cuando ingresas tu dirección, se listarán solo las tiendas que llegan a tu dirección, si la tienda que quieres no aparece, lo más probable es que no tenga cobertura para tu dirección.  Ten en cuenta que cada tienda tiene una cobertura diferente. </p>
+                    </div>
+                  </div>
+                </div>
+
+
+                  <!-- Elm 19 -->
+                  <div class="card faq">
+                    <div class="card-header" id="comprador4">
+                      <h5 class="mb-0 d-flex">
+                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapsecomprador4" aria-expanded="true" aria-controls="collapsecomprador4">
+                          ¿Cómo saber si la tienda realiza delivery o recojo en tienda? <img src="img/arrowOrangetHome.svg" alt="">
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapsecomprador4" class="collapse " aria-labelledby="comprador4" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Cuando estas dentro del comercio verás un ícono de delivery y/o recojo,  <img class="medium2" src="img/terms/buttons.png" alt="">  si aparecen ambos significa que la tienda realiza ambas formas de entrega. Y cuando estás en la pantalla final de tu pedido puedes seleccionar una de las dos formas de entrega que prefieras.</p>
+                      </div>
+                    </div>
+                  </div>
+  
+
+                  
+                  <!-- Elm 20 -->
+                  <div class="card faq">
+                    <div class="card-header" id="comprador5">
+                      <h5 class="mb-0 d-flex">
+                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapsecomprador5" aria-expanded="true" aria-controls="collapsecomprador5">
+                          ¿Cómo hago un pedido? <img src="img/arrowOrangetHome.svg" alt="">
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapsecomprador5" class="collapse " aria-labelledby="comprador5" data-parent="#accordion">
+                      <div class="card-body">
+                        Ingresa al <strong> <a href="https://play.google.com/store/apps/details?id=tulivery.com.tuliveryappandroid">App Tulivery</a> </strong> o desde la Web (<a href="https://www.tulivery.com/">https://www.tulivery.com/</a>). Sigue estos sencillos pasos:
+                        <ul>
+                          <li>1.	Ingresa la dirección donde te ubicas.</li>
+                          <li>2.	Selecciona la tienda donde deseas hacer tu pedido. Puedes filtrar los comercios según la categoría de producto o servicio que buscas.</li>
+                          <li>3.	Una vez dentro del comercio, haz clic en el botón <strong>“Agregar” </strong> sobre el producto que deseas para añadir a tu carrito de compra.</li>
+                          <li>4.	Cuando hayas terminado de agregar tus productos a tu carrito de compra, confirma tu pedido haciendo clic en el botón <strong>“Confirmar pedido”</strong>.</li>
+                          <li>5.	Finalmente, en la pantalla final de revisión de tu pedido, elige la forma de entrega de tu pedido, y selecciona la forma de pago.</li>
+                          <li>6.	Los medios de pagos son particulares para cada comercio, los disponibles son:
+                              <ul>
+                                <li>Online:                Ingresa los datos de tu tarjeta</li>
+                                <li>Contra Entrega: Puedes pagar al repartidor con tarjeta o efectivo. Si es con efectivo indica si monto con el que pagarás de lo contrario indica exacto.</li>
+                                <li>QR a la billetera digital del comercio escoge esta opción si tienes la billetera digital que el comercio acepta.</li>
+                              </ul>
+                        
+                          </li>
+                          <li>7.	Por último, haz clic en el botón <strong>“Finalizar pedido”</strong> </li>
+                        </ul>
+                        <p><strong>¡Felicidades! Tu pedido ha sido registrado en el sistema exitosamente. En seguida tendrás tu pedido. </strong></p>
+
+                      </div>
+                    </div>
+                  </div>
+
+                   <!-- Elm 21 -->
+                   <div class="card faq">
+                    <div class="card-header" id="comprador6">
+                      <h5 class="mb-0 d-flex">
+                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapsecomprador6" aria-expanded="true" aria-controls="collapsecomprador6">
+                          ¿Qué formas de pago aceptan? <img src="img/arrowOrangetHome.svg" alt="">
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapsecomprador6" class="collapse " aria-labelledby="comprador6" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Tenemos una variedad de formas de pago <strong>Online</strong> <img class="small" src="img/terms/pagoOnline.png" alt=""> o <strong>Contra Entrega</strong>  <img class="small" src="img/terms/pagoEntrega.png" alt="">. Sin embargo, la tienda es quien decide con que formas de pago van a trabajar.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                   <!-- Elm 22 -->
+                   <div class="card faq">
+                    <div class="card-header" id="comprador7">
+                      <h5 class="mb-0 d-flex">
+                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapsecomprador7" aria-expanded="true" aria-controls="collapsecomprador7">
+                          ¿Quiero saber el estado de mi pedido? <img src="img/arrowOrangetHome.svg" alt="">
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapsecomprador7" class="collapse " aria-labelledby="comprador7" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Para saber dónde está mi pedido. Sigue estos pasos:
+                           <ul>
+                            <li>1.	Haz clic en tu perfil <img class="small" src="img/terms/avatar.png" alt=""> . A continuación, selecciona la opción <strong> “Mis pedidos”</strong> .</li>
+                            <li>2.	Selecciona el pedido al cual quieres hacer seguimiento y haz clic en <strong>“Ver más”</strong>.</li>
+                            <li>3.	Se mostrará un <strong>Historial de eventos</strong>, que te permitirá conocer el estado de tu pedido.</li>
+                           </ul>
+                           <img class="medium" src="img/terms/estep.png" alt="">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                   <!-- Elm 23 -->
+                   <div class="card faq">
+                    <div class="card-header" id="comprador8">
+                      <h5 class="mb-0 d-flex">
+                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapsecomprador8" aria-expanded="true" aria-controls="collapsecomprador8">
+                          ¿Cómo elimino un pedido? <img src="img/arrowOrangetHome.svg" alt="">
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapsecomprador8" class="collapse " aria-labelledby="comprador8" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Una vez enviado tu pedido, puedes contactarte con la tienda directamente para que eliminen tu pedido, cuánto más rápido sea mejor. ¡Recuerda que la tienda ya puedes estar preparando tu pedido!</p>
+                        <p>Puedes encontrar el contacto de la tienda en el ícono de teléfono dentro de la información de tu pedido.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Elm 24 -->
+                  <div class="card faq">
+                    <div class="card-header" id="comprador9">
+                      <h5 class="mb-0 d-flex">
+                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapsecomprador9" aria-expanded="true" aria-controls="collapsecomprador9">
+                          ¿Puedo calificar y comentar sobre un pedido? <img src="img/arrowOrangetHome.svg" alt="">
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapsecomprador9" class="collapse " aria-labelledby="comprador9" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Te recomendamos siempre comentar tus experiencias, de esa manera los futuros compradores tendrán más información al momento de hacer sus pedidos. Para calificar y comentar sigue los siguientes pasos:</p>
+                          <ul>
+                            <li>1.	Identifica a tu perfil  <img class="small" src="img/terms/avatar.png" alt="">  y luego ve a <strong>“Mis comentarios”</strong></li>
+                            <li>2.	Haces clic en <strong>“Comentar”</strong>, luego seleccionas tu pedido.</li>
+                            <li>3.	A continuación, se mostrará una pantalla para que califiques y comentes tu experiencia.</li>
+                            <li>4.	Haces clic en <strong>“Guardar”</strong> y listo.</li>
+                          </ul>
+                        <p><strong>¡Tu opinión es muy importante para nosotros!</strong></p>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Elm 25 -->
+                  <div class="card faq">
+                    <div class="card-header" id="comprador10">
+                      <h5 class="mb-0 d-flex">
+                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapsecomprador10" aria-expanded="true" aria-controls="collapsecomprador10">
+                          ¿Puedo pedir en un mismo pedido de tiendas distintas? <img src="img/arrowOrangetHome.svg" alt="">
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapsecomprador10" class="collapse " aria-labelledby="comprador10" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Debido que cada tienda puede manejar sus repartos, solo puedes hacer un pedido por tienda. Si deseas hacer pedido de dos o más tiendas, te recomendamos hacer un pedido para cada tienda de tu interés.  </p>
+                      </div>
+                    </div>
+                  </div>
+
+                    <!-- Elm 26 -->
+                    <div class="card faq">
+                      <div class="card-header" id="comprador11">
+                        <h5 class="mb-0 d-flex">
+                          <a class="btn btn-link" data-toggle="collapse" data-target="#collapsecomprador11" aria-expanded="true" aria-controls="collapsecomprador11">
+                            ¿Cuánto tiempo tardará mi pedido? <img src="img/arrowOrangetHome.svg" alt="">
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapsecomprador11" class="collapse " aria-labelledby="comprador11" data-parent="#accordion">
+                        <div class="card-body">
+                          <p>Depende de la capacidad de respuesta de la tienda que has seleccionado.  </p>
+                        </div>
+                      </div>
+                    </div>
+  
+                    
+                    <!-- Elm 27 -->
+                    <div class="card faq">
+                      <div class="card-header" id="comprador12">
+                        <h5 class="mb-0 d-flex">
+                          <a class="btn btn-link" data-toggle="collapse" data-target="#collapsecomprador12" aria-expanded="true" aria-controls="collapsecomprador12">
+                            ¿Cómo hacer un reclamo a la tienda? <img src="img/arrowOrangetHome.svg" alt="">
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapsecomprador12" class="collapse " aria-labelledby="comprador12" data-parent="#accordion">
+                        <div class="card-body">
+                          <p>Puedes contactarte directamente con la tienda, cuyo teléfono se muestran dentro del pedido que realizaste en la respectiva tienda. Si la tienda no te da atención, puedes comunicarte con nuestro soporte de atención al cliente, vía email: sac@tulivery.com o al teléfono +51 1 3138390. Nosotros vamos a intermediar para ayudar a resolver el problema. </p>
+                        </div>
+                      </div>
+                    </div>
+
+              </div>
+            </div>
+         
+          </div>
+        </div>
         </div>
         <footer class="bg-sodark">
           <div class="containerv2 ">
