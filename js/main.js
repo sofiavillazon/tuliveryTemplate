@@ -157,6 +157,8 @@ $('.dirDetalle').on('click', function(){
     $(this).toggleClass('active').siblings().removeClass('active');
 });
 
+$('.sidebar-toggle').collapse();
+
 jQuery(document).ready(function(){
     $('#spinner button').on('click', function(){
         let input = $(this).closest('#spinner').find('input[name=qty]');
