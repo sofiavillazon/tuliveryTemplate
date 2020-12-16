@@ -156,7 +156,9 @@ $('input:radio').on('click', function(){
 $('.dirDetalle').on('click', function(){
     $(this).toggleClass('active').siblings().removeClass('active');
 });
-
+$('#toggleTulivery').on('click', function(){
+    $('.navbar-collapse').toggleClass("open");
+});
 $('.sidebar-toggle').collapse();
 
 jQuery(document).ready(function(){

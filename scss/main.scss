@@ -609,6 +609,7 @@ body {
 
 
 @media (max-width: 991.98px) {
+  
   .sepCarro {
     border-top: 1px solid #eaeaea; }
   
@@ -654,15 +655,20 @@ body {
     border-right: 0px solid #fff; }
   .navLogo .tittle {
     display: none; }
+  #toggleTulivery{
+    z-index: 2001!important;
+  }
+
   .offcanvas-collapse {
-    position: fixed;
-    top: 66px;
-    /* Height of navbar */
+    position: absolute!important;
+    z-index: 2000!important;
+    top:0px!important;
     bottom: 0;
     left: 100%;
     width: 100%;
     padding-right: 1rem;
     padding-left: 1rem;
+    height: 100vh;
     overflow-y: auto;
     visibility: hidden;
     background-color: #343a40;
@@ -1586,6 +1592,11 @@ input[type=radio]:not(old):checked + label > span > span {
     -webkit-text-stroke-width: 1.50px; } }
 
 @media (max-width: 991px) {
+  .avatarMenu{
+   position: absolute;
+   top: 15px;
+   right: 80px
+  }
   .sliderBanner h5 {
     font-size: 32px!important;
     line-height: 35px!important;
@@ -1596,11 +1607,18 @@ input[type=radio]:not(old):checked + label > span > span {
     display: none; }
   .imgresp .imgResponsive2 {
     height: auto !important; }
+    
   .floatMenu li {
     list-style: none; }
+  .navbar-nav  {
+    margin-top: 80px !important;
+  }
+  .floatMenu{
+    border-top: 1px solid #1e222554;
+  }
   .navbar-nav .nav-item {
-    margin-top: 4px !important;
-    padding-top: 4px !important; }
+    margin-top: 0px !important;
+    padding-top: 0px !important; }
   .floatMenu a {
     color: #ffffff;
     text-decoration: none;
@@ -3466,7 +3484,7 @@ button.smallBtn img {
   .sliderHome h5 {
     width: 70%;
     height: 50px;
-    z-index: 1031;
+    z-index: 800;
     left: calc(9vw + 10px);
     top: calc(36vh - 50px);
     position: absolute;
@@ -3477,7 +3495,7 @@ button.smallBtn img {
   .searchHome {
     width: 90%;
     height: 50px;
-    z-index: 1031;
+    z-index: 800;
     left: calc(2vw + 10px);
     top: calc(60vh - 50px);
     position: absolute; }
@@ -4051,7 +4069,7 @@ span.detail {
 .animateBg img {
   width: 100%;
   height: 100%;
-}
+  object-fit: fill !important; }
 
 .gg {
   transition: all 0.4s ease-in-out; }
@@ -4340,3 +4358,4 @@ span.detail {
   cursor: pointer;
   
 }
+
