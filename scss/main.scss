@@ -609,10 +609,6 @@ body {
 
 
 @media (max-width: 991.98px) {
-  
-  .sepCarro {
-    border-top: 1px solid #eaeaea; }
-  
   .closebtn {
     position: initial; 
     .bgLogin2 {
@@ -673,11 +669,44 @@ body {
     visibility: hidden;
     background-color: #343a40;
     transition-timing-function: ease-in-out;
-    transition-duration: .3s;
+    transition-duration: 0s;
     transition-property: left, visibility; }
     .offcanvas-collapse.open {
       left: 0;
-      visibility: visible; }
+      visibility: visible;  
+      .toggleTuliv{
+        display: block;
+        transition-delay: .2s;
+      }
+      .floatMenuOption{
+        display: none;
+      }
+      
+      .cart2{
+        display: none;
+      }
+      .navbar-nav {
+        margin-top: 60px !important;
+      }
+    }
+    .offcanvas-collapse.openProfile {
+        left: 0;
+        visibility: visible;
+        .toggleTuliv{
+          display: none;
+          transition-delay: .2s;
+        }
+        .userInfo{
+          font-size: 25px!important;
+        
+          border-bottom: 1px solid rgba(95, 95, 95, 0.09);
+          padding: 20px 0px;
+        } 
+        .cart2{
+          display: none;
+        }
+      }
+      
   .profile ul {
     text-align: center; } }
 
@@ -1590,12 +1619,32 @@ input[type=radio]:not(old):checked + label > span > span {
     -webkit-text-fill-color: #41454b;
     -webkit-text-stroke-color: #EF4E35;
     -webkit-text-stroke-width: 1.50px; } }
-
+    .linkMenu{
+      display: none;
+    }
 @media (max-width: 991px) {
   .avatarMenu{
-   position: absolute;
-   top: 15px;
-   right: 80px
+    display: none!important;
+  }
+  .insideElm{
+    display: none!important;
+  }
+  .linkMenu{
+    position: fixed!important;
+    z-index: 3000;
+    top: 4px;
+    right: 80px;
+    cursor: pointer;
+    display: block;
+    span {
+      -webkit-text-fill-color: #ffffff17;
+      -webkit-text-stroke-color: #fff;
+      -webkit-text-stroke-width: 1.50px;
+      i {
+        font-size: 37px;
+        padding-top: 0px;
+    }
+    }
   }
   .sliderBanner h5 {
     font-size: 32px!important;
@@ -1610,14 +1659,9 @@ input[type=radio]:not(old):checked + label > span > span {
     
   .floatMenu li {
     list-style: none; }
-  .navbar-nav  {
-    margin-top: 80px !important;
-  }
-  .floatMenu{
-    border-top: 1px solid #1e222554;
-  }
+
   .navbar-nav .nav-item {
-    margin-top: 0px !important;
+    margin-top: 10px !important;
     padding-top: 0px !important; }
   .floatMenu a {
     color: #ffffff;
@@ -1626,8 +1670,8 @@ input[type=radio]:not(old):checked + label > span > span {
     display: block; }
   .floatMenu a:hover {
     color: #ea4335; }
-  .floatMenuOption .nav-link {
-    display: none; } }
+  .linkMenu {
+    display: block; } }
 
 .display-inline {
   padding: 0px !important;
@@ -4359,3 +4403,9 @@ span.detail {
   
 }
 
+.noshow{
+  display: none;
+}
+.rightPosition{
+  right: 20px;
+}

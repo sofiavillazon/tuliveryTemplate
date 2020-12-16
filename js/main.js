@@ -156,9 +156,18 @@ $('input:radio').on('click', function(){
 $('.dirDetalle').on('click', function(){
     $(this).toggleClass('active').siblings().removeClass('active');
 });
+
 $('#toggleTulivery').on('click', function(){
     $('.navbar-collapse').toggleClass("open");
+    $('.linkMenu').toggleClass("noshow");
 });
+
+$('.linkMenu').on('click', function(){
+    $('.navbar-collapse').toggleClass("openProfile");
+    $('.navbar-toggler').toggleClass("noshow");
+    $('.linkMenu').toggleClass("rightPosition");
+});
+
 $('.sidebar-toggle').collapse();
 
 jQuery(document).ready(function(){
