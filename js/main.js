@@ -171,6 +171,19 @@ $('.dirDetalle').on('click', function(){
     $(this).toggleClass('active').siblings().removeClass('active');
 });
 
+$('#toggleTulivery').on('click', function(){
+    $('.navbar-collapse').toggleClass("open");
+    $('.linkMenu').toggleClass("noshow");
+});
+
+$('.linkMenu').on('click', function(){
+    $('.navbar-collapse').toggleClass("openProfile");
+    $('.navbar-toggler').toggleClass("noshow");
+    $('.linkMenu').toggleClass("rightPosition");
+});
+
+$('.sidebar-toggle').collapse();
+
 jQuery(document).ready(function(){
     $('#spinner button').on('click', function(){
         let input = $(this).closest('#spinner').find('input[name=qty]');
@@ -337,6 +350,7 @@ function myFunction() {
             $("#scrollerSection").css("max-height","215px");
         }
     }
+
 }
 
 // 
