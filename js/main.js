@@ -31,7 +31,21 @@ function fadeNext() {
         currentSlide.delay().addClass('active').fadeIn();
     }
 }
- 
+
+function showpassword2() {
+    $("#modalContratar").removeClass("fade").modal("hide");
+    $("#modalCaptcha").modal("show").addClass("fade");
+}
+$("#paso2").on("click", function() {
+    showpassword2();
+});
+function showpassword3() {
+    $("#modalCaptcha").removeClass("fade").modal("hide");
+    $("#modalMensaje").modal("show").addClass("fade");
+}
+$("#paso3").on("click", function() {
+    showpassword3();
+});
 // Function responsible for fading to previous slide
 function fadePrev() {
     currentSlide.removeClass('active').fadeOut();
@@ -342,3 +356,9 @@ $('.hero-area').slick({
     prevArrow: '<span class="slider-navigation slider-navigation-prev"><i class="icon-arrow-left"></i></span>',
     nextArrow: '<span class="slider-navigation slider-navigation-next"><i class="icon-arrow-right"></i></span>',
   });
+
+
+//   SLider
+
+
+
