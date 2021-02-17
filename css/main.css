@@ -3204,7 +3204,7 @@ em.text-success {
   border-color: #3D3D3D; }
 
 .middleText {
-  margin-top: calc(50vh - 200px); }
+  margin-top: calc(50vh - 170px); }
 
 .btn-white-home {
   font-size: 15px;
@@ -4234,11 +4234,10 @@ span.detail {
   padding-bottom: 0px; }
 
 .card.cardPro {
-  border: 1px solid #F5F9FC !important;
-  transition: all .1s ease-in-out; }
+  border: 1px solid #d9dddf; }
 
 .card.cardPro:hover {
-  border: 1px solid #EF4E35 !important; }
+  border: 1px solid #E23B3B; }
 
 .card.cardPro:hover .btn-suscribe {
   color: #fff;
@@ -4269,14 +4268,16 @@ span.detail {
 
 .headerSuscribe {
   text-align: center;
-  padding: 10px; }
+  padding: 0 0 15px 0; }
   .headerSuscribe p {
     color: #fff;
-    margin-bottom: 0px;
-    font-size: 18px; }
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 33px; }
   .headerSuscribe .logoline {
-    height: 30px;
-    padding-right: 10px;
+    height: 40px;
+    padding-right: 20px;
     margin-right: 10px; }
 
 .suscribeSeccion {
@@ -4288,7 +4289,7 @@ span.detail {
   width: 75%; }
 
 .textSuscribe h2 {
-  font-size: 38px !important;
+  font-size: 28px !important;
   text-align: center;
   width: 100%; }
 
@@ -4310,6 +4311,7 @@ span.detail {
     margin-bottom: -8px; }
 
 .pill-danger {
+  text-decoration: none !important;
   color: #fff;
   background-color: #EF4E35;
   border-color: #EF4E35; }
