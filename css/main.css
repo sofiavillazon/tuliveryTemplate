@@ -3006,7 +3006,6 @@ em.text-success {
   border-radius: 0;
   display: block;
   font-size: 1em;
-  /* margin: 10px 0px; */
   outline: 0;
   padding: 25px 20px;
   border-radius: 8px;
@@ -3332,6 +3331,8 @@ ul {
   margin-left: 15px !important; }
 
 .cardInfoHome {
+  margin-right: 30px !important;
+  margin-left: 30px !important;
   padding: 5px 0px;
   background-color: #fff;
   text-align: center;
@@ -3479,6 +3480,7 @@ button.circleButton img {
     font-size: 15px !important; }
 
 .moreinfo {
+  margin-bottom: 20px;
   float: right;
   font-size: 12px !important;
   text-transform: uppercase;
@@ -3552,6 +3554,10 @@ button.smallBtn img {
   min-height: 1px;
   padding: 13px 16px; }
 
+.sliderBanner .card.shadow-sm {
+  margin-left: 10px !important;
+  margin-right: 10px !important; }
+
 .driverinHouse .card.shadow-sm {
   margin-right: 10px !important;
   margin-left: 10px !important; }
@@ -3581,38 +3587,14 @@ button.smallBtn img {
   width: 100%;
   margin-top: -50px; }
 
-.sliderBanner .card.shadow-sm {
+.suscribePanel .card.shadow-sm {
   margin-left: 10px !important;
   margin-right: 10px !important; }
 
-.sliderBanner .cardInfoBanner {
+.suscribePanel .cardInfoBanner {
   font-family: "Source Sans Pro";
   padding-top: 0px;
   margin-top: 0px; }
-<<<<<<< HEAD
-  .sliderBanner .cardInfoBanner h4 {
-    font-size: 28px;
-    color: #EF4E35 !important;
-    font-weight: 600;
-    margin-bottom: -8px; }
-  .sliderBanner .cardInfoBanner p {
-    font-size: 16px;
-    margin-bottom: 0px !important;
-    padding-bottom: 0px !important; }
-  .sliderBanner .cardInfoBanner h1 {
-    font-family: "Source Sans Pro";
-    font-size: 40px;
-    letter-spacing: -1px; }
-    .sliderBanner .cardInfoBanner h1 span {
-      font-size: 23px;
-      font-weight: 400; }
-  .sliderBanner .cardInfoBanner .separador {
-    width: 100%;
-    border-bottom: 1px solid #BCBBBB;
-    height: 2px;
-    margin-top: 15px;
-    margin-bottom: 20px; }
-=======
 
 .suscribePanel .cardInfoBanner h4 {
   font-size: 28px;
@@ -3640,7 +3622,6 @@ button.smallBtn img {
   height: 2px;
   margin-top: 15px;
   margin-bottom: 20px; }
->>>>>>> bbc141e8cc3324d512f3002a1ff44e4261230372
 
 .separadorw-10 {
   width: 100%;
@@ -3652,6 +3633,11 @@ button.smallBtn img {
 .mobile-det {
   margin-left: 40px !important;
   list-style: none; }
+
+.listSuscribe {
+  margin-left: 40px !important;
+  list-style: none;
+  margin-bottom: 20px; }
 
 .listSuscribe {
   margin-left: 40px !important;
@@ -3696,6 +3682,17 @@ button.smallBtn img {
   line-height: 38px;
   font-weight: 400 !important; }
 
+.textDrive span {
+  color: #EF4E35;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 2px; }
+
+.textDrive h1 {
+  font-size: 43px;
+  line-height: 38px;
+  font-weight: 400 !important; }
+
 .textDrive p {
   font-size: #3D3D3D;
   margin-bottom: 0px; }
@@ -3704,6 +3701,10 @@ button.smallBtn img {
   min-width: 960px !important;
   max-width: 1140px !important;
   margin-top: 10px; }
+
+.textDrive p {
+  font-size: #3D3D3D;
+  margin-bottom: 0px; }
 
 .detailInfo {
   color: #ef4e35 !important;
@@ -4267,13 +4268,16 @@ span.detail {
   padding-top: 0px !important; }
 
 .headerSuscribe {
-  background-color: #3D3D3D;
   text-align: center;
   padding: 10px; }
   .headerSuscribe p {
     color: #fff;
     margin-bottom: 0px;
     font-size: 18px; }
+  .headerSuscribe .logoline {
+    height: 30px;
+    padding-right: 10px;
+    margin-right: 10px; }
 
 .suscribeSeccion {
   background-color: #f5f9fc !important;
@@ -4295,12 +4299,24 @@ span.detail {
     .cardSuscribe .listSuscribe li {
       font-size: 15px !important; }
   .cardSuscribe h1 {
-    font-size: 30px !important; }
+    font-size: 32px !important;
+    margin-top: -5px; }
+  .cardSuscribe p {
+    margin-bottom: 0px; }
   .cardSuscribe h4 {
     font-size: 28px;
     color: #EF4E35 !important;
     font-weight: 600;
     margin-bottom: -8px; }
+
+.pill-danger {
+  color: #fff;
+  background-color: #EF4E35;
+  border-color: #EF4E35; }
+
+.textSuscribe h1 {
+  font-size: 38px !important;
+  width: 75%; }
 
 .pill-danger {
   border-radius: 12px;
@@ -4310,14 +4326,10 @@ span.detail {
   display: inline-block;
   font-size: 14px !important; }
 
-.formDriver .card .card-body {
-  width: 100% !important; }
-
 .formDriver h1 {
   width: 100% !important; }
-
-.formDriver h1 img {
-  width: 20px; }
+  .formDriver h1 img {
+    width: 20px; }
 
 .formDriver .card.active {
   border: 1px solid #EF4E35 !important; }
@@ -4325,17 +4337,17 @@ span.detail {
 .formDriver .card {
   padding: 18px 10px 10px 10px !important;
   width: 33vw !important; }
+  .formDriver .card .card-body {
+    padding-bottom: 0px; }
+  .formDriver .card P {
+    line-height: 13px;
+    margin-top: 8px;
+    font-size: 11px; }
+  .formDriver .card h4 {
+    font-size: 18px; }
 
 .formDriver .card .card-body {
-  padding-bottom: 0px; }
-
-.formDriver .card P {
-  line-height: 13px;
-  margin-top: 8px;
-  font-size: 11px; }
-
-.formDriver .card h4 {
-  font-size: 18px; }
+  width: 100% !important; }
 
 .btn-default {
   background-color: #999999;
@@ -4369,16 +4381,15 @@ span.detail {
   .textSuscribe h1 {
     font-size: 29px !important;
     width: 75%; }
-<<<<<<< HEAD
   .sm-margin-suscribe {
     padding-right: 0px !important;
     padding-left: 0px !important; } }
-=======
-  .menuDriver li {
-    width: 28%; }
-  .menuDriver li:nth-child(1) img, .menuDriver li:nth-child(2) img {
-    padding-top: 15px !important; } }
->>>>>>> bbc141e8cc3324d512f3002a1ff44e4261230372
+
+.menuDriver li {
+  width: 28%; }
+
+.menuDriver li:nth-child(1) img, .menuDriver li:nth-child(2) img {
+  padding-top: 15px !important; }
 
 @keyframes float {
   0% {
@@ -4412,7 +4423,6 @@ span.detail {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
 
-<<<<<<< HEAD
 .modalFull.black {
   background-color: #E23B3B !important; }
   .modalFull.black .modal-content {
@@ -4505,13 +4515,13 @@ span.detail {
     display: none !important; }
   .modalFull .modalImg2 img {
     position: absolute;
-    top: -420px;
-    left: -20%;
-    width: calc(140vw - 20px);
+    top: -240px;
+    left: -7%;
+    width: calc(130vw - 40px);
     z-index: 0; }
   .modalFull .formDriver {
     margin-right: 0px; } }
-=======
+
 .navLogo.bg-dark {
   background-color: transparent !important;
   min-height: 70px !important;
@@ -4519,6 +4529,18 @@ span.detail {
   padding-top: 0px !important;
   color: #fff;
   font-size: 16px;
+  background: rgba(0, 0, 0, 0.55);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.55)), color-stop(0%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 ); }
+
+.bg-degrade {
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: rgba(0, 0, 0, 0.55);
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.55)), color-stop(0%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0)));
@@ -4740,4 +4762,6 @@ span.detail {
 
 .rightPosition {
   right: 20px; }
->>>>>>> bbc141e8cc3324d512f3002a1ff44e4261230372
+
+.pillInfo.green a {
+  background-color: #45b749; }

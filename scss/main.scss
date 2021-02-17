@@ -8,12 +8,19 @@
 /*1.-FUENTES...........*/
 /*==============================================================*/
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i");
+
 /*2.-GENERAL...........*/
+$red: #EF4E35;
+$reddark: #E23B3B;
+$dark: #3D3D3D;
+$white: #fff;
+
 /*==============================================================*/
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
-  background-color: #fff; }
+  background-color: #fff; 
+}
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
@@ -2890,7 +2897,6 @@ em.text-success {
   border-radius: 0;
   display: block;
   font-size: 1em;
-  /* margin: 10px 0px; */
   outline: 0;
   padding: 25px 20px;
   border-radius: 8px;
@@ -3072,16 +3078,12 @@ em.text-success {
 .btn-danger-home:hover {
   color: #fff;
   background-color: #3D3D3D;
-<<<<<<< HEAD
   border-color: #3D3D3D;
 }
 .middleText{
   margin-top: calc(50vh - 200px);
 }
-=======
-  border-color: #3D3D3D; }
 
->>>>>>> bbc141e8cc3324d512f3002a1ff44e4261230372
 .btn-white-home {
   font-size: 15px;
   text-transform: uppercase;
@@ -3100,21 +3102,22 @@ em.text-success {
   border-color: #3D3D3D; }
 
 .sliderHome {
-  background-color: #F5F9FC !important; }
-  .sliderHome h5 {
-    width: 60%;
-    height: 50px;
-    z-index: 1031;
-    left: calc(20vw + 10px);
-    top: calc(36vh - 50px);
-    position: absolute;
-    font-size: 55px;
-    text-align: center;
-    line-height: 51px;
-    color: #fff !important;
-    font-weight: 700; }
-  .sliderHome h5.dark {
-    color: #3D3D3D !important; }
+  background-color: #F5F9FC !important; 
+}
+.sliderHome h5 {
+  width: 60%;
+  height: 50px;
+  z-index: 1031;
+  left: calc(20vw + 10px);
+  top: calc(36vh - 50px);
+  position: absolute;
+  font-size: 55px;
+  text-align: center;
+  line-height: 51px;
+  color: #fff !important;
+  font-weight: 700; }
+.sliderHome h5.dark {
+  color: #3D3D3D !important; }
 
 .bgBanner {
   height: 260px; 
@@ -3194,17 +3197,12 @@ em.text-success {
   border-radius: 12px; }
 
 .card.shadow-sm {
-<<<<<<< HEAD
   margin-right: 15px!important;
   margin-left: 15px!important;
 }
 .cardInfoHome{
-=======
   margin-right: 30px !important;
-  margin-left: 30px !important; }
-
-.cardInfoHome {
->>>>>>> bbc141e8cc3324d512f3002a1ff44e4261230372
+  margin-left: 30px !important;
   padding: 5px 0px;
   background-color: #fff;
   text-align: center;
@@ -3331,10 +3329,9 @@ button.circleButton {
     text-align: center;
     width: 80%;
     display: block;
-<<<<<<< HEAD
     margin-bottom: 20px;
   }
-}
+
 .pillInfo{
   color: $red;
   font-weight: 500;
@@ -3343,12 +3340,9 @@ button.circleButton {
     font-size: 15px !important;
   }
 }
-.moreinfo{
-=======
-    margin-bottom: 20px; }
 
-.moreinfo {
->>>>>>> bbc141e8cc3324d512f3002a1ff44e4261230372
+.moreinfo{
+  margin-bottom: 20px; 
   float: right;
   font-size: 12px !important;
   text-transform: uppercase;
@@ -3415,93 +3409,89 @@ button.smallBtn img {
   min-height: 1px;
   padding: 13px 16px; }
 
-<<<<<<< HEAD
+
 .sliderBanner{
   .card.shadow-sm{
     margin-left: 10px!important;
     margin-right: 10px!important;
   }
-  .cardInfoBanner{
-=======
-.driverinHouse .card.shadow-sm {
-  margin-right: 10px !important;
-  margin-left: 10px !important; }
+}
+  .cardInfoBanner{}
+    .driverinHouse .card.shadow-sm {
+      margin-right: 10px !important;
+      margin-left: 10px !important; }
 
-.driverinHouse span {
-  color: #EF4E35;
-  font-size: 18px;
-  font-weight: 500;
-  padding-left: 2px; }
+    .driverinHouse span {
+      color: #EF4E35;
+      font-size: 18px;
+      font-weight: 500;
+      padding-left: 2px; }
 
-.driverinHouse h1 {
-  font-size: 43px;
-  line-height: 38px;
-  font-weight: 400 !important; }
+    .driverinHouse h1 {
+      font-size: 43px;
+      line-height: 38px;
+      font-weight: 400 !important; }
 
-.driverinHouse p {
-  font-size: #3D3D3D;
-  margin-bottom: 0px; }
+    .driverinHouse p {
+      font-size: #3D3D3D;
+      margin-bottom: 0px; }
 
-.driverinHouse button {
-  margin-top: 0px; }
-  .driverinHouse button img {
-    width: 50px; }
+    .driverinHouse button {
+      margin-top: 0px; }
+      .driverinHouse button img {
+        width: 50px; }
 
-.driverinHouse .imageDrive img {
-  width: 100%;
-  margin-top: -50px; }
+    .driverinHouse .imageDrive img {
+      width: 100%;
+      margin-top: -50px; }
 
-.suscribePanel .card.shadow-sm {
-  margin-left: 10px !important;
-  margin-right: 10px !important; }
+    .suscribePanel .card.shadow-sm {
+      margin-left: 10px !important;
+      margin-right: 10px !important; }
 
-.suscribePanel .cardInfoBanner {
-  font-family: "Source Sans Pro";
-  padding-top: 0px;
-  margin-top: 0px; }
-  .suscribePanel .cardInfoBanner h4 {
-    font-size: 28px;
-    color: #EF4E35 !important;
-    font-weight: 600;
-    margin-bottom: -8px; }
-  .suscribePanel .cardInfoBanner p {
-    font-size: 16px;
-    margin-bottom: 0px !important;
-    padding-bottom: 0px !important; }
-  .suscribePanel .cardInfoBanner h1 {
->>>>>>> bbc141e8cc3324d512f3002a1ff44e4261230372
-    font-family: "Source Sans Pro";
-    font-size: 40px;
-    letter-spacing: -1px; }
-    .suscribePanel .cardInfoBanner h1 span {
-      font-size: 23px;
-      font-weight: 400; }
-  .suscribePanel .cardInfoBanner .separador {
-    width: 100%;
-    border-bottom: 1px solid #BCBBBB;
-    height: 2px;
-    margin-top: 15px;
-    margin-bottom: 20px; }
+    .suscribePanel .cardInfoBanner {
+      font-family: "Source Sans Pro";
+      padding-top: 0px;
+      margin-top: 0px; }
+      .suscribePanel .cardInfoBanner h4 {
+        font-size: 28px;
+        color: #EF4E35 !important;
+        font-weight: 600;
+        margin-bottom: -8px; }
+      .suscribePanel .cardInfoBanner p {
+        font-size: 16px;
+        margin-bottom: 0px !important;
+        padding-bottom: 0px !important; }
+      .suscribePanel .cardInfoBanner h1 {
+        font-family: "Source Sans Pro";
+        font-size: 40px;
+        letter-spacing: -1px; }
+        .suscribePanel .cardInfoBanner h1 span {
+          font-size: 23px;
+          font-weight: 400; }
+      .suscribePanel .cardInfoBanner .separador {
+        width: 100%;
+        border-bottom: 1px solid #BCBBBB;
+        height: 2px;
+        margin-top: 15px;
+        margin-bottom: 20px; }
+
 
 .separadorw-10 {
   width: 100%;
   border-bottom: 2px solid #BCBBBB;
   height: 2px;
   margin-top: 15px;
-<<<<<<< HEAD
   margin-bottom: 20px;
 }
 .mobile-det{
   margin-left: 40px!important;
   list-style: none;
 }
-
 .listSuscribe{
   margin-left: 40px!important;
   list-style: none;
-=======
   margin-bottom: 20px; }
->>>>>>> bbc141e8cc3324d512f3002a1ff44e4261230372
 
 .listSuscribe {
   margin-left: 40px !important;
@@ -3541,7 +3531,7 @@ button.smallBtn img {
   line-height: 38px;
   font-weight: 400 !important; }
 
-<<<<<<< HEAD
+
 .textDrive{
   span{
     color: $red;
@@ -3564,12 +3554,11 @@ button.smallBtn img {
   max-width: 1140px!important;
   margin-top: 10px;
 }
-=======
+
 .textDrive p {
   font-size: #3D3D3D;
   margin-bottom: 0px; }
 
->>>>>>> bbc141e8cc3324d512f3002a1ff44e4261230372
 .detailInfo {
   color: #ef4e35 !important;
   padding-bottom: 0px;
@@ -3582,12 +3571,12 @@ button.smallBtn img {
     margin-top: 60px;
     margin-bottom: 80px; } }
 
-  @media (min-width: 575px) and (max-width: 1200px){
-    .containerAlign {
-        margin-top: 60px;
-        margin-bottom: 80px;
-    }
+@media (min-width: 575px) and (max-width: 1200px){
+  .containerAlign {
+      margin-top: 60px;
+      margin-bottom: 80px;
   }
+}
 
 @media (max-width: 800px) {
   .beforeMobile:before {
@@ -3640,7 +3629,8 @@ button.smallBtn img {
   .mobileSection .contentMobile h1 {
     color: #fff; }
   .mobileSection .contentMobile p {
-    color: #fff; } }
+    color: #fff; } 
+}
 
 .floatExpress:hover {
   background-color: #212129; }
@@ -3776,6 +3766,7 @@ button.smallBtn img {
   width: 35%;
   height: 50px;
   position: relative; }
+
   .searchHomeFix .from-search .btn-search {
     font-size: 28px !important;
     background-color: #EF4E35;
@@ -3794,12 +3785,12 @@ button.smallBtn img {
     transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out; }
     .searchHomeFix .from-search .btn-search img {
       width: 25px; }
-  .searchHomeFix .from-search .btn-search:hover {
+    .searchHomeFix .from-search .btn-search:hover {
     font-size: 28px !important;
     background-color: #E23B3B;
     border: 1px solid #E23B3B;
     box-shadow: 0px 0px 8px #EF4E35; }
-  .searchHomeFix .from-search .gradientSearch {
+    .searchHomeFix .from-search .gradientSearch {
     transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
     border: 2px solid #fff;
     color: #999999 !important;
@@ -3811,40 +3802,40 @@ button.smallBtn img {
     border-radius: 40px;
     box-shadow: 0px 0px 8px #d6d6d6;
     color: #EF4E35; }
-  .searchHomeFix .from-search .gradientSearch:hover {
+    .searchHomeFix .from-search .gradientSearch:hover {
     transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
     border: 2px solid #EF4E35;
     box-shadow: 0px 0px 8px #EF4E35; }
 
-.menuDriver {
-  list-style: none;
-  margin-top: 20px;
-  padding-left: 0px; }
-  .menuDriver li.active {
-    opacity: 1; }
-  .menuDriver li:hover {
-    opacity: 1; }
-  .menuDriver li {
-    cursor: pointer;
-    opacity: 0.6;
-    background-color: #fff !important;
-    padding-right: 10px;
-    display: inline-block;
-    width: 31%;
-    margin-right: 6px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 8px #d6d6d6; }
-    .menuDriver li span {
-      color: #3D3D3D;
-      font-size: 10px;
-      font-weight: 800;
-      letter-spacing: 0px;
-      display: block; }
-    .menuDriver li img {
-      display: block;
-      height: auto; }
+  .menuDriver {
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 0px; }
+    .menuDriver li.active {
+      opacity: 1; }
+    .menuDriver li:hover {
+      opacity: 1; }
+    .menuDriver li {
+      cursor: pointer;
+      opacity: 0.6;
+      background-color: #fff !important;
+      padding-right: 10px;
+      display: inline-block;
+      width: 31%;
+      margin-right: 6px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 15px;
+      box-shadow: 0px 0px 8px #d6d6d6; }
+      .menuDriver li span {
+        color: #3D3D3D;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0px;
+        display: block; }
+      .menuDriver li img {
+        display: block;
+        height: auto; }
 
 .bghome {
   background-color: #F5F9FC; }
@@ -4094,7 +4085,6 @@ span.detail {
   border-radius: 0px 0px 12px 12px !important; }
 
 .btn-suscribe:hover {
-<<<<<<< HEAD
     color: #fff;
     background-color: $red;
     border-color: $red;
@@ -4104,13 +4094,17 @@ span.detail {
   padding-top: 0px!important;
 }
 .headerSuscribe{
-  background-color: $dark;
   text-align: center;
   padding: 10px;
   p{
     color: $white;
     margin-bottom: 0px;
     font-size: 18px;
+  }
+  .logoline {
+    height: 30px;
+    padding-right: 10px;
+    margin-right: 10px; 
   }
 }
 .suscribeSeccion {
@@ -4137,7 +4131,11 @@ span.detail {
     }
   }
   h1{
-    font-size: 30px!important;
+    font-size: 32px!important;
+    margin-top: -5px;
+  }
+  p{
+    margin-bottom: 0px;
   }
   h4 {
     font-size: 28px;
@@ -4147,7 +4145,7 @@ span.detail {
   }
 }
 .pill-danger{
-=======
+
   color: #fff;
   background-color: #EF4E35;
   border-color: #EF4E35; }
@@ -4157,18 +4155,14 @@ span.detail {
   width: 75%; }
 
 .pill-danger {
->>>>>>> bbc141e8cc3324d512f3002a1ff44e4261230372
   border-radius: 12px;
   background-color: #EF4E35;
   color: #fff !important;
   padding: 1px 15px;
-<<<<<<< HEAD
   display: inline-block;
   font-size: 14px!important;
 }
-.formDriver .card .card-body {
-  width: 100%!important;
-}
+
 .formDriver{
   h1{
     width: 100%!important;
@@ -4196,32 +4190,8 @@ span.detail {
   }
    
 }
-=======
-  font-size: 14px !important; }
-
 .formDriver .card .card-body {
   width: 100% !important; }
-
-.formDriver h1 {
-  width: 100% !important; }
-  .formDriver h1 img {
-    width: 20px; }
-
-.formDriver .card.active {
-  border: 1px solid #EF4E35 !important; }
-
-.formDriver .card {
-  padding: 18px 10px 10px 10px !important;
-  width: 33vw !important; }
-  .formDriver .card .card-body {
-    padding-bottom: 0px; }
-  .formDriver .card P {
-    line-height: 13px;
-    margin-top: 8px;
-    font-size: 11px; }
-  .formDriver .card h4 {
-    font-size: 18px; }
->>>>>>> bbc141e8cc3324d512f3002a1ff44e4261230372
 
 .btn-default {
   background-color: #999999;
@@ -4252,7 +4222,6 @@ span.detail {
     width: 88vw !important; }
   .textSuscribe h1 {
     font-size: 29px !important;
-<<<<<<< HEAD
     width: 75%;
   } 
   .sm-margin-suscribe{
@@ -4261,19 +4230,11 @@ span.detail {
   }
 }
 
-
-// Login BG
-
-=======
-    width: 75%; } 
   .menuDriver li {
       width: 28%;
   }
   .menuDriver li:nth-child(1) img,.menuDriver li:nth-child(2) img  {
     padding-top: 15px!important;
-  }
->>>>>>> bbc141e8cc3324d512f3002a1ff44e4261230372
-
   }
 
 @keyframes float {
@@ -4310,7 +4271,6 @@ span.detail {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
 
-<<<<<<< HEAD
 .modalFull.black{
   background-color: $reddark!important;
   .modal-content {
@@ -4428,16 +4388,16 @@ span.detail {
   }
   .modalFull .modalImg2 img {
     position: absolute;
-    top: -420px;
-    left: -20%;
-    width: calc(140vw - 20px);
+    top: -240px;
+    left: -7%;
+    width: calc(130vw - 40px);
     z-index: 0;
-}
+  }
   .modalFull .formDriver {
     margin-right: 0px;
   }
 }
-=======
+
 .navLogo.bg-dark{
   background-color: transparent !important;
   min-height: 70px!important;
@@ -4453,8 +4413,19 @@ span.detail {
   background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
- }
-
+}
+.bg-degrade{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgba(0, 0, 0, 0.55);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.55)), color-stop(0%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
  .marginSpaceTop{
    margin-top: 60px!important;
  }
@@ -4610,7 +4581,6 @@ span.detail {
     width: 120px;
     transition: all 1s;
   }
-  
 }
 
 .textMessage {
@@ -4658,7 +4628,6 @@ span.detail {
 .card-informationSide:hover{
   border: 1px solid #ef4e35;
   cursor: pointer;
-  
 }
 
 .card-informationComment{
@@ -4669,7 +4638,7 @@ span.detail {
   border-radius: 8px;
   border: 1px solid #d5daed;
   min-height:100px;
-   .starProm {
+  .starProm {
     width: 150px!important;
     top: 8px;
   }
@@ -4711,7 +4680,6 @@ span.detail {
 .card-informationComment:hover{
   border: 1px solid #ef4e35;
   cursor: pointer;
-  
 }
 
 .noshow{
@@ -4720,4 +4688,7 @@ span.detail {
 .rightPosition{
   right: 20px;
 }
->>>>>>> bbc141e8cc3324d512f3002a1ff44e4261230372
+
+.pillInfo.green a{
+  background-color: #45b749;
+}
