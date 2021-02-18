@@ -4416,7 +4416,13 @@ span.detail {
     width: 75%; }
   .sm-margin-suscribe {
     padding-right: 0px !important;
-    padding-left: 0px !important; } }
+    padding-left: 0px !important; }
+  .checkpoint-small li {
+    padding: 3px 4px;
+    letter-spacing: -0.5px;
+    font-size: 8.9px; }
+  .modalFull .formDriver {
+    padding: 0px 0px !important; } }
 
 .menuDriver li {
   width: 28%; }
