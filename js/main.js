@@ -32,20 +32,29 @@ function fadeNext() {
     }
 }
 
-function showpassword2() {
+function changeModal2() {
     $("#modalContratar").removeClass("fade").modal("hide");
     $("#modalCaptcha").modal("show").addClass("fade");
 }
 $("#paso2").on("click", function() {
-    showpassword2();
+    changeModal2();
 });
-function showpassword3() {
+function changeModal3() {
     $("#modalCaptcha").removeClass("fade").modal("hide");
     $("#modalMensaje").modal("show").addClass("fade");
 }
 $("#paso3").on("click", function() {
-    showpassword3();
+    changeModal3();
 });
+
+function changeModal4() {
+    $("#modalContratar").removeClass("fade").modal("hide");
+    $("#modalMensajeUsuario").modal("show").addClass("fade");
+}
+$("#paso4").on("click", function() {
+    changeModal4();
+});
+
 // Function responsible for fading to previous slide
 function fadePrev() {
     currentSlide.removeClass('active').fadeOut();

@@ -4196,9 +4196,38 @@ span.detail {
 .formDriver .card .card-body {
   width: 100% !important; }
 
+.formList input, .formList select{
+  margin-bottom: 0px!important;
+}
+.formList label{
+  margin-top: 20px!important;
+}
+
 .btn-default {
   background-color: #999999;
   color: #fff; }
+
+.checkpoint-small {
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  text-align: left !important; }
+  .checkpoint-small li {
+    background-color: #fff;
+    border: 1px solid #3D3D3D;
+    list-style: none;
+    display: inline-block;
+    color: #3D3D3D;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 5px;
+    border-radius: 10px; }
+  .checkpoint-small li.active {
+    color: #fff;
+    border: 1px solid #EF4E35;
+    background-color: #EF4E35; }
 
 .checkpoint {
   margin-left: 10px;
@@ -4208,12 +4237,13 @@ span.detail {
     background-color: #fff;
     border: 1px solid #3D3D3D;
     list-style: none;
-    display: inline;
+    display: inline-block;
     color: #3D3D3D;
     text-transform: uppercase;
     padding: 5px 15px;
     font-size: 12px;
     font-weight: 500;
+    margin-top: 5px;
     border-radius: 10px; }
   .checkpoint li.active {
     color: #fff;
@@ -4274,10 +4304,23 @@ span.detail {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
 
-.modalFull.black{
+.modalFull.red{
   background-color: $reddark!important;
   .modal-content {
     background-color: $reddark;
+  }
+  h1{color: $white;}
+  span{color: $white;}
+}
+.modalFull.white{
+  background-color: #212129!important;
+  .modal-content {
+    background-color: #212129;
+  }
+  .imgBg{
+    opacity: .1;
+    position: absolute;
+    top: -100px
   }
   h1{color: $white;}
   span{color: $white;}
@@ -4301,6 +4344,7 @@ span.detail {
   }
   .modal-header {
     border-bottom: none;
+    z-index: 2;
   }
   .pasoList{
     list-style: none;
@@ -4392,8 +4436,8 @@ span.detail {
   .modalFull .modalImg2 img {
     position: absolute;
     top: -240px;
-    left: -7%;
-    width: calc(130vw - 40px);
+    left: -1%;
+    width: calc(110vw - 40px);
     z-index: 0;
   }
   .modalFull .formDriver {

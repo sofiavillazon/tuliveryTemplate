@@ -111,7 +111,7 @@
                         <img src="img/modalImg2.png" alt="">
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <div class="row formDriver">
+                        <div class="row formDriver formList">
                             <div class="col-md-12 ">
                               <ul class="pasoList">
                                 <li class="paso active"></li>
@@ -122,34 +122,57 @@
                                 <span>¡Tu tienda online en un minuto!</span>
                                 <h1>Empieza tu periódo de prueba de <strong>1 mes gratis</strong></h1>
                             </div>
-                            <div class="input-group col-md-12 mx-0 px-2 mt-4">
+                            <div class="input-group col-md-6 mx-0 px-2 mt-0">
                                 <label for="">Nombre</label>
                                 <input type="text" class="form-control" placeholder="Igresa tu nombre">
                             </div>
-                            <div class="input-group col-md-12 mx-0 px-2 mt-2">
-                                <label for="">Email</label>
-                                <input type="text" class="form-control" placeholder="Igrese su email">
+                            <div class="input-group col-md-6 mx-0 px-2 mt-0">
+                              <label for="">Apellido paterno</label>
+                              <input type="text" class="form-control" placeholder="Igresa tu nombre">
                             </div>
-                            <div class="input-group col-md-12 mx-0 px-2 mt-2">
-                                <label for="">Nombre del negocio</label>
-                                <input type="text" class="form-control" placeholder="Ingrese el nombre del negocio">
+                            <div class="input-group col-md-6 mx-0 px-2">
+                                <label for="">Teléfono</label>
+                                <input type="text" class="form-control" placeholder="Igrese su teléfono">
+                            </div>
+                            <div class="input-group col-md-6 mx-0 px-2">
+                              <label for="">Email</label>
+                              <input type="text" class="form-control" placeholder="Igrese su email">
                             </div>
                             
-                            <div class="custom-control optionModal col-md-12 mx-0 mt-2">
+                            <div class="input-group col-md-12 mx-0 px-2">
+                              <label for="">Contraseña</label>
+                              <input type="text" class="form-control mb-0" placeholder="Igrese contraseña">
+                              <div class="w-100">
+                                <ul class="ml-0 pl-0 checkpoint-small">
+                                  <li>8 Caract. mínimos</li>
+                                  <li class="active">al menos 1 letra</li>
+                                  <li>al menos 1 numero</li>
+                                </ul>
+                              </div>
+                            </div>
+
+                            <div class="input-group col-md-12 mx-0 mt-0 px-2">
+                              <label for="">Nombre del comercio</label>
+                              <input type="text" class="form-control" placeholder="Ingrese el nombre del negocio">
+                            </div>
+ 
+                            <div class="custom-control optionModal col-md-12 mx-0">
                                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                                 <label class="custom-control-label" for="customCheck1">He leído y acepto los <a href="">Terminos y condiciones</a></label>
                             </div>
-                            <div class="custom-control optionModal col-md-12 mx-0 mt-2">
+                            <div class="custom-control optionModal col-md-12 mx-0">
                               <button type="button" id="paso2" class="btn btn-danger-home float-right mt-3 ">Siguiente</button>
                             </div>
+                            <!-- Eliminar - boton -->
+                            <div class="custom-control optionModal col-md-12 mt-2 mx-0">
+                              <button id="paso4" class="btn btn-default float-right pb-0">Abrir otro modal</p>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-           
         </div>
-        </div>
+      </div>
     </div>
 
     <!-- Modal -->
@@ -199,10 +222,45 @@
       </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade modalFull black" id="modalMensaje" tabindex="-1" aria-labelledby="modalMensajeLabel" aria-hidden="true">
+      <!-- Modal Mensaje -->
+      <div class="modal fade modalFull red" id="modalMensaje" tabindex="-1" aria-labelledby="modalMensajeLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 modalImg2">
+                        <img src="img/modalImg3.png" alt="">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="row formDriver middleText">
+                            
+                            <div class="col-md-12 textDrive text-center mt-5 mx-0 mb-4">
+                              <h1>¡Gracias por <strong>inscribirte</strong>!</h1>
+                              <span>Ya eres parte de Tulivery Tienda</span>
+                            </div>
+                            
+                            <div class="custom-control optionModal col-md-12 mx-0 mt-2 text-center">
+                              <button type="button" class="btn btn-white-home mt-3 "data-dismiss="modal" aria-label="Close">Terminar</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Mensaje -->
+    <div class="modal fade modalFull white" id="modalMensajeUsuario" tabindex="-1" aria-labelledby="modalMensajeLabel" aria-hidden="true">
       <div class="modal-dialog">
-      <div class="modal-content">
+       <div class="modal-content">
           <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -210,27 +268,26 @@
           </div>
           <div class="modal-body">
               <div class="row">
-                  <div class="col-md-6 modalImg2">
-                      <img src="img/modalImg3.png" alt="">
-                  </div>
-                  <div class="col-md-6 col-sm-12">
+                <div class="col-md-12 col-sm-12 text-center imgBg">
+                  <img class="img" src="img/modalImg4.png" alt="">
+                </div>
+                  <div class="col-md-12 col-sm-12">
                       <div class="row formDriver middleText">
-                          
-                          <div class="col-md-12 textDrive text-center mt-5 mx-0 mb-4">
-                            <h1>¡Gracias por <strong>inscribirte</strong>!</h1>
-                            <span>Ya eres parte de Tulivery Tienda</span>
+                          <div class="col-md-12 textDrive text-center mt-0 mx-0 mb0">
+
+                            <h1>Ya tienes una cuenta en Tulivery tienda </h1>
+                            <span>Te rediccionaremos a Login</span>
                           </div>
                           
                           <div class="custom-control optionModal col-md-12 mx-0 mt-2 text-center">
-                            <button type="button" class="btn btn-white-home  mt-3 "data-dismiss="modal" aria-label="Close">Terminar</button>
+                            <button type="button" class="btn btn-white-home  mt-3 "data-dismiss="modal" aria-label="Close">Login</button>
                           </div>
                       </div>
 
                   </div>
               </div>
           </div>
-        
-      </div>
+        </div>
       </div>
     </div>
 
