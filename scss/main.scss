@@ -4126,7 +4126,9 @@ span.detail {
   }
 }
 .cardSuscribe{
+  height: 100%;
   margin-top:20px;
+  border-radius: 13px;
   .listSuscribe{
     margin-left: 20px!important;
     li{
@@ -4451,7 +4453,12 @@ span.detail {
   .modalFull .formDriver {
     margin-right: 0px;
   }
+  .cardSuscribe{
+    margin-right: 10px!important;
+    margin-left: 10px!important;
+  }
 }
+
 
 .navLogo.bg-dark{
   background-color: transparent !important;

@@ -4294,7 +4294,9 @@ span.detail {
   width: 100%; }
 
 .cardSuscribe {
-  margin-top: 20px; }
+  height: 100%;
+  margin-top: 20px;
+  border-radius: 13px; }
   .cardSuscribe .listSuscribe {
     margin-left: 20px !important; }
     .cardSuscribe .listSuscribe li {
@@ -4573,7 +4575,10 @@ span.detail {
     width: calc(110vw - 40px);
     z-index: 0; }
   .modalFull .formDriver {
-    margin-right: 0px; } }
+    margin-right: 0px; }
+  .cardSuscribe {
+    margin-right: 10px !important;
+    margin-left: 10px !important; } }
 
 .navLogo.bg-dark {
   background-color: transparent !important;
