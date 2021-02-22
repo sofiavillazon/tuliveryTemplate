@@ -4578,7 +4578,17 @@ span.detail {
     margin-right: 0px; }
   .cardSuscribe {
     margin-right: 10px !important;
-    margin-left: 10px !important; } }
+    margin-left: 10px !important; }
+  .modalFull .modalImg2 {
+    text-align: center; }
+  .modalFull .modalImg2 img {
+    position: relative;
+    top: 0px;
+    width: calc(110vw - 190px);
+    margin: 0 auto;
+    z-index: 0; }
+  .middleText {
+    margin-top: 10px; } }
 
 .navLogo.bg-dark {
   background-color: transparent !important;

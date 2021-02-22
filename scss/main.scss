@@ -617,6 +617,7 @@ body {
 
 
 @media (max-width: 991.98px) {
+
   .closebtn {
     position: initial; 
     .bgLogin2 {
@@ -4457,6 +4458,19 @@ span.detail {
     margin-right: 10px!important;
     margin-left: 10px!important;
   }
+  .modalFull .modalImg2{
+    text-align: center;
+  }
+  .modalFull .modalImg2 img {
+    position: relative;
+    top:0px;
+    width: calc(110vw - 190px);
+    margin: 0 auto;
+    z-index: 0;
+  }
+  .middleText {
+    margin-top: 10px; 
+  }
 }
 
 
@@ -4754,3 +4768,5 @@ span.detail {
 .pillInfo.green a{
   background-color: #45b749;
 }
+
+
