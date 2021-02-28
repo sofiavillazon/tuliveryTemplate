@@ -169,6 +169,10 @@ $('.toggleDetail h6').on('click', function(){
     $("i", this).toggleClass("fa-chevron-up fa-chevron-down");
 });
 
+$('.barMenuProfile a').on('click', function(){
+    $("#profileMenuFloat").toggleClass('open');
+});
+
 var $currDiv = $( "#start" );
 $('input:radio').on('click', function(){
     $currDiv  = $currDiv.next();
@@ -323,9 +327,15 @@ if(n <= maxelm){
 }
 
 $('.handler').on('click', function(){
-    $('.floatcart').toggleClass('oculto');
-    $('#overBlack').toggleClass('hidden');
+    $('.floatcart').removeClass('oculto');
+    $('#overBlack').removeClass('hidden');
 });
+
+$('.closeCart').on('click', function(){
+    $('.floatcart').addClass('oculto');
+    $('#overBlack').addClass('hidden');
+});
+
 $('#overBlack').on('click', function(){
     $('.floatcart').toggleClass('oculto');
     $('#overBlack').toggleClass('hidden');

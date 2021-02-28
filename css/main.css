@@ -166,7 +166,7 @@
   background-color: #fff; }
 
 .yelowbg {
-  background-color: #f7f7f7; }
+  background-color: #F5F9FC; }
 
 .bgstore {
   height: 270px; }
@@ -306,11 +306,12 @@ footer h6 a:hover {
   border-color: #cc3b25; }
 
 .btn-primary {
-  background-color: #0062B3; }
+  background-color: #10293d;
+  border: 1px solid #10293d; }
 
 .btn-success {
-  border-color: #39C979;
-  background-color: #39C979; }
+  border-color: #444242;
+  background-color: #444242; }
 
 .barlogo {
   border-left: 1px solid #fff;
@@ -654,8 +655,6 @@ body {
       top: 0;
       width: auto !important;
       height: 90vh !important; }
-  .sliderHome h5 {
-    font-size: 42px !important; }
   .floatcart {
     position: fixed;
     width: 70.5%;
@@ -688,6 +687,8 @@ body {
     display: none; }
   #toggleTulivery {
     z-index: 2001 !important; }
+  .bgBanner h5 {
+    font-size: 26px !important; }
   .offcanvas-collapse {
     position: absolute !important;
     z-index: 2000 !important;
@@ -1056,8 +1057,8 @@ input[type=radio]:not(old) + label {
 
 input[type=radio]:not(old) + label > span {
   display: inline-block;
-  width: 2em;
-  height: 2em;
+  width: 1.7em;
+  height: 1.7em;
   margin: 0.02em 0.5em 0.02em 0.25em;
   border: 0.1em solid #bcc1db;
   border-radius: 50%;
@@ -1747,7 +1748,7 @@ input[type=radio]:not(old):checked + label > span > span {
   padding: 15px 0px; }
 
 .profile .contentprof .sectionProf .input-group .form-control {
-  background-color: #efefef !important; }
+  background-color: #F5F9FC !important; }
 
 .profile .contentprof .sectionProf p {
   margin-top: 0;
@@ -1848,9 +1849,9 @@ input[type=radio]:not(old):checked + label > span > span {
   overflow-y: auto; }
 
 .cart2 span {
-  -webkit-text-fill-color: #46464F;
-  -webkit-text-stroke-color: #fff;
-  -webkit-text-stroke-width: 1.50px; }
+  -webkit-text-fill-color: #46464f00;
+  -webkit-text-stroke-width: 1.50px;
+  padding-right: 10px; }
 
 .cart2 span i {
   font-size: 37px;
@@ -1859,10 +1860,13 @@ input[type=radio]:not(old):checked + label > span > span {
 .cart2 span.badge-pill {
   position: absolute;
   top: 30px;
-  right: 2px;
+  left: 2px;
   -webkit-text-fill-color: #ffffff;
-  -webkit-text-stroke-color: #fff;
   -webkit-text-stroke-width: 0px; }
+
+.badge-danger {
+  color: #1d4225;
+  background-color: #ffffff; }
 
 @keyframes fadeIn {
   0% {
@@ -1913,19 +1917,31 @@ input[type=radio]:not(old):checked + label > span > span {
   display: none; }
 
 .handler:hover {
-  background-color: #46464F; }
+  background-color: #128136; }
 
 .handler {
-  background-color: #46464F;
+  background-color: #128136;
   z-index: 1032;
   position: absolute;
-  left: -60px;
-  padding: 10px 13px;
-  bottom: 27px;
+  bottom: 10px;
+  left: calc(-98vw) !important;
+  right: initial;
+  width: 95%;
+  padding: 10px 15px;
   color: #fff;
+  vertical-align: text-bottom;
   font-size: 19px;
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 8px 8px 8px 8px;
   cursor: pointer; }
+  .handler .badge-danger {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    top: 3px;
+    left: 32px;
+    font-weight: bold; }
 
 .baseCarrito.oculto {
   left: 100.5% !important;
@@ -2300,9 +2316,11 @@ em.text-success {
   border: 1px solid #eee; }
 
 .card.imgresp .imgResponsive2 span.text-right {
-  position: relative;
-  left: calc(100% - 80px) !important;
-  bottom: 45px;
+  position: absolute;
+  left: calc(100% - 100px) !important;
+  top: 30px;
+  height: 30px;
+  display: inline-flex;
   background-color: #f4f4f4;
   border-radius: 12px;
   padding: 5px 9px;
@@ -3727,8 +3745,8 @@ button.smallBtn img {
   .beforeMobile:before {
     display: none; }
   .card.imgresp .imgResponsive2 span.text-right {
-    left: calc(100% - 90px) !important;
-    bottom: 36px; }
+    left: calc(100% - 100px) !important;
+    top: 10px; }
   .searchHomeFix {
     width: 50% !important; }
   .searchHomeFix .from-search .btn-search {
@@ -3743,7 +3761,7 @@ button.smallBtn img {
     left: calc(9vw + 10px);
     top: calc(36vh - 50px);
     position: absolute;
-    font-size: 35px;
+    font-size: 32px;
     line-height: 35px;
     color: #fff !important;
     font-weight: 700; }
@@ -4833,3 +4851,150 @@ span.detail {
 
 .pillInfo.green a {
   background-color: #45b749; }
+
+.movileBtn {
+  display: none; }
+
+.barMenuProfile {
+  display: none; }
+
+@media (max-width: 991px) {
+  .searchHomeFix {
+    width: 100% !important; }
+  .smHidden {
+    display: none !important; }
+  #profileMenuFloat {
+    display: none; }
+  #profileMenuFloat.open {
+    display: block;
+    position: fixed;
+    padding-left: 0px !important;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 555; }
+  .barMenuProfile:hover a {
+    background-color: #3D3D3D !important;
+    color: #fff; }
+  .spaceTopProfile {
+    margin-top: 100px; }
+  .smSliderLogo.tiendaIco::before {
+    display: none !important; }
+  .smCard .card.imgresp {
+    padding-top: 0px !important;
+    padding-bottom: 10px !important; }
+  .smSliderLogo.tiendaIco {
+    position: relative !important;
+    width: 200px !important;
+    height: 100px !important;
+    display: block; }
+    .smSliderLogo.tiendaIco .circle {
+      width: 60px !important;
+      height: 60px !important;
+      margin-right: 0px !important;
+      padding-right: 0px !important; }
+    .smSliderLogo.tiendaIco .circle img {
+      width: 60px;
+      height: 60px; }
+  .smSliderNone {
+    display: none; }
+  .nom_tienda {
+    left: 16%; }
+  .barMenuProfile {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 556;
+    color: #fff;
+    margin-top: 0px !important;
+    background-color: #ef5535 !important;
+    padding: 70px 0px 20px 15px; }
+    .barMenuProfile a {
+      text-decoration: none;
+      background-color: #fff !important;
+      padding: 10px 50px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #363a3f; }
+  .navbar-brand img.logo {
+    width: 140px;
+    height: auto;
+    margin-top: -10px; }
+  .navbar {
+    padding: 0.5rem 0.5rem; }
+  nav .navbar-nav .nav-item {
+    margin-top: 0px !important; }
+  .movileBtn {
+    display: block;
+    position: absolute;
+    right: 60px;
+    font-size: 12px; }
+  footer .list-unstyled img {
+    max-width: 224px; }
+  .card-signin {
+    margin-top: 70px !important; }
+  .loginv2 .card-signin .card-body {
+    padding: 1rem; }
+  #spinner .btn-sm, #spinner .btn-group-sm > .btn {
+    padding: .2rem .4rem;
+    font-size: .5rem; }
+  .floatcart {
+    position: fixed;
+    width: 100%; }
+  .cart2 span i {
+    font-size: 27px;
+    padding-top: 0px; }
+  .baseCarrito.oculto .handler {
+    bottom: 10px;
+    left: calc(-98vw) !important;
+    font-size: 15px !important;
+    display: block; }
+  .fullHeight {
+    height: auto !important; }
+  .baseCarrito .handler {
+    bottom: 10px;
+    left: calc(2vw) !important;
+    font-size: 15px !important;
+    display: none; }
+  #scrollerSection {
+    max-height: 65% !important; }
+  .closeCart {
+    display: block !important;
+    padding: 15px; }
+    .closeCart i {
+      font-size: 20px; }
+  .bgstoreinfo {
+    margin-top: 0px !important; } }
+
+.closeCart {
+  display: none; }
+
+.form-signin img, .card-signin img {
+  display: none !important; }
+
+.btn-default {
+  background-color: #212529;
+  color: #fff; }
+
+.tittleFotter {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 15px; }
+
+.loginv2 .form-signin .btn {
+  box-shadow: none; }
+
+.separadorw-grey {
+  width: 100%;
+  border-bottom: 2px solid #2c3135;
+  height: 2px;
+  margin-top: 15px;
+  margin-bottom: 20px; }
+
+.smHidden {
+  display: block; }
+
+.fullHeight {
+  height: 100vh; }

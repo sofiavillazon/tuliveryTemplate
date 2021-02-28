@@ -12,6 +12,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body class="loginv2">
+      <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
+        <div class="alignnav container px-5">
+            <button type="button" class="btn btn-danger-home movileBtn btn-sm">Entrar</button>
+            <a class="navbar-brand" href="index.html">
+            <img class="logo" src="img/logo.png">
+            </a>
+            <button id="toggleTulivery" class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-md-auto ">
+                  <li class="nav-item pt-1 active">
+                    <button type="button" class="my-3 btn btn-white-home float-right  btn-sm" data-toggle="modal" data-target="#nuevaDireccion">Comenzar prueba</button>
+                  </li>
+                  <li class="nav-item pt-1 d-lg-none">
+                    <a class="nav-link " href="detalle.html"> Abrir mi tienda Virtual </a>
+                  </li>
+                  <li class="nav-item pt-1 d-lg-none">
+                    <a class="nav-link" href="detalle.html"> Planes de suscripción </a>
+                  </li>
+                  <li class="separadorw-grey"></li>
+                  <li class="nav-item pt-1 d-lg-none">
+                    <a class="nav-link" href="detalle.html"> Quiero ser repartidor </a>
+                  </li>
+                  <li class="nav-item pt-1 d-lg-none">
+                    <a class="nav-link" href="detalle.html"> Sobre Tulivery </a>
+                  </li>
+                  <li class="nav-item pt-1 d-lg-none">
+                    <a class="nav-link" href="detalle.html"> Términos y condiciones </a>
+                  </li>
+                  <li class="nav-item pt-1 d-lg-none">
+                    <a class="nav-link" href="detalle.html"> Políticas de privacidad </a>
+                  </li>
+  
+                </ul>
+            </div>
+        </div>
+      </nav>
       <div class="container">
         <div class="row">
           <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
@@ -19,6 +57,7 @@
               <div class="card-body">
                 <h5 class="card-title text-center"><img src="img/logo.png"></h5>
                 <form class="form-signin">
+                  <h2 class="tittleFotter">Registro</h2>
                   <div class="form-label-group">
                     <input type="email" id="inputEmail" class="form-control" placeholder="Correo"  >
                     <label for="inputEmail">Correo</label>

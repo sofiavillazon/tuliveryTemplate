@@ -10,31 +10,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-dark navbarHome">
-      <div class="alignnav container">
-        <button id="toggleTulivery" class="navbar-toggler p-0 border-0 ml-auto " type="button" data-toggle="offcanvas">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-          <ul class="navbar-nav ml-md-auto ">
-            <li class="nav-item pt-1 d-lg-none">
-              <a class="nav-link" href="detalle.html"> Principal </a>
-            </li>
-            <li class="nav-item pt-1 active">
-              <button type="button" class="btn btn-white-home float-right  btn-sm" data-toggle="modal" data-target="#nuevaDireccion">Regístrate</button>
-            </li>
-            <li class="nav-item pt-1 active">
-              <button type="button" class="btn btn-danger-home float-right  btn-sm" data-toggle="modal" data-target="#nuevaDireccion">Entrar</button>
-            </li>
-            
-          </ul>
-        </div>
+    <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
+      <div class="alignnav container px-5">
+          <button type="button" class="btn btn-danger-home movileBtn btn-sm">Entrar</button>
+          <a class="navbar-brand" href="index.html">
+          <img class="logo" src="img/logo.png">
+          </a>
+          <button id="toggleTulivery" class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav ml-md-auto ">
+                <li class="nav-item pt-1 active">
+                  <button type="button" class="btn btn-danger-home btn-sm">Entrar</button>
+                </li>
+                <li class="nav-item pt-1 d-lg-none">
+                  <a class="nav-link " href="detalle.html"> Abrir mi tienda Virtual </a>
+                </li>
+                <li class="nav-item pt-1 d-lg-none">
+                  <a class="nav-link" href="detalle.html"> Planes de suscripción </a>
+                </li>
+                <li class="separadorw-grey"></li>
+                <li class="nav-item pt-1 d-lg-none">
+                  <a class="nav-link" href="detalle.html"> Quiero ser repartidor </a>
+                </li>
+                <li class="nav-item pt-1 d-lg-none">
+                  <a class="nav-link" href="detalle.html"> Sobre Tulivery </a>
+                </li>
+                <li class="nav-item pt-1 d-lg-none">
+                  <a class="nav-link" href="detalle.html"> Términos y condiciones </a>
+                </li>
+                <li class="nav-item pt-1 d-lg-none">
+                  <a class="nav-link" href="detalle.html"> Políticas de privacidad </a>
+                </li>
+
+              </ul>
+          </div>
       </div>
     </nav>
-    <a class="btn-fticon4 inicioIco" href="principal.html">
-    <img class="imgHome" src="img/logoTuliveryHome.png" alt="">
-    </a>
 
     <div class="searchHome">
       <form class="form-inline from-search mt-2 mt-md-0">
@@ -72,7 +85,7 @@
         </div>
         <!-- ###### INFO SERVICE ##### -->
         <div class="container containerAlign ">
-          <div class="card-deck mb-3 text-center px-4">
+          <div class="card-deck mb-3 text-center">
             <div class="card mb-4 shadow-sm">
               <div class="card-body cardInfoHome">
                 <h4>Registra</br> tu tienda</h4>
