@@ -347,7 +347,14 @@ $('#countProd').text($divs);
       
 
 // Sticky cart
-window.onscroll = function() {myFunction()};
+
+    window.onscroll = function() {
+        if( $("#scrollerSection").hasClass("scrolly")){
+            console.log("sdfasd");
+            myFunction()
+        }
+    };
+
 var header = document.getElementById("myHeader");
 var overBlack = document.getElementById("overBlack");
 
@@ -357,16 +364,18 @@ var sticky = header.offsetTop;
 function myFunction() {
     if (window.pageYOffset < 20) {
         header.classList.remove("sticky");
-        header.classList.remove("stickyFoot");
+        // header.classList.remove("stickyFoot");
+        $("#scrollerSection .scrollerSection").css("max-height","calc(100vh - 60px);");
     }
     else{
         if (window.pageYOffset > toScroll) {
-            header.classList.remove("sticky");
-            header.classList.add("stickyFoot");
+            header.classList.add("sticky");
+            // header.classList.add("stickyFoot");
+            $("#scrollerSection .scrollerSection").css("max-height","calc(100vh - 60px);");
         } else {
             header.classList.add("sticky");
-            header.classList.remove("stickyFoot");
-            $("#scrollerSection").css("max-height","215px");
+            // header.classList.remove("stickyFoot");
+            // $("#scrollerSection").css("max-height","215px");
         }
     }
 

@@ -218,8 +218,8 @@ $white: #fff;
   border-top: 1px solid #eaeaea; }
   .detalleCarro .rightcontent {
     text-align: -webkit-right;
-    padding-bottom: 20px;
-    margin-bottom: 10px; }
+
+   }
     .detalleCarro .rightcontent .form-control {
       padding: 0rem 0rem; }
   .detalleCarro p {
@@ -647,6 +647,7 @@ body {
     position: fixed;
     z-index: 1032;
     top: 0;
+    display: none;
     left: 0px;
     background: #404040a3;
     animation: fadeIn ease 0.5s; }
@@ -1168,8 +1169,7 @@ input[type=radio]:not(old):checked + label > span > span {
   width: 100%;
   text-align: block;
   /*border-bottom: 2px dashed #46464F;*/
-  padding-bottom: 20px;
-  margin-bottom: 10px; }
+  }
   .rightcontent .form-control {
     padding: 0rem 0rem; }
 
@@ -1558,14 +1558,14 @@ input[type=radio]:not(old):checked + label > span > span {
   right: 35px; }
 
 .plantilla2 .imgResponsive2 {
-  max-height: 110px !important;
+  max-height: 180px !important;
   min-height: 80px;
   border-radius: 10px 0px 0px 10px !important;
   overflow: hidden; }
   .plantilla2 .imgResponsive2 img {
-    margin-left: -50%;
+    margin-left: 0px;
     height: 100% !important;
-    width: auto; }
+    width: 100%; }
 
 .plantilla2 .text-descr {
   line-height: 14px; }
@@ -1695,8 +1695,14 @@ input[type=radio]:not(old):checked + label > span > span {
   .sticky {
     position: fixed;
     width: 25%;
-    top: 80px;
-    z-index: 1; }
+    top: 60px;
+    height: auto;
+    z-index: 1;
+    .scrolly{
+      max-height: calc(100vh - 300px)!important;
+
+    }
+     }
   .stickyFoot {
     position: fixed;
     width: 25%;
@@ -1707,7 +1713,8 @@ input[type=radio]:not(old):checked + label > span > span {
   .carrito_final {
     bottom: 0px;
     position: absolute;
-    width: 89.5%; } }
+    width: 89.5%; } 
+  }
 
 .profile .contentprof .orangeline {
   border-top: 3px solid #ea4335; }
@@ -1878,8 +1885,8 @@ input[type=radio]:not(old):checked + label > span > span {
   margin-bottom: 20px;
   background-color: #fff; }
 
-#main > .row {
-  min-height: 76vh; }
+// #main > .row {
+//   min-height: 76vh; }
 
 .handler {
   display: none; }
@@ -1912,9 +1919,6 @@ input[type=radio]:not(old):checked + label > span > span {
   border-radius: 8px 8px 8px 8px;
   cursor: pointer; }
 
-.baseCarrito.oculto {
-  left: 100.5% !important;
-  animation: fadeIn ease 1s; }
 
 .formPedido .form-check > div {
   border-bottom: 1px solid #efefef;
@@ -4802,6 +4806,10 @@ span.detail {
   .searchHomeFix{
     width: 100%!important;
   }
+  
+.baseCarrito.oculto {
+  left: 100.5% !important;
+  animation: fadeIn ease 1s; }
   .smHidden{
     display: none!important;
   }
@@ -4951,6 +4959,10 @@ span.detail {
   .bgstoreinfo{
     margin-top:0px!important;
   }
+  
+  .fullHeight{
+    height: 100vh;
+  }
 }
 .closeCart{
   display: none;   
@@ -4970,7 +4982,9 @@ span.detail {
 .loginv2 .form-signin .btn{
   box-shadow: none;
 }
-
+.fullHeight{
+  height: calc(100vh - 310px);
+}
 .separadorw-grey {
   width: 100%;
   border-bottom: 2px solid #2c3135;
@@ -4982,7 +4996,43 @@ span.detail {
 .smHidden{
   display: block;
 }
+@media (min-width: 992px) {
+  .scrollerSectionCss{
+    position: fixed;
+    top: 20p;
+    right: 0px;
+  }
+}
 
-.fullHeight{
-  height: 100vh;
+.compactoTemplateHeight{
+  height: calc(100vh - 60px);
+}
+
+
+.compactoCarHeight{
+    height: calc(100vh - 280px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    // border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.CarHeight{
+  height: calc(100vh - 250px)
+}
+.template2{
+  .circle {
+    margin-top: 0px;
+    img{
+    width: 120px;
+  }
+}
+}
+.bannerCompacto{
+  width: 100%;
+  min-height: 80px;
+  max-height: 120px;
+  background-size: cover;
+  background-position: center;
+  margin-left: 15px;
 }
