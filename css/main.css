@@ -5027,3 +5027,6 @@ span.detail {
   background-size: cover;
   background-position: center;
   margin-left: 15px; }
+
+.plantilla2, .plantilla3, .template1 {
+  padding-bottom: 60px !important; }
