@@ -1,5 +1,14 @@
 
 
+function showpassword2() {
+    $("#password1").removeClass("fade").modal("hide");
+    $("#password2").modal("show").addClass("fade");
+}
+
+$("#password-ok").on("click", function() {
+    showpassword2();
+});
+
 // SLIDER
 var auto = true;
 var pause = 7000;
@@ -401,6 +410,3 @@ $('.hero-area').slick({
 
 
 //   SLider
-
-
-
