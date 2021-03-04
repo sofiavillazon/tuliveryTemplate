@@ -490,9 +490,9 @@ footer h6 a:hover {
   display: none;
   width: 50px;
   height: 50px;
-  z-index: 1031;
+  z-index: 10000;
   left: 3.5%;
-  top: 4px;
+  top: -5px;
   position: fixed; }
 
 .tiendaIco:before {
@@ -4070,7 +4070,7 @@ button.smallBtn img {
   height: 90px;
   z-index: 1;
   left: 5%;
-  top: 60px;
+  top: 90px;
   position: absolute; }
 
 .conteinerDetail {
@@ -4603,21 +4603,17 @@ span.detail {
   .middleText {
     margin-top: 10px; } }
 
+.navbar {
+  padding: 0rem 1rem; }
+
 .navLogo.bg-dark {
-  background-color: transparent !important;
-  min-height: 70px !important;
-  max-height: 70px !important;
+  background-color: #375F8E !important;
+  min-height: 55px !important;
+  max-height: 55px !important;
   padding-top: 0px !important;
   color: #fff;
   font-size: 16px;
-  background: rgba(0, 0, 0, 0.55);
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.55)), color-stop(0%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 ); }
+  z-index: 10000; }
 
 .bg-degrade {
   padding-top: 10px;
@@ -4631,15 +4627,20 @@ span.detail {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 ); }
 
-.marginSpaceTop {
-  margin-top: 60px !important; }
+.mainTop {
+  margin-top: 55px !important; }
+  .mainTop .template2 {
+    padding-top: 15px !important; }
+  .mainTop .template3 {
+    padding-top: 0px !important; }
 
 .bannerTopSmall {
   overflow: hidden;
-  height: 160px; }
+  height: 250px; }
   .bannerTopSmall img {
     position: relative;
     z-index: 2;
+    top: -20px;
     width: 100%; }
   .bannerTopSmall span {
     font-weight: bold; }
@@ -4648,11 +4649,11 @@ span.detail {
     min-width: 320px;
     max-width: 320px;
     color: #fff !important;
-    position: absolute;
+    position: relative;
     left: calc(50% - 160px);
     line-height: 30px;
     font-size: 30px;
-    top: 50px;
+    top: 130px;
     z-index: 3;
     text-align: center; }
 
