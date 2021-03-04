@@ -567,7 +567,10 @@ div .categorySelect:hover, .imgresp.active .categorySelect {
 footer {
   background-color: #EF4E35;
   color: #fff;
-  font-size: 14px; }
+  font-size: 14px;
+  z-index: 3;
+  position: relative;
+  }
   footer a {
     color: #fff; }
   footer a {
@@ -1560,7 +1563,7 @@ input[type=radio]:not(old):checked + label > span > span {
 .plantilla2 .imgResponsive2 {
   max-height: 180px !important;
   min-height: 80px;
-  border-radius: 10px 0px 0px 10px !important;
+  border-radius: 10px 10px 0px 0px !important;
   overflow: hidden; }
   .plantilla2 .imgResponsive2 img {
     margin-left: 0px;
@@ -5094,3 +5097,4 @@ span.detail {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 1.3rem;
 }
+
