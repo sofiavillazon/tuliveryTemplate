@@ -645,6 +645,8 @@ body {
     font-size: 13px !important; } }
 
 @media (max-width: 991.98px) {
+  .homePrincipal {
+    overflow: hidden; }
   .homeLogoSlider {
     margin: 10px 0px !important; }
   .closebtn {
@@ -5224,53 +5226,57 @@ span.detail {
 .homeLogoSlider {
   margin: 100px 0px; }
 
-.homePrincipal {
-  overflow: hidden; }
-  .homePrincipal .imgbgHome img {
-    max-height: 140vh;
-    min-height: 130vh;
-    position: absolute;
-    z-index: 0;
-    margin-top: -55px; }
-  .homePrincipal .circleButton {
-    padding: 10px 12px;
-    width: 40px;
-    height: 40px; }
-    .homePrincipal .circleButton img {
-      width: 20px;
-      height: 20px;
-      padding-left: 4px; }
-    .homePrincipal .circleButton .btn-white-home:hover {
-      background-color: #375F8E !important; }
-  .homePrincipal .searchHome {
-    padding-left: 50px; }
-  .homePrincipal .textDrive {
-    padding-left: 50px;
+.homePrincipal .imgbgHome img {
+  max-height: 140vh;
+  min-height: 130vh;
+  position: absolute;
+  z-index: 0;
+  margin-top: -55px; }
+
+.homePrincipal .circleButton {
+  padding: 10px 12px;
+  width: 40px;
+  height: 40px; }
+  .homePrincipal .circleButton img {
+    width: 20px;
+    height: 20px;
+    padding-left: 4px; }
+  .homePrincipal .circleButton .btn-white-home:hover {
+    background-color: #375F8E !important; }
+
+.homePrincipal .searchHome {
+  padding-left: 50px; }
+
+.homePrincipal .textDrive {
+  padding-left: 50px;
+  color: #fff; }
+  .homePrincipal .textDrive span {
     color: #fff; }
-    .homePrincipal .textDrive span {
-      color: #fff; }
-  .homePrincipal .heightSlide {
-    height: 200px;
-    padding-top: 7vh !important; }
-  .homePrincipal .heightBanner {
-    height: 200px;
-    padding-top: 10vh !important; }
-  .homePrincipal .bannerNotice {
-    text-align: center;
-    height: calc(80vh);
-    width: 100%;
-    position: relative;
-    right: -9vw;
-    top: 4vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: center; }
-    .homePrincipal .bannerNotice .textDrive {
-      padding: 110px 10px 40px 20px; }
-      .homePrincipal .bannerNotice .textDrive h1 {
-        font-size: 28px;
-        line-height: 28px;
-        font-weight: 500 !important; }
+
+.homePrincipal .heightSlide {
+  height: 200px;
+  padding-top: 7vh !important; }
+
+.homePrincipal .heightBanner {
+  height: 200px;
+  padding-top: 10vh !important; }
+
+.homePrincipal .bannerNotice {
+  text-align: center;
+  height: calc(80vh);
+  width: 100%;
+  position: relative;
+  right: -9vw;
+  top: 4vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center; }
+  .homePrincipal .bannerNotice .textDrive {
+    padding: 110px 10px 40px 20px; }
+    .homePrincipal .bannerNotice .textDrive h1 {
+      font-size: 28px;
+      line-height: 28px;
+      font-weight: 500 !important; }
 
 .homeLogoSlider .slick-track {
   width: 100%; }
