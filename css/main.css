@@ -1681,6 +1681,8 @@ input[type=radio]:not(old):checked + label > span > span {
       margin: 0 auto; } }
 
 @media (min-width: 992px) {
+  .cutHeader {
+    width: calc(100% - 25% - 1px); }
   .floatMenu {
     display: none;
     background-color: #fff;
@@ -2019,7 +2021,7 @@ input[type=radio]:not(old):checked + label > span > span {
 
 .baseCarrito {
   padding: 20px 0px;
-  border-radius: 10px;
+  border-radius: 0px;
   margin-bottom: 20px;
   background-color: #fff; }
 
@@ -5121,7 +5123,9 @@ span.detail {
   .scrollerSectionCss {
     position: fixed;
     top: 20p;
-    right: 0px; } }
+    right: 0px; }
+  .baseCarrito {
+    margin-top: -55px; } }
 
 .compactoTemplateHeight {
   min-height: calc(100vh); }
@@ -5139,7 +5143,7 @@ span.detail {
   padding: 10px; }
 
 .compactoCarHeight {
-  height: calc(100vh - 260px);
+  height: calc(100vh - 210px);
   overflow-y: auto;
   overflow-x: hidden;
   padding: 10px; }

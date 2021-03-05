@@ -1695,7 +1695,13 @@ input[type=radio]:not(old):checked + label > span > span {
         }
       }
 }
+
+
 @media (min-width: 992px) {
+  .cutHeader{
+    width: calc(100% - 25% - 1px);
+  }
+
   .floatMenu {
     display: none;
     background-color: #fff;
@@ -2060,7 +2066,7 @@ input[type=radio]:not(old):checked + label > span > span {
 
 .baseCarrito {
   padding: 20px 0px;
-  border-radius: 10px;
+  border-radius: 0px;
   margin-bottom: 20px;
   background-color: #fff; }
 
@@ -5196,6 +5202,9 @@ span.detail {
     top: 20p;
     right: 0px;
   }
+  .baseCarrito {
+    margin-top: -55px;
+  }
 }
 
 .compactoTemplateHeight{
@@ -5215,7 +5224,7 @@ span.detail {
 }
 
 .compactoCarHeight{
-    height: calc(100vh - 260px);
+    height: calc(100vh - 210px);
     overflow-y: auto;
     overflow-x: hidden;
     padding: 10px;
