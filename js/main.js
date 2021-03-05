@@ -23,7 +23,7 @@ $(document).on('ready', function() {
        infinite: true,
        arrows: true,
        autoplay:true,
-       autoplaySpeed: 800,
+       autoplaySpeed: 1200,
        slidesToShow: 5,
        slidesToScroll: 3,
        centerMode: false,

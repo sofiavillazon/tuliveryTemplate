@@ -5337,12 +5337,14 @@ span.detail {
   // background-repeat: no-repeat;
   // height: 140vh;
   // width: 100vw;
+  overflow: hidden;
   .imgbgHome img{
     max-height: 140vh;
     min-height: 130vh;
     position: absolute;
     z-index: 0;
     margin-top: -55px;
+    
   }
   .circleButton {
     padding: 10px 12px;
