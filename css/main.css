@@ -645,6 +645,8 @@ body {
     font-size: 13px !important; } }
 
 @media (max-width: 991.98px) {
+  .homeLogoSlider {
+    margin: 10px 0px !important; }
   .closebtn {
     position: initial; }
     .closebtn .bgLogin2 {
@@ -3393,11 +3395,9 @@ em.text-success {
   color: #3D3D3D !important; }
 
 .searchHome {
-  width: 40%;
+  width: 90%;
   height: 50px;
   z-index: 1031;
-  left: calc(30vw + 10px);
-  top: calc(60vh - 95px);
   position: absolute; }
 
 ul {
@@ -3804,7 +3804,7 @@ button.smallBtn img {
   padding-left: 2px; }
 
 .textDrive h1 {
-  font-size: 43px;
+  font-size: 38px;
   line-height: 38px;
   font-weight: 400 !important; }
 
@@ -3850,6 +3850,14 @@ button.smallBtn img {
     margin-bottom: 80px; } }
 
 @media (max-width: 800px) {
+  .homePrincipal .textDrive h1 {
+    font-size: 33px;
+    line-height: 28px;
+    font-weight: 400 !important; }
+  .homePrincipal .searchHome {
+    padding-left: 10px !important; }
+  .homePrincipal .textDrive {
+    padding-left: 10px !important; }
   .beforeMobile:before {
     display: none; }
   .card.imgresp .imgResponsive2 span.text-right {
@@ -3878,7 +3886,7 @@ button.smallBtn img {
     height: 50px;
     z-index: 800;
     left: calc(2vw + 10px);
-    top: calc(60vh - 50px);
+    top: 130px;
     position: absolute; }
   .containerAlign {
     margin-top: 80px !important;
@@ -4719,6 +4727,20 @@ span.detail {
 .navbar {
   padding: 0rem 1rem; }
 
+#verVideo .modal-body {
+  padding: 0 !important;
+  margin: 0px !important; }
+
+#verVideo .modal-content {
+  padding: 0 !important;
+  background-color: rgba(255, 255, 255, 0); }
+
+#verVideo video {
+  width: 100%;
+  height: 100%;
+  border-radius: 22px;
+  overflow: hidden; }
+
 .navLogo.bg-dark {
   background-color: #375F8E !important;
   min-height: 55px !important;
@@ -4726,7 +4748,7 @@ span.detail {
   padding-top: 0px !important;
   color: #fff;
   font-size: 16px;
-  z-index: 10000; }
+  z-index: 1037; }
 
 .bg-degrade {
   padding-top: 10px;
@@ -5198,3 +5220,106 @@ span.detail {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 1.3rem; }
+
+.homeLogoSlider {
+  margin: 100px 0px; }
+
+.homePrincipal .imgbgHome img {
+  max-height: 140vh;
+  min-height: 130vh;
+  position: absolute;
+  z-index: 0;
+  margin-top: -55px; }
+
+.homePrincipal .circleButton {
+  padding: 10px 12px;
+  width: 40px;
+  height: 40px; }
+  .homePrincipal .circleButton img {
+    width: 20px;
+    height: 20px;
+    padding-left: 4px; }
+  .homePrincipal .circleButton .btn-white-home:hover {
+    background-color: #375F8E !important; }
+
+.homePrincipal .searchHome {
+  padding-left: 50px; }
+
+.homePrincipal .textDrive {
+  padding-left: 50px;
+  color: #fff; }
+  .homePrincipal .textDrive span {
+    color: #fff; }
+
+.homePrincipal .heightSlide {
+  height: 200px;
+  padding-top: 7vh !important; }
+
+.homePrincipal .heightBanner {
+  height: 200px;
+  padding-top: 10vh !important; }
+
+.homePrincipal .bannerNotice {
+  text-align: center;
+  height: calc(80vh);
+  width: 100%;
+  position: relative;
+  right: -9vw;
+  top: 4vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center; }
+  .homePrincipal .bannerNotice .textDrive {
+    padding: 110px 10px 40px 20px; }
+    .homePrincipal .bannerNotice .textDrive h1 {
+      font-size: 28px;
+      line-height: 28px;
+      font-weight: 500 !important; }
+
+.homeLogoSlider .slick-track {
+  width: 100%; }
+
+.homeLogoSlider .scroll-section {
+  overflow: scroll;
+  padding: 7px 15px;
+  width: 90%; }
+  .homeLogoSlider .scroll-section .content-detail {
+    height: 91px;
+    width: 100%; }
+
+.homeLogoSlider .image-responsive {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  background-repeat: no-repeat; }
+
+.homeLogoSlider .card.empty {
+  background-color: #fff !important;
+  border: 1px solid #fff !important; }
+
+.homeLogoSlider .slider {
+  cursor: grabbing; }
+
+.homeLogoSlider .slider .product-image {
+  border-radius: 8px 8px 0 0;
+  height: 100px;
+  background-position: center;
+  background-size: contain; }
+
+.homeLogoSlider .slider .card {
+  padding: 15px 20px !important;
+  min-width: 120px;
+  margin-right: 12px;
+  border: 1px solid #fff;
+  border-radius: 10px; }
+  .homeLogoSlider .slider .card .card-body {
+    padding: 2px;
+    text-align: center; }
+  .homeLogoSlider .slider .card .product-image {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.6; }
