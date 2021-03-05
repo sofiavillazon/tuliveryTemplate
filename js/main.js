@@ -22,10 +22,11 @@ $(document).on('ready', function() {
        focusOnSelect: true,
        infinite: true,
        arrows: true,
+       pauseOnHover: false,
        autoplay:true,
        autoplaySpeed: 1200,
        slidesToShow: 5,
-       slidesToScroll: 3,
+       slidesToScroll: 1,
        centerMode: false,
        prevArrow: '<a style="display: block; position: absolute; top:25px; left: -5px; z-index: 1; " class="btn-arrow"><i class="icon-arrow icon-arrow-left"></i></a>',
        nextArrow: '<a style="display: block; position: absolute; top:25px; right: -15px; z-index: 1; transform: rotate(180deg);" class="btn-arrow"><i class="icon-arrow icon-arrow-right"></i></a>',
@@ -34,7 +35,7 @@ $(document).on('ready', function() {
            breakpoint: 1234,
            settings: {
              slidesToShow: 5,
-             slidesToScroll: 3,
+             slidesToScroll: 1,
              infinite: true,
            }
          },
@@ -42,7 +43,7 @@ $(document).on('ready', function() {
           breakpoint: 900,
           settings: {
             slidesToShow: 5,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             infinite: true,
           }
         },
@@ -50,7 +51,7 @@ $(document).on('ready', function() {
            breakpoint: 600,
            settings: {
              slidesToShow: 3,
-             slidesToScroll: 3,
+             slidesToScroll: 1,
              infinite: true
            }
          },
@@ -58,7 +59,7 @@ $(document).on('ready', function() {
            breakpoint: 480,
            settings: {
              slidesToShow: 2,
-             slidesToScroll: 3,
+             slidesToScroll: 1,
              infinite: true
            }
          }
