@@ -1620,6 +1620,8 @@ input[type=radio]:not(old):checked + label > span > span {
 @media (max-width: 991px) {
   .floatMenuOption {
     display: block !important; }
+  .compactoCarHeight {
+    height: calc(100vh - 250px) !important; }
   .escogerOpcion.show {
     display: block;
     position: fixed;

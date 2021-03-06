@@ -1609,6 +1609,9 @@ input[type=radio]:not(old):checked + label > span > span {
   .floatMenuOption {
     display: block!important;
   }
+  .compactoCarHeight {
+    height: calc(100vh - 250px)!important;
+  }
   .escogerOpcion.show{
     display: block;
     position: fixed;
