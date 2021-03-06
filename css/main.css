@@ -653,6 +653,14 @@ body {
     height: 140px; }
   .homeLogoSlider {
     margin: 10px 0px !important; }
+  .floatMenu .storeMenuSub {
+    width: 100%; }
+    .floatMenu .storeMenuSub button {
+      width: 100%;
+      margin-bottom: 15px; }
+  .floatMenu .separador {
+    padding: 10px 0px 0px 0px !important;
+    border-bottom: 1px solid #264a75 !important; }
   .closebtn {
     position: initial; }
     .closebtn .bgLogin2 {
@@ -1618,6 +1626,16 @@ input[type=radio]:not(old):checked + label > span > span {
   display: none; }
 
 @media (max-width: 991px) {
+  .floatMenu .tittleMenuSp {
+    padding: 15px 15px 0px 22px !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff; }
+  .floatMenu .separador {
+    padding: 10px 0px 0px 0px !important;
+    border-bottom: 1px solid #d3d2d2; }
   .floatMenuOption {
     display: block !important; }
   .compactoCarHeight {
@@ -1717,6 +1735,18 @@ input[type=radio]:not(old):checked + label > span > span {
 @media (min-width: 992px) {
   .cutHeader {
     width: calc(100% - 25% - 1px); }
+  .float-left {
+    float: left; }
+  .floatMenu .tittleMenuSp {
+    padding: 15px 15px 0px 22px !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #375F8E; }
+  .floatMenu .separador {
+    padding: 10px 0px 0px 0px !important;
+    border-bottom: 1px solid #d3d2d2; }
   .floatMenu {
     display: none;
     background-color: #fff;
@@ -5162,9 +5192,11 @@ span.detail {
     padding-top: 0px; }
   .baseCarrito.oculto .handler {
     bottom: 10px;
-    left: calc(-98vw) !important;
+    left: 10px !important;
     font-size: 15px !important;
-    display: block; }
+    display: block;
+    position: fixed;
+    z-index: 0; }
   .fullHeight {
     height: auto !important; }
   .baseCarrito {

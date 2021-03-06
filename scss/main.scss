@@ -643,6 +643,18 @@ body {
     // height: 400px;
     margin: 10px 0px!important;
   }
+  .floatMenu .storeMenuSub {
+    width: 100%;
+    button{
+      width: 100%;
+      margin-bottom: 15px ;
+    }
+    
+  }
+  .floatMenu .separador {
+    padding: 10px 0px 0px 0px !important;
+    border-bottom: 1px solid #264a75!important;
+  } 
   .closebtn {
     position: initial; 
     .bgLogin2 {
@@ -1606,6 +1618,21 @@ input[type=radio]:not(old):checked + label > span > span {
 }
 
 @media (max-width: 991px) {
+  .floatMenu{
+    .tittleMenuSp{
+      // background-color: #444;
+      padding: 15px 15px 0px 22px!important;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 500;
+      font-size: 12px;
+      color: $white;
+    }
+    .separador{
+      padding: 10px 0px 0px 0px!important;
+      border-bottom: 1px solid #d3d2d2;
+    }
+   }
   .floatMenuOption {
     display: block!important;
   }
@@ -1745,7 +1772,24 @@ input[type=radio]:not(old):checked + label > span > span {
   .cutHeader{
     width: calc(100% - 25% - 1px);
   }
-
+  .float-left{
+    float: left;
+  }
+  .floatMenu{
+    .tittleMenuSp{
+      // background-color: #444;
+      padding: 15px 15px 0px 22px!important;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 500;
+      font-size: 12px;
+      color: $blue;
+    }
+    .separador{
+      padding: 10px 0px 0px 0px!important;
+      border-bottom: 1px solid #d3d2d2;
+    }
+   }
   .floatMenu {
     display: none;
     background-color: #fff;
@@ -5256,13 +5300,25 @@ span.detail {
   }
   
   .baseCarrito.oculto{
+    // .handler:after {
+    //   background-color: $white;
+    //   position: fixed;
+    //   content: " ";
+    //   z-index: 1;
+    //   width: 100vw;
+    //   height: 30px;
+    //   left: 0px;
+    //   bottom: 0px;
+    // }
     .handler {
       bottom:10px ;
-      left: calc(-98vw) !important;
+      left: 10px !important;
       font-size: 15px!important;
       display: block;
-
+      position: fixed;
+      z-index: 0;
     }
+    
   }
   .fullHeight{
     height: auto!important;
