@@ -1592,7 +1592,7 @@ input[type=radio]:not(old):checked + label > span > span {
 .plantilla2 .imgResponsive2 {
   max-height: 180px !important;
   min-height: 80px;
-  border-radius: 10px 10px 0px 0px !important;
+  border-radius: 10px 0px 0px 10px !important;
   overflow: hidden; }
 
 .plantilla2 .imgResponsive2 img {
@@ -3498,7 +3498,7 @@ ul {
   box-shadow: 0px 0px 14px #EF4E35; }
 
 .shadow-sm {
-  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1) !important;
   border-radius: 12px; }
 
 .card.shadow-sm {
@@ -5030,6 +5030,8 @@ span.detail {
     .heightSlide.show .searchHome {
       top: 210px;
       padding-left: 10px !important; }
+    .heightSlide.show .textDrive h1 {
+      font-size: 33px; }
   .heightSlide {
     display: none; }
   .bannerNotice.show {
@@ -5283,7 +5285,12 @@ span.detail {
   border-radius: 1.3rem; }
 
 .homeLogoSlider {
-  margin: 100px 0px; }
+  margin: 50px 0px; }
+  .homeLogoSlider .content {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .homeLogoSlider .card {
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1) !important; }
 
 .homePrincipal .imgbgHome img {
   max-height: 140vh;

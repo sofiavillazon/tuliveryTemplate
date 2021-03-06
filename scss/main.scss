@@ -1580,7 +1580,7 @@ input[type=radio]:not(old):checked + label > span > span {
 .plantilla2 .imgResponsive2 {
   max-height: 180px !important;
   min-height: 80px;
-  border-radius: 10px 10px 0px 0px !important;
+  border-radius: 10px 0px 0px 10px !important;
   overflow: hidden; }
   .plantilla2 .imgResponsive2 img {
     margin-left: 0px;
@@ -1609,6 +1609,7 @@ input[type=radio]:not(old):checked + label > span > span {
   .floatMenuOption {
     display: block!important;
   }
+  
   .compactoCarHeight {
     height: calc(100vh - 250px)!important;
   }
@@ -3473,7 +3474,7 @@ em.text-success {
     box-shadow: 0px 0px 14px #EF4E35; }
 
 .shadow-sm {
-  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1) !important;
   border-radius: 12px; }
 
 .card.shadow-sm {
@@ -5081,6 +5082,9 @@ span.detail {
       top: 210px;
       padding-left: 10px!important;
     }
+    .textDrive h1 {
+      font-size: 33px;
+    }
   }
   .heightSlide{
     display: none;
@@ -5408,7 +5412,14 @@ span.detail {
 }
 .homeLogoSlider{
   // height: 400px;
-  margin: 100px 0px ;
+  margin: 50px 0px ;
+  .content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .card{
+    box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1) !important;
+  }
 }
   .homePrincipal{
     // background-size: contain;
