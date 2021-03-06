@@ -1,4 +1,5 @@
 $(document).on('ready', function() {
+
     $('.slider-for').slick({
        slidesToShow: 1,
        slidesToScroll: 1,
@@ -115,6 +116,42 @@ function showpassword2() {
 $("#password-ok").on("click", function() {
     showpassword2();
 });
+
+
+
+//MenuMobile
+function quieroComprar() {
+
+    $(".escogerOpcion").removeClass("show");
+    $(".heightBanner").removeClass("show");
+    $(".heightSlide").addClass("show");
+    $(".imgbgHome").addClass("mobileSize");
+}
+
+$("#quieroComprar").on("click", function() {
+    quieroComprar();
+});
+
+function quieroVender() {
+
+    $(".escogerOpcion").removeClass("show");
+    $(".heightBanner").addClass("show");
+    $(".heightSlide").removeClass("show");
+}
+
+$("#quieroVender").on("click", function() {
+    quieroVender();
+});
+
+var video = document.getElementById("myVideoPlayer");
+function stopVideo(){
+    video.pause();
+    video.currentTime = 0;
+}
+$("#verVideo").on('hidden.bs.modal', function () {
+    stopVideo();
+});
+
 
 // SLIDER
 var auto = true;
