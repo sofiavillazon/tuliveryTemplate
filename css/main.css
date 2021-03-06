@@ -109,8 +109,8 @@
 
 .navLogo .navbar-nav span {
   -webkit-text-fill-color: #ffffff;
-  -webkit-text-stroke-color: #fff0;
-  -webkit-text-stroke-width: 1.50px; }
+  -webkit-text-stroke-color: #375f8e;
+  -webkit-text-stroke-width: 2.5px; }
 
 .navLogo .navbar-nav span i {
   font-size: 37px;
@@ -647,6 +647,11 @@ body {
 @media (max-width: 991.98px) {
   .homePrincipal {
     overflow: hidden; }
+  .homePrincipal .heightSlide .textDrive {
+    padding-left: 10px !important;
+    display: none; }
+  .homePrincipal .heightSlide {
+    height: 140px; }
   .homeLogoSlider {
     margin: 10px 0px !important; }
   .closebtn {
@@ -2579,13 +2584,13 @@ em.text-success {
 
 .navLogo .navbar-nav span {
   -webkit-text-fill-color: #ffffff;
-  -webkit-text-stroke-color: #fff0;
-  -webkit-text-stroke-width: 1.50px; }
+  -webkit-text-stroke-color: #375f8e;
+  -webkit-text-stroke-width: 2.5px; }
 
 .navLogo .navbar-nav span:hover {
   -webkit-text-fill-color: #ffffff;
-  -webkit-text-stroke-color: #fff0;
-  -webkit-text-stroke-width: 1.50px; }
+  -webkit-text-stroke-color: #375f8e;
+  -webkit-text-stroke-width: 2.5px; }
 
 .hiddenBar {
   display: none;
@@ -3298,13 +3303,13 @@ em.text-success {
 
 .navLogo .navbar-nav span {
   -webkit-text-fill-color: #ffffff;
-  -webkit-text-stroke-color: #fff0;
-  -webkit-text-stroke-width: 1.50px; }
+  -webkit-text-stroke-color: #375f8e;
+  -webkit-text-stroke-width: 2.5px; }
 
 .navLogo .navbar-nav span:hover {
   -webkit-text-fill-color: #ffffff;
-  -webkit-text-stroke-color: #fff0;
-  -webkit-text-stroke-width: 1.50px; }
+  -webkit-text-stroke-color: #375f8e;
+  -webkit-text-stroke-width: 2.5px; }
 
 .bgHome {
   height: 90vh; }
@@ -3857,7 +3862,8 @@ button.smallBtn img {
     line-height: 28px;
     font-weight: 400 !important; }
   .homePrincipal .searchHome {
-    padding-left: 10px !important; }
+    padding-left: 10px !important;
+    top: 50px; }
   .homePrincipal .textDrive {
     padding-left: 10px !important; }
   .beforeMobile:before {
@@ -4996,6 +5002,12 @@ span.detail {
 @media (max-width: 991px) {
   .searchHomeFix {
     width: 100% !important; }
+  .homePrincipal .searchHome {
+    top: 50px; }
+  .homePrincipal .bannerNotice {
+    top: -6vh !important; }
+  .homePrincipal .bannerNotice .textDrive {
+    padding: 60px 10px 40px 20px !important; }
   .baseCarrito.oculto {
     left: 100.5% !important;
     animation: fadeIn ease 1s; }
@@ -5251,7 +5263,8 @@ span.detail {
   padding-left: 50px;
   color: #fff; }
   .homePrincipal .textDrive span {
-    color: #fff; }
+    color: #fff;
+    font-size: 20px; }
 
 .homePrincipal .heightSlide {
   height: 200px;
@@ -5266,7 +5279,7 @@ span.detail {
   height: calc(80vh);
   width: 100%;
   position: relative;
-  right: -9vw;
+  right: -4vw;
   top: 4vh;
   background-repeat: no-repeat;
   background-size: contain;
