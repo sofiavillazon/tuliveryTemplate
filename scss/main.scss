@@ -3589,8 +3589,17 @@ button.circleButton {
   margin-top: -43px; }
 
 .appfooter img {
-  width: 220px !important; }
+  width: 150px !important; }
 
+.footerLogo{
+  max-width: 190px !important; 
+  min-width: 150px !important; 
+}
+footer{
+  h6 strong{
+    font-size: 15px;
+  }
+}
 .mobileSection {
   background-size: contain;
   background-repeat: no-repeat;
@@ -5063,7 +5072,16 @@ span.detail {
   display: none;
 }
 @media (max-width: 991px) {
-
+.baseCarrito .totalCarro {
+    position: fixed;
+    bottom: 5px;
+    left: 0px;
+    width: 100vw;
+    border-top: 1px solid #eee;
+}
+.baseCarrito.oculto .totalCarro {
+  display: none;
+}
   .imgbgHome.mobileSize img {
     max-height: 100vh!important;
     min-height: 50vh!important;
@@ -5549,4 +5567,8 @@ span.detail {
     }
 
   }
+}
+
+.temporarilyHide{
+  display: none;
 }
