@@ -612,7 +612,12 @@ footer {
   .container {
     min-width: 1600px !important; }
   .containerv2 {
-    padding: 0px 60px; } }
+    padding: 0px 60px; } 
+  .navbar .container{
+    min-width: 100%!important;
+  }
+  
+  }
 
 /*6.OFF CANVAS--------*/
 body {
@@ -626,6 +631,7 @@ body {
     font-size: 13px !important;
   } 
 }
+
 
 
 @media (max-width: 991.98px) {
@@ -5181,6 +5187,17 @@ span.detail {
     top: 150px;
   }
  
+.baseCarrito {
+  .bgHandler {
+    background-color: #fff;
+    width: 100vh;
+    height: 70px;
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 0;
+  }
+}
 .baseCarrito.oculto {
   left: 100.5% !important;
   animation: fadeIn ease 1s; }
