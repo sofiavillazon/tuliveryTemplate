@@ -308,8 +308,8 @@ footer h6 a:hover {
   border: 1px solid #10293d; }
 
 .btn-success {
-  border-color: #444242;
-  background-color: #444242; }
+  border-color: #31ab6a;
+  background-color: #31ab6a; }
 
 .barlogo {
   border-left: 1px solid #fff;
@@ -1643,26 +1643,59 @@ input[type=radio]:not(old):checked + label > span > span {
   .compactoCarHeight {
     height: calc(100vh - 250px) !important; }
   .escogerOpcion.show {
+    overflow-y: scroll;
     display: block;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
-    background: #ef4e35;
-    background: linear-gradient(47deg, #ef4e35 0%, #d82033 60%);
+    background: #EB4535;
+    background: linear-gradient(47deg, #D92134 0%, #EB4535 60%);
     height: 100vh;
     width: 100vw;
-    padding: 34% 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     text-align: center;
     color: #fff; }
-    .escogerOpcion.show h2 {
-      margin-bottom: 40px; }
-    .escogerOpcion.show button {
+    .escogerOpcion.show #quieroComprar {
+      width: 180px;
+      margin: 0px auto; }
+      .escogerOpcion.show #quieroComprar img {
+        width: 100%; }
+    .escogerOpcion.show #quieroVender {
+      width: 180px;
+      margin: 0px auto; }
+      .escogerOpcion.show #quieroVender img {
+        width: 100%; }
+    .escogerOpcion.show .logoline {
       display: block;
-      padding: 20px;
       text-align: center;
-      margin: 40px auto;
-      font-size: 20px; }
+      margin: 10px auto;
+      width: 120px; }
+    .escogerOpcion.show span {
+      font-size: 16px; }
+    .escogerOpcion.show h2 {
+      margin-bottom: 40px;
+      margin-top: -5px !important;
+      font-size: 24px;
+      margin-top: 0px;
+      padding-top: 0px; }
+    .escogerOpcion.show .poscomprar {
+      position: relative;
+      bottom: 20px !important;
+      left: 70px !important; }
+    .escogerOpcion.show .posVender {
+      position: relative;
+      bottom: 30px;
+      right: 70px;
+      rotate: 90deg;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+      -webkit-transition-duration: 1.3s;
+      -moz-transition-duration: 1.3s;
+      -o-transition-duration: 1.3s;
+      transition-duration: 1.3s; }
   .sm-hidden {
     display: none; }
   .floatMenu {
@@ -2091,25 +2124,53 @@ input[type=radio]:not(old):checked + label > span > span {
   margin-bottom: 20px;
   background-color: #fff; }
 
+.cartBtn {
+  border-radius: 50px;
+  font-size: 15px !important;
+  text-align: left;
+  padding: 7px 15px !important;
+  margin-top: 0px; }
+  .cartBtn .i {
+    padding-bottom: 7px;
+    display: inline-block; }
+
+.baseCarrito .totalCarro {
+  padding: 0px 10px 0px 10px;
+  text-align: left; }
+  .baseCarrito .totalCarro button {
+    text-align: left; }
+  .baseCarrito .totalCarro .badge-danger {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    top: 3px;
+    left: 32px;
+    font-weight: bold; }
+  .baseCarrito .totalCarro span .fa-shopping-cart {
+    -webkit-text-fill-color: #46464f00;
+    -webkit-text-stroke-width: 1.50px;
+    padding-right: 10px;
+    font-size: 27px;
+    padding-top: 0px; }
+
 .handler {
   display: none; }
 
 .handler:hover {
-  background-color: #128136; }
+  background-color: #31ab6a; }
 
 .handler {
-  background-color: #128136;
+  background-color: #31ab6a;
   z-index: 1032;
   position: absolute;
-  bottom: 10px;
-  left: calc(-98vw) !important;
   right: initial;
   width: 95%;
-  padding: 10px 15px;
   color: #fff;
   vertical-align: text-bottom;
   font-size: 19px;
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 30px;
   cursor: pointer; }
   .handler .badge-danger {
     position: absolute;
@@ -5267,7 +5328,9 @@ span.detail {
     top: 20p;
     right: 0px; }
   .baseCarrito {
-    margin-top: -55px; } }
+    margin-top: -55px; }
+  .baseCarrito.topConfig {
+    margin-top: 0px !important; } }
 
 .compactoTemplateHeight {
   min-height: calc(100vh); }

@@ -310,8 +310,8 @@ footer h6 {
 }
 
 .btn-success {
-  border-color: #444242;
-  background-color: #444242; }
+  border-color: #31ab6a;
+  background-color: #31ab6a; }
 
 .barlogo {
   border-left: 1px solid #fff;
@@ -1647,27 +1647,68 @@ input[type=radio]:not(old):checked + label > span > span {
     height: calc(100vh - 250px)!important;
   }
   .escogerOpcion.show{
+    overflow-y: scroll;
     display: block;
     position: fixed;
     top:0;
     left: 0;
     z-index: 9999;
-    background: rgb(239,78,53);
-    background: linear-gradient(47deg, rgba(239,78,53,1) 0%, rgba(216,32,51,1) 60%);
+    background: #EB4535;
+    background: linear-gradient(47deg, #D92134 0%, #EB4535 60%);
     height: 100vh;
     width: 100vw;
-    padding: 34% 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     text-align: center;
     color: $white;
+    #quieroComprar{
+      width: 180px;
+      margin: 0px auto;
+      img{
+        width: 100%;
+      }
+    }
+    #quieroVender{
+      width: 180px;
+      margin: 0px auto;
+      img{
+        width: 100%;
+      }
+    }
+    .logoline{
+      display: block;
+      text-align: center;
+      margin: 10px auto;
+      width: 120px;
+    }
+    span{
+      font-size: 16px;
+    }
     h2{
       margin-bottom: 40px;
+      margin-top: -5px!important;
+      font-size: 24px;
+      margin-top: 0px;
+      padding-top: 0px;
     }
-    button{
-      display: block;
-      padding: 20px;
-      text-align: center;
-      margin: 40px auto;
-      font-size: 20px;
+    .poscomprar{
+      position: relative;
+      bottom: 20px !important;
+      left: 70px !important;
+      
+    }
+    .posVender{
+      position: relative;
+      bottom: 30px;
+      right: 70px;
+      rotate: 90deg;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+      -webkit-transition-duration: 1.3s;
+      -moz-transition-duration: 1.3s;
+      -o-transition-duration: 1.3s;
+      transition-duration: 1.3s;
     }
    
   }
@@ -2167,11 +2208,50 @@ input[type=radio]:not(old):checked + label > span > span {
 // #main > .row {
 //   min-height: 76vh; }
 
+.cartBtn{
+  border-radius: 50px;
+  font-size: 15px!important;
+  text-align: left;
+  padding: 7px 15px!important;
+  margin-top: 0px;
+  .i{
+    padding-bottom: 7px;
+    display: inline-block;
+  }
+}
+
+.baseCarrito .totalCarro {
+  button{
+    text-align: left;
+  }
+  padding: 0px 10px 0px 10px;
+  text-align: left;
+  .badge-danger {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    top: 3px;
+    left: 32px;
+    font-weight: bold;
+  }
+  span {
+    
+    .fa-shopping-cart {
+      -webkit-text-fill-color: #46464f00;
+      -webkit-text-stroke-width: 1.50px;
+      padding-right: 10px;
+      font-size: 27px;
+      padding-top: 0px;
+    }
+  }
+}
 .handler {
   display: none; }
 
 .handler:hover {
-  background-color: #128136; }
+  background-color: #31ab6a; }
 
 .handler {
   .badge-danger{
@@ -2184,18 +2264,15 @@ input[type=radio]:not(old):checked + label > span > span {
     left: 32px;
     font-weight: bold;
   }
-  background-color: #128136;
+  background-color: #31ab6a;
   z-index: 1032;
   position: absolute;
-  bottom:10px ;
-  left: calc(-98vw) !important;
   right: initial;
   width: 95%;
-  padding: 10px 15px;
   color: #fff;
   vertical-align: text-bottom;
   font-size: 19px;
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 30px;
   cursor: pointer; }
 
 
@@ -5410,6 +5487,9 @@ span.detail {
   }
   .baseCarrito {
     margin-top: -55px;
+  }
+  .baseCarrito.topConfig{
+    margin-top: 0px!important;
   }
 }
 
