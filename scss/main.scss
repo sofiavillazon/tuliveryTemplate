@@ -1624,6 +1624,65 @@ input[type=radio]:not(old):checked + label > span > span {
 }
 
 @media (max-width: 991px) {
+  .specialcart{
+    .separdor{
+      border-top: 1px solid #eee;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .checkoutSectionv2 {
+      margin-bottom: 80px;
+    }
+    .baseCarrito .bgHandler {
+      background-color: #fff;
+      width: 100vh;
+      height: 70px;
+      bottom: 0px;
+      left: 0px;
+      position: fixed;
+      z-index: 19;
+      border-top: 1px solid #eee;
+    }
+    .baseCarrito .handler {
+      bottom: 10px;
+      left: 10px !important;
+      font-size: 15px !important;
+      display: block;
+      position: fixed;
+      z-index: 20;
+    }
+    .pos1{
+      order: 1;
+    }
+    .pos2{
+      margin-top: 0px;
+      order: 2;
+    }
+    .pos3{
+      order: 3;
+    }
+   
+    .logoInfo {
+      display: none!important;
+    }
+    .baseCarrito{
+      padding: 66px 0px !important;
+      .checkoutCarHeight {
+        display: none;
+      }
+      small,.resumen{
+        display: none;
+      }
+      
+    }
+    .baseCarrito .totalCarro {
+      position: absolute;
+      top: 0px;
+      bottom: auto;
+      left: 0px;
+      padding-bottom: 20px!important;
+    }
+  }
   .floatMenu{
     .tittleMenuSp{
       // background-color: #444;
@@ -1713,7 +1772,7 @@ input[type=radio]:not(old):checked + label > span > span {
    
   }
   .sm-hidden{
-    display: none;
+    display: none!important;
   }
   .floatMenu {
     width: 100%;
@@ -1816,6 +1875,15 @@ input[type=radio]:not(old):checked + label > span > span {
 
 
 @media (min-width: 992px) {
+  .hidexl{
+    display: none;
+  }
+  .specialcart{
+    .baseCarrito {
+      margin-top:0px!important;
+    }
+   
+  }
   .cutHeader{
     width: calc(100% - 25% - 1px);
   }

@@ -1628,6 +1628,49 @@ input[type=radio]:not(old):checked + label > span > span {
   display: none; }
 
 @media (max-width: 991px) {
+  .specialcart .separdor {
+    border-top: 1px solid #eee;
+    width: 100%;
+    margin-top: 10px; }
+  .specialcart .checkoutSectionv2 {
+    margin-bottom: 80px; }
+  .specialcart .baseCarrito .bgHandler {
+    background-color: #fff;
+    width: 100vh;
+    height: 70px;
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 19;
+    border-top: 1px solid #eee; }
+  .specialcart .baseCarrito .handler {
+    bottom: 10px;
+    left: 10px !important;
+    font-size: 15px !important;
+    display: block;
+    position: fixed;
+    z-index: 20; }
+  .specialcart .pos1 {
+    order: 1; }
+  .specialcart .pos2 {
+    margin-top: 0px;
+    order: 2; }
+  .specialcart .pos3 {
+    order: 3; }
+  .specialcart .logoInfo {
+    display: none !important; }
+  .specialcart .baseCarrito {
+    padding: 66px 0px !important; }
+    .specialcart .baseCarrito .checkoutCarHeight {
+      display: none; }
+    .specialcart .baseCarrito small, .specialcart .baseCarrito .resumen {
+      display: none; }
+  .specialcart .baseCarrito .totalCarro {
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+    left: 0px;
+    padding-bottom: 20px !important; }
   .floatMenu .tittleMenuSp {
     padding: 15px 15px 0px 22px !important;
     text-transform: uppercase;
@@ -1697,7 +1740,7 @@ input[type=radio]:not(old):checked + label > span > span {
       -o-transition-duration: 1.3s;
       transition-duration: 1.3s; }
   .sm-hidden {
-    display: none; }
+    display: none !important; }
   .floatMenu {
     width: 100%;
     text-decoration: none;
@@ -1768,6 +1811,10 @@ input[type=radio]:not(old):checked + label > span > span {
       margin: 0 auto; } }
 
 @media (min-width: 992px) {
+  .hidexl {
+    display: none; }
+  .specialcart .baseCarrito {
+    margin-top: 0px !important; }
   .cutHeader {
     width: calc(100% - 25% - 1px); }
   .float-left {
