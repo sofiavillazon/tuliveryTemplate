@@ -1628,6 +1628,8 @@ input[type=radio]:not(old):checked + label > span > span {
   display: none; }
 
 @media (max-width: 991px) {
+  .dotacion .bgBanner .textDrive {
+    width: 90% !important; }
   .specialcart .separdor {
     border-top: 1px solid #eee;
     width: 100%;
@@ -5573,3 +5575,74 @@ span.detail {
 
 .temporarilyHide {
   display: none; }
+
+.dotacion .bgBanner {
+  margin-top: -20px;
+  position: relative;
+  height: 100%; }
+  .dotacion .bgBanner img {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    z-index: -1; }
+  .dotacion .bgBanner .textDrive {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: 40px;
+    width: 50%;
+    color: #fff; }
+    .dotacion .bgBanner .textDrive h1 {
+      font-weight: 600 !important; }
+    .dotacion .bgBanner .textDrive span {
+      color: #fff; }
+
+.dotacion .textSuscription:hover .imginfo {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s; }
+
+.dotacion .imagesuscr img {
+  border-radius: 40px;
+  max-width: 450px; }
+
+.dotacion .bg-blue {
+  background-color: #375F8E;
+  border-radius: 20px;
+  color: #fff;
+  margin: 40px 0px; }
+  .dotacion .bg-blue img {
+    width: 80px;
+    height: 80px; }
+  .dotacion .bg-blue h3 {
+    font-weight: 400;
+    padding: 20px 0px;
+    font-size: 20px; }
+
+.dotacion .textSuscription {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 0px;
+  border: none;
+  background-color: transparent !important; }
+  .dotacion .textSuscription .bg-light-fullw {
+    position: absolute;
+    left: -15px;
+    margin-top: -220px;
+    z-index: -1; }
+    .dotacion .textSuscription .bg-light-fullw img {
+      min-width: 100vw; }
+  .dotacion .textSuscription .imginfo {
+    width: 100px;
+    transition: all 1s;
+    margin-bottom: 20px; }
+  .dotacion .textSuscription h2 {
+    color: #3D3D3D;
+    margin-bottom: 20px; }
+  .dotacion .textSuscription p {
+    font-size: 18px;
+    color: #3D3D3D; }
