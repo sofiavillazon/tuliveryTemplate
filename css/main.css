@@ -5440,6 +5440,16 @@ span.detail {
     text-align: center;
     border-radius: 10px; }
 
+.totalCarro .btn-success, .specialcart .btn-success, .handler .btn-success {
+  color: #fff;
+  background-color: #EF4E35 !important;
+  border-color: #EF4E35 !important; }
+
+.totalCarro .btn-success:hover, .specialcart .btn-success:hover, .handler .btn-success:hover {
+  color: #fff;
+  background-color: #e43e24 !important;
+  border-color: #e43e24 !important; }
+
 .modal-content {
   position: relative;
   display: flex;
@@ -5467,9 +5477,10 @@ span.detail {
   margin-top: -55px; }
 
 .homePrincipal .circleButton {
+  margin-top: 10px !important;
   padding: 10px 12px;
-  width: 40px;
-  height: 40px; }
+  width: 50px;
+  height: 50px; }
   .homePrincipal .circleButton img {
     width: 20px;
     height: 20px;
