@@ -647,6 +647,11 @@ body {
     font-size: 13px !important; } }
 
 @media (max-width: 991.98px) {
+  .InfoMap .text-dark {
+    font-size: 16px;
+    line-height: 14px; }
+  .InfoMap .detailInfo {
+    font-size: 12px; }
   .homePrincipal {
     overflow: hidden; }
   .homePrincipal .heightSlide .textDrive {
@@ -5706,19 +5711,16 @@ body {
     line-height: 14px; }
 
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
-  align-self: center;
-  border-bottom: none;
-  border-top-color: #375F8E !important; }
-
-.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
-  align-self: center;
-  border-bottom: none;
   border-top-color: #375F8E !important; }
 
 .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-  align-self: center;
-  border-bottom: none;
-  border-top-color: #375F8E !important; }
+  border-right-color: #375F8E !important; }
+
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+  border-left-color: #375F8E !important; }
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+  border-bottom-color: #375F8E !important; }
 
 .mapboxgl-popup-close-button {
   outline: none !important;
@@ -5732,22 +5734,62 @@ body {
   color: #fff !important;
   font-size: 22px; }
 
+.InfoEmpresa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 5;
+  background-color: #37608ef3;
+  padding: 10px; }
+  .InfoEmpresa .logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden; }
+    .InfoEmpresa .logo img {
+      width: 100%; }
+  .InfoEmpresa .textoMap {
+    padding: 10px; }
+    .InfoEmpresa .textoMap h3 {
+      font-size: 18px;
+      margin-bottom: 0px;
+      color: #d9dfe9 !important; }
+    .InfoEmpresa .textoMap h4 {
+      font-size: 16px;
+      margin-bottom: 0px;
+      color: #F7F7F7 !important; }
+
 .InfoMap {
+  z-index: 5;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100vw; }
+  .InfoMap .ButtonFloat {
+    position: absolute;
+    right: 5px;
+    top: 40px; }
+    .InfoMap .ButtonFloat button {
+      margin-right: 8px; }
+  .InfoMap h6 {
+    margin-bottom: 0px;
+    color: #375F8E;
+    font-size: 14px; }
+  .InfoMap h3 {
+    line-height: 18px; }
 
 .tiempo {
   position: fixed;
   width: 60px;
   height: 60px;
-  background: #e44d35;
+  background: #21386b;
   border-radius: 50%;
-  top: 65px;
+  top: 10px;
   right: 10px;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  z-index: 6; }
   .tiempo h2 {
     padding-top: 10px;
     font-size: 22px;

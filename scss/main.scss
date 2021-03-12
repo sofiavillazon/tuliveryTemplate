@@ -635,6 +635,15 @@ body {
 
 
 @media (max-width: 991.98px) {
+  .InfoMap{
+    .text-dark{
+      font-size: 16px;
+      line-height: 14px;
+    }
+    .detailInfo {
+      font-size: 12px;
+    }
+  }
   .homePrincipal{
     overflow: hidden;
   }
@@ -5978,14 +5987,17 @@ body { margin: 0; padding: 0; }
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
   border-top-color: $blue !important;
 }
-.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
-  border-top-color: $blue !important;
-}
 
 .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-  border-top-color: $blue !important;
+  border-right-color: $blue!important;
+}
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+  border-left-color: $blue!important;
 }
 
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+  border-bottom-color: $blue!important;
+}
 
 .mapboxgl-popup-close-button {
   outline: none!important;
@@ -5999,24 +6011,73 @@ body { margin: 0; padding: 0; }
   color: $white!important;
   font-size: 22px;
 }
+.InfoEmpresa{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 5;
+  background-color: #37608ef3;
+  padding: 10px;
+  .logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+  .textoMap{
+    padding: 10px;
+    h3{
+      font-size: 18px;
+      margin-bottom: 0px;
+      color: #d9dfe9!important;
+    }
+    h4{
+      font-size: 16px;
+      margin-bottom: 0px;
+      color: #F7F7F7!important;
+    }
+  }
+}
 
 .InfoMap{
+  z-index: 5;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100vw;
+  .ButtonFloat{
+    position: absolute;
+    right: 5px;
+    top:40px;
+    button{
+      margin-right: 8px;
+    }
+  }
+  h6{
+    margin-bottom: 0px;
+    color: $blue;
+    font-size: 14px;
+  }
+  h3{
+    line-height: 18px;
+  }
 }
 
 .tiempo{
   position: fixed;
   width: 60px;
   height: 60px;
-  background: #e44d35;
+  background: #21386b;
   border-radius: 50%;
-  top: 65px;
+  top: 10px;
   right: 10px;
   text-align: center;
   color: $white;
+  z-index: 6;
   h2{
     padding-top: 10px;
     font-size: 22px;

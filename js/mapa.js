@@ -4,7 +4,7 @@ var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/sofiavillazon/ckm6gzd3v22mm17po2a5zjd3d',
   center: [-76.993702, -12.093133],
-  zoom: 16
+  zoom: 15
 });
 
 
