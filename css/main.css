@@ -648,10 +648,12 @@ body {
 
 @media (max-width: 991.98px) {
   .InfoMap .text-dark {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 14px; }
   .InfoMap .detailInfo {
-    font-size: 12px; }
+    font-size: 13px; }
+  .InfoMap h3 {
+    line-height: 18px; }
   .homePrincipal {
     overflow: hidden; }
   .homePrincipal .heightSlide .textDrive {
@@ -5776,8 +5778,6 @@ body {
     margin-bottom: 0px;
     color: #375F8E;
     font-size: 14px; }
-  .InfoMap h3 {
-    line-height: 18px; }
 
 .tiempo {
   position: fixed;
