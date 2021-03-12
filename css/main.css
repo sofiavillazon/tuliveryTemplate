@@ -5646,3 +5646,109 @@ span.detail {
   .dotacion .textSuscription p {
     font-size: 18px;
     color: #3D3D3D; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%; }
+
+.markerClient {
+  background-image: url("../img/mapa/pin-orange.svg");
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  cursor: pointer; }
+
+.markerDriver {
+  background-image: url("../img/mapa/pin-driver.svg");
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  cursor: pointer; }
+
+.markerStore {
+  background-image: url("../img/mapa/pin-store.svg");
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  cursor: pointer; }
+
+.mapboxgl-popup {
+  max-width: 200px;
+  text-align: left; }
+
+.mapboxgl-popup-content {
+  border-radius: 12px !important;
+  background: #375F8E !important;
+  text-align: left;
+  padding: 18px 18px 3px 18px !important;
+  z-index: 55555;
+  font-family: 'Open Sans', sans-serif; }
+  .mapboxgl-popup-content h6 {
+    color: #fff;
+    font-size: 11px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px; }
+  .mapboxgl-popup-content h2 {
+    color: #c7d5e9;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0px; }
+  .mapboxgl-popup-content p {
+    color: #fff;
+    line-height: 14px; }
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  align-self: center;
+  border-bottom: none;
+  border-top-color: #375F8E !important; }
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+  align-self: center;
+  border-bottom: none;
+  border-top-color: #375F8E !important; }
+
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+  align-self: center;
+  border-bottom: none;
+  border-top-color: #375F8E !important; }
+
+.mapboxgl-popup-close-button {
+  outline: none !important;
+  position: absolute;
+  right: 4px !important;
+  top: 4px !important;
+  border: 0;
+  border-radius: 0 3px 0 0;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff !important;
+  font-size: 22px; }
+
+.InfoMap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw; }
+
+.tiempo {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background: #e44d35;
+  border-radius: 50%;
+  top: 65px;
+  right: 10px;
+  text-align: center;
+  color: #fff; }
+  .tiempo h2 {
+    padding-top: 10px;
+    font-size: 22px;
+    margin-bottom: -10px; }

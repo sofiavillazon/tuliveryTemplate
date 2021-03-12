@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="loading" lang="en">
+    <!-- BEGIN: Head-->
+    <head>
+        <meta charset="utf-8">
+        <title>Tulivery - Pedido</title>
+        <!-- STYLES -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/icon-font.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    </head>
+    <!-- END: Head-->
+    <!-- BEGIN: Body-->
+    <body>
+
+        <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-dark ">
+            <div class="alignnav container">
+                <a class="navbar-brand" href="index.html">
+                <img class="logoline" src="img/logo.png">
+                <!-- <span class="barlogo pl-2">Haz tu pedido en tu tienda favorita</span> -->
+                </a>
+                <button id="toggleTulivery" class="navbar-toggler p-0 border-0 ml-auto " type="button" data-toggle="offcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <div class="cart2">
+                    <a class="nav-link" href="informacion.html"> <span><i class="fa fa-shopping-cart"></i></span> </a>
+                </div>  -->
+                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                    <ul class="navbar-nav ml-md-auto ">
+                        <li class="nav-item pt-1 d-lg-none sm-hidden">
+                            <a class="nav-link" href="detalle.html"> Principal </a>
+                            <span class="tittle barlogo pl-2">Haz tu pedido en tu tienda favorita</span>
+                        </li> 
+                        
+                        <li class="nav-item pt-2 active">
+                            <button type="button" class="btn btn-white-home float-right  btn-sm" >Entrar</button>
+                        </li>
+                      
+                        <li class="nav-item floatMenuOption noMovileBtn">
+                            <a class="nav-link sm-hidden">
+                              <span>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                              </span>
+                            </a>
+                            <ul class="floatMenu">
+                                <li class="userInfo storeMenuSub btnSection ">
+                                    <button type="button" class="mt-1 btn btn-danger-home btn-sm" onclick="inscripcion_ingresar()">Comenzar prueba</button>
+      
+                                </li>
+                                <a class="linkElm" id="" href="#" > 
+                                    <li>
+                                        Abrir mi tienda Virtual
+                                    </li>
+                                </a>  
+                               
+                                <a class="linkElm" id="" href="#" > 
+                                    <li>
+                                        Planes de suscripción
+                                    </li>
+                                </a>  
+                                <a class="linkElm" id="" href="#" > 
+                                    <li>
+                                        Quiero ser repartidor
+                                    </li>
+                                </a>  
+                                <a class="linkElm" id="" href="#" > 
+                                    <li>
+                                        Sobre Tulivery
+                                    </li>
+                                </a>  
+                                <a class="linkElm" id="" href="#" > 
+                                    <li>
+                                        Términos y condiciones
+                                    </li>
+                                </a>  
+                                  
+                                <a class="linkElm" id="" href="#" > 
+                                    <li>
+                                        Políticas de privacidad
+                                    </li>
+                                </a> 
+                            </ul>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+                        
+        <div id="map"></div>
+    
+        <div class="tiempo">
+           <h2>12</h2> <small>min</small>
+        </div>
+
+        <div class="InfoMap">
+            <div class="card card-left flex-md-row mb-4 shadow-sm h-md-250">
+                <div class="card-img-right flex-auto d-none " style="background-image: url('img/defaultImg.jpg');">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <strong class="d-inline-block mb-2 detailInfo">Driver a cargo</strong>
+                  <h3 class="mb-0 text-truncate">
+                    <a class="text-dark" href="#">Aldo Benites Palomino</a>
+                  </h3>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">llega en 15 minutos</small>
+                    <button type="button" class="btn btn-danger-home circleButton smallBtn"><img src="img/mapa/phone.svg" alt=""></button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" charset="utf-8"></script>
+
+        <script src="js/main.js"></script>
+        <script src="js/mapa.js"></script>
+
+    </body>
+    <!-- END: Body-->
+</html>
