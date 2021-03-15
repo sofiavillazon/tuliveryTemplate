@@ -5815,13 +5815,18 @@ body {
 
 #nuevaDireccion .textDriver {
   padding: 0px 20px; }
+  #nuevaDireccion .textDriver img {
+    width: 60%;
+    max-width: 80px;
+    margin-bottom: 10px; }
   #nuevaDireccion .textDriver h1 {
-    font-size: 23px !important;
+    font-size: 18px !important;
     line-height: 38px;
     font-weight: 500 !important;
     color: #3D3D3D !important;
     margin-top: -10px; }
   #nuevaDireccion .textDriver span {
+    font-size: 12px !important;
     color: #E23B3B;
     font-weight: 500;
     margin-bottom: 0px; }
