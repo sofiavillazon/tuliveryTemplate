@@ -647,6 +647,9 @@ body {
     font-size: 13px !important; } }
 
 @media (max-width: 991.98px) {
+  .textSuscription .bg-light-fullw img {
+    min-width: 100%;
+    width: 100%; }
   .InfoMap .text-dark {
     font-size: 18px;
     line-height: 14px; }
@@ -5768,10 +5771,21 @@ body {
   bottom: 0;
   left: 0;
   width: 100vw; }
+  .InfoMap .driverImage {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    background-color: #212129;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px; }
+    .InfoMap .driverImage img {
+      width: 100%; }
   .InfoMap .ButtonFloat {
     position: absolute;
     right: 5px;
-    top: 40px; }
+    top: 90px; }
     .InfoMap .ButtonFloat button {
       margin-right: 8px; }
   .InfoMap h6 {
@@ -5794,3 +5808,20 @@ body {
     padding-top: 10px;
     font-size: 22px;
     margin-bottom: -10px; }
+
+#nuevaDireccion .modal-body {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+#nuevaDireccion .textDriver {
+  padding: 0px 20px; }
+  #nuevaDireccion .textDriver h1 {
+    font-size: 23px !important;
+    line-height: 38px;
+    font-weight: 500 !important;
+    color: #3D3D3D !important;
+    margin-top: -10px; }
+  #nuevaDireccion .textDriver span {
+    color: #E23B3B;
+    font-weight: 500;
+    margin-bottom: 0px; }

@@ -38,22 +38,53 @@
                 <div class="card-img-right flex-auto d-none " style="background-image: url('img/defaultImg.jpg');">
                 </div>
                 <div class="card-body d-flex flex-column">
-                  <strong class="d-inline-block mb-2 detailInfo">Driver a cargo</strong>
-                  <h6><strong>Estado: </strong> En camino</h6>
-                  <h3 class="mb-0 text-truncate">
-                    <a class="text-dark" href="#">Aldo Benites Palomino</a>
-                  </h3>
-                  <div class="d-flex justify-content-between">
-                    <small class="text-muted">llega en 15 minutos</small>
-                    
-                  </div>
-                  <div class="ButtonFloat">
-                      <button type="button" class="btn btn-danger-home circleButton smallBtn"><img src="img/mapa/phone.svg" alt=""></button>
-                      <button type="button" class="btn btn-danger-home circleButton smallBtn"><img src="img/mapa/chat.svg" alt=""></button>
-                  </div>
+                    <strong class="d-inline-block mb-2 detailInfo">Driver a cargo</strong>
+                    <h3 class="mb-0 text-truncate">
+                        <a class="text-dark" href="#">Aldo Benites Palomino</a>
+                      </h3>
+                    <h6><strong>Estado: </strong> En camino</h6>
+
+                    <div class="d-flex justify-content-between">
+                        <small class="text-muted">llega en 15 minutos</small>
+                    </div>
+                    <button type="button" class="btn btn-danger-home col-3 btn-sm mt-2" data-toggle="modal" data-target="#nuevaDireccion">Modal</button>
+                    <div class="driverImage">
+                      <img src="img/avatarR.png" alt="">  
+                    </div>
+                    <div class="ButtonFloat">
+                        <button type="button" class="btn btn-danger-home circleButton smallBtn"><img src="img/mapa/phone.svg" alt=""></button>
+                        <button type="button" class="btn btn-danger-home circleButton smallBtn"><img src="img/mapa/chat.svg" alt=""></button>
+                    </div>
                 </div>
               </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade fade bd-example-modal-lg" id="nuevaDireccion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    
+                    <div class="modal-body">
+                            <div class="row">
+
+                                <div class="col-md-12 text-center">
+                                    <div class="textDriver">
+                                        <span>Pedido Entregado con éxito</span>
+                                        <h1>Gracias por tu preferencia</h1>
+                                        <p>Esperamos que tu experiencia de compra haya sido de tu agrado. Déjanos tu opinión para seguir mejorando</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger-home" data-dismiss="modal">Opinar</button>
+                        <button type="button" class="btn btn-white-home">Ahora no</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
 
         <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" charset="utf-8"></script>

@@ -635,6 +635,17 @@ body {
 
 
 @media (max-width: 991.98px) {
+
+  .textSuscription {
+    .bg-light-fullw{
+      img{
+        min-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+
   .InfoMap{
     .text-dark{
       font-size: 18px;
@@ -6052,10 +6063,23 @@ body { margin: 0; padding: 0; }
   bottom: 0;
   left: 0;
   width: 100vw;
+  .driverImage{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    background-color: #212129;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    img{  
+      width: 100%;
+    }
+  }
   .ButtonFloat{
     position: absolute;
     right: 5px;
-    top:40px;
+    top: 90px;
     button{
       margin-right: 8px;
     }
@@ -6082,5 +6106,28 @@ body { margin: 0; padding: 0; }
     padding-top: 10px;
     font-size: 22px;
     margin-bottom: -10px;
+  }
+}
+
+
+#nuevaDireccion {
+  .modal-body{
+    padding-top:60px;
+    padding-bottom:60px;
+  }
+  .textDriver {
+    padding: 0px 20px;
+    h1 {
+      font-size:23px!important;
+      line-height: 38px;
+      font-weight: 500 !important;
+      color: $dark!important;
+      margin-top: -10px;
+    }
+    span{
+      color: $reddark;
+      font-weight: 500;
+      margin-bottom: 0px;
+    }
   }
 }
