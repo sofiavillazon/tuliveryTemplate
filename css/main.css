@@ -647,6 +647,8 @@ body {
     font-size: 13px !important; } }
 
 @media (max-width: 991.98px) {
+  .template2 .bannerCompacto {
+    display: none; }
   .textSuscription .bg-light-fullw img {
     min-width: 100%;
     width: 100%; }
