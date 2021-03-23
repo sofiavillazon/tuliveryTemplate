@@ -5414,7 +5414,8 @@ span.detail {
     margin-top: 0px !important; }
   .template2 .circle {
     margin-top: 0px;
-    width: 320px; }
+    width: 280px !important;
+    width: 180px !important; }
     .template2 .circle img {
       width: 100%; }
   .template2 .bannerCompacto {
