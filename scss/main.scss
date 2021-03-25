@@ -4434,7 +4434,13 @@ button.smallBtn img {
   position: absolute; }
 
 .conteinerDetail {
-  background-color: transparent; }
+  background-color: transparent; 
+  strong {
+    line-height: 17px!important;
+    font-weight: 600!important;
+    color: #05080c!important;
+  }
+}
 
 .conteinerDetail .cardDetail:hover {
   border: 1px solid #ef4e35;

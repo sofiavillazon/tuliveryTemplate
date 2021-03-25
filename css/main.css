@@ -4402,6 +4402,10 @@ button.smallBtn img {
 
 .conteinerDetail {
   background-color: transparent; }
+  .conteinerDetail strong {
+    line-height: 17px !important;
+    font-weight: 600 !important;
+    color: #05080c !important; }
 
 .conteinerDetail .cardDetail:hover {
   border: 1px solid #ef4e35;
