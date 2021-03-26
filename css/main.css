@@ -1612,14 +1612,10 @@ input[type=radio]:not(old):checked + label > span > span {
   right: 35px; }
 
 .plantilla2 .imgResponsive2 {
-  max-height: 180px !important;
-  min-height: 80px;
-  border-radius: 10px 0px 0px 10px !important;
   overflow: hidden; }
 
 .plantilla2 .imgResponsive2 img {
   margin-left: 0px;
-  height: 100% !important;
   width: 100%; }
 
 .plantilla2 .text-descr {
@@ -1825,6 +1821,42 @@ input[type=radio]:not(old):checked + label > span > span {
       margin: 0 auto; } }
 
 @media (min-width: 992px) {
+  .plantilla1 .cardDetail ul {
+    list-style: circle !important;
+    margin-left: 15px !important;
+    margin-bottom: 15px !important; }
+  .plantilla1 .cardDetail p {
+    margin-bottom: 5px !important; }
+  .plantilla1 .cardDetail strong {
+    line-height: 17px !important; }
+  .plantilla1 .card.imgresp {
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    margin: 0px !important; }
+  .plantilla1 .imgResponsive2 {
+    max-height: 180px !important;
+    min-height: 80px;
+    border-radius: 10px 10px 0px 0px !important;
+    overflow: hidden; }
+  .plantilla1 .cardDetail {
+    height: 100% !important; }
+  .plantilla1 .cardDetail strong {
+    margin-bottom: 5px; }
+  .plantilla2 .cardDetail ul {
+    list-style: circle !important;
+    margin-left: 15px !important;
+    margin-bottom: 15px !important; }
+  .plantilla2 .cardDetail p {
+    margin-bottom: 5px !important; }
+  .plantilla2 .cardDetail strong {
+    line-height: 17px !important; }
+  .plantilla2 .imgWidth {
+    border-radius: 12px !important;
+    margin-left: 0px;
+    height: auto !important;
+    width: 100px !important;
+    float: left;
+    margin-right: 10px; }
   .tiendaIco {
     top: calc(30% - 22px) !important; }
   #slider2 {
@@ -1953,6 +1985,21 @@ input[type=radio]:not(old):checked + label > span > span {
   display: none; }
 
 @media (max-width: 991px) {
+  .plantilla2 .cardDetail ul {
+    list-style: circle !important;
+    margin-left: 15px !important;
+    margin-bottom: 15px !important; }
+  .plantilla2 .cardDetail p {
+    margin-bottom: 5px !important; }
+  .plantilla2 .cardDetail strong {
+    line-height: 17px !important; }
+  .plantilla2 .imgWidth {
+    border-radius: 12px !important;
+    margin-left: 0px;
+    height: auto !important;
+    width: 100% !important;
+    float: left;
+    margin-right: 10px; }
   .avatarMenu {
     display: none !important; }
   .insideElm {
@@ -4192,8 +4239,8 @@ button.smallBtn img {
   border-radius: 12px; }
 
 .sliderProductHome li:hover, .sliderProductHome li.active {
-  min-width: 50px;
-  max-width: 250px;
+  min-width: 100%;
+  max-width: 100%;
   width: max-content;
   display: block;
   height: 38px;
@@ -4403,7 +4450,6 @@ button.smallBtn img {
 .conteinerDetail {
   background-color: transparent; }
   .conteinerDetail strong {
-    line-height: 17px !important;
     font-weight: 600 !important;
     color: #05080c !important; }
 

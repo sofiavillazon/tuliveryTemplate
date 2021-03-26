@@ -1621,14 +1621,12 @@ input[type=radio]:not(old):checked + label > span > span {
   right: 35px; }
 
 .plantilla2 .imgResponsive2 {
-  max-height: 180px !important;
-  min-height: 80px;
-  border-radius: 10px 0px 0px 10px !important;
-  overflow: hidden; }
+  overflow: hidden; 
+}
   .plantilla2 .imgResponsive2 img {
     margin-left: 0px;
-    height: 100% !important;
-    width: 100%; }
+    width: 100%; 
+  }
 
 .plantilla2 .text-descr {
   line-height: 14px; }
@@ -1903,6 +1901,63 @@ input[type=radio]:not(old):checked + label > span > span {
 
 
 @media (min-width: 992px) {
+
+  .plantilla1{
+    .cardDetail {
+      ul{
+        list-style: circle!important;
+        margin-left: 15px!important;
+        margin-bottom: 15px!important;
+      }
+      p{
+        margin-bottom: 5px!important;
+      }
+      strong {
+      line-height: 17px!important;
+      }
+    }
+    .card.imgresp {
+      padding-bottom: 10px !important;
+      padding-top: 10px !important;
+      margin: 0px !important;
+    }
+    .imgResponsive2 {
+      max-height: 180px !important;
+      min-height: 80px;
+      border-radius: 10px 10px 0px 0px !important;
+      overflow: hidden;
+    }
+    .cardDetail{
+      height: 100%!important;
+    }
+    .cardDetail strong{
+      margin-bottom: 5px;
+    }
+  }
+  .plantilla2{
+    .cardDetail {
+      ul{
+        list-style: circle!important;
+        margin-left: 15px!important;
+        margin-bottom: 15px!important;
+      }
+      p{
+        margin-bottom: 5px!important;
+      }
+      strong {
+      line-height: 17px!important;
+      }
+    }
+    .imgWidth {
+      border-radius: 12px!important;
+      margin-left: 0px;
+      height: auto !important; 
+      width: 100px!important; 
+      float: left ;
+      margin-right: 10px;
+    }
+  }
+
   .tiendaIco {
     top: calc(30% - 22px) !important;
   }
@@ -2083,6 +2138,30 @@ input[type=radio]:not(old):checked + label > span > span {
       display: none;
     }
 @media (max-width: 991px) {
+  .plantilla2{
+    .cardDetail {
+      ul{
+        list-style: circle!important;
+        margin-left: 15px!important;
+        margin-bottom: 15px!important;
+      }
+      p{
+        margin-bottom: 5px!important;
+      }
+      strong {
+      line-height: 17px!important;
+      }
+    }
+    .imgWidth {
+      border-radius: 12px!important;
+      margin-left: 0px;
+      height: auto !important; 
+      width: 100%!important; 
+      float: left ;
+      margin-right: 10px;
+      }
+    } 
+  
   .avatarMenu{
     display: none!important;
   }
@@ -4237,8 +4316,8 @@ button.smallBtn img {
   border-radius: 12px; }
 
 .sliderProductHome li:hover, .sliderProductHome li.active {
-  min-width: 50px;
-  max-width: 250px;
+  min-width: 100%;
+  max-width: 100%;
   width: max-content;
   display: block;
   height: 38px;
@@ -4436,7 +4515,6 @@ button.smallBtn img {
 .conteinerDetail {
   background-color: transparent; 
   strong {
-    line-height: 17px!important;
     font-weight: 600!important;
     color: #05080c!important;
   }
@@ -6182,3 +6260,5 @@ body { margin: 0; padding: 0; }
     }
   }
 }
+
+
