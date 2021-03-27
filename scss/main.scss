@@ -1903,12 +1903,12 @@ input[type=radio]:not(old):checked + label > span > span {
 @media (min-width: 992px) {
   .plantilla3{
     .cardDetail .flex-column {
-      min-height: 1250px;
+      min-height: 51px;
     }
   }
   .plantilla1{
     .cardDetail .flex-column {
-      min-height: 1250px;
+      min-height: 105px;
     }
     .cardDetail {
       ul{
@@ -1942,9 +1942,7 @@ input[type=radio]:not(old):checked + label > span > span {
     }
   }
   .plantilla2{
-    .cardDetail .flex-column {
-      min-height: 1250px;
-    }
+
     .cardDetail {
       ul{
         list-style: circle!important;

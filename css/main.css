@@ -1821,6 +1821,10 @@ input[type=radio]:not(old):checked + label > span > span {
       margin: 0 auto; } }
 
 @media (min-width: 992px) {
+  .plantilla3 .cardDetail .flex-column {
+    min-height: 51px; }
+  .plantilla1 .cardDetail .flex-column {
+    min-height: 105px; }
   .plantilla1 .cardDetail ul {
     list-style: circle !important;
     margin-left: 15px !important;
