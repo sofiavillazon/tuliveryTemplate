@@ -1901,8 +1901,15 @@ input[type=radio]:not(old):checked + label > span > span {
 
 
 @media (min-width: 992px) {
-
+  .plantilla3{
+    .cardDetail .flex-column {
+      min-height: 1250px;
+    }
+  }
   .plantilla1{
+    .cardDetail .flex-column {
+      min-height: 1250px;
+    }
     .cardDetail {
       ul{
         list-style: circle!important;
@@ -1935,6 +1942,9 @@ input[type=radio]:not(old):checked + label > span > span {
     }
   }
   .plantilla2{
+    .cardDetail .flex-column {
+      min-height: 1250px;
+    }
     .cardDetail {
       ul{
         list-style: circle!important;
@@ -6260,5 +6270,4 @@ body { margin: 0; padding: 0; }
     }
   }
 }
-
 
