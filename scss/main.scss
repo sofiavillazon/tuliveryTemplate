@@ -1905,6 +1905,19 @@ input[type=radio]:not(old):checked + label > span > span {
     .cardDetail .flex-column {
       min-height: 51px;
     }
+    .cardDetail {
+      ul{
+        list-style: circle!important;
+        margin-left: 15px!important;
+        margin-bottom: 15px!important;
+      }
+      p{
+        margin-bottom: 5px!important;
+      }
+      strong {
+      line-height: 17px!important;
+      }
+    }
   }
   .plantilla1{
     .cardDetail .flex-column {
@@ -1946,8 +1959,12 @@ input[type=radio]:not(old):checked + label > span > span {
     .cardDetail {
       ul{
         list-style: circle!important;
-        margin-left: 15px!important;
+        
+        margin-left: 20px!important;
         margin-bottom: 15px!important;
+       li{
+        list-style-position: inside;
+       }
       }
       p{
         margin-bottom: 5px!important;

@@ -1823,6 +1823,14 @@ input[type=radio]:not(old):checked + label > span > span {
 @media (min-width: 992px) {
   .plantilla3 .cardDetail .flex-column {
     min-height: 51px; }
+  .plantilla3 .cardDetail ul {
+    list-style: circle !important;
+    margin-left: 15px !important;
+    margin-bottom: 15px !important; }
+  .plantilla3 .cardDetail p {
+    margin-bottom: 5px !important; }
+  .plantilla3 .cardDetail strong {
+    line-height: 17px !important; }
   .plantilla1 .cardDetail .flex-column {
     min-height: 105px; }
   .plantilla1 .cardDetail ul {
@@ -1848,8 +1856,10 @@ input[type=radio]:not(old):checked + label > span > span {
     margin-bottom: 5px; }
   .plantilla2 .cardDetail ul {
     list-style: circle !important;
-    margin-left: 15px !important;
+    margin-left: 20px !important;
     margin-bottom: 15px !important; }
+    .plantilla2 .cardDetail ul li {
+      list-style-position: inside; }
   .plantilla2 .cardDetail p {
     margin-bottom: 5px !important; }
   .plantilla2 .cardDetail strong {
