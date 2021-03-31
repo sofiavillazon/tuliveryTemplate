@@ -1820,6 +1820,44 @@ input[type=radio]:not(old):checked + label > span > span {
       display: block;
       margin: 0 auto; } }
 
+.selectCategory {
+  height: 58px !important;
+  border-radius: 12px !important;
+  border: 1px solid #E23B3B; }
+
+.searchCategory .from-search .gradientSearch {
+  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  border: 2px solid #fff;
+  color: #999999 !important;
+  height: 58px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  padding-left: 30px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 8px #d6d6d6;
+  color: #EF4E35; }
+
+.searchCategory .from-search .btn-search {
+  font-size: 28px !important;
+  background-color: #EF4E35;
+  display: block;
+  border: 1px solid #EF4E35;
+  padding: 0px 10px 0px 10px;
+  border-radius: 40px;
+  position: absolute;
+  left: calc(100% - 80px);
+  z-index: 0;
+  font-weight: 300;
+  margin-top: 0px;
+  width: 58px;
+  height: 58px;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out; }
+
+.searchCategory .from-search .btn-search img {
+  width: 25px; }
+
 @media (min-width: 992px) {
   .plantilla3 .cardDetail .flex-column {
     min-height: 51px; }
@@ -1853,6 +1891,40 @@ input[type=radio]:not(old):checked + label > span > span {
   .plantilla1 .cardDetail {
     height: 100% !important; }
   .plantilla1 .cardDetail strong {
+    margin-bottom: 5px; }
+  .plantilla4 .card-columns {
+    column-count: 4;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1; }
+  .plantilla4 .cardDetail .flex-column {
+    min-height: 105px; }
+  .plantilla4 .cardDetail ul {
+    list-style: circle !important;
+    margin-left: 15px !important;
+    margin-bottom: 15px !important; }
+  .plantilla4 .cardDetail h4 {
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    text-align: right;
+    color: #E23B3B !important; }
+  .plantilla4 .cardDetail p {
+    margin-bottom: 5px !important; }
+  .plantilla4 .cardDetail strong {
+    line-height: 17px !important; }
+  .plantilla4 .card.imgresp {
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    margin: 0px !important; }
+  .plantilla4 .imgResponsive2 {
+    max-height: 160px !important;
+    min-height: 80px;
+    border-radius: 10px 10px 0px 0px !important;
+    overflow: hidden; }
+  .plantilla4 .cardDetail {
+    height: 100% !important; }
+  .plantilla4 .cardDetail strong {
     margin-bottom: 5px; }
   .plantilla2 .cardDetail ul {
     list-style: circle !important;
@@ -1999,6 +2071,9 @@ input[type=radio]:not(old):checked + label > span > span {
   display: none; }
 
 @media (max-width: 991px) {
+  .imgresp .imgResponsive2 {
+    min-height: 110px !important;
+    max-height: 222px; }
   .plantilla2 .cardDetail ul {
     list-style: circle !important;
     margin-left: 15px !important;
@@ -2273,6 +2348,10 @@ input[type=radio]:not(old):checked + label > span > span {
   border-radius: 0px;
   background-color: #fff;
   padding-bottom: 0px; }
+  .baseCarrito .leftcontent a {
+    font-size: 13px; }
+  .baseCarrito .leftcontent h6 {
+    margin-bottom: 0px; }
   .baseCarrito .headerInfo {
     background-color: #ebeff4;
     padding-top: 8px;
