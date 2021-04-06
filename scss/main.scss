@@ -1739,6 +1739,100 @@ input[type=radio]:not(old):checked + label > span > span {
   left: initial;
   right: 35px; }
 
+.plantilla1 {
+  .conteinerDetail .cardDetail {
+    background-color: #fff;
+    min-height: 320px;
+  }
+  .lineNumber {
+    position: relative;
+    p{
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
+    }
+    .bgvermas{
+      position: absolute;
+      text-align: right;
+      width: 70px;
+      right: 0px;
+      bottom:0px;
+      background-color: white;
+    }
+  }
+}
+.plantilla2 {
+  .conteinerDetail .cardDetail {
+    background-color: #fff;
+    min-height: 150px;
+  }
+  .lineNumber {
+    position: relative;
+    p{
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
+    }
+    .bgvermas{
+      position: absolute;
+      text-align: right;
+      width: 70px;
+      right: 0px;
+      bottom:0px;
+      background-color: white;
+    }
+  }
+}
+
+.plantilla3 {
+  .conteinerDetail .cardDetail {
+    background-color: #fff;
+    min-height: 130px;
+  }
+  .lineNumber {
+    position: relative;
+    p{
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
+    }
+    .bgvermas{
+      position: absolute;
+      text-align: right;
+      width: 70px;
+      right: 0px;
+      bottom:0px;
+      background-color: white;
+    }
+  }
+}
+.plantilla4{
+  .conteinerDetail .cardDetail {
+    background-color: #fff;
+    min-height: 320px;
+  }
+  .lineNumber {
+    position: relative;
+    
+      display: -webkit-box;
+      -webkit-line-clamp:8;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
+   
+    
+    .bgvermas{
+      position: absolute;
+      text-align: right;
+      width: 70px;
+      right: 0px;
+      bottom:0px;
+      background-color: white;
+    }
+  }
+}
 .plantilla2 .imgResponsive2 {
   overflow: hidden; 
 }
@@ -5040,6 +5134,7 @@ button.smallBtn img {
 .template2 {
   background-color: #F5F9FC;
   height: auto;
+  
 }
   .template2 .circle {
     margin-top: 30px; 
