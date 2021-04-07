@@ -5194,17 +5194,28 @@ button.smallBtn img {
 .checkoutSectionv2 .display-inline {
   display: block !important;
   width: 100%; }
-
+.checkoutTemplateHeight {
+  .baseCarrito .totalCarro {
+    background-color: #ffffff!important;
+  }
+}
 .checkoutSectionv2 .nav-order .nav-item .nav-link {
-  background: #a1b7c7 !important;
+  background: #fff !important;
   border: 1px solid #e4ebf0 !important;
   width: 100% !important;
   display: inline-flex;
   border-radius: 12px;
   margin-bottom: 12px;
-  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out; }
+  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out; 
+  position: relative;
+  .floatCheck{
+    position: absolute;
+    right: 0px;
+    display: none;
+  }
+}
   .checkoutSectionv2 .nav-order .nav-item .nav-link p {
-    color: #fff;
+    color: #444;
     padding-top: 18px;
     padding-left: 10px; }
   .checkoutSectionv2 .nav-order .nav-item .nav-link img {
@@ -5215,7 +5226,12 @@ button.smallBtn img {
     float: right; }
 
 .checkoutSectionv2 .nav-order .nav-link.active {
-  background: #EF4E35 !important; }
+  background: #fff !important; 
+  border: 1px solid #375f8e !important;
+  .floatCheck{
+    display: block;
+  }
+}
 
 .checkoutSectionv2 input[type=radio]:not(old):checked + label > span:before {
   font-size: 0.9em; }
