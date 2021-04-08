@@ -1739,12 +1739,23 @@ input[type=radio]:not(old):checked + label > span > span {
   left: initial;
   right: 35px; }
 
+
 .plantilla1 {
-  .conteinerDetail .cardDetail {
-    background-color: #fff;
-    min-height: 320px;
+  .containerTag{
+    min-height: 100%;
+    .buttonContainer{
+        position: absolute;
+        bottom: 20px;
+        max-width: calc(100% - 30px);
+    }
+  }
+  .conteinerDetail .containerTag {
+    min-height: 135px;
   }
   .lineNumber {
+    font-size: 12px!important;
+    text-align: justify!important;
+    line-height: 13px!important;
     position: relative;
     p{
       display: -webkit-box;
@@ -1763,9 +1774,16 @@ input[type=radio]:not(old):checked + label > span > span {
   }
 }
 .plantilla2 {
-  .conteinerDetail .cardDetail {
-    background-color: #fff;
-    min-height: 150px;
+  .containerTag{
+    min-height: 100%;
+    .buttonContainer{
+        position: absolute;
+        bottom: 0px;
+        max-width: calc(100% - 30px);
+    }
+  }
+  .conteinerDetail .containerTag {
+    height: 150px;
   }
   .lineNumber {
     position: relative;
@@ -1787,10 +1805,18 @@ input[type=radio]:not(old):checked + label > span > span {
 }
 
 .plantilla3 {
-  .conteinerDetail .cardDetail {
-    background-color: #fff;
-    min-height: 130px;
+  .containerTag{
+    min-height: 100%;
+    .buttonContainer{
+        position: absolute;
+        bottom: 15px;
+        max-width: calc(100% - 30px);
+    }
   }
+  .conteinerDetail .containerTag {
+    height: 150px;
+  }
+
   .lineNumber {
     position: relative;
     p{
@@ -1810,10 +1836,19 @@ input[type=radio]:not(old):checked + label > span > span {
   }
 }
 .plantilla4{
-  .conteinerDetail .cardDetail {
-    background-color: #fff;
-    min-height: 320px;
+
+  .containerTag{
+    min-height: 100%;
+    .buttonContainer{
+        position: absolute;
+        bottom: 15px;
+        max-width: calc(100% - 30px);
+    }
   }
+  .conteinerDetail .containerTag {
+    height: 260px;
+  }
+
   .lineNumber {
     position: relative;
     
@@ -2207,6 +2242,11 @@ input[type=radio]:not(old):checked + label > span > span {
       line-height: 16px;
       font-size: 16px;
       margin-bottom: 2px;
+      height: 31px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
     }
     p{
       font-size: 12px;
@@ -2227,6 +2267,11 @@ input[type=radio]:not(old):checked + label > span > span {
       line-height: 16px;
       font-size: 16px;
       margin-bottom: 2px;
+      height: 31px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
     }
     p{
       font-size: 12px;
@@ -2247,6 +2292,11 @@ input[type=radio]:not(old):checked + label > span > span {
       line-height: 16px;
       font-size: 16px;
       margin-bottom: 2px;
+      height: 31px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
     }
     p{
       font-size: 12px;
@@ -2268,6 +2318,11 @@ input[type=radio]:not(old):checked + label > span > span {
       line-height: 16px;
       font-size: 16px;
       margin-bottom: 2px;
+      height: 31px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
     }
     p{
       font-size: 12px;
@@ -2279,7 +2334,7 @@ input[type=radio]:not(old):checked + label > span > span {
 
 .verMas {
   color: #375f8e;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   text-decoration: underline;
   &:hover{
@@ -2288,6 +2343,7 @@ input[type=radio]:not(old):checked + label > span > span {
   }
 }
 @media (min-width: 992px) {
+  
   .plantilla3{
     .cardDetail .flex-column {
       min-height: 51px;
@@ -2307,6 +2363,7 @@ input[type=radio]:not(old):checked + label > span > span {
     }
   }
   .plantilla1{
+    
     .cardDetail .flex-column {
       min-height: 105px;
     }
@@ -2619,7 +2676,7 @@ input[type=radio]:not(old):checked + label > span > span {
       border-radius: 12px!important;
       margin-left: 0px;
       height: auto !important; 
-      width: 100%!important; 
+      width: 20%!important; 
       float: left ;
       margin-right: 10px;
       }
@@ -2978,7 +3035,7 @@ input[type=radio]:not(old):checked + label > span > span {
 
 .formPedido .form-check > div {
   border-bottom: 1px solid #efefef;
-  padding: 10px 0px; }
+  padding: 7px 0px 0px 0px; }
 
 .formPedido .form-check > div:last-child {
   border-bottom: 0px solid #efefef;
@@ -4189,12 +4246,12 @@ em.text-success {
 
 
 .btn-danger-home {
-  font-size: 15px;
+  font-size: 12px;
   text-transform: uppercase;
   font-family: 'Source Sans Pro';
   letter-spacing: 1px;
   font-weight: 700;
-  padding: 6px 15px;
+  padding: 4px 15px!important;
   border-radius: 18px;
   color: #fff;
   background-color: #e44d35;
