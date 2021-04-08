@@ -1723,19 +1723,22 @@ input[type=radio]:not(old):checked + label > span > span {
   font-size: 12px !important;
   text-align: justify !important;
   line-height: 13px !important;
-  position: relative; }
-  .plantilla1 .lineNumber p {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden; }
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden; }
   .plantilla1 .lineNumber .bgvermas {
     position: absolute;
     text-align: right;
+    line-height: 9px;
     width: 70px;
     right: 0px;
-    bottom: 0px;
-    background-color: white; }
+    bottom: -1px;
+    background-color: #fff;
+    height: 20px;
+    margin-bottom: -8px;
+    padding: 0px; }
 
 .plantilla2 .containerTag {
   min-height: 100%; }
@@ -1748,19 +1751,22 @@ input[type=radio]:not(old):checked + label > span > span {
   height: 150px; }
 
 .plantilla2 .lineNumber {
-  position: relative; }
-  .plantilla2 .lineNumber p {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden; }
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden; }
   .plantilla2 .lineNumber .bgvermas {
     position: absolute;
     text-align: right;
+    line-height: 9px;
     width: 70px;
     right: 0px;
-    bottom: 0px;
-    background-color: white; }
+    bottom: -1px;
+    background-color: #fff;
+    height: 20px;
+    margin-bottom: -8px;
+    padding: 0px; }
 
 .plantilla3 .containerTag {
   min-height: 100%; }
@@ -1773,19 +1779,22 @@ input[type=radio]:not(old):checked + label > span > span {
   height: 150px; }
 
 .plantilla3 .lineNumber {
-  position: relative; }
-  .plantilla3 .lineNumber p {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden; }
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden; }
   .plantilla3 .lineNumber .bgvermas {
     position: absolute;
     text-align: right;
+    line-height: 9px;
     width: 70px;
     right: 0px;
-    bottom: 0px;
-    background-color: white; }
+    bottom: -1px;
+    background-color: #fff;
+    height: 20px;
+    margin-bottom: -8px;
+    padding: 0px; }
 
 .plantilla4 .containerTag {
   min-height: 100%; }
@@ -1795,7 +1804,7 @@ input[type=radio]:not(old):checked + label > span > span {
     max-width: calc(100% - 30px); }
 
 .plantilla4 .conteinerDetail .containerTag {
-  height: 260px; }
+  height: 240px; }
 
 .plantilla4 .lineNumber {
   position: relative;
@@ -1806,10 +1815,14 @@ input[type=radio]:not(old):checked + label > span > span {
   .plantilla4 .lineNumber .bgvermas {
     position: absolute;
     text-align: right;
+    line-height: 9px;
     width: 70px;
     right: 0px;
-    bottom: 0px;
-    background-color: white; }
+    bottom: -1px;
+    background-color: #fff;
+    height: 23px;
+    margin-bottom: -8px;
+    padding: 0px; }
 
 .plantilla2 .imgResponsive2 {
   overflow: hidden; }
@@ -2109,9 +2122,15 @@ input[type=radio]:not(old):checked + label > span > span {
   -webkit-box-orient: vertical;
   overflow: hidden; }
 
-.plantilla1 .cardDetail p {
+.plantilla1 .cardDetail p, .plantilla1 .cardDetail ul {
   font-size: 12px;
-  text-align: justify; }
+  text-align: justify;
+  line-height: 13px;
+  margin-bottom: 0px !important; }
+
+.plantilla1 .cardDetail ul {
+  margin-left: 15px !important;
+  list-style: circle !important; }
 
 .plantilla2 .cardDetail h4 {
   color: #E23B3B !important;
@@ -2129,10 +2148,15 @@ input[type=radio]:not(old):checked + label > span > span {
   -webkit-box-orient: vertical;
   overflow: hidden; }
 
-.plantilla2 .cardDetail p {
+.plantilla2 .cardDetail p, .plantilla2 .cardDetail ul {
   font-size: 12px;
   text-align: justify;
-  line-height: 13px; }
+  line-height: 13px;
+  margin-bottom: 0px !important; }
+
+.plantilla2 .cardDetail ul {
+  margin-left: 5px !important;
+  list-style: circle !important; }
 
 .plantilla3 .cardDetail h4 {
   color: #E23B3B !important;
@@ -2150,10 +2174,15 @@ input[type=radio]:not(old):checked + label > span > span {
   -webkit-box-orient: vertical;
   overflow: hidden; }
 
-.plantilla3 .cardDetail p {
+.plantilla3 .cardDetail p, .plantilla3 .cardDetail ul {
   font-size: 12px;
   text-align: justify;
-  line-height: 13px; }
+  line-height: 13px;
+  margin-bottom: 0; }
+
+.plantilla3 .cardDetail ul {
+  margin-left: 5px !important;
+  list-style: circle !important; }
 
 .plantilla4 .cardDetail h4 {
   color: #E23B3B !important;
@@ -2172,9 +2201,11 @@ input[type=radio]:not(old):checked + label > span > span {
   -webkit-box-orient: vertical;
   overflow: hidden; }
 
-.plantilla4 .cardDetail p {
+.plantilla4 .cardDetail p, .plantilla4 .cardDetail ul {
   font-size: 12px;
-  text-align: justify; }
+  text-align: justify;
+  line-height: 16px;
+  margin-bottom: 0 !important; }
 
 .verMas {
   color: #375f8e;
@@ -2192,7 +2223,7 @@ input[type=radio]:not(old):checked + label > span > span {
     margin-left: 15px !important;
     margin-bottom: 15px !important; }
   .plantilla3 .cardDetail p {
-    margin-bottom: 5px !important; }
+    margin-bottom: 0px !important; }
   .plantilla3 .cardDetail strong {
     line-height: 16px !important; }
   .plantilla1 .cardDetail .flex-column {
@@ -2200,9 +2231,9 @@ input[type=radio]:not(old):checked + label > span > span {
   .plantilla1 .cardDetail ul {
     list-style: circle !important;
     margin-left: 15px !important;
-    margin-bottom: 15px !important; }
+    margin-bottom: 0px !important; }
   .plantilla1 .cardDetail p {
-    margin-bottom: 5px !important; }
+    margin-bottom: 0px !important; }
   .plantilla1 .cardDetail strong {
     line-height: 16px !important; }
   .plantilla1 .card.imgresp {
@@ -2228,14 +2259,14 @@ input[type=radio]:not(old):checked + label > span > span {
   .plantilla4 .cardDetail ul {
     list-style: circle !important;
     margin-left: 15px !important;
-    margin-bottom: 5px !important; }
+    margin-bottom: 0px !important; }
   .plantilla4 .cardDetail h4 {
     font-size: 16px;
     font-weight: 700;
     width: 100%;
     color: #E23B3B !important; }
   .plantilla4 .cardDetail p {
-    margin-bottom: 5px !important; }
+    margin-bottom: 0px !important; }
   .plantilla4 .cardDetail strong {
     line-height: 16px !important; }
   .plantilla4 .card.imgresp {
@@ -2253,12 +2284,12 @@ input[type=radio]:not(old):checked + label > span > span {
     margin-bottom: 5px; }
   .plantilla2 .cardDetail ul {
     list-style: circle !important;
-    margin-left: 20px !important;
+    margin-left: 5px !important;
     margin-bottom: 15px !important; }
     .plantilla2 .cardDetail ul li {
       list-style-position: inside; }
   .plantilla2 .cardDetail p {
-    margin-bottom: 5px !important; }
+    margin-bottom: 0px !important; }
   .plantilla2 .cardDetail strong {
     line-height: 17px !important; }
   .plantilla2 .imgWidth {
@@ -2404,7 +2435,7 @@ input[type=radio]:not(old):checked + label > span > span {
     margin-left: 15px !important;
     margin-bottom: 15px !important; }
   .plantilla2 .cardDetail p {
-    margin-bottom: 5px !important; }
+    margin-bottom: 0px !important; }
   .plantilla2 .cardDetail strong {
     line-height: 17px !important; }
   .plantilla2 .imgWidth {
@@ -4033,6 +4064,9 @@ em.text-success {
   background-color: #148f5d;
   border-color: #148f5d;
   color: #fff; }
+
+.h-100 {
+  height: 100%; }
 
 .btn-danger-home {
   font-size: 12px;

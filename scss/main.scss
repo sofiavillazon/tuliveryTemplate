@@ -1757,19 +1757,21 @@ input[type=radio]:not(old):checked + label > span > span {
     text-align: justify!important;
     line-height: 13px!important;
     position: relative;
-    p{
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;  
-      overflow: hidden;
-    }
+     display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
     .bgvermas{
       position: absolute;
       text-align: right;
+      line-height: 9px;
       width: 70px;
       right: 0px;
-      bottom:0px;
-      background-color: white;
+      bottom: -1px;
+      background-color: #fff;
+      height: 20px;
+      margin-bottom: -8px;
+      padding: 0px;
     }
   }
 }
@@ -1787,19 +1789,21 @@ input[type=radio]:not(old):checked + label > span > span {
   }
   .lineNumber {
     position: relative;
-    p{
       display: -webkit-box;
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;  
       overflow: hidden;
-    }
     .bgvermas{
       position: absolute;
       text-align: right;
+      line-height: 9px;
       width: 70px;
       right: 0px;
-      bottom:0px;
-      background-color: white;
+      bottom: -1px;
+      background-color: $white;
+      height: 20px;
+      margin-bottom: -8px;
+      padding: 0px;
     }
   }
 }
@@ -1819,19 +1823,21 @@ input[type=radio]:not(old):checked + label > span > span {
 
   .lineNumber {
     position: relative;
-    p{
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;  
-      overflow: hidden;
-    }
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
     .bgvermas{
       position: absolute;
       text-align: right;
+      line-height: 9px;
       width: 70px;
       right: 0px;
-      bottom:0px;
-      background-color: white;
+      bottom: -1px;
+      background-color: $white;
+      height: 20px;
+      margin-bottom: -8px;
+      padding: 0px;
     }
   }
 }
@@ -1846,25 +1852,27 @@ input[type=radio]:not(old):checked + label > span > span {
     }
   }
   .conteinerDetail .containerTag {
-    height: 260px;
+    height: 240px;
   }
 
   .lineNumber {
     position: relative;
-    
-      display: -webkit-box;
-      -webkit-line-clamp:8;
-      -webkit-box-orient: vertical;  
-      overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp:8;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
    
-    
     .bgvermas{
       position: absolute;
       text-align: right;
+      line-height: 9px;
       width: 70px;
       right: 0px;
-      bottom:0px;
-      background-color: white;
+      bottom: -1px;
+      background-color: $white;
+      height: 23px;
+      margin-bottom: -8px;
+      padding: 0px;
     }
   }
 }
@@ -2248,9 +2256,15 @@ input[type=radio]:not(old):checked + label > span > span {
       -webkit-box-orient: vertical;  
       overflow: hidden;
     }
-    p{
+    p,ul{
       font-size: 12px;
       text-align: justify;
+      line-height: 13px;
+      margin-bottom: 0px!important;
+    }
+    ul{
+      margin-left: 15px !important;
+      list-style: circle!important;
     }
   }
 }
@@ -2273,10 +2287,15 @@ input[type=radio]:not(old):checked + label > span > span {
       -webkit-box-orient: vertical;  
       overflow: hidden;
     }
-    p{
+    p,ul{
       font-size: 12px;
       text-align: justify;
       line-height: 13px;
+      margin-bottom: 0px!important;
+    }
+    ul{
+      margin-left: 5px !important;
+      list-style: circle!important;
     }
   }
 }
@@ -2298,10 +2317,15 @@ input[type=radio]:not(old):checked + label > span > span {
       -webkit-box-orient: vertical;  
       overflow: hidden;
     }
-    p{
+    p,ul{
       font-size: 12px;
       text-align: justify;
       line-height: 13px;
+      margin-bottom: 0;
+    }
+    ul{
+      margin-left: 5px !important;
+      list-style: circle!important;
     }
   }
 }
@@ -2324,9 +2348,11 @@ input[type=radio]:not(old):checked + label > span > span {
       -webkit-box-orient: vertical;  
       overflow: hidden;
     }
-    p{
+    p,ul{
       font-size: 12px;
       text-align: justify;
+      line-height: 16px;
+      margin-bottom: 0!important;
     }
   }
 }
@@ -2355,10 +2381,10 @@ input[type=radio]:not(old):checked + label > span > span {
         margin-bottom: 15px!important;
       }
       p{
-        margin-bottom: 5px!important;
+        margin-bottom: 0px!important;
       }
       strong {
-      line-height: 16px!important;
+        line-height: 16px!important;
       }
     }
   }
@@ -2371,10 +2397,10 @@ input[type=radio]:not(old):checked + label > span > span {
       ul{
         list-style: circle!important;
         margin-left: 15px!important;
-        margin-bottom: 15px!important;
+        margin-bottom: 0px!important;
       }
       p{
-        margin-bottom: 5px!important;
+        margin-bottom: 0px!important;
       }
       strong {
       line-height: 16px!important;
@@ -2413,7 +2439,7 @@ input[type=radio]:not(old):checked + label > span > span {
       ul{
         list-style: circle!important;
         margin-left: 15px!important;
-        margin-bottom: 5px!important;
+        margin-bottom: 0px!important;
       }
       h4{
         font-size: 16px;
@@ -2422,7 +2448,7 @@ input[type=radio]:not(old):checked + label > span > span {
         color: $reddark!important;
       }
       p{
-        margin-bottom: 5px!important;
+        margin-bottom: 0px!important;
       }
       strong {
       line-height: 16px!important;
@@ -2451,14 +2477,14 @@ input[type=radio]:not(old):checked + label > span > span {
     .cardDetail {
       ul{
         list-style: circle!important;
-        margin-left: 20px!important;
+        margin-left: 5px!important;
         margin-bottom: 15px!important;
        li{
         list-style-position: inside;
        }
       }
       p{
-        margin-bottom: 5px!important;
+        margin-bottom: 0px!important;
       }
       strong {
       line-height: 17px!important;
@@ -2666,7 +2692,7 @@ input[type=radio]:not(old):checked + label > span > span {
         margin-bottom: 15px!important;
       }
       p{
-        margin-bottom: 5px!important;
+        margin-bottom: 0px!important;
       }
       strong {
       line-height: 17px!important;
@@ -4244,7 +4270,9 @@ em.text-success {
   color: $white;
 }
 
-
+.h-100 {
+  height: 100%;
+}
 .btn-danger-home {
   font-size: 12px;
   text-transform: uppercase;
