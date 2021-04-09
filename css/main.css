@@ -1804,7 +1804,37 @@ input[type=radio]:not(old):checked + label > span > span {
     max-width: calc(100% - 30px); }
 
 .plantilla4 .conteinerDetail .containerTag {
-  height: 240px; }
+  height: 261px; }
+
+.plantilla4 .boxInput {
+  background-color: #e6e6e6;
+  border-radius: 8px;
+  display: flex;
+  padding-top: 7px;
+  margin-left: 24px;
+  padding-bottom: 4px;
+  padding-right: 10px;
+  text-align: left; }
+
+.plantilla4 .cardDetail .rightcontent {
+  width: calc(100% - 100px); }
+  .plantilla4 .cardDetail .rightcontent .btn {
+    font-size: 0.5rem !important; }
+  .plantilla4 .cardDetail .rightcontent #spinner .form-control {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none !important;
+    margin-top: -9px;
+    font-size: 16px;
+    display: inline-flex !important; }
+  .plantilla4 .cardDetail .rightcontent #spinner .minusBtn {
+    position: absolute;
+    top: 16px; }
+  .plantilla4 .cardDetail .rightcontent #spinner .plussBtn {
+    position: absolute;
+    top: -6px; }
+
+.plantilla4 .card:hover .btn-success-line, .plantilla4 .card:hover .btn-danger-line {
+  box-shadow: none !important; }
 
 .plantilla4 .lineNumber {
   position: relative;
@@ -2087,6 +2117,14 @@ input[type=radio]:not(old):checked + label > span > span {
 
 .plantillaModal .modal-footer {
   border-top: 1px solid #ced4da; }
+  .plantillaModal .modal-footer .subInfo {
+    width: 130px;
+    background-color: #dae4ea;
+    font-size: 22px;
+    padding: 7px 0px;
+    text-align: center;
+    margin: 0px 21px;
+    border-radius: 15px; }
 
 .plantillaModal .cardDetail img {
   border-radius: 10px 10px 0 0; }

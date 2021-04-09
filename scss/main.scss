@@ -1841,8 +1841,8 @@ input[type=radio]:not(old):checked + label > span > span {
     }
   }
 }
-.plantilla4{
 
+.plantilla4{
   .containerTag{
     min-height: 100%;
     .buttonContainer{
@@ -1852,9 +1852,49 @@ input[type=radio]:not(old):checked + label > span > span {
     }
   }
   .conteinerDetail .containerTag {
-    height: 240px;
+    height: 261px;
   }
+  .boxInput{
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    display: flex;
+    padding-top: 7px;
+    margin-left: 24px;
+    padding-bottom: 4px;
+    padding-right: 10px;
+    text-align: left;
+  }
+  .cardDetail{
+    
+    .rightcontent{
+      width: calc(100% - 100px);
+      .btn {
+        font-size: 0.5rem !important;
+      }
+      #spinner .form-control{
+        background-color: rgba(0, 0, 0, 0) !important;
+        border: none !important;
+        margin-top: -9px;
 
+        font-size: 16px;
+        display: inline-flex !important;
+      }
+      #spinner{
+        .minusBtn{
+          position: absolute;
+          top: 16px;
+        }
+        .plussBtn{
+          position: absolute;
+          top: -6px;
+        }
+      }
+    }
+    
+  }
+  .card:hover .btn-success-line,.card:hover .btn-danger-line {
+    box-shadow: none!important;
+  }
   .lineNumber {
     position: relative;
     display: -webkit-box;
@@ -2214,7 +2254,15 @@ input[type=radio]:not(old):checked + label > span > span {
   }
   .modal-footer{
     border-top: 1px solid #ced4da;
-
+    .subInfo {
+      width: 130px;
+      background-color: #dae4ea;
+      font-size: 22px;
+      padding: 7px 0px;
+      text-align: center;
+      margin: 0px 21px;
+      border-radius: 15px;
+    }
   }
   .cardDetail{
     img{
