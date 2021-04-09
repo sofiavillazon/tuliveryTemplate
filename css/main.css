@@ -1796,8 +1796,14 @@ input[type=radio]:not(old):checked + label > span > span {
     margin-bottom: -8px;
     padding: 0px; }
 
-.detalleInfo span {
-  float: right; }
+.detalleInfo {
+  color: #818181 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.6px; }
+  .detalleInfo b {
+    color: #818181 !important; }
+  .detalleInfo span {
+    float: right; }
 
 .plantilla4 .containerTag {
   min-height: 100%; }

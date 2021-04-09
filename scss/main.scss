@@ -1842,6 +1842,12 @@ input[type=radio]:not(old):checked + label > span > span {
   }
 }
 .detalleInfo{
+  color: #818181!important;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  b{
+    color: #818181!important;
+  }
   span{
     float: right;
   }
