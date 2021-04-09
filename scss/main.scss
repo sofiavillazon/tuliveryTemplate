@@ -1841,7 +1841,11 @@ input[type=radio]:not(old):checked + label > span > span {
     }
   }
 }
-
+.detalleInfo{
+  span{
+    float: right;
+  }
+}
 .plantilla4{
   .containerTag{
     min-height: 100%;

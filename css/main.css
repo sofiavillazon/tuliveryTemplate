@@ -1796,6 +1796,9 @@ input[type=radio]:not(old):checked + label > span > span {
     margin-bottom: -8px;
     padding: 0px; }
 
+.detalleInfo span {
+  float: right; }
+
 .plantilla4 .containerTag {
   min-height: 100%; }
   .plantilla4 .containerTag .buttonContainer {
