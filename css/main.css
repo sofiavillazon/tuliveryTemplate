@@ -1317,10 +1317,10 @@ input[type=radio]:not(old):checked + label > span > span {
   text-align: block;
   /*border-bottom: 2px dashed #46464F;*/ }
   .rightcontent .btn {
-    padding: 2px 5px !important;
+    padding: 3px 6px !important;
     font-size: 0.7rem !important;
     line-height: 1.5 !important;
-    border-radius: 0.2rem !important; }
+    border-radius: 0.3rem !important; }
 
 .rightcontent .form-control {
   padding: 0rem 0rem; }
@@ -1828,7 +1828,7 @@ input[type=radio]:not(old):checked + label > span > span {
 .plantilla4 .cardDetail .rightcontent {
   width: calc(100% - 100px); }
   .plantilla4 .cardDetail .rightcontent .btn {
-    font-size: 0.5rem !important; }
+    font-size: 0.6rem !important; }
   .plantilla4 .cardDetail .rightcontent #spinner .form-control {
     background-color: rgba(0, 0, 0, 0) !important;
     border: none !important;
@@ -1837,7 +1837,7 @@ input[type=radio]:not(old):checked + label > span > span {
     display: inline-flex !important; }
   .plantilla4 .cardDetail .rightcontent #spinner .minusBtn {
     position: absolute;
-    top: 16px; }
+    top: 18px; }
   .plantilla4 .cardDetail .rightcontent #spinner .plussBtn {
     position: absolute;
     top: -6px; }
@@ -4126,6 +4126,13 @@ em.text-success {
   color: #fff;
   background-color: #e44d35;
   border-color: #e44d35; }
+
+.btn-danger-home.subtotalCart {
+  min-width: 250px;
+  text-align: right;
+  font-size: 13px; }
+  .btn-danger-home.subtotalCart span {
+    float: left; }
 
 .btn-danger-home:hover {
   color: #fff;
