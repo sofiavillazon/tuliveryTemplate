@@ -305,22 +305,17 @@
     max-width: 100%;
     display: inline-flex;
     margin-left: 5px; }
-  .spinnerContent #spinner button {
-    border-radius: 50% !important; }
   .spinnerContent .input-group-btn {
     width: 10px !important; }
   .spinnerContent .btn {
     padding: 2px 5px !important;
     font-size: 0.7rem !important;
     line-height: 1.5 !important;
-    border-radius: 0.2rem !important; }
+    border-radius: 50% !important; }
 
 #spinner {
   max-width: 100%;
   display: inline-flex; }
-
-#spinner button {
-  border-radius: 50% !important; }
 
 .smallleter {
   font-size: 12px; }
@@ -1314,13 +1309,14 @@ input[type=radio]:not(old):checked + label > span > span {
 
 .rightcontent {
   width: 100%;
-  text-align: block;
-  /*border-bottom: 2px dashed #46464F;*/ }
+  text-align: block; }
+  .rightcontent .sqare button {
+    border-radius: 5px !important; }
   .rightcontent .btn {
-    padding: 3px 6px !important;
+    padding: 0.5px 4px !important;
     font-size: 0.7rem !important;
     line-height: 1.5 !important;
-    border-radius: 0.3rem !important; }
+    border-radius: 50% !important; }
 
 .rightcontent .form-control {
   padding: 0rem 0rem; }
@@ -1828,19 +1824,20 @@ input[type=radio]:not(old):checked + label > span > span {
 .plantilla4 .cardDetail .rightcontent {
   width: calc(100% - 100px); }
   .plantilla4 .cardDetail .rightcontent .btn {
-    font-size: 0.6rem !important; }
+    font-size: 0.67rem !important; }
   .plantilla4 .cardDetail .rightcontent #spinner .form-control {
     background-color: rgba(0, 0, 0, 0) !important;
     border: none !important;
     margin-top: -9px;
     font-size: 16px;
     display: inline-flex !important; }
-  .plantilla4 .cardDetail .rightcontent #spinner .minusBtn {
+  .plantilla4 .cardDetail .rightcontent .minusBtn {
     position: absolute;
-    top: 18px; }
-  .plantilla4 .cardDetail .rightcontent #spinner .plussBtn {
+    top: 16px;
+    border-radius: 1px; }
+  .plantilla4 .cardDetail .rightcontent .plussBtn {
     position: absolute;
-    top: -6px; }
+    top: -5px; }
 
 .plantilla4 .card:hover .btn-success-line, .plantilla4 .card:hover .btn-danger-line {
   box-shadow: none !important; }
@@ -4128,10 +4125,17 @@ em.text-success {
   border-color: #e44d35; }
 
 .btn-danger-home.subtotalCart {
-  min-width: 250px;
+  min-width: 265px;
   text-align: right;
-  font-size: 13px; }
+  font-size: 14px;
+  padding-top: 20px; }
+  .btn-danger-home.subtotalCart p {
+    display: inline-block;
+    padding-top: 4px;
+    margin-bottom: 0px; }
   .btn-danger-home.subtotalCart span {
+    padding-top: 0px;
+    font-size: 19px;
     float: left; }
 
 .btn-danger-home:hover {
