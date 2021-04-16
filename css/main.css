@@ -2474,6 +2474,22 @@ input[type=radio]:not(old):checked + label > span > span {
   .imgresp .imgResponsive2 {
     min-height: 110px !important;
     max-height: 222px; }
+  .plantilla4 .containerTag .buttonContainer {
+    position: absolute;
+    bottom: 15px;
+    max-width: calc(66% - 30px); }
+  .plantilla4 .btn-danger-home {
+    font-size: 9px; }
+  .plantilla4 .imgResponsive2 {
+    margin-left: 0px;
+    height: auto !important;
+    width: 30% !important;
+    float: left;
+    margin-right: 10px;
+    border-radius: 12px !important;
+    margin-top: 10px;
+    margin-left: 10px;
+    overflow: hidden; }
   .plantilla2 .cardDetail ul {
     list-style: circle !important;
     margin-left: 15px !important;
