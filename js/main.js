@@ -105,6 +105,7 @@ $(document).on('ready', function() {
       ]
   
     });
+   
   });
   
 
@@ -170,6 +171,12 @@ var autoPlay = null;
 
 slides.not(':first').css('display', 'none');
 currentSlide.addClass('active');
+
+//line para plantilla4
+
+var numLine = 5;
+$(".plantilla4 .lineNumber").css("-webkit-line-clamp",numLine.toString());
+$(".plantilla4 .containerTag").css("height",(numLine*16 + 130)+"px");
 
 function fadeNext() {
     currentSlide.removeClass('active').fadeOut();
