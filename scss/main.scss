@@ -227,10 +227,12 @@ $white: #fff;
 }
 
 #categoryOptions.press{
-  background-color: $white;
+  background-color: $red;
   color: $blue;
-  border: 1px solid $blue;
-
+  border: none;
+}
+.bg-menuSelect{
+  background-color: #e5eaf0;
 }
 
 .categoryStyle{
@@ -245,12 +247,14 @@ $white: #fff;
     border-radius: 5px;
     padding: 20px 10px;
     z-index: 10;
-    max-height: calc(100vh - 310px);
+    height: calc(100vh - 275px);
     width: 240px;
-    border: 1px solid $blue!important;
+    box-shadow: 0px 3px 12px #3d3d3d79 !important;
+    /* border: 1px solid #375F8E !important; */
     position: absolute;
     overflow-y: scroll;
     overflow-X: hidden;
+
     .tittleList{
       padding-top: 5px;
       margin-bottom: 10px;
@@ -742,7 +746,15 @@ body {
     font-size: 13px !important;
   } 
 }
-
+.bg-averlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #333333d3;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
 
 
 @media (max-width: 991.98px) {
@@ -752,23 +764,18 @@ body {
   .categoryStyle .listShow li {
     margin-top: 14px;
   }
-  .bg-averlay{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background-color: #333333d3;
-    z-index: 1;
-    width: 100vw;
-    height: 100vh;
+ 
+  #categoryOptions2.press {
+    display: none;
   }
   #categoryOptions.press {
-    background-color: #fff;
+    background-color: #375F8E;
     color: #375F8E;
     border: 1px solid #375F8E;
     z-index: 9;
     position: absolute;
-    top: 0px;
-    left: 15px;
+    top: 4px;
+    left: 4px;
   }
   .categoryStyle .listShow {
     background-color: #fff;
@@ -1999,7 +2006,7 @@ input[type=radio]:not(old):checked + label > span > span {
       position: absolute;
       width: 100vw;
       top: -40px;
-      left: 5px;
+      left: -3px;
     }
     
     .search:focus {
@@ -2509,19 +2516,39 @@ input[type=radio]:not(old):checked + label > span > span {
   }
 }
 @media (min-width: 992px) {
+  
   .smallElm{
+    #categoryOptions2.press {
+      display: block;
+      position: fixed;
+      z-index: 15;
+      top: 60px;
+      left: 0;
+    }
+    #categoryOptions2.press {
+      background-color: #375F8E;
+      color: #375F8E;
+      border: 1px solid #375F8E;
+
+    }
     .sliderProductHome .paddles img {
-      width: 22px!important;
+      width: 10px!important;
+      margin-top: -6px;
     }
     .sliderProductHome .paddles .right-paddle, .sliderProductHome .paddles .left-paddle{
-      right: 0;
-      height: 26px!important;
-      width: 26px!important;
+      height: 19px!important;
+      width: 19px!important;
       padding: 0px 0px;
-      top: 3px!important;
+      top: 5px!important;
+      background: #e5eaf0;
+ 
     }
-    .categoryStyle{
-      text-align: center;
+    
+    .categoryLine {
+      margin: 0 23px!important;
+    }
+    .categoryLine a {
+      text-align: center!important;
     }
     .box{
       display: flex;
@@ -2863,6 +2890,7 @@ input[type=radio]:not(old):checked + label > span > span {
     .btn-danger-home {
       font-size: 9px;
     }
+    
     .imgResponsive2{
       margin-left: 0px;
       height: auto !important;
@@ -2954,6 +2982,20 @@ input[type=radio]:not(old):checked + label > span > span {
   display: inline-flex !important; }
 
 @media (min-width: 992px) {
+  .categoryStyle .listShow {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 50px 10px 20px 0px!important;
+    z-index: 10;
+    height: calc(100vh);
+    width: 240px;
+    box-shadow: 0px 3px 12px #3d3d3d79 !important;
+    /* border: 1px solid #375F8E !important; */
+    position: fixed;
+    overflow-y: scroll;
+    top: 50px;
+    overflow-X: hidden;
+  }
   .sticky {
     position: fixed;
     width: 25%;
@@ -4474,7 +4516,8 @@ em.text-success {
   border-radius: 18px;
   color: #fff;
   background-color: #e44d35;
-  border-color: #e44d35; }
+  border-color: #e44d35; 
+}
 .btn-danger-home.subtotalCart{
   min-width: 265px;
   text-align: right;
@@ -4533,10 +4576,8 @@ em.text-success {
     color: #fff;
     background-color: #3D3D3D;
     border-color: #3D3D3D; }
-  
 
-
-  .sliderHome {
+    .sliderHome {
   background-color: #F5F9FC !important; 
 }
 .sliderHome h5 {
@@ -5136,36 +5177,54 @@ button.smallBtn img {
   border-radius: 12px; }
   
 .smallElm {
-
+  .sliderProductHome li:hover,.sliderProductHome li.active {
+    margin-right: 0;
+    text-align: center;
+  }
+  .sliderProductHome li {
+    margin-right: 0;
+    text-align: center;
+  }
   .sliderProductHome h3 {
     font-size: 14px;
     text-align: center;
-    background-color: #f5f9fc;
+    background-color: #e5eaf0;
     padding: 1px 0px;
     border-radius: 2px;
     position: relative;
     top: 0px;
     color: #707070;
   }
+  
   .btn-danger-home {
     font-size: 18px;
     text-transform: uppercase;
     font-family: 'Source Sans Pro';
     letter-spacing: 1px;
     font-weight: 700;
-    padding: 4px 5px !important;
-    padding: 5px 21px;
-    border-radius: 18px;
+    margin-top: 3px;
+    margin-left: 5px;
+    padding: 0px 9px 5px 8px!important;
+    border-radius: 8px!important;
     color: #ef4e35;
-    background-color: transparent;
+    background-color: $reddark;
     border: none;
+    &.press{
+      background-color: $red;
+      color: $blue;
+      border: none;
+    }
+    img{
+      width: 20px;
+    }
   }
+
   .sliderProductHome li:hover, .sliderProductHome li.active {
     height: 28px;
   }
   .sliderProductHome li {
-    background-color: #f5f9fc;
-    border: 5px solid #f5f9fc;
+    background-color: #e5eaf0;
+    border: 5px solid #e5eaf0;
   }
   .sliderProductHome li,.sliderProductHome li.active {
     height: 28px;
@@ -5176,7 +5235,7 @@ button.smallBtn img {
     height: 39px;
     padding: 0px 0px;
     margin-bottom: 0px;
-    border-radius: 12px;
+    border-radius: 0px;
   }
   .sliderProductHome .paddles .left-paddle,.sliderProductHome .paddles .right-paddle {
     top: 8px;
@@ -6299,7 +6358,9 @@ span.detail {
 .pillInfo.green a{
   background-color: #45b749;
 }
-
+.smallElm .sliderProductHome .menu-wrapper {
+  background-color: #e5eaf0;
+}
 .movileBtn{
   display: none;
 }
@@ -6310,12 +6371,12 @@ span.detail {
   .smallElm {
     position: fixed;
     top: 55px;
-    left: -5px;
+    left: 18px;
     z-index: 1;
     width: 102vw;
-    background-color: #f5f9fc;
+    background-color: #e5eaf0;
     height: 48px;
-    padding: 0px 10px;
+    padding: 0px 0px;
    .btn-search {
       font-size: 9px !important;
       border-radius: 40px;
@@ -6323,6 +6384,12 @@ span.detail {
       top: 5px!important;
       width: 38px!important;
       height: 38px!important;
+    }
+    .btn-danger-home {
+      padding: 0px 5px 5px 5px!important;
+      img{
+        width: 18px;
+      }
     }
   }
 .smallElm .sliderProductHome .menu-wrapper {

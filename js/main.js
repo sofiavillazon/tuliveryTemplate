@@ -178,7 +178,7 @@ var numLine4 = 3;
 $(".plantilla4 .lineNumber").css("-webkit-line-clamp",numLine4.toString());
 $(".plantilla4 .containerTag").css("height",(numLine4*16 + 130)+"px");
 
-var numLine3 = 4;
+var numLine3 = 5;
 $(".plantilla3 .lineNumber").css("-webkit-line-clamp",numLine3.toString());
 $(".plantilla3 .containerTag").css("height",(numLine3*16 + 100)+"px");
 
@@ -186,7 +186,7 @@ var numLine2 = 5;
 $(".plantilla2 .lineNumber").css("-webkit-line-clamp",numLine2.toString());
 $(".plantilla2 .containerTag").css("height",(numLine2*16 + 85)+"px");
 
-var numLine1 = 5;
+var numLine1 = 4;
 $(".plantilla1 .lineNumber").css("-webkit-line-clamp",numLine1.toString());
 $(".plantilla1 .containerTag").css("height",(numLine1*16 + 80)+"px");
 
@@ -377,7 +377,14 @@ $('#categoryOptions').on('click', function(){
     $('#categoryOptions').toggleClass("press");
 });
 
-
+$('#categoryOptions2').on('click', function(){
+    $('.menuCateg').toggleClass("show");
+    $('#categoryOptions').toggleClass("press");
+});
+$('.bg-averlay').on('click', function(){
+    $('.menuCateg').toggleClass("show");
+    $('#categoryOptions').toggleClass("press");
+});
 $('.sidebar-toggle').collapse();
 
 jQuery(document).ready(function(){
