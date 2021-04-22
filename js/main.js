@@ -215,6 +215,11 @@ $("#paso4").on("click", function() {
     changeModal4();
 });
 
+
+$(".icon-expand").on("click", function() {
+    $('.search').toggleClass('expanded');
+    $('.gradientSearch').focus();
+});
 // Function responsible for fading to previous slide
 function fadePrev() {
     currentSlide.removeClass('active').fadeOut();
