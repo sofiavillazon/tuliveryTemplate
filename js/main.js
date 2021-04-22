@@ -174,9 +174,21 @@ currentSlide.addClass('active');
 
 //line para plantilla4
 
-var numLine = 5;
-$(".plantilla4 .lineNumber").css("-webkit-line-clamp",numLine.toString());
-$(".plantilla4 .containerTag").css("height",(numLine*16 + 130)+"px");
+var numLine4 = 3;
+$(".plantilla4 .lineNumber").css("-webkit-line-clamp",numLine4.toString());
+$(".plantilla4 .containerTag").css("height",(numLine4*16 + 130)+"px");
+
+var numLine3 = 4;
+$(".plantilla3 .lineNumber").css("-webkit-line-clamp",numLine3.toString());
+$(".plantilla3 .containerTag").css("height",(numLine3*16 + 100)+"px");
+
+var numLine2 = 5;
+$(".plantilla2 .lineNumber").css("-webkit-line-clamp",numLine2.toString());
+$(".plantilla2 .containerTag").css("height",(numLine2*16 + 85)+"px");
+
+var numLine1 = 5;
+$(".plantilla1 .lineNumber").css("-webkit-line-clamp",numLine1.toString());
+$(".plantilla1 .containerTag").css("height",(numLine1*16 + 80)+"px");
 
 function fadeNext() {
     currentSlide.removeClass('active').fadeOut();
@@ -305,7 +317,7 @@ $('.menu').on('scroll', function() {
 	} else if (menuPosition >= menuEndOffset) {
 		$(leftPaddle).removeClass('hidden');
 		$(rightPaddle).addClass('hidden');
-}
+    }
 });
 
 
