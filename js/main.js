@@ -228,6 +228,13 @@ $("#paso4").on("click", function() {
 });
 
 
+$(".btn-hide").on("click", function() {
+    $('.scrollerSectionCss').toggleClass('oculto');
+    $('.cutHeader').toggleClass('sideoculto');
+    $('.compactoTemplateHeight').toggleClass('sideoculto');
+});
+
+
 $(".icon-expand").on("click", function() {
     $('.search').toggleClass('expanded');
     $('.gradientSearch').focus();
