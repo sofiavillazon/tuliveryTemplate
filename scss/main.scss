@@ -47,6 +47,11 @@ $white: #fff;
 
 
 @media (min-width: 992px){
+  .fixed-cartElm{
+    position: fixed;
+    left: calc(60% + 60px);
+    top: 95px;
+  }
   .modal-lg, .modal-xl {
       max-width: 882px;
   }
@@ -7364,4 +7369,64 @@ body { margin: 0; padding: 0; }
 }
 .cutHeader.sideoculto {
   width: calc(100vw - 25px);
+}
+
+.baseCarrito.whitebg .totalCarro {
+  background-color: #fff;
+  padding-bottom: 10px !important;
+}
+
+
+.verticarCart{
+  .cardDetail{
+    border: none;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.09);;
+    border-radius: 12px;
+  }
+  .cardDetail:hover{
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);;
+    border: none;
+  }
+}
+.modal-content{
+  border-radius: 12px!important;
+}
+.modal-header{
+  border-radius: 12px 12px 0 0!important;
+}
+
+.itemChoice{
+  width: 100%!important;
+  margin-top: 10px;
+  .spinnerContent{
+    width: 70px;
+  }
+  .label {
+    min-width: 100%!important;
+  }
+  .priecItem{
+    padding-top: 0px;
+  }
+
+  input{
+    text-align: center!important;
+    margin-left: 8px;
+  }
+  button{
+    box-shadow: none!important;
+   }
+ 
+}
+
+.specialcart.verticarCart .baseCarrito .totalCarro {
+  position: relative;
+  top: 0px;
+  bottom: auto;
+  left: 0px;
+  padding-bottom: 0px !important;
+}
+
+
+.specialcart.verticarCart .baseCarrito {
+  padding: 0px 0px !important;
 }
