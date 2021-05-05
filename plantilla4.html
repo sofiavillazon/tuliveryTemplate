@@ -11,12 +11,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-dark cutHeader">
-            <div class="alignnav container">
-                <button id="toggleTulivery" class="navbar-toggler p-0 border-0 ml-auto " type="button" data-toggle="offcanvas">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-           
+        <nav class="navLogo navbar navbar-expand-lg fixed-top navbar-dark bg-light sideoculto cutHeader">
+            <div class="alignnav container ">
+                
+                <div class="col-8 col-md-4 searchCategory bar ">
+                    <div class="box">
+                        <input class="form-control gradientSearch mr-sm-2 search" type="text" placeholder="¿Qué producto necesitas?">
+                        <div class="icon-expand"><img src="img/locationHome2.svg" alt=""></div>
+                    </div>
+                </div>
+
                 <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav ml-md-auto ">
                         <li class="nav-item pt-1 d-lg-none sm-hidden">
@@ -24,151 +28,50 @@
                             <span class="tittle barlogo pl-2">Haz tu pedido en tu tienda favorita</span>
                         </li> 
                         
-                        <li class="nav-item pt-2 active">
-                            <button type="button" class="btn btn-white-home float-right  btn-sm" data-toggle="modal" data-target="#nuevaDireccion">Entrar</button>
-                        </li>
+                        <!-- <li class="nav-item pt-2 active">
+                            <button type="button" class="btn btn-danger-home float-right " data-toggle="modal" data-target="#nuevaDireccion">Entrar</button>
+                        </li> -->
                         <li class="nav-item floatMenuOption">
-                            <a class="nav-link sm-hidden" href="login.html"> <span><i class="fa fa-user"></i></span> </a>
-                            <ul class="floatMenu">
-                                <li class="userInfo userMenuSub">
-                                    <div class="optionUSer">
-                                        <div class="avatarMenu" style="background-image: url('https://www.tulivery.com/images/avatarR.png');"></div>
-                                        ¡Hola <strong>Prueba</strong>!
-
-                                    </div>
-                                </li>
-                                <a class="linkElm" id="a_perfil" href="" > 
-                                    <li>
-                                        Mi perfil
-                                    </li>
-                                </a>
-                                <a class="linkElm" id="a_direccion" href="" >
-                                    <li>
-                                        Mis direcciones 
-                                    </li>
-                                </a>
-                                <a class="linkElm" id="a_pedidos" href="" >
-                                    <li>
-                                        Mis pedidos 
-                                    </li>
-                                </a>
-                                <li class="userInfo storeMenuSub menubgsec2 ">
-                                    <div class="optionUSer">
-                                    <div class="avatarMenu" style="background-image: url('https://www.tulivery.com/tiendas/kallpa_burguer/company/kallpa_burguer_logo.jpg');"></div>
-                                        <strong>Kallpa Burguer</strong>
-                                    </div>
-                                </li>
-                                <a class="linkElm menubgsec2" id="a_perfil" href="#" > 
-                                    <li>
-                                        Menú
-                                    </li>
-                                </a>
-                                <a class="linkElm menubgsec2" id="a_perfil" href="#" > 
-                                    <li>
-                                        Calificación
-                                    </li>
-                                </a>
-                                <a class="linkElm menubgsec2" id="a_perfil" href="#" > 
-                                    <li>
-                                        Información
-                                    </li>
-                                </a>
-                                <a class="exit" id="a_logout" href="index.html" >
-                                    <li>
-                                        <img class="exitSub" src="img/exit.png" alt="">
-                                    </li>
-                                </a>
-                            </ul>
-                        </li>
-                      
-                        <li class="nav-item floatMenuOption noMovileBtn">
-                            <a class="nav-link sm-hidden">
-                              <span>
-                                <i class="fa fa-bars" aria-hidden="true"></i>
-                              </span>
-                            </a>
-                            <ul class="floatMenu">
-                                <li class="tittleMenuSp">
-                                    Quiero Vender
-                                </li>
-                                <li class="userInfo storeMenuSub btnSection my-0 py-3">
-                                    <button type="button" class="btn btn-danger-home mt-0 float-left full-w btn-sm" onclick="inscripcion_ingresar()">Comenzar prueba</button>
-
-                                </li>
-                                <a class="linkElm" id="" href="#" > 
-                                    <li>
-                                        Abrir mi tienda Virtual
-                                    </li>
-                                </a>  
-                               
-                                <a class="linkElm" id="" href="#" > 
-                                    <li>
-                                        Planes de suscripción
-                                    </li>
-                                </a> 
-                                <li class="separador">
-                                </li> 
-                                <li class="tittleMenuSp">
-                                    Servicios corrativos
-                                </li>
-                                <a class="linkElm" id="" href="#" > 
-                                    <li>
-                                        Dotación y monitoreo de Drivers
-                                    </li>
-                                </a>  
-                                <a class="linkElm" id="" href="#" > 
-                                    <li>
-                                        Servicio Express Business
-                                    </li>
-                                </a>  
-                                <a class="linkElm" id="" href="#" > 
-                                    <li>
-                                        Quiero ser repartidor
-                                    </li>
-                                </a>  
-                                <li class="separador">
-                                </li>
-                                <a class="linkElm" id="" href="#" > 
-                                    <li>
-                                        Sobre Tulivery
-                                    </li>
-                                </a>  
-                                <a class="linkElm" id="" href="#" > 
-                                    <li>
-                                        Términos y condiciones
-                                    </li>
-                                </a>  
-                                  
-                                <a class="linkElm" id="" href="#" > 
-                                    <li>
-                                        Políticas de privacidad
-                                    </li>
-                                </a> 
-                            </ul>
+                            <div class="btn-hide">
+                                <img src="img/shopping-cart.svg" alt="">
+                                <div class="square-num">2</div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> 
+
         <a class="btn-fticon4 inicioIco" href="principal.html">
-            <i class="fa fa-home"></i>
+            <img src="img/home.svg" alt="">
         </a>
         <div class="nom_tienda">
             Casa del Alfajor
         </div>
+
         
         <main id="main" class="contenido jumbotronbg mainTop" >        
             <div class="row mx-0 bg-white ">
            
-                <div class="col-12 col-lg-9 col-md-12 lineRight compactoTemplateHeight px-0">
-                    <div class="template2 col-12 col-md-12 col-sm-12 marginSpaceTop bgstore align-items-stretch d-flex" >
-                        <div class="circle"><img class="smlogo" src="https://www.tulivery.com/tiendas/home_burger/company/2021_03_22_13_15_07_logo.png"></div>
-                        <div class="bannerCompacto" >
-                            <img src="https://www.tulivery.com/tiendas/home_burger/company/2021_03_25_16_53_20_web.png" alt="">
+                <div class="col-12 col-lg-9 col-md-12 lineRight compactoTemplateHeight sideoculto px-0">
+                    <div id="sliderFijo" class="smSliderNone col-12 col-md-12 col-sm-12 d-flex">
+                        <a class="tiendaIco smSliderLogo show-sm-banner" href="detalle.html">
+                            <div class="circle show-sm-banner"><img src="https://www.tulivery.com/tiendas/kallpa_burguer/company/2021_03_24_18_33_38_logo.png"></div>
+                        </a>
+                        <div class="slides-container show-sm-banner">
+                            <div class="slide">
+                                <img class="bgimgP1" src="https://www.tulivery.com/tiendas/kallpa_burguer/company/2021_03_26_11_41_37_web.png" alt="slider">
+                            </div>
+                        </div>
+                        <div class="content-info align-content-center show-sm-banner-mov">
+                            <h1>Dixie Chicken House </h1>
+                            <p>Pollo,Hamburguesas</p>
+                            <p>Delivery - Recojo  </p>
+                            <span>Temporalmente no disponible</span> <span class="info-store"><i class="fa fa-star"></i><strong> 4.8</strong></span><br>
+                            <a href="#">Información</a>
                         </div>
                     </div>
-
-                    <div class="col-md-12 smtop bg-menuSelect">
+                    <div class="col-md-12 smtop bg-menuSelect mt-5">
                         <div class="row smallElm justify-md-content-between pl-3 pr-3">
                             <div class="mt-1 mb-0 categoryStyle">
                                 <button id="categoryOptions" class="btn btn-danger-home">
@@ -194,7 +97,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-10 col-lg-6 col-md-6 sliderProductHome mt-2 pl-1">
+                            <div class="col-11 col-lg-11 col-md-10 sliderProductHome mt-2 pl-1">
                                 
                                 <div class="menu-wrapper">
                                     <ul class="menu categoryLine" >
@@ -203,6 +106,47 @@
                                                 <h3 class="title">Nombre Tag</h3>
                                             </li>
                                         </a>
+                                        <a>
+                                            <li class="item">
+                                                <h3 class="title">Nombre Tag</h3>
+                                            </li>
+                                        </a>
+                                        <a>
+                                            <li class="item">
+                                                <h3 class="title">Nombre Tag</h3>
+                                            </li>
+                                        </a>
+                                        <a>
+                                            <li class="item">
+                                                <h3 class="title">Nombre Tag</h3>
+                                            </li>
+                                        </a>
+                                        <a>
+                                            <li class="item">
+                                                <h3 class="title">Nombre Tag</h3>
+                                            </li>
+                                        </a>
+                                        <a>
+                                            <li class="item">
+                                                <h3 class="title">Nombre Tag</h3>
+                                            </li>
+                                        </a>
+                                        <a>
+                                            <li class="item">
+                                                <h3 class="title">Nombre Tag</h3>
+                                            </li>
+                                        </a>
+                                        <a>
+                                            <li class="item">
+                                                <h3 class="title">Nombre Tag</h3>
+                                            </li>
+                                        </a>
+                                        <a>
+                                            <li class="item">
+                                                <h3 class="title">Nombre Tag</h3>
+                                            </li>
+                                        </a>
+
                                         <a>
                                             <li class="item">
                                                 <h3 class="title">Nombre Tag</h3>
@@ -265,12 +209,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-2 col-lg-5 col-md-5 m-0 searchCategory">
-                                <div class="box">
-                                    <input class="form-control gradientSearch mr-sm-2 search" type="text" placeholder="¿Qué producto necesitas?">
-                                    <div class="icon-expand"><img src="img/locationHome2.svg" alt=""></div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                     
@@ -510,142 +449,183 @@
                 <div class="col-md-3 bg-white p-0 px-0 scrollerSectionCss">
                     <div>
                         <div id="overBlack"></div>
-                            <div class="baseCarrito plantillaFullHeight floatcart oculto" id="myHeader">
-                                <div class="bgHandler"></div>
-                                <div class="handler cart2"><button href="index.html" type="button" class="btn btn-success cartBtn col-12"><span><i class="fa fa-shopping-cart"></i></span> <div id="countProd" class="badge-danger">1</div><div class="i">Ver carrito de compra</div>  <strong><div class="float-right pt-1">S/.34.90</div></strong></button></div>
-                                <div class="closeCart float-right"><i class="fa fa-times"></i></div>
-                                
-                                <div class="headerInfo ">
-                                    <div class="justify-content-start">
-                                        <div class="btn-hide">
-                                            <img src="img/arrowWhitetHome.svg" alt="">
-                                        </div>
-                                        <div class="ml-2">
-                                            <h5 class="px-3">Oscar Bardales</h5>
-                                            <h6 class="px-3">Tu pedido de La casa del  Alfajor</h6>
+                        <div class="baseCarrito plantillaFullHeight floatcart " id="myHeader">
+                            <div class="bgHandler"></div>
+                            <div class="handler cart2"><button href="index.html" type="button" class="btn btn-success cartBtn col-12"><span><i class="fa fa-shopping-cart"></i></span> <div id="countProd" class="badge-danger">1</div><div class="i">Ver carrito de compra</div>  <strong><div class="float-right pt-1">S/.34.90</div></strong></button></div>
+                            <div class="closeCart float-right"><i class="fa fa-times"></i></div>
+                            
+                            <div class="headerInfo ">
+                                <div class="justify-content-start">
+                                   
+                                    <div class="m-0">
+                                        <h5 class="px-3">Oscar Bardales</h5>
+                                        <h6 class="px-3">Tu pedido de La casa del  Alfajor</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="compactoCarHeight">
+                                <div class="detalleCarro pt-2 pb-1 px-2 row d-flex">
+                                    <div class="leftcontent pl-2">
+                                        <h6>Producto Producto asdas da asdas asd 1</h6>
+                                        <p class="smallleter">Tamaño personal</p>
+                                        <p class="smallleter">Poco picante</p>
+                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                    </div>
+                                    <div class="rightcontent">
+                                        S/.45.00 <br>
+                                        <div class="input-group" id="spinner">
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-danger-line" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                            </span>
+                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-success-line" data-action="increment"><span class="fa fa-plus"></span></button>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="compactoCarHeight">
-                                    <div class="detalleCarro pt-2 pb-1 px-2 row d-flex">
-                                        <div class="leftcontent pl-2">
-                                            <h6>Producto Producto asdas da asdas asd 1</h6>
-                                            <p class="smallleter">Tamaño personal</p>
-                                            <p class="smallleter">Poco picante</p>
-                                            <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
-                                        </div>
-                                        <div class="rightcontent">
-                                            S/.45.00 <br>
-                                            <div class="input-group" id="spinner">
-                                                <span class="input-group-btn btn-group-sm">
-                                                <button type="button" class="btn btn-danger-line" data-action="decrement"><span class="fa fa-minus"></span></button>
-                                                </span>
-                                                <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
-                                                <span class="input-group-btn btn-group-sm">
-                                                <button type="button" class="btn btn-success-line" data-action="increment"><span class="fa fa-plus"></span></button>
-                                                </span>
-                                            </div>
+                                <div class="detalleCarro pt-2 pb-1 px-2 row d-flex">
+                                    <div class="leftcontent pl-2">
+                                        <h6>Producto 2</h6>
+                                        <p class="smallleter">Tamaño personal</p>
+                                        <p class="smallleter">Poco picante</p>
+                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                    </div>
+                                    <div class="rightcontent">
+                                        S/.45.00 <br>
+                                        <div class="input-group" id="spinner">
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-danger-line" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                            </span>
+                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-success-line" data-action="increment"><span class="fa fa-plus"></span></button>
+                                            </span>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="detalleCarro pt-2 pb-1 px-2 row d-flex">
-                                        <div class="leftcontent pl-2">
-                                            <h6>Producto 2</h6>
-                                            <p class="smallleter">Tamaño personal</p>
-                                            <p class="smallleter">Poco picante</p>
-                                            <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
-                                        </div>
-                                        <div class="rightcontent">
-                                            S/.45.00 <br>
-                                            <div class="input-group" id="spinner">
-                                                <span class="input-group-btn btn-group-sm">
-                                                <button type="button" class="btn btn-danger-line" data-action="decrement"><span class="fa fa-minus"></span></button>
-                                                </span>
-                                                <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
-                                                <span class="input-group-btn btn-group-sm">
-                                                <button type="button" class="btn btn-success-line" data-action="increment"><span class="fa fa-plus"></span></button>
-                                                </span>
-                                            </div>
-                                        </div>
+                                <div class="detalleCarro pt-2 pb-1 px-2 row d-flex">
+                                    <div class="leftcontent pl-2">
+                                        <h6>Producto 3</h6>
+                                        <p class="smallleter">Tamaño personal</p>
+                                        <p class="smallleter">Poco picante</p>
+                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
                                     </div>
-
-                                    <div class="detalleCarro pt-2 pb-1 px-2 row d-flex">
-                                        <div class="leftcontent pl-2">
-                                            <h6>Producto 3</h6>
-                                            <p class="smallleter">Tamaño personal</p>
-                                            <p class="smallleter">Poco picante</p>
-                                            <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
-                                        </div>
-                
-                                        <div class="rightcontent">
-                                            S/.45.00 <br>
-                                            <div class="input-group" id="spinner">
-                                                <span class="input-group-btn btn-group-sm">
-                                                <button type="button" class="btn btn-danger-line" data-action="decrement"><span class="fa fa-minus"></span></button>
-                                                </span>
-                                                <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
-                                                <span class="input-group-btn btn-group-sm">
-                                                <button type="button" class="btn btn-success-line" data-action="increment"><span class="fa fa-plus"></span></button>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                
-                                    <div class="detalleCarro pt-2 pb-1 px-2 row d-flex">
-                
-                                        <div class="leftcontent pl-2">
-                                            <h6>Producto 4</h6>
-                                            <p class="smallleter">Tamaño personal</p>
-                                            <p class="smallleter">Poco picante</p>
-                                            <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
-                                        </div>
-                
-                                        <div class="rightcontent">
-                                            S/.45.00 <br>
-                                            <div class="input-group" id="spinner">
-                                                <span class="input-group-btn btn-group-sm">
-                                                <button type="button" class="btn btn-danger-line" data-action="decrement"><span class="fa fa-minus"></span></button>
-                                                </span>
-                                                <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
-                                                <span class="input-group-btn btn-group-sm">
-                                                <button type="button" class="btn btn-success-line" data-action="increment"><span class="fa fa-plus"></span></button>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                        
-                                    <div class="detalleCarro pt-2 pb-1 px-2 row d-flex">
-                                        <div class="leftcontent pl-2"> 
-                                            <h6>Producto 5</h6>
-                                            <p class="smallleter">Tamaño personal</p>
-                                            <p class="smallleter">Poco picante</p>
-                                            <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
-                                        </div>
-                
-                                        <div class="rightcontent">
-                                            S/.45.00 <br>
-                                            <div class="input-group" id="spinner">
-                                                <span class="input-group-btn btn-group-sm">
-                                                <button type="button" class="btn btn-danger-line" data-action="decrement"><span class="fa fa-minus"></span></button>
-                                                </span>
-                                                <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
-                                                <span class="input-group-btn btn-group-sm">
-                                                <button type="button" class="btn btn-success-line" data-action="increment"><span class="fa fa-plus"></span></button>
-                                                </span>
-                                            </div>
+            
+                                    <div class="rightcontent">
+                                        S/.45.00 <br>
+                                        <div class="input-group" id="spinner">
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-danger-line" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                            </span>
+                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-success-line" data-action="increment"><span class="fa fa-plus"></span></button>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
             
-                                <div class="totalCarro sepCarro px-2 pt-2">
-                                    <h6 class="px-3">Subtotal <b class="float-right">S/.80.00</b></h6>
-                                    <h6 class="px-3">Costo de envío <b class="float-right">S/.10.00</b></h6>
-                                    <a href="finalizarPedido.html">
-                                        <button href="index.html" type="button" class="btn btn-success cartBtn col-12"><span><i class="fa fa-shopping-cart"></i></span> <div id="countProd" class="badge-danger">1</div><div class="i">Ver carrito de compra</div>  <strong><div class="float-right pt-1">S/.34.90</div></strong></button>
-                                    </a>
+                                <div class="detalleCarro pt-2 pb-1 px-2 row d-flex">
+            
+                                    <div class="leftcontent pl-2">
+                                        <h6>Producto 4</h6>
+                                        <p class="smallleter">Tamaño personal</p>
+                                        <p class="smallleter">Poco picante</p>
+                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                    </div>
+            
+                                    <div class="rightcontent">
+                                        S/.45.00 <br>
+                                        <div class="input-group" id="spinner">
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-danger-line" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                            </span>
+                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-success-line" data-action="increment"><span class="fa fa-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
+                                    
+                                <div class="detalleCarro pt-2 pb-1 px-2 row d-flex">
+                                    <div class="leftcontent pl-2"> 
+                                        <h6>Producto 5</h6>
+                                        <p class="smallleter">Tamaño personal</p>
+                                        <p class="smallleter">Poco picante</p>
+                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                    </div>
+            
+                                    <div class="rightcontent">
+                                        S/.45.00 <br>
+                                        <div class="input-group" id="spinner">
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-danger-line" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                            </span>
+                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-success-line" data-action="increment"><span class="fa fa-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detalleCarro pt-2 pb-1 px-2 row d-flex">
+                                    <div class="leftcontent pl-2"> 
+                                        <h6>Producto 5</h6>
+                                        <p class="smallleter">Tamaño personal</p>
+                                        <p class="smallleter">Poco picante</p>
+                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                    </div>
+            
+                                    <div class="rightcontent">
+                                        S/.45.00 <br>
+                                        <div class="input-group" id="spinner">
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-danger-line" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                            </span>
+                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-success-line" data-action="increment"><span class="fa fa-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detalleCarro pt-2 pb-1 px-2 row d-flex">
+                                    <div class="leftcontent pl-2"> 
+                                        <h6>Producto 5</h6>
+                                        <p class="smallleter">Tamaño personal</p>
+                                        <p class="smallleter">Poco picante</p>
+                                        <p><a data-toggle="modal" data-target="#exampleModal" href="">Cambiar</a></p>
+                                    </div>
+            
+                                    <div class="rightcontent">
+                                        S/.45.00 <br>
+                                        <div class="input-group" id="spinner">
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-danger-line" data-action="decrement"><span class="fa fa-minus"></span></button>
+                                            </span>
+                                            <input name="qty" type="text" class="form-control text-center" value="1" min="1" max="100" disabled>
+                                            <span class="input-group-btn btn-group-sm">
+                                            <button type="button" class="btn btn-success-line" data-action="increment"><span class="fa fa-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+        
+                            <div class="totalCarro sepCarro px-2 pt-2">
+                                <h6 class="px-2">Subtotal <b class="float-right">S/.80.00</b></h6>
+                                <h6 class="px-2">Costo de envío <b class="float-right">S/.10.00</b></h6>
+                                <a href="finalizarPedido.html">
+                                    <button href="index.html" type="button" class="btn btn-success cartBtn col-12"><span><i class="fa fa-shopping-cart"></i></span> <div id="countProd" class="badge-danger">1</div><div class="i">Ver carrito de compra</div>  <strong><div class="float-right pt-1">S/.34.90</div></strong></button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

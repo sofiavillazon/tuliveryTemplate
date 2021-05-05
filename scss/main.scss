@@ -47,6 +47,9 @@ $white: #fff;
 
 
 @media (min-width: 992px){
+
+ 
+
   .fixed-cartElm{
     position: fixed;
     left: calc(60% + 60px);
@@ -598,21 +601,21 @@ footer h6 {
   width: 50px;
   height: 50px;
   z-index: 10000;
-  left: 3.5%;
-  top: -5px;
+  left: 2%;
+  top: -10px;
   position: fixed; }
 
 .tiendaIco:before {
-  width: 138px;
-  height: 138px;
+  width: 128px;
+  height: 128px;
   position: absolute;
   border-radius: 50%;
   content: '';
   background-color: rgba(255, 255, 255, 0);
-  border: 9px solid rgba(255, 255, 255, 0.5);
+  border: 5px solid rgb(255, 255, 255);
   z-index: 11;
-  top: -9px;
-  left: -9px; }
+  top: -4px;
+  left: -5px; }
 
 /*4.-EFFECT.............*/
 /*==============================================================*/
@@ -717,11 +720,64 @@ footer {
     }
    
   }
+
+  .square-shop{
+    background-color: $reddark;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
 @media (min-width: 1200px) {
   
   // .plantillaFullHeight.floatcart{
   //   margin-top: 50px;
   // }
+  .baseCarrito {
+    padding: 0px 0px;
+    border-radius: 0px;
+    background-color: #fff;
+    padding-bottom: 0px;
+    position: fixed;
+    right: 100%;
+    z-index: 26;
+    margin-top: -56px!important;
+    animation: fadeIn ease 1s; 
+    .headerInfo {
+      background-color: #f4f9ff!important;
+    }
+    .totalCarro {
+      border-radius: 20px 20px 0px 0px!important;
+    }
+    .detalleCarro {
+      border: none;
+      .leftcontent p{
+        color: #728292!important;
+      }
+    }
+  }
+  .closeCart {
+    font-size: 23px;
+    padding: 10px;
+    cursor: pointer;
+    i{
+      color: #8c97a3;
+    }
+  }
+  
+  .baseCarrito.show {
+    right: 0px;
+  }
+  .nom_tienda{
+    z-index: 0!important;
+  }
+  .bg-light.back{
+    z-index: 0!important;
+  }
 
   .plantillaFullHeight.stickyFoot{
   margin-top: -20px;
@@ -731,9 +787,9 @@ footer {
   .inicioIco {
     display: block; }
   .nav-item.floatMenuOption {
-    padding-left: 18px; } }
-
-
+    padding-left: 18px; } 
+}
+  
 @media (min-width: 1900px) {
   .container {
     min-width: 1600px !important; }
@@ -751,11 +807,56 @@ body {
   /* Prevent scroll on narrow devices */
   /* padding-top: 56px;  */
 }
+#overBlack {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: none;
+  left: 0px;
+  background: #333333b6;
+  animation: fadeIn ease 0.5s; }
+  #overBlack.show {
+    display: block;}
 
+   
 @media (max-width: 1200px) {
   .navLogo .navbar-nav a h6 {
     font-size: 13px !important;
   } 
+  .col-md-5{
+    width: calc(100vw / 1);
+  }
+  .baseCarrito {
+    padding: 0px 0px;
+    border-radius: 0px;
+    background-color: #fff;
+    padding-bottom: 0px;
+    position: fixed;
+    right: 100vw!important;
+    z-index: 26;
+    margin-top: 0px!important;
+    animation: fadeIn ease 1s; 
+    .headerInfo {
+      background-color: #f4f9ff!important;
+    }
+    .totalCarro {
+      border-radius: 20px 20px 0px 0px!important;
+    }
+    .detalleCarro {
+      border: none;
+      .leftcontent p{
+        color: #728292!important;
+      }
+    }
+  }
+  .baseCarrito.show {
+    right: 0px!important;
+    top: 0;
+    width: 100%;
+  }
+
 }
 .bg-averlay{
   position: fixed;
@@ -771,6 +872,13 @@ body {
 @media (max-width: 991.98px) {
   .template2 .bannerCompacto {
       display: none;
+  }
+  .show-sm-banner {
+    display: none!important;
+  }
+  .show-sm-banner-mov{
+    margin-top: 70px;
+    width: 100%;
   }
   .categoryStyle .listShow li {
     margin-top: 14px;
@@ -869,16 +977,7 @@ body {
     height: 100%;
     z-index: 1032;
     border-radius: 0px !important; }
-  #overBlack {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: 1032;
-    top: 0;
-    display: none;
-    left: 0px;
-    background: #404040a3;
-    animation: fadeIn ease 0.5s; }
+
   .navbar-nav {
     padding: 0px;
     margin: 0px; }
@@ -2018,6 +2117,7 @@ input[type=radio]:not(old):checked + label > span > span {
   position: absolute!important;
   border-radius: 50%!important;
   right: 25px!important;
+  top: 0px!important;
   img {
     padding: 7px 6px 4px 6px!important;
     width: 35px!important;
@@ -2030,13 +2130,14 @@ input[type=radio]:not(old):checked + label > span > span {
   padding-left: 20px;
   background: #ebecee!important;
 }
+
 @media (max-width: 991px) {
   
   .cutHeader.sideoculto {
     width: calc(100vw) !important;
   }
   .btn-hide{
-    display: none;
+    display: block;
   }
   .dotacion .bgBanner .textDrive {
     width: 90%!important;
@@ -2044,7 +2145,10 @@ input[type=radio]:not(old):checked + label > span > span {
   .smtop{
     margin: 50px;
   }
-  .searchCategory{
+
+  .searchCategory.bar{
+      margin-left: 0px!important;
+      top: 25px;
     .box {
       position: absolute;
       width: 100vw;
@@ -2058,6 +2162,7 @@ input[type=radio]:not(old):checked + label > span > span {
       position: absolute!important;
       border-radius: 50%!important;
       right: 25px!important;
+      
     }
     .search:focus {
       outline: 0;
@@ -2079,8 +2184,9 @@ input[type=radio]:not(old):checked + label > span > span {
      
     }
     .search.expanded {
-        max-width:calc(100vw + 15px);
+        max-width:calc(100vw - 80px);
         opacity:1;
+        top: -6px;
     }
     .icon-expand {
         width: 30px;
@@ -2569,13 +2675,14 @@ input[type=radio]:not(old):checked + label > span > span {
   .justify-md-content-between{
     justify-content: space-between !important;
   }
+  
   .smallElm{
     #categoryOptions2.press {
       display: block;
-      position: fixed;
+      position: absolute;
       z-index: 15;
-      top: 60px;
-      left: 0;
+      top: 10px;
+      left: 15px;
     }
 
     #categoryOptions2.press {
@@ -2751,7 +2858,7 @@ input[type=radio]:not(old):checked + label > span > span {
   }
 
   .tiendaIco {
-    top: calc(30% - 22px) !important;
+    top: calc(79% - 22px) !important;
   }
   #slider2 {
     margin: 0px;
@@ -3037,17 +3144,17 @@ input[type=radio]:not(old):checked + label > span > span {
 @media (min-width: 992px) {
   .categoryStyle .listShow {
     background-color: #fff;
-    border-radius: 5px;
-    padding: 50px 10px 20px 0px!important;
+    border-radius: 12px;
+    padding: 50px 10px 20px 0px !important;
     z-index: 10;
-    height: calc(100vh);
-    width: 240px;
+    height: auto;
     box-shadow: 0px 3px 12px #3d3d3d79 !important;
-    /* border: 1px solid #375F8E !important; */
-    position: fixed;
-    overflow-y: scroll;
-    top: 50px;
-    overflow-X: hidden;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    .tittleList{
+      width: auto!important;
+    }
   }
   .sticky {
     position: fixed;
@@ -4299,7 +4406,12 @@ em.text-success {
 @media (max-width: 576px) {
   .colum-divider {
     width: 100%;
-    display: inline-block; }
+    display: inline-block; 
+  }
+    .col-md-5-dd{
+      width: 100%;
+    }
+  
   .movPad {
     padding-right: 15px !important; } }
 
@@ -4308,9 +4420,19 @@ em.text-success {
     padding-right: 15px !important; }
   .colum-divider {
     width: 49.5%;
-    display: inline-block; } }
+    display: inline-block; } 
+    .col-md-5-dd{
+      width: 50%;
+    }
+  }
+
+
 
 @media (min-width: 1201px) {
+
+  .col-md-5-dd{
+    width: calc(20%);
+  }
   .cardPed h2 {
     line-height: 25px;
     font-size: 25px;
@@ -5105,6 +5227,17 @@ button.smallBtn img {
   margin-bottom: 0px !important; }
 
 @media (min-width: 1200px) {
+  .searchCategory.bar {
+    margin-left: 32%;
+  }
+  #sliderFijo{
+    margin-top: 20px;
+  }
+  #sliderFijo .bgimgP1 {
+    width: auto;
+    height: 11vw;
+    border-radius: 12px;
+  } 
   .containerAlign {
     min-width: 960px !important;
     max-width: 1140px !important;
@@ -5117,7 +5250,17 @@ button.smallBtn img {
       margin-bottom: 80px;
   }
 }
-
+.square-num{
+  background-color: $reddark;
+  border-radius: 5px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  text-align: center;
+  top: 23px;
+  right: 5px;
+}
 @media (max-width: 800px) {
 
  
@@ -5248,12 +5391,12 @@ button.smallBtn img {
       background-color: #fff!important;
     }
   .sliderProductHome li:hover,.sliderProductHome li.active {
-    margin-right: 0;
+    margin-right: 15px;
     text-align: center;
     
   }
   .sliderProductHome li {
-    margin-right: 0;
+    margin-right: 15px;
     text-align: center;
   }
   .sliderProductHome h3 {
@@ -5519,14 +5662,14 @@ button.smallBtn img {
   margin-bottom: 10vh;
   cursor: pointer; }
 
-.tiendaIco {
-  width: 80px;
-  height: 90px;
-  z-index: 1;
-  left: 5%;
-  top: 90px;
-  position: absolute; }
-
+  .tiendaIco {
+    width: 80px;
+    height: 90px;
+    z-index: 1;
+    left: 27px;
+    top: 90px;
+    position: absolute;
+}
 .conteinerDetail {
   background-color: transparent; 
   strong {
@@ -6138,6 +6281,20 @@ span.detail {
     overflow: hidden;
   }
 }
+
+.navLogo.bg-light{
+  background-color: $white !important;
+  min-height: 60px!important;
+  max-height: 60px!important;
+  padding-top: 0px!important;
+  color: #fff;
+  font-size: 16px;
+  z-index: 1037;
+  box-sizing: border-box;
+  border: 1px solid #EBEFF4;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05)!important;
+}
+
 .navLogo.bg-dark{
   background-color: $blue !important;
   min-height: 55px!important;
@@ -6734,9 +6891,7 @@ span.detail {
     height: 100vh;
   }
 }
-.closeCart{
-  display: none;   
-}
+
 .form-signin img,.card-signin img{
   display: none!important;
 }
@@ -6768,9 +6923,9 @@ span.detail {
 }
 @media (min-width: 992px) {
   .scrollerSectionCss{
-    position: fixed;
+    position: absolute;
     top: 20p;
-    right: 0px;
+    left: 0px;
   }
   
   .baseCarrito {
@@ -6819,7 +6974,7 @@ span.detail {
 }
 
 .compactoCarHeight{
-    height: calc(100vh - 180px);
+    height: calc(100vh - 175px);
     overflow-y: auto;
     overflow-x: hidden;
     padding: 0px 10px 10px 10px;
@@ -7338,20 +7493,15 @@ body { margin: 0; padding: 0; }
 }
 
 .btn-hide{
-  position: fixed;
-  background-color: $blue;
-  height: 55px;
+  position: relative;
   margin-top: 0px;
-  padding-top: 0px;
   cursor: pointer;
-  right: calc(25% - 20px);
-  img{
-    height: 55px;
-    width: 20px;
-  }
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 8px;
 }
 .btn-hide:hover{
-  background-color: #212529;
+  background-color: #f5f5f5;
 }
 .scrollerSectionCss.oculto{
   right: -25%;
@@ -7368,7 +7518,7 @@ body { margin: 0; padding: 0; }
   min-width: calc(100vw )!important;
 }
 .cutHeader.sideoculto {
-  width: calc(100vw - 25px);
+  width: calc(100vw);
 }
 
 .baseCarrito.whitebg .totalCarro {
@@ -7429,4 +7579,42 @@ body { margin: 0; padding: 0; }
 
 .specialcart.verticarCart .baseCarrito {
   padding: 0px 0px !important;
+}
+
+
+.content-info{
+  padding-left: 12px;
+  color: $dark;
+  font-family: 'Source Sans Pro'!important;
+  h1{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0px!important;
+  }
+  p{
+    color: #5e6a75;
+    margin-bottom: 0px!important;
+  }
+  span{
+    background-color: $dark;
+    color: $white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  a{
+    color: $blue;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  .info-store{
+    background-color: #fff!important;
+    color: $dark!important;
+    font-size: 18px;
+    i{
+      color: rgb(221, 163, 37);
+    }
+  }
 }

@@ -229,9 +229,26 @@ $("#paso4").on("click", function() {
 
 
 $(".btn-hide").on("click", function() {
-    $('.scrollerSectionCss').toggleClass('oculto');
-    $('.cutHeader').toggleClass('sideoculto');
-    $('.compactoTemplateHeight').toggleClass('sideoculto');
+    $('.baseCarrito').toggleClass('show');
+    $('#overBlack').toggleClass('show');
+    $('.bg-light').toggleClass('back');
+});
+
+$('#overBlack').on('click', function(){
+    $('.baseCarrito').toggleClass('show');
+    $('.bg-light').toggleClass('back');
+    $('#overBlack').toggleClass('show');
+});
+$('.closeCart').on('click', function(){
+    $('.baseCarrito').toggleClass('show');
+    $('.bg-light').toggleClass('back');
+    $('#overBlack').toggleClass('show');
+});
+$('.cartBtn').on('click', function(e){
+    e.preventDefault();
+    $('.baseCarrito').toggleClass('show');
+    $('.bg-light').toggleClass('back');
+    $('#overBlack').toggleClass('show');
 });
 
 
@@ -523,20 +540,7 @@ if(n <= maxelm){
     $(".scrolldir2").css("max-height","100%");
 }
 
-$('.handler').on('click', function(){
-    $('.floatcart').removeClass('oculto');
-    $('#overBlack').removeClass('hidden');
-});
 
-$('.closeCart').on('click', function(){
-    $('.floatcart').addClass('oculto');
-    $('#overBlack').addClass('hidden');
-});
-
-$('#overBlack').on('click', function(){
-    $('.floatcart').toggleClass('oculto');
-    $('#overBlack').toggleClass('hidden');
-});
 
 
 var $divs = $(".detalleCarro").toArray().length;
