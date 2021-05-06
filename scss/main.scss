@@ -744,6 +744,7 @@ footer {
     padding-bottom: 0px;
     position: fixed;
     right: 100%;
+    width: 370px;
     z-index: 26;
     margin-top: -56px!important;
     animation: fadeIn ease 1s; 
@@ -776,7 +777,7 @@ footer {
     z-index: 0!important;
   }
   .bg-light.back{
-    z-index: 0!important;
+    z-index: 1!important;
   }
 
   .plantillaFullHeight.stickyFoot{

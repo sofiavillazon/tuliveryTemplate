@@ -741,6 +741,7 @@ footer li {
     padding-bottom: 0px;
     position: fixed;
     right: 100%;
+    width: 370px;
     z-index: 26;
     margin-top: -56px !important;
     animation: fadeIn ease 1s; }
@@ -763,7 +764,7 @@ footer li {
   .nom_tienda {
     z-index: 0 !important; }
   .bg-light.back {
-    z-index: 0 !important; }
+    z-index: 1 !important; }
   .plantillaFullHeight.stickyFoot {
     margin-top: -20px; }
   .container {
