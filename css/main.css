@@ -41,8 +41,9 @@
 @media (min-width: 992px) {
   .fixed-cartElm {
     position: fixed;
-    left: calc(60% + 60px);
-    top: 95px; }
+    left: calc(56% + 20px);
+    top: 95px;
+    width: 30%; }
   .modal-lg, .modal-xl {
     max-width: 882px; } }
 
@@ -4499,7 +4500,7 @@ em.text-success {
 .searchHome {
   width: 90%;
   height: 50px;
-  z-index: 1031;
+  z-index: 5;
   position: absolute; }
 
 ul {
@@ -5018,7 +5019,7 @@ button.smallBtn img {
   top: 85px;
   width: 200px;
   background-color: #282932;
-  z-index: 1500;
+  z-index: 8;
   font-weight: 900;
   right: 0px;
   color: #fff;
@@ -6977,3 +6978,24 @@ body {
     font-size: 18px; }
     .content-info .info-store i {
       color: #dda325; }
+
+.vermas-contentResume {
+  transition: all .1s ease-in-out; }
+  .vermas-contentResume img {
+    width: 30px;
+    float: right;
+    transform: rotate(90deg); }
+
+.contentResume {
+  display: block; }
+
+.vermas-contentResume.open img {
+  width: 30px;
+  float: right;
+  transform: rotate(180deg); }
+
+.contentResume.open {
+  display: none !important; }
+
+.separadoronly.open {
+  display: none !important; }

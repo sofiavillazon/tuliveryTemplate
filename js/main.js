@@ -239,6 +239,14 @@ $('#overBlack').on('click', function(){
     $('.bg-light').toggleClass('back');
     $('#overBlack').toggleClass('show');
 });
+
+$('.vermas-contentResume').on('click', function(){
+    $('.contentResume').toggleClass('open');
+    $('.vermas-contentResume').toggleClass('open');
+    $('.vermas-contentResume .separadoronly').toggleClass('open');
+    
+});
+
 $('.closeCart').on('click', function(){
     $('.baseCarrito').toggleClass('show');
     $('.bg-light').toggleClass('back');
